@@ -1,0 +1,77 @@
+You are processing the movie "{movie_title}" (released around {movie_year}).
+
+Contextual Information - TMDB Raw Character/Actor List:
+This is a list of characters, the actors who played them, and their TMDB person IDs, obtained from TMDB.
+```yaml
+{raw_tmdb_characters_yaml}
+Your task is to respond with a single, valid JSON object. This JSON object MUST contain exactly two top-level keys: "character_list" and "relationships".
+TASK 1: Content for "character_list" key:
+Transform the 'TMDB Raw Character/Actor List' provided above into a JSON array of objects for the "character_list" key. Each object in this array represents a character and MUST have the following keys and value types:
+"name": (string) Use the exact tmdb_character_name from the input for this character.
+"actor_name": (string) Use the exact tmdb_actor_name from the input.
+"tmdb_person_id": (integer or null) Use the integer tmdb_person_id from the input. If the input tmdb_person_id is missing, not an integer, or explicitly null in the input, use JSON null for this value.
+"description": (string) Generate a concise description for the character (e.g., their role, key traits, brief arc summary in 1-2 sentences).
+"group": (string) Determine an appropriate group for the character (e.g., "Dwarves", "Tribe Members", "Shawshank Prisoners", "Guards", "Family Members", "Political Enemies"). Be specific to the movie context and narrative. Avoid generic terms like "Cast".
+"aliases": (array of strings or null) Generate a JSON array of common nicknames or alternative names used for the character in the movie. If there are no significant aliases, use JSON null.
+Example for one character object in the "character_list" array:
+{{
+"name": "Andy Dufresne",
+"actor_name": "Tim Robbins",
+"tmdb_person_id": 2,
+"description": "A banker wrongly convicted...",
+"group": "Shawshank Prisoners",
+"aliases": null
+}}
+TASK 2: Content for "relationships" key:
+Generate a JSON array of objects for the "relationships" key. Each object represents a unique relationship only between characters present in the "character_list" you just generated (use their "name" fields for "source" and "target"). Each relationship object MUST have the following keys and value types:
+"source": (string) The name of the source character (must match a "name" from your "character_list").
+"target": (string) The name of the target character (must match a "name" from your "character_list").
+"type": (string) The type of relationship (e.g., "Friend", "Mentor", "Brother", "Rival").
+"directed": (boolean) true if the relationship is primarily A -> B, false if it's A <-> B (mutual).
+"description": (string) A 1-2 sentence explanation of the nature of the relationship.
+"sentiment": (string) Allowed values: "negative", "positive", "neutral", "complicated".
+"strength": (integer) A value from 1 to 5 (inclusive), where 5 is very strong.
+"tense": (string) Allowed values: "past", "present", "evolving".
+CRITICAL for "relationships":
+"source" and "target" values MUST EXACTLY MATCH one of the "name" values from the "character_list" you generated in TASK 1.
+Two characters can only appear together in ONE relationship object. Avoid duplicates (e.g., if A-B exists, don't add B-A unless the relationship types are truly distinct and directed). If they have a mutual relationship (directed: false), that is the single entry for that pair.
+Example for one relationship object:
+{{
+"source": "Andy Dufresne",
+"target": "Ellis Boyd Redding",
+"type": "Friend",
+"directed": false,
+"description": "Andy and Red form a strong bond...",
+"sentiment": "positive",
+"strength": 5,
+"tense": "evolving"
+}}
+Ensure your entire response is only the JSON object containing these two keys.
+// Example for end of prompt:
+Output Structure Reminder:
+{{
+"character_list": [
+{{
+"name": "string",
+"actor_name": "string",
+"tmdb_person_id": "integer|null",
+"description": "string",
+"group": "string",
+"aliases": ["string"]|null
+}}
+// ... more characters
+],
+"relationships": [
+{{
+"source": "string",
+"target": "string",
+"type": "string",
+"directed": "boolean",
+"description": "string",
+"sentiment": "string",
+"strength": "integer",
+"tense": "string"
+}}
+// ... more relationships
+]
+}}

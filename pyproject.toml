@@ -1,5 +1,5 @@
 [project]
-name = "book-writer"
+name = "movie_data_buiilder"
 version = "0.1.0"
 description = "continually writes and patches it together."
 authors = [

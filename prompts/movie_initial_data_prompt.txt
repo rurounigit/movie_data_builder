@@ -1,0 +1,49 @@
+You are given the following movie details:
+Movie Title: {movie_title_from_tmdb}
+Release Year: {movie_year_from_tmdb}
+
+Your task is to provide detailed information for THIS SPECIFIC MOVIE.
+Respond strictly in JSON format. The JSON object should be a single, top-level object.
+
+CRITICALLY IMPORTANT:
+- The 'movie_title' field in your JSON output MUST be the exact string '{movie_title_from_tmdb}'.
+- The 'movie_year' field in your JSON output MUST be the exact string '{movie_year_from_tmdb}'.
+
+Provide the following fields in your JSON response with appropriate content for the movie '{movie_title_from_tmdb}':
+- movie_title: (string, exactly '{movie_title_from_tmdb}')
+- movie_year: (string, exactly '{movie_year_from_tmdb}')
+- character_profile: (string, around 150 words. Focus on the overall character landscape or the protagonist if one is very central.)
+- critical_reception: (string, international critical reception summary, around 150 words.)
+- visual_style: (string, concise but concrete and tangible description of the visual style, around 200 words.)
+- most_talked_about_related_topic: (string, most controversial, shocking, or moving related topic or trivia, around 150 words.)
+- sequel: (string, name the sequel if one exists, otherwise null.)
+- prequel: (string, name the prequel if one exists, otherwise null.)
+- spin_off_of: (string, what movie is this movie a spin-off of, if any, otherwise null.)
+- spin_off: (string, what is this movie's spin-off, if any, otherwise null.)
+- remake_of: (string, what movie is this movie a remake of, if any, otherwise null.)
+- remake: (string, what is this movie's remake, if any, otherwise null.)
+- complex_search_queries: (array of strings. Provide 1-2 short, insightful search queries to find similar movies. Examples: ["Critically acclaimed 90s mystery movies set in Europe.", "Visually stunning post-2015 sci-fi with strong female leads."])
+
+Ensure your entire response is a single valid JSON object.
+---
+Output Schema Reference (Your JSON output must conform to this structure):
+{{
+  "type": "object",
+  "properties": {{
+    "movie_title": {{"type": "string"}},
+    "movie_year": {{"type": "string"}},
+    "character_profile": {{"type": "string"}},
+    "critical_reception": {{"type": "string"}},
+    "visual_style": {{"type": "string"}},
+    "most_talked_about_related_topic": {{"type": "string"}},
+    "sequel": {{"type": ["string", "null"]}},
+    "prequel": {{"type": ["string", "null"]}},
+    "spin_off_of": {{"type": ["string", "null"]}},
+    "spin_off": {{"type": ["string", "null"]}},
+    "remake_of": {{"type": ["string", "null"]}},
+    "remake": {{"type": ["string", "null"]}},
+    "complex_search_queries": {{"type": "array", "items": {{"type": "string"}}}}
+  }},
+  "required": ["movie_title", "movie_year", "character_profile", "critical_reception", "visual_style", "most_talked_about_related_topic", "complex_search_queries"]
+}}
+---

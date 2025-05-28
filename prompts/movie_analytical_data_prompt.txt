@@ -1,0 +1,72 @@
+For the movie titled "{movie_title_from_call_1}" (released around {movie_year_from_call_1}).
+Provide the following analytical information and recommendations for this specific movie.
+Respond with a single, valid JSON object.
+
+The JSON object MUST have the following top-level keys with the specified structures and types:
+
+1.  "character_profile_big5": (JSON object)
+    This object is for the main character. It MUST contain keys: "Openness", "Conscientiousness", "Extraversion", "Agreeableness", and "Neuroticism".
+    The value for each of these trait keys MUST be a JSON object with exactly two keys:
+    - "score": (integer) An integer score from 1 to 5. (Scale: 1=Strongly Disagree/Very Inaccurate, 2=Disagree/Inaccurate, 3=Neutral, 4=Agree/Accurate, 5=Strongly Agree/Very Accurate).
+    - "explanation": (string) A very concise string explainer for that trait score for the character.
+    Example for "Openness": {{"score": 4, "explanation": "Clarice shows openness by venturing into unfamiliar, dangerous psychological territory to catch Buffalo Bill."}}
+
+2.  "character_profile_myersbriggs": (JSON object)
+    This object is for the main character. It MUST contain exactly two keys:
+    - "type": (string) The 4-letter MBTI type string (e.g., "ISTJ"). Valid types are: ESFP, INTJ, INTP, ENTJ, ENTP, INFJ, INFP, ENFJ, ENFP, ISTJ, ISFJ, ESTJ, ESFJ, ISTP, ISFP, ESTP.
+    - "explanation": (string) A single, concise string explainer for that type, linking it to the character.
+    Example: {{"type": "ISTJ", "explanation": "Introverted, Sensing, Thinking, Judging (Logistician). Clarice demonstrates ISTJ traits through her dutiful approach..."}}
+
+3.  "genre_mix": (JSON object)
+    This object MUST contain a single key: "genres".
+    The value of "genres" MUST be a JSON object where each key is a genre name (string) and its value is the percentage (integer, 0-100) of that genre's presence in the movie. Identify up to 6 apparent genres.
+    Example: {{"genres": {{"action": 80, "comedy": 70, "sci-fi": 50, "drama": 20, "romance": 10, "fantasy": 50}}}}
+
+4.  "matching_tags": (JSON object)
+    This object MUST contain a single key: "tags".
+    The value of "tags" MUST be either JSON `null` (if no tags strongly and centrally apply after careful consideration) OR a JSON object.
+    If it's an object, its keys MUST be exact tag strings from the 'TAGS' list provided below. The value for each tag key MUST be a concise, movie-specific string explanation (1 sentence) justifying WHY that tag demonstrably and centrally applies based on its definition.
+    **RULES FOR TAG SELECTION - READ VERY CAREFULLY:**
+    1.  Accuracy is Paramount: Your primary goal is to select tags that are UNDENIABLY and CENTRALLY relevant to the movie. The tag MUST be a core, defining aspect of the film.
+    2.  Strict Adherence to Definitions: You MUST strictly follow the 'TAG DEFINITIONS' provided below for each tag. Do NOT deviate or interpret loosely.
+    3.  No Stretching Definitions: If a movie only vaguely touches upon a tag, or if the tag is a minor or incidental aspect, DO NOT apply the tag.
+    4.  Pre-conditions are Absolute: If a tag definition includes a pre-condition (e.g., 'Movie MUST BE or HAS TO BE a Franchise continuation'), that condition MUST be met. If not, the tag CANNOT be used for this movie.
+    5.  Quality Over Quantity: It is better to have FEW or NO tags if none strongly and centrally apply, rather than including weakly matched tags.
+    6.  Output Format: (Covered by JSON structure described here).
+    7.  No Matches: (Covered by JSON `null` option for "tags" value).
+
+    TAGS LIST:
+    ["Optimistic Dystopia", "Identity Quest", "Lo-Fi Epic", "Solarpunk Saga", "Existential Laugh", "Third Culture Narrative", "Micro Revolution", "Everyday Magic", "Existential Grind", "Accidental Wholesome", "Imperfect Unions", "Analog Heartbeats", "Legacy Reckoning", "Genre Autopsy", "Retro Immersion"]
+
+    Example for "matching_tags" (if movie met these definitions):
+    {{"tags": {{"Analog Heartbeats": "It focuses on the intimacy of quiet, shared moments and unspoken emotions in a pre-digital era.", "Imperfect Unions": "The central bond is defined by its painful imperfection and societal constraints, remaining unconsummated."}}}}
+    OR (if no tags apply):
+    {{"tags": null}}
+
+    FOR YOUR REFERENCE, TAG DEFINITIONS ARE (Use these to understand the tags; do NOT include these full definitions in your output. Your explanation MUST be movie-specific and justify the tag based on these definitions):
+    Optimistic Dystopia: the film's setting has to be a world with significant challenges (e.g., extreme climate change, societal division, tech overreach) that, unlike bleak dystopias, centers on characters actively building better futures through community, innovation, empathy, or rebellion against oppressive systems. (e.g., Nausicaä of the Valley of the Wind, Tomorrowland).
+    Identity Quest: the films has to rely mostly on diving deep into characters' internal worlds, mental health, and complex journeys of self-discovery. May use surrealism, metaphor, or unique narratives to explore anxiety, depression, neurodivergence, finding one's place, or multifaceted identities. (e.g., Eternal Sunshine of the Spotless Mind, Lady Bird).
+    Lo-Fi Epic: the story of the movie has to include very grand emotional stakes or themes of significant change, but in contrast be told through a grounded, intimate, character-driven lens (e.g., The Green Knight, A Ghost Story).
+    Solarpunk Saga: film has to blend ecological themes with mythological storytelling, ancient wisdom, or a solarpunk aesthetic (optimistic, sustainable futures via renewable energy & community). Characters rediscover nature, fight for environmental or build regenerative communities. (e.g., Princess Mononoke).
+    Existential Laugh: film has to rely heavily on dark humour. Film also has to explore big existential questions (purpose, meaning, connection), e.g., Sorry to Bother You, Being John Malkovich.
+    Third Culture Narrative: films story has to include experiences of individuals navigating multiple cultural identities (e.g., 'third culture kids,' immigrants, those at the intersection of different worlds). (e.g., Minari, Bend It Like Beckham).
+    Micro Revolution: film has to be centered on small-scale grassroots movements, community organizing, or everyday rebellions leading to significant change (e.g., Pride, Paddington 2).
+    Everyday Magic: film has to be about finding the fantastical, magical, or subtly surreal in specific, mundane, local settings. Not high fantasy, but magic hidden in familiar places, local legends, or ordinary people with extraordinary abilities tied to their environment. (e.g., Amélie, Stranger than Fiction).
+    Existential Grind: film has to capture the hilariously bleak, absurd, or mundane aspects of modern daily life (work, dating, bureaucracy). Characters may be trapped in ironic loops or face Sisyphean tasks. (e.g., Office Space, Triangle of Sadness).
+    Accidental Wholesome: film has to include a grumpy, cynical, or isolated character who inadvertently stumbles into heartwarming situations, forming unlikely bonds, or become part of an unexpected found family. Wholesomeness is often a surprise to the characters, emerging from chaos or absurdity. (e.g., Up, Hunt for the Wilderpeople).
+    Imperfect Unions: film has to  portray a relationship (romantic or deeply platonic) where the individuals connect over shared anxieties, traumas, mental health struggles and other vulnerabilities, rather than fairytale ideals. Focuses on accepting imperfections and navigating challenges together. (e.g., Silver Linings Playbook, Punch-Drunk Love).
+    Analog Heartbeats: film has to have a romance or story of longing/connection with a 'lo-fi' aesthetic (quiet, intimate, possibly vintage-feeling). Characters may seek tangible connections (letters, mixtapes, quiet moments) in a digital world.  (e.g., Before Sunrise, Call Me By Your Name).
+    Legacy Reckoning: PRE-CONDITION: Movie MUST BE a Franchise continuation (sequel, reboot). Has to show an aging protagonist confronting his past and some form of Meta-narrative about franchise history (e.g., Creed, Blade Runner 2049, Top Gun: Maverick, Logan, Star Wars: The Force Awakens).
+    Genre Autopsy: film has to be meta-aware, not like the typical films of the genre, has to actively dissect, deconstruct, satirize, or rebuild genre tropes. The film has to expose genre mechanics, blend styles unconventionally, and play with audience expectations. (e.g., Cabin in the Woods, Everything Everywhere All At Once, Deadpool).
+    Retro Immersion: film has to be deeply saturated in a past era's aesthetics, music, and culture (e.g., 80s/90s). (e.g., Everybody Wants Some!!, Sing Street, Stranger Things).
+
+5.  "recommendations": (JSON array of objects)
+    Provide a list of 5 DIFFERENT movie recommendations. Each recommendation MUST be a JSON object with exactly three keys:
+    - "title": (string) The recommended movie title.
+    - "year": (integer or string) The 4-digit release year of the recommended movie.
+    - "explanation": (string) A short, 1-sentence explainer for why it's recommended, linking to the original movie's high IMDb rating, overall vibe, and main character personality.
+    Important: The recommended movie should NEVER be the same as "{movie_title_from_call_1}"! Focus on quality and comparable viewing experience.
+    Example of one recommendation object:
+    {{"title": "Parasite", "year": 2019, "explanation": "A critically acclaimed, high-rated thriller with a unique, intense vibe and masterfully crafted suspense that fans of intelligent, dark narratives would appreciate."}}
+
+Ensure your entire response is only the JSON object.
