@@ -1,0 +1,14 @@
+providers:
+  lm_studio_gemma_3_12b:
+    description: "Local LM Studio running Gemma 3 12B QAT"
+    base_url: "http://localhost:1234/v1"
+    api_key_env_var: "LM_STUDIO_API_KEY" # Points to an env var name
+    model_id: "gemma-3-12b-it-qat"       # The actual model ID for the API call
+    type: "openai_compatible"            # Indicates it uses the OpenAI client directly
+
+  google_gemini_2_0_flash_lite:
+    description: "Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint"
+    base_url: "https://generativelanguage.googleapis.com/v1beta" # Or Vertex AI endpoint
+    api_key_env_var: "GOOGLE_GEMINI_API_KEY"
+    model_id: "models/gemini-2.0-flash-lite"
+    type: "openai_compatible"

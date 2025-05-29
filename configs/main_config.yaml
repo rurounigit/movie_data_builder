@@ -8,14 +8,16 @@ character_image_save_path: "output/character_images"   # Ensure 'output/characte
 # --- Session Control ---
 num_new_movies_to_fetch_this_session: 1 # Start with 1 for testing
 max_tmdb_top_rated_pages_to_check: 2    # How many TMDB top-rated pages to check for new movies
-max_characters_from_tmdb: 15            # Max characters to fetch from TMDB credits
+max_characters_from_tmdb: 30            # Max characters to fetch from TMDB credits
 
-# --- LLM Settings ---
-default_llm_model_id: "gemma-3-12b-it-qat" # Your primary LLM model ID
-# Optional: Define specific models per call if needed, e.g.:
-# llm_model_call1: "gemma-3-12b-it-qat"
-# llm_model_call2: "gemma-3-12b-it-qat"
-# llm_model_call3: "gemma-3-12b-it-qat"
+# LLM Configuration
+# active_llm_provider_id: "lm_studio_gemma_3_12b"
+active_llm_provider_id: "google_gemini_2_0_flash_lite" # Example: switch here
+
+prompts:
+  call1_initial_data: "prompts/movie_initial_data_prompt.txt"
+  call2_chars_rels: "prompts/movie_enrich_chars_relationships_prompt.txt"
+  call3_analytical: "prompts/movie_analytical_data_prompt.txt"
 
 # --- TMDB Image Settings ---
 tmdb_image_base_url: "https://image.tmdb.org/t/p/"

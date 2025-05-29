@@ -5948,3 +5948,256 @@
     sentiment: positive
     strength: 4
     tense: past
+- movie_title: Grave of the Fireflies
+  movie_year: '1988'
+  tmdb_movie_id: 12477
+  imdb_id: tt0095327
+  character_profile: The film primarily focuses on Seita, a teenage boy, and his younger
+    sister Setsuko. Their character arcs are defined by their struggle for survival
+    in war-torn Japan. Seita, initially resourceful and protective, gradually becomes
+    overwhelmed by the circumstances, his youthful optimism eroded by hunger, loss,
+    and the responsibility of caring for Setsuko. Setsuko, innocent and dependent,
+    embodies the devastating impact of war on children, her playful nature slowly
+    fading as she succumbs to malnutrition and illness. The supporting characters,
+    though few, highlight the indifference and hardship faced by many during the conflict.
+  character_profile_big5:
+    Openness:
+      score: 2
+      explanation: Seita shows limited openness, clinging to familiar routines and
+        struggling to adapt to the harsh realities of war and displacement.
+    Conscientiousness:
+      score: 3
+      explanation: Seita's conscientiousness is inconsistent; he initially tries to
+        provide for Setsuko but his impulsiveness and lack of planning lead to their
+        downfall.
+    Extraversion:
+      score: 1
+      explanation: Seita is introverted, preferring to keep to himself and Setsuko,
+        isolating them from potential help and support.
+    Agreeableness:
+      score: 4
+      explanation: Seita demonstrates agreeableness by his unwavering love and care
+        for Setsuko, prioritizing her well-being above all else.
+    Neuroticism:
+      score: 5
+      explanation: Seita exhibits high neuroticism, experiencing intense anxiety,
+        stress, and emotional instability due to the war and their circumstances.
+  character_profile_myersbriggs:
+    type: ISFP
+    explanation: Introverted, Sensing, Feeling, Perceiving (Adventurer). Seita's actions
+      are driven by his strong feelings for his sister, his introverted nature leads
+      to isolation, and he struggles to plan for the future.
+  critical_reception: Grave of the Fireflies received widespread critical acclaim
+    upon its release and continues to be lauded for its emotional power and anti-war
+    message. Critics praised its unflinching portrayal of the devastating effects
+    of war on civilians, particularly children. The film's animation style, while
+    simple, was lauded for its ability to convey profound emotion. Many reviewers
+    cited the film's heartbreaking narrative and its lasting impact on viewers. It's
+    often considered one of the greatest animated films ever made, and a powerful
+    commentary on the human cost of conflict.
+  visual_style: The visual style of Grave of the Fireflies is characterized by its
+    understated realism and delicate animation. The backgrounds are often detailed
+    and evocative, depicting the decaying landscapes of wartime Japan. The character
+    designs are relatively simple, yet expressive, conveying a wide range of emotions
+    through subtle gestures and facial expressions. The use of light and shadow is
+    particularly effective in creating a sense of atmosphere and highlighting the
+    characters' emotional states. The film's color palette is muted, reflecting the
+    bleakness of the setting, with occasional bursts of vibrant color, such as the
+    fireflies, adding moments of beauty and contrast.
+  most_talked_about_related_topic: The most talked-about topic related to Grave of
+    the Fireflies is its profound emotional impact and the raw depiction of suffering.
+    The film's unflinching portrayal of starvation, illness, and the loss of innocence
+    is deeply moving and often leaves viewers emotionally devastated. The film's anti-war
+    message is also frequently discussed, with many viewers highlighting its condemnation
+    of the human cost of conflict and the devastating impact on children. The film's
+    ending, in particular, is often cited as one of the most heartbreaking in cinematic
+    history.
+  genre_mix:
+    genres:
+      drama: 90
+      war: 60
+      animation: 100
+      historical: 40
+      tragedy: 80
+      slice of life: 20
+  matching_tags:
+    tags:
+      Lo-Fi Epic: Despite the grand scale of war and loss, the film focuses on the
+        intimate, character-driven story of two siblings struggling to survive.
+      Analog Heartbeats: The film's focus on the bond between siblings and their shared
+        experiences, even in the face of hardship, evokes a sense of longing and connection.
+  complex_search_queries:
+  - Heartbreaking animated movies about war and survival.
+  - Japanese animated films with strong emotional impact.
+  recommendations:
+  - title: My Neighbor Totoro
+    year: 1988
+    explanation: This film shares the same animation studio and offers a similarly
+      poignant and emotionally resonant experience, exploring childhood and family
+      bonds in a time of hardship, but with a more optimistic tone.
+    imdb_id: tt0096283
+  - title: The Wind Rises
+    year: 2013
+    explanation: This film, also by Studio Ghibli, shares a similar focus on Japanese
+      culture and history, offering a visually stunning and emotionally complex story
+      about pursuing one's dreams amidst societal upheaval.
+    imdb_id: tt2013293
+  - title: A Silent Voice
+    year: 2016
+    explanation: This animated film explores themes of guilt, redemption, and the
+      importance of human connection, offering a similarly emotionally impactful and
+      thought-provoking experience.
+    imdb_id: tt5323662
+  - title: Barefoot Gen
+    year: 1983
+    explanation: This animated film, like Grave of the Fireflies, deals with the horrors
+      of war and its impact on children, offering a similarly powerful and unforgettable
+      viewing experience.
+    imdb_id: tt0085218
+  - title: Come and See
+    year: 1985
+    explanation: This film offers a similar unflinching portrayal of the devastating
+      effects of war on innocent lives, providing a similarly harrowing and emotionally
+      resonant experience.
+    imdb_id: tt0091251
+  character_list:
+  - name: Seita (voice)
+    actor_name: Tsutomu Tatsumi
+    tmdb_person_id: 72413
+    description: A young boy who struggles to survive with his younger sister Setsuko
+      during the final months of World War II in Japan.
+    group: Family Members
+  - name: Setsuko (voice)
+    actor_name: Ayano Shiraishi
+    tmdb_person_id: 72414
+    description: Seita's younger sister, who is dependent on him for survival and
+      succumbs to malnutrition.
+    group: Family Members
+  - name: Mother (voice)
+    actor_name: Yoshiko Shinohara
+    tmdb_person_id: 72415
+    description: Seita and Setsuko's mother, who dies from injuries sustained in an
+      air raid.
+    group: Family Members
+  - name: Auntie (voice)
+    actor_name: Akemi Yamaguchi
+    tmdb_person_id: 72416
+    description: Seita and Setsuko's aunt, who initially takes them in but becomes
+      increasingly resentful of their presence.
+    group: Family Members
+  - name: Woman who takes care of Setsuko (voice)
+    actor_name: Masayo Sakai
+    tmdb_person_id: 3773484
+    description: A woman who briefly cares for Setsuko.
+    group: Supporting Characters
+  - name: Obayashi Chairman (voice)
+    actor_name: Kozo Hashida
+    tmdb_person_id: 3773478
+    description: A minor character.
+    group: Supporting Characters
+  - name: Cousin (voice)
+    actor_name: Kazumi Nozaki
+    tmdb_person_id: 3773488
+    description: Seita and Setsuko's cousin, who lives with the aunt.
+    group: Family Members
+  - name: Gosaku (voice)
+    actor_name: Yoshio Matsuoka
+    tmdb_person_id: 3773491
+    description: A minor character.
+    group: Supporting Characters
+  - name: Aunt's House Guest (voice)
+    actor_name: Masahiro Kanetake
+    tmdb_person_id: 3773492
+    description: A minor character.
+    group: Supporting Characters
+  - name: Patrolman (voice)
+    actor_name: Kiyoshi Yanagawa
+    tmdb_person_id: 3773494
+    description: A minor character.
+    group: Supporting Characters
+  - name: Man who arrests Seita (voice)
+    actor_name: Hajime Maki
+    tmdb_person_id: 3773496
+    description: A minor character.
+    group: Supporting Characters
+  - name: Person in Bank (voice)
+    actor_name: Atsuo Omotem
+    tmdb_person_id: 3773498
+    description: A minor character.
+    group: Supporting Characters
+  - name: Station Worker (voice)
+    actor_name: Teruhisa Harita
+    tmdb_person_id: 3773499
+    description: A minor character.
+    group: Supporting Characters
+  - name: Person in Bank (voice)
+    actor_name: Hiroshi Tanaka
+    tmdb_person_id: 118998
+    description: A minor character.
+    group: Supporting Characters
+    image_file: output/character_images/118998.jpg
+  - name: Station Worker / Doctor (voice)
+    actor_name: Michio Denpo
+    tmdb_person_id: 3773504
+    description: A minor character.
+    group: Supporting Characters
+  - name: Person in Bank (voice)
+    actor_name: Shiro Tamaki
+    tmdb_person_id: 3773506
+    description: A minor character.
+    group: Supporting Characters
+  - name: Nurse (voice)
+    actor_name: Mika Sekita
+    tmdb_person_id: 3773508
+    description: A minor character.
+    group: Supporting Characters
+  - name: (voice)
+    actor_name: Kyoko Moriwaki
+    tmdb_person_id: 3642773
+    description: A minor character.
+    group: Supporting Characters
+    image_file: output/character_images/3642773.jpg
+  relationships:
+  - source: Seita (voice)
+    target: Setsuko (voice)
+    type: Sibling
+    directed: false
+    description: Seita and Setsuko share a close bond as siblings, relying on each
+      other for survival.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: Seita (voice)
+    target: Mother (voice)
+    type: Child
+    directed: true
+    description: Seita loves his mother, but her death deeply impacts him.
+    sentiment: positive
+    strength: 4
+    tense: past
+  - source: Setsuko (voice)
+    target: Mother (voice)
+    type: Child
+    directed: true
+    description: Setsuko loves her mother, but her death deeply impacts her.
+    sentiment: positive
+    strength: 4
+    tense: past
+  - source: Seita (voice)
+    target: Auntie (voice)
+    type: Family
+    directed: false
+    description: The relationship between Seita and his aunt deteriorates as she becomes
+      less welcoming.
+    sentiment: negative
+    strength: 3
+    tense: evolving
+  - source: Setsuko (voice)
+    target: Auntie (voice)
+    type: Family
+    directed: false
+    description: The relationship between Setsuko and her aunt deteriorates as she
+      becomes less welcoming.
+    sentiment: negative
+    strength: 3
+    tense: evolving

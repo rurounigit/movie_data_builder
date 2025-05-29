@@ -8281,3 +8281,47 @@ matching_tags
 2025-05-28 19:04:54,141 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:474 - Raw log: 'output/generated_movie_data_raw_log.txt'
 2025-05-28 19:04:54,141 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:475 - Clean YAML data: 'output/clean_movie_database.yaml'
 2025-05-28 19:04:54,142 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:477 - Character images saved to: 'output/character_images'
+2025-05-29 13:40:26,646 - MovieEnrichmentPipeline - CRITICAL - main_orchestrator.load_llm_providers_config:54 - LLM providers configuration file not found at configs/llm_providers.yaml
+2025-05-29 13:41:10,041 - MovieEnrichmentPipeline - CRITICAL - main_orchestrator.load_llm_providers_config:54 - LLM providers configuration file not found at configs/llm_providers_config.yaml
+2025-05-29 13:42:35,278 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 13:42:35,278 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 13:42:35,278 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 13:42:35,278 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 13:42:35,278 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True}
+2025-05-29 13:42:35,297 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 13:42:35,460 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 22 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 13:53:01,525 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 13:53:01,526 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 13:53:01,526 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 13:53:01,526 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 13:53:01,526 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True}
+2025-05-29 13:53:01,544 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 13:53:01,713 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 22 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 14:09:38,963 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 14:09:38,963 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 14:09:38,963 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 14:09:38,963 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 14:09:38,963 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True}
+2025-05-29 14:09:38,981 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 14:09:39,146 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 22 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 14:09:39,146 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:261 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 14:09:39,374 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:312 - --- Processing New Movie: 'Grave of the Fireflies' (1988) TMDB_ID: 12477 ---
+2025-05-29 14:09:39,374 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:328 -   Running: Initial Data Enrichment for 'Grave of the Fireflies'
+2025-05-29 14:09:43,927 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:336 -   Success: Initial Data for 'Grave of the Fireflies'.
+2025-05-29 14:09:43,927 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:356 -   Running: Character and Relations Enrichment for 'Grave of the Fireflies'
+2025-05-29 14:09:53,807 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:378 -   Success: LLM Call 2 (Chars/Rels) for 'Grave of the Fireflies'.
+2025-05-29 14:09:53,809 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:381 -     Fetching character images for 'Grave of the Fireflies'
+2025-05-29 14:09:57,459 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:405 -   Running: Analytical Data Enrichment for 'Grave of the Fireflies'
+2025-05-29 14:10:03,008 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:413 -   Success: Analytical Data for 'Grave of the Fireflies'.
+2025-05-29 14:10:03,008 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:434 -   Fetching/Updating IMDb IDs for 'Grave of the Fireflies' and its relations.
+2025-05-29 14:10:04,954 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:472 -   Finalizing entry for 'Grave of the Fireflies'.
+2025-05-29 14:10:05,105 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:496 -   Saved 'Grave of the Fireflies' to 'output/clean_movie_database.yaml'.
+2025-05-29 14:10:07,108 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:507 - Target for new movies (1) reached during page processing.
+2025-05-29 14:10:07,108 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:513 - Target for new movies reached. Ending TMDB page fetching.
+2025-05-29 14:10:07,108 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:526 - ===== MOVIE ENRICHMENT SESSION FINISHED =====
+2025-05-29 14:10:07,108 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:527 - Attempted to process 19 movie candidates from TMDB API.
+2025-05-29 14:10:07,108 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:528 - Added 1 new movie(s) this session.
+2025-05-29 14:10:07,108 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:529 - Total movies in 'output/clean_movie_database.yaml': 23
+2025-05-29 14:10:07,109 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:530 - Raw log: 'output/generated_movie_data_raw_log.txt'
+2025-05-29 14:10:07,109 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:531 - Clean YAML data: 'output/clean_movie_database.yaml'
+2025-05-29 14:10:07,109 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:533 - Character images saved to: 'output/character_images'
