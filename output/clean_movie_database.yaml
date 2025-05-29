@@ -3760,7 +3760,6 @@
     description: A young girl who enters a magical bathhouse and must work to free
       herself and her parents, becoming resourceful and courageous in the process.
     group: Main Characters
-    image_file: character_images/19587.jpg
   - name: Haku (voice)
     actor_name: Miyu Irino
     tmdb_person_id: 19588
@@ -3769,7 +3768,6 @@
     group: Spirits
     aliases:
     - Kohaku River
-    image_file: character_images/19588.jpg
   - name: Yubaba / Zeniba (voice)
     actor_name: Mari Natsuki
     tmdb_person_id: 19589
@@ -3780,39 +3778,33 @@
     aliases:
     - Yubaba
     - Zeniba
-    image_file: character_images/19589.jpg
   - name: Akio Ogino (voice)
     actor_name: Takashi Naito
     tmdb_person_id: 19590
     description: Chihiro's father, who transforms into a pig after eating food meant
       for the spirits.
     group: Chihiro's Family
-    image_file: character_images/19590.jpg
   - name: Yuko Ogino (voice)
     actor_name: Yasuko Sawaguchi
     tmdb_person_id: 19591
     description: Chihiro's mother, who transforms into a pig along with her husband.
     group: Chihiro's Family
-    image_file: character_images/19591.jpg
   - name: Chichiyaku (voice)
     actor_name: Tsunehiko Kamijô
     tmdb_person_id: 20334
     description: An assistant manager at Yubaba's bathhouse.
     group: Bathhouse Senior Staff
-    image_file: character_images/20334.jpg
   - name: Aniyaku (voice)
     actor_name: Takehiko Ono
     tmdb_person_id: 544088
     description: A foreman spirit at the bathhouse who gives orders to other workers.
     group: Bathhouse Senior Staff
-    image_file: character_images/544088.jpg
   - name: Kamaji (voice)
     actor_name: Bunta Sugawara
     tmdb_person_id: 119243
     description: The elderly and wise six-armed boiler man who operates the bathhouse's
       boilers and serves as a mentor figure to Chihiro.
     group: Bathhouse Workers
-    image_file: character_images/119243.jpg
   - name: Kaonashi (voice)
     actor_name: Akio Nakamura
     tmdb_person_id: 554612
@@ -3821,48 +3813,41 @@
     group: Spirits
     aliases:
     - No-Face
-    image_file: character_images/554612.jpg
   - name: Rin (voice)
     actor_name: Yumi Tamai
     tmdb_person_id: 19594
     description: A young bathhouse worker, a transformed weasel spirit or human, who
       befriends and helps Chihiro.
     group: Bathhouse Workers
-    image_file: character_images/19594.jpg
   - name: Boh (voice)
     actor_name: Ryunosuke Kamiki
     tmdb_person_id: 225730
     description: Yubaba's giant baby son, who is pampered and spoiled, and later transformed
       into a mouse by Zeniba.
     group: Yubaba's Circle
-    image_file: character_images/225730.jpg
   - name: Aogaeru (voice)
     actor_name: Tatsuya Gashûin
     tmdb_person_id: 19592
     description: A greedy frog spirit working at the bathhouse who is swallowed by
       No-Face.
     group: Spirits
-    image_file: character_images/19592.jpg
   - name: Bantai Frog Service (voice)
     actor_name: Yo Oizumi
     tmdb_person_id: 40450
     description: A group of frog spirits who work in the bathhouse.
     group: Bathhouse Workers
-    image_file: character_images/40450.jpg
   - name: Mr. Oshira (voice)
     actor_name: Ken Yasuda
     tmdb_person_id: 1039220
     description: The Radish Spirit, a large, silent spirit who is a customer at the
       bathhouse and shows kindness to Chihiro.
     group: Spirits
-    image_file: character_images/1039220.jpg
   - name: God of the River (voice)
     actor_name: Koba Hayashi
     tmdb_person_id: 554423
     description: A powerful river spirit, initially appearing as a "stink spirit"
       due to pollution, who is cleansed by Chihiro.
     group: Spirits
-    image_file: character_images/554423.jpg
   relationships:
   - source: Chihiro Ogino / Sen (voice)
     target: Haku (voice)
@@ -3928,287 +3913,6 @@
     sentiment: complicated
     strength: 3
     tense: past
-- movie_title: Dilwale Dulhania Le Jayenge
-  movie_year: '1995'
-  tmdb_movie_id: 19404
-  imdb_id: tt0112870
-  character_profile: Dilwale Dulhania Le Jayenge presents a landscape of contrasting
-    values and generational divides. Raj and Simran, the central protagonists, embody
-    youthful idealism and a desire for personal happiness, clashing with the traditional
-    expectations of their families and the Indian diaspora. Raj, a free-spirited photographer,
-    represents a modern outlook, while Simran, though initially adhering to her family's
-    wishes, yearns for a life beyond arranged marriage. Their families, deeply rooted
-    in tradition, represent the established norms of Indian society. The film explores
-    the tension between these forces, showcasing the struggles and sacrifices individuals
-    make to reconcile personal desires with familial obligations, ultimately celebrating
-    the triumph of love and acceptance. Supporting characters like Raj's friends and
-    Simran's family add layers to this exploration of cultural identity and evolving
-    societal values.
-  character_profile_big5:
-    Openness:
-      score: 4
-      explanation: Raj is open to new experiences, demonstrated by his willingness
-        to travel and embrace different cultures, though tempered by his respect for
-        tradition.
-    Conscientiousness:
-      score: 4
-      explanation: Raj is responsible, organized, and dedicated to his family and
-        their values, evident in his commitment to his parents' wishes.
-    Extraversion:
-      score: 4
-      explanation: Raj is outgoing and enjoys socializing, readily engaging with people
-        and forming connections, though he balances this with introspection.
-    Agreeableness:
-      score: 5
-      explanation: Raj is exceptionally agreeable, empathetic, and considerate of
-        others' feelings, consistently prioritizing harmony and kindness in his interactions.
-    Neuroticism:
-      score: 2
-      explanation: Raj experiences minimal anxiety or emotional instability, maintaining
-        a calm and collected demeanor even in challenging situations.
-  character_profile_myersbriggs:
-    type: ESFJ
-    explanation: Extraverted, Sensing, Feeling, Judging (The Consul). Raj embodies
-      ESFJ traits through his strong sense of duty, focus on family harmony, and compassionate
-      approach to relationships, always striving to create a supportive and nurturing
-      environment.
-  critical_reception: Dilwale Dulhania Le Jayenge was a monumental success, receiving
-    overwhelmingly positive reviews upon its release. Critics lauded the film's romantic
-    storyline, vibrant cinematography, and memorable music. It was praised for its
-    portrayal of the Indian diaspora and its exploration of cultural identity. The
-    film was particularly celebrated for Shah Rukh Khan and Kajol's on-screen chemistry,
-    which became iconic in Indian cinema. Internationally, the film resonated with
-    audiences due to its universal themes of love, family, and tradition. It became
-    a cultural phenomenon, transcending language and geographical barriers. The film's
-    enduring popularity is a testament to its timeless appeal and its ability to capture
-    the essence of romantic love within a cultural context. It is considered a landmark
-    film in Bollywood history, setting a new standard for romantic dramas.
-  visual_style: The visual style of Dilwale Dulhania Le Jayenge is characterized by
-    a vibrant and romantic aesthetic, heavily influenced by the picturesque landscapes
-    of Europe. The film utilizes sweeping panoramic shots of Switzerland and London,
-    showcasing their beauty and creating a sense of escapism. The cinematography emphasizes
-    natural light and soft focus, contributing to the film's dreamy and romantic atmosphere.
-    Costumes are meticulously designed, reflecting both traditional Indian attire
-    and contemporary Western fashion. The color palette is warm and inviting, with
-    earthy tones and splashes of vibrant colors. The film's visual style is a blend
-    of realism and fantasy, creating a world that is both believable and enchanting.
-    The use of slow-motion sequences and close-ups further enhances the film's emotional
-    impact, immersing the viewer in the characters' experiences. The overall effect
-    is a visually stunning and emotionally resonant cinematic experience.
-  most_talked_about_related_topic: The enduring legacy of Dilwale Dulhania Le Jayenge
-    is inextricably linked to its portrayal of arranged marriage and the concept of
-    elopement. The film sparked widespread discussion about the traditional Indian
-    practice of arranged marriage and the increasing desire among young people to
-    choose their own partners. Simran's initial reluctance and eventual decision to
-    defy her family’s wishes resonated deeply with audiences, particularly those navigating
-    similar cultural expectations. The film’s depiction of Raj and Simran eloping,
-    a significant act of rebellion in the context of Indian society, became a symbol
-    of youthful defiance and the pursuit of personal happiness. The film’s success
-    arguably contributed to a broader conversation about individual choice and the
-    evolving dynamics of family and tradition within the Indian diaspora.
-  genre_mix:
-    genres:
-      romance: 75
-      drama: 60
-      musical: 40
-      comedy: 25
-      family: 20
-      cultural: 15
-  matching_tags:
-    tags:
-      Analog Heartbeats: The film's romance unfolds through intimate moments, heartfelt
-        conversations, and a focus on traditional values, creating a nostalgic and
-        emotionally resonant experience.
-      Imperfect Unions: Raj and Simran's relationship is built on overcoming cultural
-        barriers and personal insecurities, showcasing a love that defies expectations
-        and embraces imperfections.
-  complex_search_queries:
-  - Romantic dramas exploring cross-cultural relationships and family expectations.
-  recommendations:
-  - title: When Harry Met Sally...
-    year: 1989
-    explanation: A classic romantic comedy with a focus on deep connection and exploring
-      the complexities of relationships, appealing to fans of the film's emotional
-      depth.
-    imdb_id: tt0098635
-  - title: Before Sunrise
-    year: 1995
-    explanation: Shares a similar focus on intimate conversations and the exploration
-      of connection, capturing a sense of longing and shared discovery.
-    imdb_id: tt0112471
-  - title: You've Got Mail
-    year: 1998
-    explanation: A charming romantic comedy with a focus on connection and overcoming
-      obstacles, offering a feel-good experience with a touch of modern sensibility.
-    imdb_id: tt0128853
-  - title: Pride & Prejudice
-    year: 1995
-    explanation: A timeless story of cultural differences, family expectations, and
-      finding love, resonating with the film's exploration of tradition and personal
-      desires (referring to the 1995 BBC mini-series).
-    imdb_id: tt0112130
-  - title: Amelie
-    year: 2001
-    explanation: A whimsical and heartwarming film with a focus on kindness, connection,
-      and finding joy in everyday moments, offering a similarly uplifting and feel-good
-      experience.
-    imdb_id: tt0211915
-  character_list:
-  - name: Simran Singh
-    actor_name: Kajol
-    tmdb_person_id: 55061
-    description: A spirited and independent young woman from a traditional Indian
-      family living in London, Simran is torn between her family's expectations for
-      an arranged marriage and her desire for love and freedom.
-    group: Singh Family
-    image_file: character_images/55061.jpg
-  - name: Raj Malhotra
-    actor_name: Shah Rukh Khan
-    tmdb_person_id: 35742
-    description: A charming, wealthy, and fun-loving young man from London, Raj falls
-      for Simran and pursues her to India to win her family's approval.
-    group: Malhotra Family
-    image_file: character_images/35742.jpg
-  - name: Chaudhry Baldev Singh
-    actor_name: Amrish Puri
-    tmdb_person_id: 691
-    description: Simran's strict and traditional father, who wants his daughter to
-      marry Kuljeet, the son of his friend in Punjab.
-    group: Singh Family
-    image_file: character_images/691.jpg
-  - name: Lajwanti 'Lajjo' Singh
-    actor_name: Farida Jalal
-    tmdb_person_id: 146971
-    description: Baldev Singh's wife and Simran's mother, a loving and supportive
-      woman who wants her daughter's happiness but respects her husband's wishes.
-    group: Singh Family
-    image_file: character_images/146971.jpg
-  - name: Dharamvir Malhotra
-    actor_name: Anupam Kher
-    tmdb_person_id: 6217
-    description: Raj's wealthy, liberal, and understanding father who supports his
-      son's pursuit of love.
-    group: Malhotra Family
-    image_file: character_images/6217.jpg
-  - name: Rajeshwari 'Chutki' Singh
-    actor_name: Pooja Ruparel
-    tmdb_person_id: 146973
-    description: Simran's younger sister, playful and supportive of Simran's feelings
-      for Raj.
-    group: Singh Family
-    image_file: character_images/146973.jpg
-  - name: Kuljeet Singh
-    actor_name: Parmeet Sethi
-    tmdb_person_id: 85696
-    description: The arrogant son of Baldev Singh's friend, to whom Simran is betrothed
-      in an arranged marriage.
-    group: Kuljeet's Family (Simran's Betrothed's Side)
-    image_file: character_images/85696.jpg
-  - name: Ajit Singh
-    actor_name: Satish Shah
-    tmdb_person_id: 35759
-    description: Kuljeet's father and Baldev Singh's friend in Punjab.
-    group: Kuljeet's Family (Simran's Betrothed's Side)
-    image_file: character_images/35759.jpg
-  - name: Preeti Singh
-    actor_name: Mandira Bedi
-    tmdb_person_id: 146974
-    description: Kuljeet's sister.
-    group: Kuljeet's Family (Simran's Betrothed's Side)
-    image_file: character_images/146974.jpg
-  - name: Simran's Grandmother
-    actor_name: Achala Sachdev
-    tmdb_person_id: 146972
-    description: Simran's grandmother, a traditional matriarch who initially supports
-      the arranged marriage but is moved by Raj's efforts.
-    group: Singh Family
-    image_file: character_images/146972.jpg
-  - name: Simran's Aunt
-    actor_name: Himani Shivpuri
-    tmdb_person_id: 78248
-    description: Simran's aunt, supportive of Simran.
-    group: Singh Family
-    image_file: character_images/78248.jpg
-  - name: Rocky
-    actor_name: Karan Johar
-    tmdb_person_id: 35736
-    description: Raj's friend, a flamboyant and supportive companion who helps Raj
-      in his pursuit of Simran.
-    group: Raj's Friends
-    image_file: character_images/35736.jpg
-  - name: Roby
-    actor_name: Arjun Sablok
-    tmdb_person_id: 631226
-    description: Raj's friend, a supportive companion to Raj.
-    group: Raj's Friends
-  - name: Sheena
-    actor_name: Anaita Shroff Adajania
-    tmdb_person_id: 102252
-    description: A friend of Raj, who briefly shows interest in him.
-    group: Raj's Friends
-    image_file: character_images/102252.jpg
-  - name: Man on Bike
-    actor_name: Uday Chopra
-    tmdb_person_id: 69709
-    description: A young man who briefly crosses paths with Simran and Raj.
-    group: Supporting Characters
-    image_file: character_images/69709.jpg
-  relationships:
-  - source: Raj Malhotra
-    target: Simran Singh
-    type: Romantic Interest
-    directed: true
-    description: Raj and Simran fall in love during a trip across Europe, and Raj
-      pursues her to India to win her family's approval for their marriage, challenging
-      traditional norms.
-    sentiment: positive
-    strength: 5
-    tense: evolving
-  - source: Simran Singh
-    target: Chaudhry Baldev Singh
-    type: Family (Daughter/Father)
-    directed: true
-    description: Simran is the daughter of Baldev Singh and feels a sense of duty
-      to her father's traditional values, which conflicts with her love for Raj and
-      her desire for her own happiness.
-    sentiment: complicated
-    strength: 4
-    tense: present
-  - source: Raj Malhotra
-    target: Dharamvir Malhotra
-    type: Family (Son/Father)
-    directed: true
-    description: Raj is the son of Dharamvir Malhotra, and they share a supportive
-      and understanding relationship, with Dharamvir encouraging Raj to pursue Simran.
-    sentiment: positive
-    strength: 4
-    tense: present
-  - source: Rocky
-    target: Raj Malhotra
-    type: Friend
-    directed: true
-    description: Rocky is a loyal friend to Raj, offering support and encouragement
-      throughout his journey.
-    sentiment: positive
-    strength: 3
-    tense: present
-  - source: Roby
-    target: Raj Malhotra
-    type: Friend
-    directed: true
-    description: Roby is a friend of Raj, offering companionship and assistance.
-    sentiment: positive
-    strength: 3
-    tense: present
-  - source: Simran Singh
-    target: Kuljeet Singh
-    type: Arranged Betrothal
-    directed: true
-    description: Simran is arranged to be married to Kuljeet by her father, a boorish
-      man she does not love, creating the central conflict Raj must overcome.
-    sentiment: negative
-    strength: 3
-    tense: present
 - movie_title: Parasite
   movie_year: '2019'
   tmdb_movie_id: 496243
@@ -4345,83 +4049,71 @@
     description: The patriarch of the Kim family, a former driver, often unemployed
       but resourceful, who masterminds parts of the infiltration.
     group: Kim Family
-    image_file: character_images/20738.jpg
   - name: Park Dong-ik
     actor_name: Lee Sun-kyun
     tmdb_person_id: 115290
     description: The wealthy and outwardly affable CEO of an IT company, head of the
       Park family, oblivious to the Kims' schemes.
     group: Park Family
-    image_file: character_images/115290.jpg
   - name: Yeon-kyo
     actor_name: Cho Yeo-jeong
     tmdb_person_id: 556435
     description: Park Dong-ik's wife, a seemingly naive, anxious, and easily manipulated
       socialite.
     group: Park Family
-    image_file: character_images/556435.jpg
   - name: Ki-woo
     actor_name: Choi Woo-shik
     tmdb_person_id: 1255881
     description: The son of the Kim family, a smart and ambitious young man who initiates
       the infiltration by becoming a tutor for the Park family's daughter.
     group: Kim Family
-    image_file: character_images/1255881.jpg
   - name: Ki-jung
     actor_name: Park So-dam
     tmdb_person_id: 1442583
     description: The daughter of the Kim family, a cunning, artistic, and manipulative
       young woman who poses as an art therapist for the Park family's son.
     group: Kim Family
-    image_file: character_images/1442583.jpg
   - name: Moon-gwang
     actor_name: Lee Jung-eun
     tmdb_person_id: 1572354
     description: The Park family's original housekeeper, who has a secret connection
       to the house's hidden bunker.
     group: Former Park Household Staff
-    image_file: character_images/1572354.jpg
   - name: Chung-sook
     actor_name: Jang Hye-jin
     tmdb_person_id: 2158882
     description: The Kim family's mother, a former athlete, resilient and pragmatic,
       who becomes the Park family's new housekeeper.
     group: Kim Family
-    image_file: character_images/2158882.jpg
   - name: Geun-se
     actor_name: Park Myung-hoon
     tmdb_person_id: 1694435
     description: Moon-gwang's husband, who has been secretly living in the Park family's
       hidden basement bunker for years to escape loan sharks.
     group: Former Park Household Staff
-    image_file: character_images/1694435.jpg
   - name: Da-hye
     actor_name: Jung Ji-so
     tmdb_person_id: 1418762
     description: The Park family's teenage daughter, who develops a crush on her tutor,
       Ki-woo.
     group: Park Family
-    image_file: character_images/1418762.jpg
   - name: Da-song
     actor_name: Jung Hyeon-jun
     tmdb_person_id: 2306987
     description: The Park family's young son, energetic, obsessed with "Indians,"
       and somewhat traumatized by a past event.
     group: Park Family
-    image_file: character_images/2306987.jpg
   - name: Driver Yoon
     actor_name: Park Keun-rok
     tmdb_person_id: 1709230
     description: Mr. Park's original chauffeur, who is framed and fired as part of
       the Kims' scheme.
     group: Dismissed Park Household Staff
-    image_file: character_images/1709230.jpg
   - name: Pizza Manager
     actor_name: Jung Yi-seo
     tmdb_person_id: 2326809
     description: A pizza delivery manager who deals with the Kim family's complaints.
     group: Outside Characters
-    image_file: character_images/2326809.jpg
   - name: Pizza Man
     actor_name: Cho Jae-myung
     tmdb_person_id: 2478772
@@ -4434,13 +4126,11 @@
       and recommends him for the tutoring job with the Park family, inadvertently
       setting the plot in motion.
     group: Ki-woo's Connections
-    image_file: character_images/2326615.jpg
   - name: Drunk 1
     actor_name: Kim Kyu-baek
     tmdb_person_id: 2478781
     description: A drunk man who provides a warning to Ki-woo.
     group: Outside Characters
-    image_file: character_images/2478781.jpg
   relationships:
   - source: Kim Ki-taek
     target: Chung-sook
@@ -4628,14 +4318,12 @@
       Mount Doom in Mordor and destroy it, facing immense peril and the corrupting
       influence of the Ring along the way.
     group: Hobbits
-    image_file: character_images/109.jpg
   - name: Gandalf
     actor_name: Ian McKellen
     tmdb_person_id: 1327
     description: A wise and powerful Istari (wizard), returned as Gandalf the White,
       guiding the Fellowship and the forces of good in the war against Sauron.
     group: Istari (Wizards)
-    image_file: character_images/1327.jpg
   - name: Aragorn
     actor_name: Viggo Mortensen
     tmdb_person_id: 110
@@ -4643,7 +4331,6 @@
       and warrior who embraces his destiny to lead the fight against Sauron and become
       King.
     group: Dúnedain (Heirs of Númenor)
-    image_file: character_images/110.jpg
   - name: Sam
     actor_name: Sean Astin
     tmdb_person_id: 1328
@@ -4651,7 +4338,6 @@
       unwavering support, courage, and resilience throughout their perilous journey
       to Mordor.
     group: Hobbits
-    image_file: character_images/1328.jpg
   - name: Gollum / Smeagol
     actor_name: Andy Serkis
     tmdb_person_id: 1333
@@ -4659,21 +4345,18 @@
       One Ring, torn between his former self and the manipulative influence of Gollum,
       guiding Frodo and Sam to Mordor.
     group: Creatures Corrupted by Ring
-    image_file: character_images/1333.jpg
   - name: Merry
     actor_name: Dominic Monaghan
     tmdb_person_id: 1330
     description: A brave and loyal hobbit, part of the Fellowship, who later serves
       Théoden and fights in the Battle of the Pelennor Fields.
     group: Hobbits
-    image_file: character_images/1330.jpg
   - name: Pippin
     actor_name: Billy Boyd
     tmdb_person_id: 1329
     description: A mischievous and adventurous hobbit, part of the Fellowship, who
       later serves Denethor in Minas Tirith and fights in the war.
     group: Hobbits
-    image_file: character_images/1329.jpg
   - name: Denethor
     actor_name: John Noble
     tmdb_person_id: 1381
@@ -4681,7 +4364,6 @@
       and increasingly desperate leader struggling to defend his kingdom, eventually
       succumbing to despair.
     group: Stewards of Gondor
-    image_file: character_images/1381.jpg
   - name: Faramir
     actor_name: David Wenham
     tmdb_person_id: 1371
@@ -4689,49 +4371,42 @@
       warrior captain of Gondor who resists the allure of the One Ring and demonstrates
       great integrity.
     group: Captains of Gondor
-    image_file: character_images/1371.jpg
   - name: Éowyn
     actor_name: Miranda Otto
     tmdb_person_id: 502
     description: A strong-willed and courageous shieldmaiden of Rohan, niece of King
       Théoden, longing for glory and defying traditional roles to fight in the war.
     group: Rohan Royalty
-    image_file: character_images/502.jpg
   - name: Théoden
     actor_name: Bernard Hill
     tmdb_person_id: 1369
     description: The King of Rohan, initially weakened by Grima Wormtongue's influence
       but ultimately rallying his people to fight valiantly in the War of the Ring.
     group: Rohan Royalty
-    image_file: character_images/1369.jpg
   - name: Gimli
     actor_name: John Rhys-Davies
     tmdb_person_id: 655
     description: A proud and skilled dwarf warrior, son of Glóin, part of the Fellowship
       and developing a strong bond with Legolas.
     group: Dwarves
-    image_file: character_images/655.jpg
   - name: Legolas
     actor_name: Orlando Bloom
     tmdb_person_id: 114
     description: An elven prince from Mirkwood and skilled archer, part of the Fellowship
       and forming a close friendship with Gimli.
     group: Elves
-    image_file: character_images/114.jpg
   - name: Elrond
     actor_name: Hugo Weaving
     tmdb_person_id: 1331
     description: The Lord of Rivendell, a wise and powerful half-elf, father of Arwen,
       who convenes the Council of Elrond and aids the Fellowship.
     group: Elves
-    image_file: character_images/1331.jpg
   - name: Arwen
     actor_name: Liv Tyler
     tmdb_person_id: 882
     description: Elrond's daughter, an elven princess who chooses to renounce her
       immortality to marry Aragorn, symbolizing hope and love.
     group: Elves
-    image_file: character_images/882.jpg
   relationships:
   - source: Frodo
     target: Sam
@@ -4932,96 +4607,81 @@
     description: A high school student living in Tokyo who begins to experience strange
       dreams where he swaps bodies with a girl from a rural town.
     group: Main Character
-    image_file: character_images/225730.jpg
   - name: Mitsuha Miyamizu (voice)
     actor_name: Mone Kamishiraishi
     tmdb_person_id: 1369100
     description: A young girl living in a rural town who begins to experience strange
       dreams where she swaps bodies with a boy from Tokyo.
     group: Main Character
-    image_file: character_images/1369100.jpg
   - name: Katsuhiko Teshigawara (voice)
     actor_name: Ryo Narita
     tmdb_person_id: 1668610
     description: Taki's friend who is often seen with him and helps him navigate the
       unusual circumstances of the body swaps.
     group: Supporting Character
-    image_file: character_images/1668610.jpg
   - name: Sayaka Natori (voice)
     actor_name: Aoi Yuki
     tmdb_person_id: 936275
     description: A friend of Mitsuha's who is involved in the town's traditions and
       helps Mitsuha with various tasks.
     group: Supporting Character
-    image_file: character_images/936275.jpg
   - name: Tsukasa Fujii (voice)
     actor_name: Nobunaga Shimazaki
     tmdb_person_id: 1210634
     description: Another friend of Taki's who provides support and companionship.
     group: Supporting Character
-    image_file: character_images/1210634.jpg
   - name: Shinta Takagi (voice)
     actor_name: Kaito Ishikawa
     tmdb_person_id: 1324666
     description: A friend of Taki's who is known for his playful and energetic personality.
     group: Supporting Character
-    image_file: character_images/1324666.jpg
   - name: Yotsuha Miyamizu (voice)
     actor_name: Kanon Tani
     tmdb_person_id: 1344919
     description: Mitsuha's younger sister who is mischievous and full of energy.
     group: Family Member
-    image_file: character_images/1344919.jpg
   - name: Toshiki Miyamizu (voice)
     actor_name: Masaki Terasoma
     tmdb_person_id: 219659
     description: Mitsuha and Yotsuha's father, who is a stern but loving parent.
     group: Family Member
-    image_file: character_images/219659.jpg
   - name: Futaha Miyamizu (voice)
     actor_name: Sayaka Ohara
     tmdb_person_id: 148447
     description: Mitsuha and Yotsuha's mother, who is a caring and supportive figure.
     group: Family Member
-    image_file: character_images/148447.jpg
   - name: Taki's Father (voice)
     actor_name: Kazuhiko Inoue
     tmdb_person_id: 89968
     description: Taki's father, who runs a restaurant and provides a stable home environment.
     group: Family Member
-    image_file: character_images/89968.jpg
   - name: Teshigawara's Father (voice)
     actor_name: Chafurin
     tmdb_person_id: 87583
     description: Teshigawara's father, who is a traditional craftsman.
     group: Family Member
-    image_file: character_images/87583.jpg
   - name: Teshigawara's Mother (voice)
     actor_name: Yuka Kato
     tmdb_person_id: 3351486
     description: Teshigawara's mother, who supports her son's work and family.
     group: Family Member
-    image_file: character_images/3351486.jpg
   - name: Teacher Yuki-chan (voice)
     actor_name: Kana Hanazawa
     tmdb_person_id: 119143
     description: A teacher at Mitsuha's school who is involved in the town's traditions.
     group: Supporting Character
-    image_file: character_images/119143.jpg
   - name: Miki Okudera (voice)
     actor_name: Masami Nagasawa
     tmdb_person_id: 87637
     description: A local resident who is knowledgeable about the town's history and
       traditions.
     group: Supporting Character
-    image_file: character_images/87637.jpg
   - name: Hitoha Miyamizu (voice)
     actor_name: Etsuko Ichihara
     tmdb_person_id: 91288
     description: Mitsuha and Yotsuha's grandmother, who is a wise and respected figure
       in the community.
     group: Family Member
-    image_file: character_images/91288.jpg
   relationships:
   - source: Taki Tachibana (voice)
     target: Mitsuha Miyamizu (voice)
@@ -5208,56 +4868,48 @@
     description: A former NASA pilot and engineer who is recruited to join a space
       mission to find a habitable planet for humanity.
     group: Family Members
-    image_file: character_images/10297.jpg
   - name: Brand
     actor_name: Anne Hathaway
     tmdb_person_id: 1813
     description: A scientist and astronaut selected to join Cooper on the mission
       to find a new home for humanity, harboring a romantic interest in him.
     group: Family Members
-    image_file: character_images/1813.jpg
   - name: Professor Brand
     actor_name: Michael Caine
     tmdb_person_id: 3895
     description: A brilliant physicist who develops the theory of relativity and leads
       NASA's efforts to find a new planet.
     group: Political Enemies
-    image_file: character_images/3895.jpg
   - name: Murph
     actor_name: Jessica Chastain
     tmdb_person_id: 83002
     description: Cooper's daughter, a gifted young woman who struggles with unexplained
       phenomena and eventually discovers the key to solving humanity's problems.
     group: Family Members
-    image_file: character_images/83002.jpg
   - name: Tom
     actor_name: Casey Affleck
     tmdb_person_id: 1893
     description: Cooper's son who, along with Murph, represents the future of humanity
       and the continuation of the family line.
     group: Family Members
-    image_file: character_images/1893.jpg
   - name: Doyle
     actor_name: Wes Bentley
     tmdb_person_id: 8210
     description: One of the crew members on the Endurance mission, known for his skepticism
       and eventual breakdown under pressure.
     group: Political Enemies
-    image_file: character_images/8210.jpg
   - name: Getty
     actor_name: Topher Grace
     tmdb_person_id: 17052
     description: Another crew member on the Endurance mission, known for his intelligence
       and eventual demise.
     group: Political Enemies
-    image_file: character_images/17052.jpg
   - name: Murph (10 Yrs.)
     actor_name: Mackenzie Foy
     tmdb_person_id: 851784
     description: Young Murph, experiencing strange occurrences that lead her to believe
       her father is communicating with her from the future.
     group: Family Members
-    image_file: character_images/851784.jpg
   - name: Murph (older)
     actor_name: Ellen Burstyn
     tmdb_person_id: 9560
@@ -5265,49 +4917,42 @@
       and saves humanity, having dedicated her life to understanding her father’s
       message.
     group: Family Members
-    image_file: character_images/9560.jpg
   - name: Donald
     actor_name: John Lithgow
     tmdb_person_id: 12074
     description: The director of NASA, who makes the difficult decision to launch
       the Lazarus mission, despite the risks involved.
     group: Political Enemies
-    image_file: character_images/12074.jpg
   - name: TARS (voice)
     actor_name: Bill Irwin
     tmdb_person_id: 58549
     description: A sophisticated and loyal robotic companion who provides essential
       support and analysis during the mission.
     group: Political Enemies
-    image_file: character_images/58549.jpg
   - name: Romilly
     actor_name: David Gyasi
     tmdb_person_id: 55411
     description: A crew member on the Endurance mission who is dedicated to scientific
       observation and analysis.
     group: Political Enemies
-    image_file: character_images/55411.jpg
   - name: Tom (15 Yrs.)
     actor_name: Timothée Chalamet
     tmdb_person_id: 1190668
     description: A teenage Tom, representing the future generation and the hope for
       humanity's survival.
     group: Family Members
-    image_file: character_images/1190668.jpg
   - name: Mann
     actor_name: Matt Damon
     tmdb_person_id: 1892
     description: An astronaut who has been sent to a distant planet to assess its
       habitability, but his findings are questionable.
     group: Political Enemies
-    image_file: character_images/1892.jpg
   - name: CASE (voice)
     actor_name: Josh Stewart
     tmdb_person_id: 40039
     description: A robotic companion, less sophisticated than TARS, providing essential
       support during the mission.
     group: Political Enemies
-    image_file: character_images/40039.jpg
   relationships:
   - source: Cooper
     target: Murph
@@ -5497,7 +5142,6 @@
     description: A respected FBI agent who investigates the activities of Henry Hill
       and his associates, eventually leading to their downfall.
     group: Law Enforcement
-    image_file: character_images/380.jpg
   - name: Henry Hill
     actor_name: Ray Liotta
     tmdb_person_id: 11477
@@ -5507,7 +5151,6 @@
     group: Lucchese Crime Family
     aliases:
     - Harry
-    image_file: character_images/11477.jpg
   - name: Tommy DeVito
     actor_name: Joe Pesci
     tmdb_person_id: 4517
@@ -5516,56 +5159,48 @@
     group: Lucchese Crime Family
     aliases:
     - Two-Gun Tommy
-    image_file: character_images/4517.jpg
   - name: Karen Hill
     actor_name: Lorraine Bracco
     tmdb_person_id: 11478
     description: Henry Hill's wife, who struggles with the lifestyle and consequences
       of his involvement in organized crime.
     group: Family Members
-    image_file: character_images/11478.jpg
   - name: Paul Cicero
     actor_name: Paul Sorvino
     tmdb_person_id: 7004
     description: A high-ranking member of the Lucchese crime family, known for his
       strict adherence to mob rules and his mentorship of younger associates.
     group: Lucchese Crime Family
-    image_file: character_images/7004.jpg
   - name: Frankie Carbone
     actor_name: Frank Sivero
     tmdb_person_id: 11480
     description: A loyal but less ambitious mob associate who works under Paul Cicero
       and often serves as a messenger.
     group: Lucchese Crime Family
-    image_file: character_images/11480.jpg
   - name: Sonny Bunz
     actor_name: Tony Darrow
     tmdb_person_id: 11482
     description: A mob associate involved in various criminal activities, known for
       his association with Frankie Carbone.
     group: Lucchese Crime Family
-    image_file: character_images/11482.jpg
   - name: Frenchy
     actor_name: Mike Starr
     tmdb_person_id: 5170
     description: A quirky and unreliable mob associate who often finds himself in
       trouble and is known for his erratic behavior.
     group: Lucchese Crime Family
-    image_file: character_images/5170.jpg
   - name: Billy Batts
     actor_name: Frank Vincent
     tmdb_person_id: 7164
     description: A notorious prison inmate and rival of Henry Hill, whose confrontation
       with Hill leads to a violent altercation.
     group: Prison Inmates
-    image_file: character_images/7164.jpg
   - name: Morris Kessler
     actor_name: Chuck Low
     tmdb_person_id: 11479
     description: A Jewish gangster who provides loans to the Lucchese crime family,
       often creating tension and complications.
     group: Business Associates
-    image_file: character_images/11479.jpg
   - name: Tuddy Cicero
     actor_name: Frank DiLeo
     tmdb_person_id: 11481
@@ -5578,28 +5213,24 @@
     description: A famous comedian who provides entertainment for the mob, and becomes
       a source of amusement for Henry Hill.
     group: Entertainment
-    image_file: character_images/99939.jpg
   - name: Janice Rossi
     actor_name: Gina Mastrogiacomo
     tmdb_person_id: 11485
     description: A girlfriend of Tommy DeVito, who becomes involved in the mob's activities
       and experiences the consequences.
     group: Associates
-    image_file: character_images/11485.jpg
   - name: Tommy's Mother
     actor_name: Catherine Scorsese
     tmdb_person_id: 11483
     description: Tommy DeVito's mother, a traditional Italian matriarch who provides
       a sense of family and tradition.
     group: Family Members
-    image_file: character_images/11483.jpg
   - name: Vinnie
     actor_name: Charles Scorsese
     tmdb_person_id: 1006721
     description: A friend of Henry Hill and a fellow mob associate, who provides support
       and companionship.
     group: Associates
-    image_file: character_images/1006721.jpg
   relationships:
   - source: Henry Hill
     target: James Conway
@@ -5794,14 +5425,12 @@
     description: A billionaire playboy who secretly operates as the masked vigilante
       Batman, fighting crime in Gotham City.
     group: Family Members
-    image_file: output/character_images/3894.jpg
   - name: Joker
     actor_name: Heath Ledger
     tmdb_person_id: 1810
     description: A chaotic criminal mastermind and anarchist whose actions challenge
       Batman's moral code and destabilize Gotham.
     group: Political Enemies
-    image_file: output/character_images/1810.jpg
   - name: Harvey Dent
     actor_name: Aaron Eckhart
     tmdb_person_id: 6383
@@ -5809,90 +5438,77 @@
       of hope, who falls victim to the Joker's influence and transforms into the vengeful
       Two-Face.
     group: Political Enemies
-    image_file: output/character_images/6383.jpg
   - name: Alfred
     actor_name: Michael Caine
     tmdb_person_id: 3895
     description: Bruce Wayne's loyal butler and confidant, providing guidance and
       support throughout his journey as Batman.
     group: Family Members
-    image_file: output/character_images/3895.jpg
   - name: Rachel
     actor_name: Maggie Gyllenhaal
     tmdb_person_id: 1579
     description: Bruce Wayne's former love interest and a talented lawyer who becomes
       embroiled in the conflict between Batman and the Joker.
     group: Family Members
-    image_file: output/character_images/1579.jpg
   - name: Gordon
     actor_name: Gary Oldman
     tmdb_person_id: 64
     description: A dedicated police commissioner struggling to maintain order in a
       city plagued by corruption and crime, forming an uneasy alliance with Batman.
     group: Political Enemies
-    image_file: output/character_images/64.jpg
   - name: Lucius Fox
     actor_name: Morgan Freeman
     tmdb_person_id: 192
     description: A brilliant engineer and Wayne Enterprises executive who provides
       Batman with advanced technology and support.
     group: Family Members
-    image_file: output/character_images/192.jpg
   - name: Ramirez
     actor_name: Monique Gabriela Curnen
     tmdb_person_id: 53651
     description: A corrupt police officer working with the mob, later facing consequences
       for her actions.
     group: Political Enemies
-    image_file: output/character_images/53651.jpg
   - name: Wuertz
     actor_name: Ron Dean
     tmdb_person_id: 57597
     description: A member of the criminal organization led by Maroni, involved in
       various illicit activities.
     group: Political Enemies
-    image_file: output/character_images/57597.jpg
   - name: Scarecrow
     actor_name: Cillian Murphy
     tmdb_person_id: 2037
     description: A psychiatrist who uses fear toxin to terrorize Gotham, serving as
       a pawn in the Joker's plan.
     group: Political Enemies
-    image_file: output/character_images/2037.jpg
   - name: Lau
     actor_name: Chin Han
     tmdb_person_id: 101015
     description: A businessman involved in illegal arms dealing, providing weapons
       to criminals in Gotham.
     group: Political Enemies
-    image_file: output/character_images/101015.jpg
   - name: Mayor
     actor_name: Nestor Carbonell
     tmdb_person_id: 21316
     description: The mayor of Gotham, struggling to maintain control amidst the escalating
       chaos and corruption.
     group: Political Enemies
-    image_file: output/character_images/21316.jpg
   - name: Maroni
     actor_name: Eric Roberts
     tmdb_person_id: 21315
     description: A powerful mob boss whose empire is threatened by Batman and the
       rising influence of other criminals.
     group: Political Enemies
-    image_file: output/character_images/21315.jpg
   - name: Chechen
     actor_name: Ritchie Coster
     tmdb_person_id: 13939
     description: A ruthless gangster involved in the criminal underworld, seeking
       to expand his territory.
     group: Political Enemies
-    image_file: output/character_images/13939.jpg
   - name: Engel
     actor_name: Anthony Michael Hall
     tmdb_person_id: 1904
     description: A member of the criminal organization, assisting in various operations.
     group: Political Enemies
-    image_file: output/character_images/1904.jpg
   relationships:
   - source: Bruce Wayne
     target: Alfred
@@ -6135,7 +5751,6 @@
     tmdb_person_id: 118998
     description: A minor character.
     group: Supporting Characters
-    image_file: output/character_images/118998.jpg
   - name: Station Worker / Doctor (voice)
     actor_name: Michio Denpo
     tmdb_person_id: 3773504
@@ -6156,7 +5771,6 @@
     tmdb_person_id: 3642773
     description: A minor character.
     group: Supporting Characters
-    image_file: output/character_images/3642773.jpg
   relationships:
   - source: Seita (voice)
     target: Setsuko (voice)
@@ -6201,3 +5815,968 @@
     sentiment: negative
     strength: 3
     tense: evolving
+- movie_title: Dilwale Dulhania Le Jayenge
+  movie_year: '1995'
+  tmdb_movie_id: 19404
+  imdb_id: tt0112870
+  character_profile: The film features a cast of memorable characters, with Raj Malhotra
+    and Simran Singh at the heart of the story. Raj, a carefree and charming young
+    man, undergoes significant growth as he navigates the complexities of love and
+    commitment. Simran, a traditional and family-oriented woman, is torn between her
+    duty to her family and her burgeoning feelings for Raj. The supporting characters,
+    including Amrish Puri as Simran's strict father and the various friends and family
+    members, contribute to the film's rich tapestry of relationships and cultural
+    dynamics. Their interactions highlight the clash between modern and traditional
+    values.
+  character_profile_big5:
+    Openness:
+      score: 4
+      explanation: Simran demonstrates openness by embracing a new culture and challenging
+        her traditional upbringing.
+    Conscientiousness:
+      score: 3
+      explanation: Raj's conscientiousness is moderate; he is playful but ultimately
+        committed to his goals.
+    Extraversion:
+      score: 5
+      explanation: Raj is highly extraverted, outgoing, and enjoys social interactions,
+        driving the plot forward with his charm.
+    Agreeableness:
+      score: 4
+      explanation: Raj shows agreeableness through his kindness, empathy, and willingness
+        to help others, especially Simran.
+    Neuroticism:
+      score: 2
+      explanation: Raj displays low neuroticism; he remains relatively calm and optimistic
+        despite challenges.
+  character_profile_myersbriggs:
+    type: ENFP
+    explanation: Extraverted, Intuitive, Feeling, Perceiving (Campaigner). Raj embodies
+      ENFP traits through his energetic, imaginative, and people-focused approach
+      to life and love.
+  critical_reception: While primarily a commercial success, 'Dilwale Dulhania Le Jayenge'
+    received mixed reviews from international critics. Some praised its vibrant storytelling,
+    romantic appeal, and the performances of Shah Rukh Khan and Kajol. Others found
+    the plot predictable and the portrayal of Indian culture somewhat stereotypical.
+    However, the film's enduring popularity and cultural impact have largely overshadowed
+    the initial critical reception. It is often credited with popularizing Bollywood
+    cinema globally and influencing romantic comedies for years to come.
+  visual_style: The film's visual style is characterized by its vibrant colors, picturesque
+    locations, and elaborate song-and-dance sequences. The cinematography captures
+    the beauty of both European landscapes, particularly Switzerland, and the bustling
+    energy of Indian cities. The use of natural light and scenic backdrops enhances
+    the romantic atmosphere. The costumes, especially the traditional Indian attire,
+    are visually striking and contribute to the film's cultural richness. The choreography
+    of the musical numbers is dynamic and visually engaging, further enhancing the
+    film's overall aesthetic appeal. The film's visual style is a key element of its
+    enduring charm.
+  most_talked_about_related_topic: The most talked-about aspect of 'Dilwale Dulhania
+    Le Jayenge' is its unprecedented success and its impact on Indian cinema. The
+    film's record-breaking theatrical run, still ongoing in some theaters, is a testament
+    to its enduring popularity. Its influence on Bollywood's romantic genre, with
+    its emphasis on love, family, and cultural values, is undeniable. The film's success
+    also paved the way for the global recognition of Indian cinema and its stars,
+    making it a landmark achievement in the history of Indian film.
+  genre_mix:
+    genres:
+      romance: 70
+      comedy: 60
+      drama: 40
+      musical: 10
+      family: 10
+  matching_tags:
+    tags:
+      Analog Heartbeats: The film focuses on the blossoming romance and longing between
+        Raj and Simran, emphasizing their connection through shared experiences and
+        intimate moments.
+  complex_search_queries:
+  - Bollywood romantic comedies with strong cultural themes
+  - Movies featuring Shah Rukh Khan and Kajol
+  recommendations:
+  - title: Kuch Kuch Hota Hai
+    year: 1998
+    explanation: This film shares a similar high IMDb rating and romantic comedy vibe,
+      with a focus on friendship and love triangles, appealing to fans of 'Dilwale
+      Dulhania Le Jayenge'.
+    imdb_id: tt0172684
+  - title: Veer-Zaara
+    year: 2004
+    explanation: This movie offers a similar blend of romance, drama, and cultural
+      themes, with a high rating and emotional depth that resonates with fans of the
+      original film.
+    imdb_id: tt0420332
+  - title: Hum Aapke Hain Koun..!
+    year: 1994
+    explanation: This film shares a similar family-friendly vibe and musical elements,
+      appealing to fans of the original film's lighthearted tone and romantic themes.
+    imdb_id: tt0110076
+  - title: Jab We Met
+    year: 2007
+    explanation: This movie offers a similar feel-good romantic comedy experience
+      with a high rating and a focus on character development, appealing to fans of
+      the original film's charm.
+    imdb_id: tt1093370
+  - title: Love Actually
+    year: 2003
+    explanation: This film shares a similar romantic comedy vibe, with multiple interconnected
+      storylines and a high rating, appealing to fans of the original film's charm
+      and heartwarming moments.
+    imdb_id: tt0314331
+  character_list:
+  - name: Simran Singh
+    actor_name: Kajol
+    tmdb_person_id: 55061
+    description: A young woman of Indian descent living in London, torn between her
+      family's traditions and her own desires.
+    group: Family & Friends
+    image_file: output/character_images/55061.jpg
+  - name: Raj Malhotra
+    actor_name: Shah Rukh Khan
+    tmdb_person_id: 35742
+    description: A carefree and charming young man who falls in love with Simran and
+      travels to India to win her family's approval.
+    group: Family & Friends
+    image_file: output/character_images/35742.jpg
+  - name: Chaudhry Baldev Singh
+    actor_name: Amrish Puri
+    tmdb_person_id: 691
+    description: Simran's strict and traditional father, who initially opposes her
+      relationship with Raj.
+    group: Family
+    image_file: output/character_images/691.jpg
+  - name: Lajwanti 'Lajjo' Singh
+    actor_name: Farida Jalal
+    tmdb_person_id: 146971
+    description: Simran's mother, a supportive and loving figure who understands her
+      daughter's feelings.
+    group: Family
+    aliases:
+    - Lajjo
+    image_file: output/character_images/146971.jpg
+  - name: Dharamvir Malhotra
+    actor_name: Anupam Kher
+    tmdb_person_id: 6217
+    description: Raj's father, a jovial and understanding man who encourages his son's
+      pursuit of love.
+    group: Family & Friends
+    image_file: output/character_images/6217.jpg
+  - name: Rajeshwari "Chutki" Singh
+    actor_name: Pooja Ruparel
+    tmdb_person_id: 146973
+    description: Simran's younger sister, who provides support and companionship.
+    group: Family
+    aliases:
+    - Chutki
+    image_file: output/character_images/146973.jpg
+  - name: Kuljeet Singh
+    actor_name: Parmeet Sethi
+    tmdb_person_id: 85696
+    description: Simran's arranged fiancé, a wealthy and traditional man.
+    group: Family & Friends
+    image_file: output/character_images/85696.jpg
+  - name: Ajit Singh, Kuljeet's Father
+    actor_name: Satish Shah
+    tmdb_person_id: 35759
+    description: Kuljeet's father, who is involved in the marriage arrangement.
+    group: Family & Friends
+    image_file: output/character_images/35759.jpg
+  - name: Preeti Singh, Kuljeet's Sister
+    actor_name: Mandira Bedi
+    tmdb_person_id: 146974
+    description: Kuljeet's sister, present during the wedding preparations.
+    group: Family & Friends
+    image_file: output/character_images/146974.jpg
+  - name: Simran's Grandmother
+    actor_name: Achala Sachdev
+    tmdb_person_id: 146972
+    description: Simran's grandmother, a wise and supportive figure.
+    group: Family
+    image_file: output/character_images/146972.jpg
+  - name: Simran's Aunt
+    actor_name: Himani Shivpuri
+    tmdb_person_id: 78248
+    description: Simran's aunt, part of the family.
+    group: Family
+    image_file: output/character_images/78248.jpg
+  - name: Rocky, Raj's friend
+    actor_name: Karan Johar
+    tmdb_person_id: 35736
+    description: One of Raj's friends, who accompanies him on his journey.
+    group: Family & Friends
+    image_file: output/character_images/35736.jpg
+  - name: Roby, Raj's friend
+    actor_name: Arjun Sablok
+    tmdb_person_id: 631226
+    description: One of Raj's friends, who accompanies him on his journey.
+    group: Family & Friends
+  - name: Sheena
+    actor_name: Anaita Shroff Adajania
+    tmdb_person_id: 102252
+    description: A friend of Raj, seen in the beginning.
+    group: Family & Friends
+    image_file: output/character_images/102252.jpg
+  - name: Man on Bike
+    actor_name: Uday Chopra
+    tmdb_person_id: 69709
+    description: A character who appears briefly in the film.
+    group: Minor Characters
+    image_file: output/character_images/69709.jpg
+  - name: Simran's Friend
+    actor_name: Hemlata Deepak
+    tmdb_person_id: 1661299
+    description: One of Simran's friends.
+    group: Family & Friends
+  - name: Simran's Uncle
+    actor_name: Lalit Tiwari
+    tmdb_person_id: 1427907
+    description: Simran's uncle, part of the family.
+    group: Family
+  - name: Guest in the song Mehendi Laga Ke Rakhna (uncredited)
+    actor_name: Surendra Rahi
+    tmdb_person_id: 2400263
+    description: A guest in the wedding song.
+    group: Minor Characters
+  relationships:
+  - source: Simran Singh
+    target: Raj Malhotra
+    type: Romantic Interest
+    directed: false
+    description: Simran and Raj fall in love and fight for their relationship.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: Chaudhry Baldev Singh
+    target: Simran Singh
+    type: Father-Daughter
+    directed: true
+    description: Baldev is Simran's father and initially disapproves of her relationship
+      with Raj.
+    sentiment: complicated
+    strength: 4
+    tense: evolving
+  - source: Lajwanti 'Lajjo' Singh
+    target: Simran Singh
+    type: Mother-Daughter
+    directed: false
+    description: Lajjo is Simran's mother and supports her choices.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: Dharamvir Malhotra
+    target: Raj Malhotra
+    type: Father-Son
+    directed: false
+    description: Dharamvir is Raj's father and supports his son's decisions.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: Raj Malhotra
+    target: Chaudhry Baldev Singh
+    type: Rival
+    directed: true
+    description: Raj initially faces opposition from Baldev Singh.
+    sentiment: complicated
+    strength: 3
+    tense: evolving
+  - source: Simran Singh
+    target: Kuljeet Singh
+    type: Fiancé
+    directed: true
+    description: Simran is engaged to Kuljeet, though she doesn't love him.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Raj Malhotra
+    target: Rocky, Raj's friend
+    type: Friend
+    directed: false
+    description: Rocky is one of Raj's friends.
+    sentiment: positive
+    strength: 3
+    tense: present
+  - source: Raj Malhotra
+    target: Roby, Raj's friend
+    type: Friend
+    directed: false
+    description: Roby is one of Raj's friends.
+    sentiment: positive
+    strength: 3
+    tense: present
+  - source: Raj Malhotra
+    target: Sheena
+    type: Friend
+    directed: false
+    description: Sheena is a friend of Raj.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Simran Singh
+    target: Rajeshwari "Chutki" Singh
+    type: Sister
+    directed: false
+    description: Simran and Chutki are sisters.
+    sentiment: positive
+    strength: 4
+    tense: present
+  - source: Simran Singh
+    target: Simran's Grandmother
+    type: Family
+    directed: true
+    description: Simran's grandmother is a supportive family member.
+    sentiment: positive
+    strength: 3
+    tense: present
+  - source: Simran Singh
+    target: Simran's Aunt
+    type: Family
+    directed: true
+    description: Simran's aunt is part of the family.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Simran Singh
+    target: Simran's Friend
+    type: Friend
+    directed: false
+    description: Simran has a friend.
+    sentiment: positive
+    strength: 3
+    tense: present
+  - source: Simran Singh
+    target: Simran's Uncle
+    type: Family
+    directed: true
+    description: Simran's uncle is part of the family.
+    sentiment: neutral
+    strength: 2
+    tense: present
+- movie_title: Life Is Beautiful
+  movie_year: '1997'
+  tmdb_movie_id: 637
+  imdb_id: tt0118799
+  character_profile: The film centers on Guido Orefice, a Jewish Italian man with
+    a vibrant imagination and a boundless optimism. He is the heart of the story,
+    using his wit and humor to shield his son, Giosuè, from the horrors of a Nazi
+    concentration camp. Guido's character is defined by his resilience, his love for
+    his family, and his unwavering belief in the power of joy, even in the face of
+    unimaginable suffering. His actions are driven by a desire to protect his son's
+    innocence and create a world of fantasy to make the experience bearable. The supporting
+    characters, including Dora, Guido's wife, and Giosuè, are also crucial in highlighting
+    the themes of love, sacrifice, and the enduring human spirit.
+  character_profile_big5:
+    Openness:
+      score: 5
+      explanation: Guido demonstrates high openness by embracing imagination, creativity,
+        and a willingness to create a fantastical world to protect his son.
+    Conscientiousness:
+      score: 4
+      explanation: Guido shows conscientiousness through his meticulous planning and
+        dedication to shielding his son from the horrors of the concentration camp.
+    Extraversion:
+      score: 5
+      explanation: Guido is highly extraverted, charming, and outgoing, using humor
+        and social skills to navigate difficult situations and connect with others.
+    Agreeableness:
+      score: 5
+      explanation: Guido is exceptionally agreeable, displaying kindness, empathy,
+        and a strong desire to protect and care for those around him, especially his
+        son.
+    Neuroticism:
+      score: 2
+      explanation: While facing immense pressure, Guido maintains a relatively low
+        level of neuroticism, remaining optimistic and resourceful despite the dire
+        circumstances.
+  character_profile_myersbriggs:
+    type: ENFP
+    explanation: Guido embodies the ENFP personality type, exhibiting a charismatic,
+      imaginative, and empathetic nature, using his creativity and enthusiasm to inspire
+      hope and protect his loved ones.
+  critical_reception: Life Is Beautiful received widespread critical acclaim upon
+    its release, particularly for its emotional depth and the performance of Roberto
+    Benigni. Critics praised the film's ability to blend comedy and tragedy, creating
+    a poignant and ultimately uplifting story. While some critics found the film's
+    depiction of the Holocaust to be overly sentimental or simplistic, the majority
+    lauded its message of hope and resilience. The film's universal themes of love,
+    family, and the triumph of the human spirit resonated with audiences worldwide,
+    leading to numerous awards and nominations, including three Academy Awards.
+  visual_style: The visual style of 'Life Is Beautiful' is characterized by a blend
+    of vibrant, almost fairytale-like imagery in the first half, transitioning to
+    a more somber and muted palette in the second half, reflecting the shift in tone
+    and setting. The early scenes are filled with bright colors, whimsical camera
+    movements, and a sense of playful energy, mirroring Guido's optimistic outlook.
+    As the story progresses, the visual style becomes more restrained, with a focus
+    on conveying the harsh realities of the concentration camp. The use of long shots
+    and close-ups emphasizes the characters' emotions and the claustrophobic environment.
+    The overall effect is a visually striking contrast that underscores the film's
+    central themes of hope and despair.
+  most_talked_about_related_topic: The most talked-about topic related to 'Life Is
+    Beautiful' is the controversy surrounding its depiction of the Holocaust. Some
+    critics and viewers found the film's comedic elements and optimistic portrayal
+    of the concentration camp to be inappropriate and potentially trivializing of
+    the historical tragedy. The debate centered on whether the film's approach, while
+    aiming to convey a message of hope, risked minimizing the suffering of the victims.
+    Others defended the film, arguing that its focus on the power of love and the
+    human spirit offered a unique and ultimately moving perspective on the Holocaust,
+    and that the film's intention was not to downplay the atrocities, but to offer
+    a message of hope.
+  genre_mix:
+    genres:
+      comedy: 40
+      drama: 50
+      war: 20
+      romance: 15
+      family: 30
+      historical: 25
+  matching_tags:
+    tags:
+      Everyday Magic: The film transforms the harsh reality of the Holocaust into
+        a fantastical game, finding magic and wonder in the ordinary to protect a
+        child's innocence.
+      Accidental Wholesome: Guido, a naturally optimistic and humorous character,
+        inadvertently creates a heartwarming and protective environment for his son
+        amidst the horrors of the concentration camp.
+      Analog Heartbeats: The film emphasizes the power of love, connection, and the
+        importance of tangible moments, even in the face of unimaginable adversity.
+  complex_search_queries:
+  - Holocaust films with a focus on family and resilience.
+  - Movies blending comedy and tragedy with a historical setting.
+  recommendations:
+  - title: Cinema Paradiso
+    year: 1988
+    explanation: This film shares a similar heartwarming tone and explores themes
+      of love, childhood, and the power of imagination, appealing to those who enjoyed
+      the emotional depth and optimism of 'Life is Beautiful'.
+    imdb_id: tt0095765
+  - title: The Intouchables
+    year: 2011
+    explanation: Like 'Life Is Beautiful', this film offers a blend of comedy and
+      drama, focusing on an unlikely friendship that brings joy and meaning to both
+      characters' lives, resonating with the original's uplifting spirit.
+    imdb_id: tt1675434
+  - title: Big Fish
+    year: 2003
+    explanation: This film shares the same imaginative storytelling and focus on a
+      father-son relationship with a similar emphasis on creating a fantastical world,
+      appealing to the original's emotional core.
+    imdb_id: tt0319061
+  - title: Amelie
+    year: 2001
+    explanation: This film, like 'Life Is Beautiful', celebrates the beauty of everyday
+      life and the power of small acts of kindness, offering a similar whimsical and
+      heartwarming viewing experience.
+    imdb_id: tt0211915
+  - title: Paddington
+    year: 2014
+    explanation: This film shares the same heartwarming tone and explores themes of
+      family, acceptance, and the power of kindness, appealing to those who enjoyed
+      the emotional depth and optimism of 'Life is Beautiful'.
+    imdb_id: tt1109624
+  character_list:
+  - name: Guido
+    actor_name: Roberto Benigni
+    tmdb_person_id: 4818
+    description: A charming and resourceful waiter who uses humor and imagination
+      to protect his son from the horrors of a concentration camp.
+    group: Family
+    image_file: output/character_images/4818.jpg
+  - name: Dora
+    actor_name: Nicoletta Braschi
+    tmdb_person_id: 9235
+    description: Guido's wife, a schoolteacher, who is initially engaged to another
+      man but falls in love with Guido.
+    group: Family
+    aliases:
+    - Princess
+    image_file: output/character_images/9235.jpg
+  - name: Giosué
+    actor_name: Giorgio Cantarini
+    tmdb_person_id: 9236
+    description: Guido and Dora's young son, who is sheltered from the reality of
+      the Holocaust by his father's playful deception.
+    group: Family
+    image_file: output/character_images/9236.jpg
+  - name: Zio
+    actor_name: Giustino Durano
+    tmdb_person_id: 9237
+    description: Guido's uncle, who helps him in his pursuit of Dora.
+    group: Supporting Characters
+    image_file: output/character_images/9237.jpg
+  - name: Ferruccio
+    actor_name: Sergio Bini Bustric
+    tmdb_person_id: 9239
+    description: Guido's friend, who shares his enthusiasm for life and helps him
+      in his endeavors.
+    group: Supporting Characters
+    image_file: output/character_images/9239.jpg
+  - name: Dora's Mother
+    actor_name: Marisa Paredes
+    tmdb_person_id: 954
+    description: Dora's mother, who disapproves of Guido initially.
+    group: Supporting Characters
+    image_file: output/character_images/954.jpg
+  - name: Doctor Lessing
+    actor_name: Horst Buchholz
+    tmdb_person_id: 5789
+    description: A doctor at the camp, who is also a German officer.
+    group: German Officers
+    image_file: output/character_images/5789.jpg
+  - name: Mrs. Guicciardini
+    actor_name: Lidia Alfonsi
+    tmdb_person_id: 9240
+    description: A woman who is a customer of Guido.
+    group: Supporting Characters
+    image_file: output/character_images/9240.jpg
+  - name: School Principal
+    actor_name: Giuliana Lojodice
+    tmdb_person_id: 9242
+    description: The principal of the school where Dora works.
+    group: Supporting Characters
+    image_file: output/character_images/9242.jpg
+  - name: Rodolfo
+    actor_name: Amerigo Fontani
+    tmdb_person_id: 9238
+    description: Dora's fiancé before she meets Guido.
+    group: Supporting Characters
+    image_file: output/character_images/9238.jpg
+  - name: Bartolomeo
+    actor_name: Pietro De Silva
+    tmdb_person_id: 9241
+    description: A character who is present in the camp.
+    group: Camp Inmates
+    image_file: output/character_images/9241.jpg
+  - name: Vittorino
+    actor_name: Francesco Guzzo
+    tmdb_person_id: 9243
+    description: A character who is present in the camp.
+    group: Camp Inmates
+    image_file: output/character_images/9243.jpg
+  - name: Elena
+    actor_name: Raffaella Lebboroni
+    tmdb_person_id: 93726
+    description: A character who is present in the movie.
+    group: Supporting Characters
+    image_file: output/character_images/93726.jpg
+  - name: Rodolfo's Friend
+    actor_name: Claudio Alfonsi
+    tmdb_person_id: 1884402
+    description: A friend of Rodolfo.
+    group: Supporting Characters
+    image_file: output/character_images/1884402.jpg
+  - name: Prefect
+    actor_name: Gil Baroni
+    tmdb_person_id: 1397652
+    description: A local official.
+    group: Supporting Characters
+  - name: Man with Key
+    actor_name: Massimo Bianchi
+    tmdb_person_id: 1898014
+    description: A character who is present in the movie.
+    group: Supporting Characters
+    image_file: output/character_images/1898014.jpg
+  - name: German Party Attendant
+    actor_name: Jürgen Bohn
+    tmdb_person_id: 4479382
+    description: A German party attendant.
+    group: German Officers
+  - name: German Auxilliary
+    actor_name: Verena Buratti
+    tmdb_person_id: 6289
+    description: A German auxiliary.
+    group: German Officers
+    image_file: output/character_images/6289.jpg
+  - name: German Executioner
+    actor_name: Robert Camero
+    tmdb_person_id: 4479387
+    description: A German executioner.
+    group: German Officers
+  - name: General Graziosi
+    actor_name: Ennio Consalvi
+    tmdb_person_id: 4479388
+    description: A general.
+    group: Supporting Characters
+  - name: Waiter Ernesto
+    actor_name: Giancarlo Cosentino
+    tmdb_person_id: 1913215
+    description: A waiter.
+    group: Supporting Characters
+    image_file: output/character_images/1913215.jpg
+  - name: US Tank Driver
+    actor_name: Aaron Craig
+    tmdb_person_id: 1807066
+    description: A US tank driver.
+    group: Allied Forces
+    image_file: output/character_images/1807066.jpg
+  - name: King
+    actor_name: Alfiero Falomi
+    tmdb_person_id: 4479396
+    description: A character who is present in the movie.
+    group: Supporting Characters
+  - name: German Auxiliary
+    actor_name: Daniela Fedke
+    tmdb_person_id: 4479397
+    description: A German auxiliary.
+    group: German Officers
+  - name: School Janitor
+    actor_name: Antonio Fommei
+    tmdb_person_id: 4479398
+    description: The school janitor.
+    group: Supporting Characters
+  - name: Card Player
+    actor_name: Stefano Frangipani
+    tmdb_person_id: 4479399
+    description: A card player.
+    group: Supporting Characters
+  - name: German Sergeant
+    actor_name: Ernst Frowein Holger
+    tmdb_person_id: 4479400
+    description: A German sergeant.
+    group: German Officers
+  - name: Teacher
+    actor_name: Alessandra Grassi
+    tmdb_person_id: 4479403
+    description: A teacher.
+    group: Supporting Characters
+  - name: German Corporal
+    actor_name: Hannes Hellmann
+    tmdb_person_id: 45662
+    description: A German corporal.
+    group: German Officers
+    image_file: output/character_images/45662.jpg
+  - name: German Major at Party
+    actor_name: Wolfgang Hillinger
+    tmdb_person_id: 991277
+    description: A German major.
+    group: German Officers
+  - name: Female Soldier at Children's Dinner
+    actor_name: Margarita Lucia Krauss
+    tmdb_person_id: 4479404
+    description: A female soldier.
+    group: Allied Forces
+  - name: 1st Lady at the Grand Hotel
+    actor_name: Patrizia Lazzarini
+    tmdb_person_id: 4479406
+    description: A lady at the Grand Hotel.
+    group: Supporting Characters
+  - name: 2nd Lady at the Grand Hotel
+    actor_name: Maria Letizia
+    tmdb_person_id: 4234606
+    description: A lady at the Grand Hotel.
+    group: Supporting Characters
+  - name: Gigliola
+    actor_name: Concetta Lombardo
+    tmdb_person_id: 4479408
+    description: A character who is present in the movie.
+    group: Supporting Characters
+  - name: Regina
+    actor_name: Maria Rita Macellari
+    tmdb_person_id: 4479411
+    description: A character who is present in the movie.
+    group: Supporting Characters
+  - name: Eleonora
+    actor_name: Carlotta Mangione
+    tmdb_person_id: 4479413
+    description: A character who is present in the movie.
+    group: Supporting Characters
+  - name: Public Education Inspector
+    actor_name: Franco Mescolini
+    tmdb_person_id: 1724150
+    description: A public education inspector.
+    group: Supporting Characters
+    image_file: output/character_images/1724150.jpg
+  - name: Lady at the Opera
+    actor_name: Francesca Messinese
+    tmdb_person_id: 4479415
+    description: A lady at the opera.
+    group: Supporting Characters
+  - name: German Auxiliary
+    actor_name: Inger Lise Middelthon
+    tmdb_person_id: 4479417
+    description: A German auxiliary.
+    group: German Officers
+  - name: Upholsterer
+    actor_name: Andrea Nardi
+    tmdb_person_id: 4479419
+    description: An upholsterer.
+    group: Supporting Characters
+  relationships:
+  - source: Guido
+    target: Dora
+    type: Romantic
+    directed: false
+    description: Guido and Dora fall in love and marry.
+    sentiment: positive
+    strength: 5
+    tense: past
+  - source: Guido
+    target: Giosué
+    type: Parent-Child
+    directed: false
+    description: Guido is a loving father to Giosué, protecting him throughout the
+      Holocaust.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: Guido
+    target: Zio
+    type: Family
+    directed: false
+    description: Guido and his uncle have a close relationship.
+    sentiment: positive
+    strength: 3
+    tense: past
+  - source: Guido
+    target: Ferruccio
+    type: Friend
+    directed: false
+    description: Guido and Ferruccio are friends who share a similar outlook on life.
+    sentiment: positive
+    strength: 4
+    tense: past
+  - source: Dora
+    target: Giosué
+    type: Parent-Child
+    directed: false
+    description: Dora is Giosué's mother.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: Dora
+    target: Rodolfo
+    type: Romantic
+    directed: true
+    description: Dora was engaged to Rodolfo before meeting Guido.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Dora
+    target: Dora's Mother
+    type: Family
+    directed: false
+    description: Dora has a relationship with her mother.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Guido
+    target: Doctor Lessing
+    type: Acquaintance
+    directed: true
+    description: Guido encounters Doctor Lessing at the camp.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Mrs. Guicciardini
+    type: Customer
+    directed: true
+    description: Guido interacts with Mrs. Guicciardini as a waiter.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Guido
+    target: School Principal
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the school principal.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Giosué
+    target: Bartolomeo
+    type: Camp Inmate
+    directed: true
+    description: Giosué encounters Bartolomeo at the camp.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Giosué
+    target: Vittorino
+    type: Camp Inmate
+    directed: true
+    description: Giosué encounters Vittorino at the camp.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: German Sergeant
+    type: Enemy
+    directed: true
+    description: Guido is in conflict with the German Sergeant.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Guido
+    target: German Corporal
+    type: Enemy
+    directed: true
+    description: Guido is in conflict with the German Corporal.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Guido
+    target: German Major at Party
+    type: Enemy
+    directed: true
+    description: Guido is in conflict with the German Major at Party.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Guido
+    target: German Executioner
+    type: Enemy
+    directed: true
+    description: Guido is in conflict with the German Executioner.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Dora
+    target: German Auxiliary
+    type: Enemy
+    directed: true
+    description: Dora is in conflict with the German Auxiliary.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Guido
+    target: Elena
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with Elena.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Prefect
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Prefect.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Man with Key
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Man with Key.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: German Party Attendant
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the German Party Attendant.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: King
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the King.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: School Janitor
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the School Janitor.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Card Player
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Card Player.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Teacher
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Teacher.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Female Soldier at Children's Dinner
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Female Soldier at Children's Dinner.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: 1st Lady at the Grand Hotel
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the 1st Lady at the Grand Hotel.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: 2nd Lady at the Grand Hotel
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the 2nd Lady at the Grand Hotel.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Gigliola
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with Gigliola.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Regina
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with Regina.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Eleonora
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with Eleonora.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Public Education Inspector
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Public Education Inspector.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Lady at the Opera
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Lady at the Opera.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Guido
+    target: Upholsterer
+    type: Acquaintance
+    directed: true
+    description: Guido interacts with the Upholsterer.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Giosué
+    target: Doctor Lessing
+    type: Acquaintance
+    directed: true
+    description: Giosué encounters Doctor Lessing at the camp.
+    sentiment: neutral
+    strength: 1
+    tense: past

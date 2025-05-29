@@ -8325,3 +8325,63 @@ matching_tags
 2025-05-29 14:10:07,109 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:530 - Raw log: 'output/generated_movie_data_raw_log.txt'
 2025-05-29 14:10:07,109 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:531 - Clean YAML data: 'output/clean_movie_database.yaml'
 2025-05-29 14:10:07,109 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:533 - Character images saved to: 'output/character_images'
+2025-05-29 14:55:52,862 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 14:55:52,862 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 14:55:52,862 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 14:55:52,862 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 14:55:52,862 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True}
+2025-05-29 14:55:52,880 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 14:55:53,050 - MovieEnrichmentPipeline - WARNING - main_orchestrator.run_enrichment_pipeline:223 - Could not validate existing movie data for 'Dilwale Dulhania Le Jayenge': 1 validation error for MovieEntry
+character_list.9.group
+  Field required [type=missing, input_value={'name': "Simran's Grandm...oved by Raj's efforts."}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing. Skipping this entry from file.
+2025-05-29 14:55:53,050 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 22 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 14:55:53,051 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:261 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 14:55:53,128 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:312 - --- Processing New Movie: 'Dilwale Dulhania Le Jayenge' (1995) TMDB_ID: 19404 ---
+2025-05-29 14:55:53,128 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:328 -   Running: Initial Data Enrichment for 'Dilwale Dulhania Le Jayenge'
+2025-05-29 14:55:57,567 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:336 -   Success: Initial Data for 'Dilwale Dulhania Le Jayenge'.
+2025-05-29 14:55:57,568 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:356 -   Running: Character and Relations Enrichment for 'Dilwale Dulhania Le Jayenge'
+2025-05-29 14:56:11,193 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:378 -   Success: LLM Call 2 (Chars/Rels) for 'Dilwale Dulhania Le Jayenge'.
+2025-05-29 14:56:11,193 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:381 -     Fetching character images for 'Dilwale Dulhania Le Jayenge'
+2025-05-29 14:56:15,904 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:405 -   Running: Analytical Data Enrichment for 'Dilwale Dulhania Le Jayenge'
+2025-05-29 14:56:20,849 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:413 -   Success: Analytical Data for 'Dilwale Dulhania Le Jayenge'.
+2025-05-29 14:56:20,850 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:434 -   Fetching/Updating IMDb IDs for 'Dilwale Dulhania Le Jayenge' and its relations.
+2025-05-29 14:56:22,366 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:472 -   Finalizing entry for 'Dilwale Dulhania Le Jayenge'.
+2025-05-29 14:56:22,542 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:496 -   Saved 'Dilwale Dulhania Le Jayenge' to 'output/clean_movie_database.yaml'.
+2025-05-29 14:56:24,548 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:507 - Target for new movies (1) reached during page processing.
+2025-05-29 14:56:24,548 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:513 - Target for new movies reached. Ending TMDB page fetching.
+2025-05-29 14:56:24,548 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:526 - ===== MOVIE ENRICHMENT SESSION FINISHED =====
+2025-05-29 14:56:24,549 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:527 - Attempted to process 8 movie candidates from TMDB API.
+2025-05-29 14:56:24,549 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:528 - Added 1 new movie(s) this session.
+2025-05-29 14:56:24,549 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:529 - Total movies in 'output/clean_movie_database.yaml': 23
+2025-05-29 14:56:24,549 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:530 - Raw log: 'output/generated_movie_data_raw_log.txt'
+2025-05-29 14:56:24,549 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:531 - Clean YAML data: 'output/clean_movie_database.yaml'
+2025-05-29 14:56:24,550 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:533 - Character images saved to: 'output/character_images'
+2025-05-29 14:57:05,916 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 14:57:05,916 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 14:57:05,916 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 14:57:05,916 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 14:57:05,916 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True}
+2025-05-29 14:57:05,932 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 14:57:06,103 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 23 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 14:57:06,104 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:261 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 14:57:06,157 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:312 - --- Processing New Movie: 'Life Is Beautiful' (1997) TMDB_ID: 637 ---
+2025-05-29 14:57:06,157 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:328 -   Running: Initial Data Enrichment for 'Life Is Beautiful'
+2025-05-29 14:57:11,224 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:336 -   Success: Initial Data for 'Life Is Beautiful'.
+2025-05-29 14:57:11,224 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:356 -   Running: Character and Relations Enrichment for 'Life Is Beautiful'
+2025-05-29 14:57:40,555 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:378 -   Success: LLM Call 2 (Chars/Rels) for 'Life Is Beautiful'.
+2025-05-29 14:57:40,556 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:381 -     Fetching character images for 'Life Is Beautiful'
+2025-05-29 14:57:49,944 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:405 -   Running: Analytical Data Enrichment for 'Life Is Beautiful'
+2025-05-29 14:57:55,568 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:413 -   Success: Analytical Data for 'Life Is Beautiful'.
+2025-05-29 14:57:55,568 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:434 -   Fetching/Updating IMDb IDs for 'Life Is Beautiful' and its relations.
+2025-05-29 14:57:57,207 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:472 -   Finalizing entry for 'Life Is Beautiful'.
+2025-05-29 14:57:57,376 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:496 -   Saved 'Life Is Beautiful' to 'output/clean_movie_database.yaml'.
+2025-05-29 14:57:59,381 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:507 - Target for new movies (1) reached during page processing.
+2025-05-29 14:57:59,381 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:513 - Target for new movies reached. Ending TMDB page fetching.
+2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:526 - ===== MOVIE ENRICHMENT SESSION FINISHED =====
+2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:527 - Attempted to process 20 movie candidates from TMDB API.
+2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:528 - Added 1 new movie(s) this session.
+2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:529 - Total movies in 'output/clean_movie_database.yaml': 24
+2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:530 - Raw log: 'output/generated_movie_data_raw_log.txt'
+2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:531 - Clean YAML data: 'output/clean_movie_database.yaml'
+2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:533 - Character images saved to: 'output/character_images'

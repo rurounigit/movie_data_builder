@@ -17,3 +17,4 @@ story_agent_v20.py
 story_agent_v21.py
 .DS_Store
 output/character_images/
+__pycache__/

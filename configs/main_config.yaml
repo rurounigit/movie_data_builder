@@ -8,7 +8,7 @@ character_image_save_path: "output/character_images"   # Ensure 'output/characte
 # --- Session Control ---
 num_new_movies_to_fetch_this_session: 1 # Start with 1 for testing
 max_tmdb_top_rated_pages_to_check: 2    # How many TMDB top-rated pages to check for new movies
-max_characters_from_tmdb: 30            # Max characters to fetch from TMDB credits
+max_characters_from_tmdb: 40            # Max characters to fetch from TMDB credits
 
 # LLM Configuration
 # active_llm_provider_id: "lm_studio_gemma_3_12b"
