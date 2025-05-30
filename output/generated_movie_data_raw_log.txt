@@ -8385,3 +8385,164 @@ character_list.9.group
 2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:530 - Raw log: 'output/generated_movie_data_raw_log.txt'
 2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:531 - Clean YAML data: 'output/clean_movie_database.yaml'
 2025-05-29 14:57:59,382 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:533 - Character images saved to: 'output/character_images'
+2025-05-29 20:22:40,981 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 20:22:40,981 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 20:22:40,981 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 20:22:40,981 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 20:22:40,981 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True, 'tmdb_review_summary': True, 'constrained_plot_with_relations': True}
+2025-05-29 20:22:41,000 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 20:22:41,191 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 24 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 20:22:41,192 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 20:22:42,380 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 2 ---
+2025-05-29 20:22:42,540 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:316 - --- Processing New Movie: 'Fight Club' (1999) TMDB_ID: 550 ---
+2025-05-29 20:22:42,540 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:332 -   Running: Initial Data Enrichment for 'Fight Club'
+2025-05-29 20:22:47,314 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:340 -   Success: Initial Data for 'Fight Club'.
+2025-05-29 20:22:47,314 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:360 -   Running: Character and Relations Enrichment for 'Fight Club'
+2025-05-29 20:23:16,385 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:382 -   Success: LLM Call 2 (Chars/Rels) for 'Fight Club'.
+2025-05-29 20:23:16,386 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:385 -     Fetching character images for 'Fight Club'
+2025-05-29 20:27:47,912 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 20:27:47,912 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 20:27:47,912 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 20:27:47,912 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 20:27:47,912 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True, 'tmdb_review_summary': True, 'constrained_plot_with_relations': True}
+2025-05-29 20:27:47,930 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 20:27:48,121 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 24 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 20:27:48,122 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 20:27:49,651 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 2 ---
+2025-05-29 20:27:49,782 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:316 - --- Processing New Movie: 'Fight Club' (1999) TMDB_ID: 550 ---
+2025-05-29 20:27:49,782 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:332 -   Running: Initial Data Enrichment for 'Fight Club'
+2025-05-29 20:27:54,175 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:340 -   Success: Initial Data for 'Fight Club'.
+2025-05-29 20:27:54,175 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:360 -   Running: Character and Relations Enrichment for 'Fight Club'
+2025-05-29 20:28:26,772 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:382 -   Success: LLM Call 2 (Chars/Rels) for 'Fight Club'.
+2025-05-29 20:28:26,773 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:385 -     Fetching character images for 'Fight Club'
+2025-05-29 20:28:34,913 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:415 -   Generating Constrained Plot (with relations) for 'Fight Club'.
+2025-05-29 20:28:36,860 - MovieEnrichmentPipeline - ERROR - llm_clients.get_llm_response_and_parse:161 - LLM Constrained Plot (w/ Relations) for 'Fight Club': OpenAI APIError communicating with LLM (model: models/gemini-2.0-flash-lite): Error code: 503 - [{'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2025-05-29 20:28:36,860 - MovieEnrichmentPipeline - ERROR - constrained_plot_rel_enricher.generate_constrained_plot_with_relations:63 - Failed to get/parse LLM response for constrained plot (w/ rel) for 'Fight Club'.
+2025-05-29 20:28:36,861 - MovieEnrichmentPipeline - WARNING - main_orchestrator.run_enrichment_pipeline:439 -     Could not generate constrained plot (with relations) for 'Fight Club'.
+2025-05-29 20:28:36,861 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:467 -   Running: Analytical Data Enrichment for 'Fight Club'
+2025-05-29 20:28:38,958 - MovieEnrichmentPipeline - ERROR - llm_clients.get_llm_response_and_parse:161 - LLM Call 3 (Analytical) for 'Fight Club': OpenAI APIError communicating with LLM (model: models/gemini-2.0-flash-lite): Error code: 503 - [{'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2025-05-29 20:28:38,958 - MovieEnrichmentPipeline - WARNING - main_orchestrator.run_enrichment_pipeline:478 -   Failure or incomplete: Analytical Data for 'Fight Club'.
+2025-05-29 20:28:38,958 - MovieEnrichmentPipeline - ERROR - main_orchestrator.run_enrichment_pipeline:480 -     Critical analytical data missing for new movie 'Fight Club'. Skipping final assembly.
+2025-05-29 20:28:38,959 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:316 - --- Processing New Movie: 'Cinema Paradiso' (1988) TMDB_ID: 11216 ---
+2025-05-29 20:28:38,959 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:332 -   Running: Initial Data Enrichment for 'Cinema Paradiso'
+2025-05-29 20:28:45,305 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:340 -   Success: Initial Data for 'Cinema Paradiso'.
+2025-05-29 20:28:45,305 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:360 -   Running: Character and Relations Enrichment for 'Cinema Paradiso'
+2025-05-29 20:28:59,008 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:382 -   Success: LLM Call 2 (Chars/Rels) for 'Cinema Paradiso'.
+2025-05-29 20:28:59,008 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:385 -     Fetching character images for 'Cinema Paradiso'
+2025-05-29 20:29:04,283 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:415 -   Generating Constrained Plot (with relations) for 'Cinema Paradiso'.
+2025-05-29 20:29:06,623 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:437 -     Success: Generated constrained plot (with relations) for 'Cinema Paradiso'.
+2025-05-29 20:29:06,623 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:467 -   Running: Analytical Data Enrichment for 'Cinema Paradiso'
+2025-05-29 20:29:11,919 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:475 -   Success: Analytical Data for 'Cinema Paradiso'.
+2025-05-29 20:29:11,919 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:496 -   Fetching and Summarizing TMDB User Reviews for 'Cinema Paradiso'
+2025-05-29 20:29:13,299 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:527 -     Success: Generated TMDB user review summary for 'Cinema Paradiso'.
+2025-05-29 20:29:13,299 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:546 -   Fetching/Updating IMDb IDs for 'Cinema Paradiso' and its relations.
+2025-05-29 20:29:14,674 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:584 -   Finalizing entry for 'Cinema Paradiso'.
+2025-05-29 20:29:14,915 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:608 -   Saved 'Cinema Paradiso' to 'output/clean_movie_database.yaml'.
+2025-05-29 20:29:16,920 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:619 - Target for new movies (1) reached during page processing.
+2025-05-29 20:29:16,920 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:625 - Target for new movies reached. Ending TMDB page fetching.
+2025-05-29 20:29:16,920 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:638 - ===== MOVIE ENRICHMENT SESSION FINISHED =====
+2025-05-29 20:29:16,921 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:639 - Attempted to process 22 movie candidates from TMDB API.
+2025-05-29 20:29:16,921 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:640 - Added 1 new movie(s) this session.
+2025-05-29 20:29:16,921 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:641 - Total movies in 'output/clean_movie_database.yaml': 25
+2025-05-29 20:29:16,921 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:642 - Raw log: 'output/generated_movie_data_raw_log.txt'
+2025-05-29 20:29:16,921 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:643 - Clean YAML data: 'output/clean_movie_database.yaml'
+2025-05-29 20:29:16,921 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:645 - Character images saved to: 'output/character_images'
+2025-05-29 22:06:32,133 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 22:06:32,133 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 22:06:32,133 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 22:06:32,133 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 22:06:32,133 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True, 'tmdb_review_summary': True, 'constrained_plot_with_relations': True}
+2025-05-29 22:06:32,153 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 22:06:32,352 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 25 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 22:06:32,353 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 22:06:33,483 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 2 ---
+2025-05-29 22:06:33,549 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:316 - --- Processing New Movie: 'Fight Club' (1999) TMDB_ID: 550 ---
+2025-05-29 22:06:33,550 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:332 -   Running: Initial Data Enrichment for 'Fight Club'
+2025-05-29 22:06:38,842 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:340 -   Success: Initial Data for 'Fight Club'.
+2025-05-29 22:06:38,843 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:360 -   Running: Character and Relations Enrichment for 'Fight Club'
+2025-05-29 22:07:07,118 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:382 -   Success: LLM Call 2 (Chars/Rels) for 'Fight Club'.
+2025-05-29 22:07:07,120 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:385 -     Fetching character images for 'Fight Club'
+2025-05-29 22:07:14,162 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:415 -   Generating Constrained Plot (with relations) for 'Fight Club'.
+2025-05-29 22:07:16,171 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:437 -     Success: Generated constrained plot (with relations) for 'Fight Club'.
+2025-05-29 22:07:16,172 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:467 -   Running: Analytical Data Enrichment for 'Fight Club'
+2025-05-29 22:07:22,194 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:475 -   Success: Analytical Data for 'Fight Club'.
+2025-05-29 22:07:22,195 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:496 -   Fetching and Summarizing TMDB User Reviews for 'Fight Club'
+2025-05-29 22:07:23,629 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:527 -     Success: Generated TMDB user review summary for 'Fight Club'.
+2025-05-29 22:07:23,629 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:546 -   Fetching/Updating IMDb IDs for 'Fight Club' and its relations.
+2025-05-29 22:07:24,849 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:584 -   Finalizing entry for 'Fight Club'.
+2025-05-29 22:07:25,050 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:608 -   Saved 'Fight Club' to 'output/clean_movie_database.yaml'.
+2025-05-29 22:07:27,054 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:619 - Target for new movies (1) reached during page processing.
+2025-05-29 22:07:27,055 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:625 - Target for new movies reached. Ending TMDB page fetching.
+2025-05-29 22:07:27,055 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:638 - ===== MOVIE ENRICHMENT SESSION FINISHED =====
+2025-05-29 22:07:27,055 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:639 - Attempted to process 21 movie candidates from TMDB API.
+2025-05-29 22:07:27,055 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:640 - Added 1 new movie(s) this session.
+2025-05-29 22:07:27,055 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:641 - Total movies in 'output/clean_movie_database.yaml': 26
+2025-05-29 22:07:27,055 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:642 - Raw log: 'output/generated_movie_data_raw_log.txt'
+2025-05-29 22:07:27,055 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:643 - Clean YAML data: 'output/clean_movie_database.yaml'
+2025-05-29 22:07:27,056 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:645 - Character images saved to: 'output/character_images'
+2025-05-29 22:13:28,524 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 22:13:28,524 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 22:13:28,524 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 22:13:28,525 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 22:13:28,525 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True, 'tmdb_review_summary': True, 'constrained_plot_with_relations': True}
+2025-05-29 22:13:28,543 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 22:13:28,759 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 26 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 22:13:28,760 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 22:13:31,159 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 2 ---
+2025-05-29 22:13:31,317 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:316 - --- Processing New Movie: 'City of God' (2002) TMDB_ID: 598 ---
+2025-05-29 22:13:31,317 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:332 -   Running: Initial Data Enrichment for 'City of God'
+2025-05-29 22:13:36,717 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:340 -   Success: Initial Data for 'City of God'.
+2025-05-29 22:13:36,718 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:360 -   Running: Character and Relations Enrichment for 'City of God'
+2025-05-29 22:14:14,436 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:382 -   Success: LLM Call 2 (Chars/Rels) for 'City of God'.
+2025-05-29 22:14:14,437 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:385 -     Fetching character images for 'City of God'
+2025-05-29 22:14:29,331 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:415 -   Generating Constrained Plot (with relations) for 'City of God'.
+2025-05-29 22:14:33,272 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:437 -     Success: Generated constrained plot (with relations) for 'City of God'.
+2025-05-29 22:14:33,272 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:467 -   Running: Analytical Data Enrichment for 'City of God'
+2025-05-29 22:14:39,053 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:475 -   Success: Analytical Data for 'City of God'.
+2025-05-29 22:14:39,054 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:496 -   Fetching and Summarizing TMDB User Reviews for 'City of God'
+2025-05-29 22:14:40,739 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:527 -     Success: Generated TMDB user review summary for 'City of God'.
+2025-05-29 22:14:40,739 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:546 -   Fetching/Updating IMDb IDs for 'City of God' and its relations.
+2025-05-29 22:14:42,243 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:584 -   Finalizing entry for 'City of God'.
+2025-05-29 22:14:42,478 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:608 -   Saved 'City of God' to 'output/clean_movie_database.yaml'.
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:619 - Target for new movies (1) reached during page processing.
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:625 - Target for new movies reached. Ending TMDB page fetching.
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:638 - ===== MOVIE ENRICHMENT SESSION FINISHED =====
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:639 - Attempted to process 23 movie candidates from TMDB API.
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:640 - Added 1 new movie(s) this session.
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:641 - Total movies in 'output/clean_movie_database.yaml': 27
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:642 - Raw log: 'output/generated_movie_data_raw_log.txt'
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:643 - Clean YAML data: 'output/clean_movie_database.yaml'
+2025-05-29 22:14:44,489 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:645 - Character images saved to: 'output/character_images'
+2025-05-29 22:18:47,134 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:163 - ===== MOVIE ENRICHMENT SESSION STARTED =====
+2025-05-29 22:18:47,134 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:164 - Using LLM Provider: Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint (ID: google_gemini_2_0_flash_lite)
+2025-05-29 22:18:47,134 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:165 - LLM Model ID for API calls: models/gemini-2.0-flash-lite
+2025-05-29 22:18:47,134 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:166 - Update existing movies: False
+2025-05-29 22:18:47,134 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:169 - Active enrichers: {'initial_data': True, 'characters_and_relations': True, 'fetch_character_images': True, 'analytical_data': True, 'fetch_imdb_ids': True, 'tmdb_review_summary': True, 'constrained_plot_with_relations': True}
+2025-05-29 22:18:47,152 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:202 - OpenAI-compatible LLM client initialized. Provider: google_gemini_2_0_flash_lite, Base URL: https://generativelanguage.googleapis.com/v1beta
+2025-05-29 22:18:47,394 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:224 - Loaded 27 valid movie entries from 'output/clean_movie_database.yaml'.
+2025-05-29 22:18:47,394 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 1 ---
+2025-05-29 22:18:48,472 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:265 - --- Fetching TMDB Top Rated Page: 2 ---
+2025-05-29 22:18:48,539 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:316 - --- Processing New Movie: 'A Dog's Will' (2000) TMDB_ID: 40096 ---
+2025-05-29 22:18:48,539 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:332 -   Running: Initial Data Enrichment for 'A Dog's Will'
+2025-05-29 22:18:53,466 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:340 -   Success: Initial Data for 'A Dog's Will'.
+2025-05-29 22:18:53,467 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:360 -   Running: Character and Relations Enrichment for 'A Dog's Will'
+2025-05-29 22:19:05,773 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:382 -   Success: LLM Call 2 (Chars/Rels) for 'A Dog's Will'.
+2025-05-29 22:19:05,775 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:385 -     Fetching character images for 'A Dog's Will'
+2025-05-29 22:19:10,516 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:415 -   Generating Constrained Plot (with relations) for 'A Dog's Will'.
+2025-05-29 22:19:13,413 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:437 -     Success: Generated constrained plot (with relations) for 'A Dog's Will'.
+2025-05-29 22:19:13,413 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:467 -   Running: Analytical Data Enrichment for 'A Dog's Will'
+2025-05-29 22:19:18,330 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:475 -   Success: Analytical Data for 'A Dog's Will'.
+2025-05-29 22:19:18,331 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:496 -   Fetching and Summarizing TMDB User Reviews for 'A Dog's Will'
+2025-05-29 22:19:19,942 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:527 -     Success: Generated TMDB user review summary for 'A Dog's Will'.
+2025-05-29 22:19:19,943 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:546 -   Fetching/Updating IMDb IDs for 'A Dog's Will' and its relations.
+2025-05-29 22:19:21,452 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:584 -   Finalizing entry for 'A Dog's Will'.
+2025-05-29 22:19:21,710 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:608 -   Saved 'A Dog's Will' to 'output/clean_movie_database.yaml'.
+2025-05-29 22:19:23,714 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:619 - Target for new movies (1) reached during page processing.
+2025-05-29 22:19:23,715 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:625 - Target for new movies reached. Ending TMDB page fetching.
+2025-05-29 22:19:23,715 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:638 - ===== MOVIE ENRICHMENT SESSION FINISHED =====
+2025-05-29 22:19:23,715 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:639 - Attempted to process 24 movie candidates from TMDB API.
+2025-05-29 22:19:23,715 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:640 - Added 1 new movie(s) this session.
+2025-05-29 22:19:23,715 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:641 - Total movies in 'output/clean_movie_database.yaml': 28
+2025-05-29 22:19:23,715 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:642 - Raw log: 'output/generated_movie_data_raw_log.txt'
+2025-05-29 22:19:23,716 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:643 - Clean YAML data: 'output/clean_movie_database.yaml'
+2025-05-29 22:19:23,716 - MovieEnrichmentPipeline - INFO - main_orchestrator.run_enrichment_pipeline:645 - Character images saved to: 'output/character_images'

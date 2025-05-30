@@ -11,7 +11,7 @@ Transform the 'TMDB Raw Character/Actor List' provided above into a JSON array o
 "actor_name": (string) Use the exact tmdb_actor_name from the input.
 "tmdb_person_id": (integer or null) Use the integer tmdb_person_id from the input. If the input tmdb_person_id is missing, not an integer, or explicitly null in the input, use JSON null for this value.
 "description": (string) Generate a concise description for the character (e.g., their role, key traits, brief arc summary in 1-2 sentences).
-"group": (string) Determine an appropriate group for the character (e.g., "Dwarves", "Tribe Members", "Shawshank Prisoners", "Guards", "Family Members", "Political Enemies"). Be specific to the movie context and narrative. Avoid generic terms like "Main Character" or "Supporting Characters"!!
+"group": (string) Determine an appropriate group for the character (e.g., "Dwarves", "Tribe Members", "Shawshank Prisoners", "Guards", "Family Members", "Political Enemies"). Be specific to the movie context and narrative. Avoid generic terms like "Main Character" or "Supporting Characters" or "Community Members"!!
 "aliases": (array of strings or null) Generate a JSON array of common nicknames or alternative names used for the character in the movie. If there are no significant aliases, use JSON null.
 Example for one character object in the "character_list" array:
 {{

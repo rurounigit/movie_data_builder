@@ -2,6 +2,34 @@
 from pydantic import BaseModel, Field, field_validator,HttpUrl
 from typing import Optional, List, Dict, Any, Union
 
+class LLMConstrainedPlotWithRelationsOutput(BaseModel):
+    plot_with_character_constraints_and_relations: Optional[str] = None
+
+class LLMReviewSummaryOutput(BaseModel):
+    tmdb_user_review_summary: Optional[str] = Field(None, description="LLM-generated summary of TMDB user reviews.")
+
+class TMDBReviewAuthorDetails(BaseModel):
+    name: Optional[str] = None
+    username: Optional[str] = None
+    avatar_path: Optional[str] = None
+    rating: Optional[float] = None # TMDB shows null or number, float handles both
+
+class TMDBReviewResult(BaseModel):
+    author: Optional[str] = None
+    author_details: Optional[TMDBReviewAuthorDetails] = None
+    content: Optional[str] = None
+    created_at: Optional[str] = None # Could be datetime if you parse it
+    id: Optional[str] = None
+    updated_at: Optional[str] = None # Could be datetime
+    url: Optional[str] = None
+
+class TMDBReviewsResponse(BaseModel):
+    id: Optional[int] = None # Movie ID
+    page: Optional[int] = None
+    results: Optional[List[TMDBReviewResult]] = []
+    total_pages: Optional[int] = None
+    total_results: Optional[int] = None
+
 class BigFiveTrait(BaseModel):
     score: int = Field(..., ge=1, le=5)
     explanation: str
@@ -175,6 +203,9 @@ class MovieEntry(BaseModel):
     recommendations: Optional[List[Recommendation]] = None
     character_list: Optional[List[CharacterListItem]] = None
     relationships: Optional[List[Relationship]] = None
+
+    tmdb_user_review_summary: Optional[str] = Field(None, description="An LLM-generated summary of user reviews from TMDB.")
+    plot_with_character_constraints_and_relations: Optional[str] = Field(None, description="Plot description strictly using character names from TMDB's initial list, informed by LLM-generated relationships.")
 
 
 # --- Models for TMDB API responses (examples) ---

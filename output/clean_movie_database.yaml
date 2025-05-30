@@ -6780,3 +6780,2131 @@
     sentiment: neutral
     strength: 1
     tense: past
+- movie_title: Cinema Paradiso
+  movie_year: '1988'
+  tmdb_movie_id: 11216
+  imdb_id: tt0095765
+  character_profile: The film's characters are deeply rooted in the Italian village
+    setting, with a strong emphasis on the bonds of community and the power of nostalgia.
+    Salvatore, the protagonist, undergoes a significant transformation, evolving from
+    a young boy captivated by the magic of cinema to a successful filmmaker haunted
+    by his past. Alfredo, the projectionist, serves as a paternal figure and mentor,
+    shaping Salvatore's love for movies and providing guidance. The supporting characters,
+    including the various townsfolk and the other children, contribute to the film's
+    rich tapestry of human experience, showcasing the joys, sorrows, and eccentricities
+    of small-town life.
+  character_profile_big5:
+    Openness:
+      score: 4
+      explanation: Toto shows openness through his willingness to embrace new experiences,
+        his artistic pursuits, and his emotional vulnerability.
+    Conscientiousness:
+      score: 3
+      explanation: Toto's conscientiousness is moderate; he is driven by passion but
+        can be impulsive and doesn't always adhere strictly to rules.
+    Extraversion:
+      score: 3
+      explanation: Toto is somewhat extraverted, enjoying social interactions and
+        forming close bonds, but also has moments of introversion and introspection.
+    Agreeableness:
+      score: 5
+      explanation: Toto is highly agreeable, demonstrating kindness, empathy, and
+        a strong desire to connect with others, especially Alfredo.
+    Neuroticism:
+      score: 3
+      explanation: Toto experiences moments of sadness and longing, but generally
+        copes well with life's challenges and doesn't display extreme emotional instability.
+  character_profile_myersbriggs:
+    type: ISFP
+    explanation: Introverted, Sensing, Feeling, Perceiving (Adventurer). Toto embodies
+      ISFP traits through his artistic sensitivity, his focus on the present moment,
+      his strong emotional responses, and his adaptable, free-spirited nature.
+  critical_reception: Cinema Paradiso received widespread critical acclaim upon its
+    release, particularly for its heartwarming story, beautiful cinematography, and
+    Ennio Morricone's iconic score. Critics praised the film's exploration of memory,
+    loss, and the enduring power of cinema. The film's emotional resonance and universal
+    themes resonated with audiences worldwide, leading to numerous awards and accolades,
+    including the Academy Award for Best Foreign Language Film. Some critics noted
+    that the theatrical release version was superior to the extended director's cut.
+  visual_style: The visual style of Cinema Paradiso is characterized by its warm,
+    nostalgic aesthetic, reflecting the film's themes of memory and childhood. The
+    cinematography utilizes soft lighting and vibrant colors, particularly in the
+    scenes set within the cinema itself. The film frequently employs close-ups to
+    emphasize the characters' emotions and reactions, enhancing the intimate feel
+    of the story. The use of film within the film, showcasing snippets of classic
+    movies, adds another layer of visual richness and serves as a visual metaphor
+    for the power of cinema. The film's pacing is deliberate, allowing the audience
+    to fully immerse themselves in the atmosphere of the Italian village.
+  most_talked_about_related_topic: The most talked-about aspect of Cinema Paradiso
+    often revolves around the film's ending, particularly the montage of kisses. This
+    sequence, comprised of censored scenes from various films, is a powerful and emotionally
+    charged moment that encapsulates the film's themes of love, loss, and the enduring
+    impact of cinema. The montage is a poignant reminder of the censorship and societal
+    constraints of the time, while also celebrating the joy and passion found within
+    the art of filmmaking. The scene's impact is amplified by Morricone's score, making
+    it a truly unforgettable cinematic experience.
+  genre_mix:
+    genres:
+      drama: 90
+      romance: 30
+      comedy: 20
+      coming-of-age: 70
+      nostalgia: 60
+      family: 40
+  matching_tags:
+    tags:
+      Analog Heartbeats: The film focuses on the enduring power of connection and
+        longing, with a strong emphasis on the shared experience of cinema and the
+        tangible memories it creates.
+      Retro Immersion: The movie is deeply saturated in the aesthetics, music, and
+        culture of post-war Italy, creating a strong sense of nostalgia for a specific
+        era.
+  complex_search_queries:
+  - Italian coming-of-age films with strong emotional impact.
+  - Movies about the power of cinema and nostalgia.
+  recommendations:
+  - title: Life is Beautiful
+    year: 1997
+    explanation: This film shares a similar blend of drama, comedy, and heartwarming
+      moments, offering a powerful story of love and resilience, much like Cinema
+      Paradiso.
+    imdb_id: tt0118799
+  - title: Amelie
+    year: 2001
+    explanation: Both films share a whimsical and heartwarming tone, celebrating the
+      beauty of everyday life and the power of human connection, appealing to fans
+      of Cinema Paradiso's emotional depth.
+    imdb_id: tt0211915
+  - title: Like Water for Chocolate
+    year: 1992
+    explanation: This film, like Cinema Paradiso, is a visually rich and emotionally
+      resonant story about family, love, and the power of memory, set against a backdrop
+      of cultural traditions.
+    imdb_id: tt0103994
+  - title: The Intouchables
+    year: 2011
+    explanation: This film offers a similar feel-good experience with a focus on unlikely
+      friendships and overcoming adversity, resonating with the heartwarming themes
+      of Cinema Paradiso.
+    imdb_id: tt1675434
+  - title: Paddington 2
+    year: 2017
+    explanation: This film shares a similar heartwarming and optimistic tone, focusing
+      on community, kindness, and the power of human connection, much like Cinema
+      Paradiso.
+    imdb_id: tt4468740
+  character_list:
+  - name: Alfredo
+    actor_name: Philippe Noiret
+    tmdb_person_id: 24366
+    description: The projectionist at the Cinema Paradiso, Alfredo becomes a father
+      figure and mentor to young Totò.
+    group: Cinema Staff
+    image_file: output/character_images/24366.jpg
+  - name: Salvatore 'Totò' Di Vita (adult)
+    actor_name: Jacques Perrin
+    tmdb_person_id: 20030
+    description: The adult version of Totò, reflecting on his childhood and the impact
+      of Alfredo and the cinema on his life.
+    group: Protagonist
+    aliases:
+    - Totò
+    image_file: output/character_images/20030.jpg
+  - name: Salvatore 'Totò' Di Vita (teen)
+    actor_name: Marco Leonardi
+    tmdb_person_id: 27643
+    description: The teenage version of Totò, experiencing love and navigating the
+      complexities of adolescence.
+    group: Protagonist
+    aliases:
+    - Totò
+    image_file: output/character_images/27643.jpg
+  - name: Salvatore 'Totò' Di Vita (child)
+    actor_name: Salvatore Cascio
+    tmdb_person_id: 68635
+    description: The young Totò, a mischievous boy who develops a deep love for cinema
+      and a close bond with Alfredo.
+    group: Protagonist
+    aliases:
+    - Totò
+    image_file: output/character_images/68635.jpg
+  - name: Elena Mendola (teen) / Elena's daughter (in Director's cut)
+    actor_name: Agnese Nano
+    tmdb_person_id: 120152
+    description: Totò's teenage love interest, Elena, who represents a significant
+      emotional connection in his life.
+    group: Love Interests
+    image_file: output/character_images/120152.jpg
+  - name: Maria Di Vita (young)
+    actor_name: Antonella Attili
+    tmdb_person_id: 70083
+    description: Totò's mother, who struggles to raise him and is often worried about
+      his future.
+    group: Family Members
+    image_file: output/character_images/70083.jpg
+  - name: Maria Di Vita (aged)
+    actor_name: Pupella Maggio
+    tmdb_person_id: 25780
+    description: The aged version of Totò's mother, reflecting on her life and her
+      son's choices.
+    group: Family Members
+    image_file: output/character_images/25780.jpg
+  - name: Spaccafico
+    actor_name: Enzo Cannavale
+    tmdb_person_id: 52657
+    description: A regular at the cinema, known for his boisterous reactions to the
+      films.
+    group: Cinema Patrons
+    image_file: output/character_images/52657.jpg
+  - name: Anna
+    actor_name: Isa Danieli
+    tmdb_person_id: 1014911
+    description: A character in the film, part of the community.
+    group: Cinema Patrons
+    image_file: output/character_images/1014911.jpg
+  - name: Ignazio, usher
+    actor_name: Leo Gullotta
+    tmdb_person_id: 119992
+    description: The usher at the Cinema Paradiso, responsible for maintaining order
+      and assisting patrons.
+    group: Cinema Staff
+    aliases:
+    - Ignazio
+    image_file: output/character_images/119992.jpg
+  - name: Father Adelfio
+    actor_name: Leopoldo Trieste
+    tmdb_person_id: 14151
+    description: The local priest who censors the films shown at the Cinema Paradiso.
+    group: Community Members
+    image_file: output/character_images/14151.jpg
+  - name: Fabbro, blacksmith
+    actor_name: Tano Cimarosa
+    tmdb_person_id: 103627
+    description: A local blacksmith, part of the community.
+    group: Community Members
+    image_file: output/character_images/103627.jpg
+  - name: Village idiot
+    actor_name: Nicola Di Pinto
+    tmdb_person_id: 39618
+    description: A character in the film, part of the community.
+    group: Community Members
+    image_file: output/character_images/39618.jpg
+  - name: Lia
+    actor_name: Roberta Lena
+    tmdb_person_id: 1077256
+    description: A character in the film, part of the community.
+    group: Community Members
+    image_file: output/character_images/1077256.jpg
+  - name: Peppino's Father
+    actor_name: Nino Terzo
+    tmdb_person_id: 134215
+    description: A character in the film, part of the community.
+    group: Community Members
+    image_file: output/character_images/134215.jpg
+  - name: Elena Mendola (adult) (in Director's cut) (uncredited)
+    actor_name: Brigitte Fossey
+    tmdb_person_id: 1959
+    description: The adult version of Elena, who reconnects with Totò.
+    group: Love Interests
+    image_file: output/character_images/1959.jpg
+  - name: Projectionist (uncredited)
+    actor_name: Giuseppe Tornatore
+    tmdb_person_id: 65314
+    description: The projectionist, a minor character in the film.
+    group: Cinema Staff
+    image_file: output/character_images/65314.jpg
+  relationships:
+  - source: Alfredo
+    target: Salvatore 'Totò' Di Vita (child)
+    type: Mentor
+    directed: true
+    description: Alfredo guides and teaches young Totò about cinema and life.
+    sentiment: positive
+    strength: 5
+    tense: past
+  - source: Salvatore 'Totò' Di Vita (child)
+    target: Alfredo
+    type: Friend
+    directed: false
+    description: Totò and Alfredo share a close bond, built on their shared love of
+      cinema.
+    sentiment: positive
+    strength: 5
+    tense: past
+  - source: Salvatore 'Totò' Di Vita (adult)
+    target: Alfredo
+    type: Reminiscence
+    directed: false
+    description: The adult Totò reflects on his relationship with Alfredo.
+    sentiment: positive
+    strength: 4
+    tense: past
+  - source: Salvatore 'Totò' Di Vita (teen)
+    target: Elena Mendola (teen) / Elena's daughter (in Director's cut)
+    type: Love
+    directed: false
+    description: Totò and Elena share a passionate teenage romance.
+    sentiment: positive
+    strength: 4
+    tense: past
+  - source: Salvatore 'Totò' Di Vita (adult)
+    target: Elena Mendola (adult) (in Director's cut) (uncredited)
+    type: Reunion
+    directed: false
+    description: The adult Totò and Elena reconnect after many years.
+    sentiment: complicated
+    strength: 3
+    tense: past
+  - source: Maria Di Vita (young)
+    target: Salvatore 'Totò' Di Vita (child)
+    type: Mother-Son
+    directed: false
+    description: Maria is the mother of Totò, and they share a familial bond.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Father Adelfio
+    target: Alfredo
+    type: Authority
+    directed: true
+    description: Father Adelfio represents the church's censorship of the films shown
+      at the cinema.
+    sentiment: negative
+    strength: 2
+    tense: past
+  - source: Ignazio, usher
+    target: Alfredo
+    type: Coworker
+    directed: false
+    description: Ignazio works with Alfredo at the cinema.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Spaccafico
+    target: Alfredo
+    type: Customer
+    directed: false
+    description: Spaccafico is a regular patron of the cinema and interacts with Alfredo.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Salvatore 'Totò' Di Vita (teen)
+    target: Maria Di Vita (young)
+    type: Family
+    directed: false
+    description: Totò and his mother share a familial relationship.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Salvatore 'Totò' Di Vita (adult)
+    target: Maria Di Vita (aged)
+    type: Family
+    directed: false
+    description: Totò and his mother share a familial relationship.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  tmdb_user_review_summary: User reviews for 'Cinema Paradiso' highlight its emotional
+    impact and refreshing qualities. The film is described as soulful and magical,
+    leaving a lasting impression on viewers. Common praise includes the music, story,
+    acting, direction, and editing, contributing to its overall beauty. One reviewer
+    specifically notes the film's depiction of early cinematography and the friendship
+    at its core. The movie is seen as a gem, with some viewers expressing a desire
+    to rewatch it multiple times. One user also mentions this being their first foreign
+    film and enjoying the experience.
+  plot_with_character_constraints_and_relations: 'In a small Sicilian village, the
+    life of Salvatore ''Totò'' Di Vita (child) revolves around the local cinema, Cinema
+    Paradiso, and his mentor, Alfredo. Alfredo, the projectionist, guides young Totò,
+    teaching him about the magic of movies and life. Their bond is forged amidst the
+    censorship of Father Adelfio, who dictates which scenes are cut. Ignazio, the
+    usher, works alongside Alfredo, witnessing Totò''s growing passion for cinema.
+
+    As Totò grows into Salvatore ''Totò'' Di Vita (teen), he experiences his first
+    love with Elena Mendola (teen). Their romance blossoms, but life takes them in
+    different directions. Years later, Salvatore ''Totò'' Di Vita (adult), now a successful
+    filmmaker, is called back to his village after Alfredo''s passing. He reminisces
+    about his childhood with Alfredo and his mother, Maria Di Vita (young), and the
+    simple joys of the cinema. The adult Totò reflects on his past, his love for Elena
+    (adult), and the indelible mark Alfredo left on his life. Spaccafico, a regular
+    at the cinema, also played a role in the community that shaped Totò''s destiny.
+    Totò''s journey is a poignant exploration of memory, loss, and the enduring power
+    of cinema.'
+- movie_title: Fight Club
+  movie_year: '1999'
+  tmdb_movie_id: 550
+  imdb_id: tt0137523
+  character_profile: The film's character landscape is dominated by the unnamed Narrator,
+    a man grappling with insomnia and existential ennui. He finds an escape and a
+    sense of purpose through Tyler Durden, a charismatic and anarchic figure who embodies
+    the Narrator's repressed desires. The supporting characters, members of Fight
+    Club and Project Mayhem, represent a spectrum of societal frustrations and a yearning
+    for primal connection. Marla Singer, the Narrator's love interest, adds a layer
+    of complexity, representing a shared sense of alienation and a search for meaning
+    in a consumerist society. The film explores themes of identity, masculinity, and
+    the destructive nature of unchecked desires through these characters.
+  character_profile_big5:
+    Openness:
+      score: 5
+      explanation: The Narrator is highly open to unconventional ideas, philosophies,
+        and experiences, embracing chaos and challenging societal norms.
+    Conscientiousness:
+      score: 1
+      explanation: The Narrator initially lacks discipline and structure, struggling
+        with his mundane life and embracing a destructive, rule-breaking lifestyle.
+    Extraversion:
+      score: 3
+      explanation: The Narrator is initially introverted and isolated, but becomes
+        more outwardly expressive and assertive through his involvement with Tyler
+        Durden and Fight Club.
+    Agreeableness:
+      score: 2
+      explanation: The Narrator is not particularly agreeable, often displaying cynicism,
+        sarcasm, and a willingness to engage in violence and destructive behavior.
+    Neuroticism:
+      score: 4
+      explanation: The Narrator experiences significant anxiety, insomnia, and emotional
+        distress, which fuels his desire for change and his embrace of Tyler Durden's
+        philosophy.
+  character_profile_myersbriggs:
+    type: INFP
+    explanation: Introverted, Intuitive, Feeling, Perceiving (Mediator). The Narrator
+      grapples with internal conflicts, seeks authenticity, and desires to change
+      the world according to his values, though his methods are ultimately destructive.
+  critical_reception: Fight Club initially polarized critics upon its release. Some
+    found the film's violence and nihilistic themes off-putting, while others praised
+    its subversive nature and sharp social commentary. Over time, the film has gained
+    significant critical acclaim, with many recognizing its prescience and its exploration
+    of themes relevant to contemporary society. Critics now often highlight the film's
+    innovative narrative structure, its strong performances, and its thought-provoking
+    examination of consumerism, masculinity, and identity. The film's cult following
+    has also contributed to its positive re-evaluation.
+  visual_style: David Fincher's visual style in Fight Club is characterized by its
+    gritty realism and stylized flourishes. The film employs a desaturated color palette,
+    creating a sense of urban decay and alienation. Fincher utilizes quick cuts, subliminal
+    imagery, and unconventional camera angles to convey the Narrator's fractured mental
+    state and the film's underlying themes of chaos and rebellion. The fight scenes
+    are visceral and raw, emphasizing the physical and emotional toll of violence.
+    The cinematography often incorporates close-ups and dynamic camera movements,
+    immersing the viewer in the characters' experiences. The overall aesthetic is
+    dark, edgy, and visually arresting, reflecting the film's themes of societal critique
+    and anti-establishment sentiment.
+  most_talked_about_related_topic: 'The most talked-about topic related to Fight Club
+    is undoubtedly its shocking and unexpected plot twist: the revelation that Tyler
+    Durden is a figment of the Narrator''s imagination. This twist fundamentally alters
+    the audience''s understanding of the narrative, forcing them to re-evaluate everything
+    they have seen. The twist''s impact is amplified by the film''s meticulous foreshadowing
+    and the subtle clues scattered throughout. The twist has sparked countless discussions
+    and analyses, making it a defining element of the film''s legacy and a key reason
+    for its enduring popularity and cultural impact.'
+  genre_mix:
+    genres:
+      drama: 90
+      thriller: 70
+      dark comedy: 60
+      action: 40
+      psychological: 90
+      crime: 30
+  matching_tags:
+    tags:
+      Identity Quest: The film is a deep dive into the Narrator's fractured psyche
+        and his journey of self-discovery, exploring themes of mental health, anxiety,
+        and the search for meaning.
+      Genre Autopsy: Fight Club deconstructs the tropes of masculinity, consumerism,
+        and societal rebellion, satirizing and subverting expectations of the action
+        and thriller genres.
+      Existential Grind: The film captures the bleakness and absurdity of modern life,
+        with the Narrator trapped in a cycle of consumerism and dissatisfaction before
+        seeking an extreme escape.
+  complex_search_queries:
+  - Movies exploring themes of identity and societal rebellion.
+  - Films with unreliable narrators and unexpected plot twists.
+  recommendations:
+  - title: Mr. Robot
+    year: 2015
+    explanation: This series shares a similar exploration of mental instability, societal
+      critique, and a dark, stylish aesthetic, appealing to fans of Fight Club's intense
+      and thought-provoking narrative.
+    imdb_id: tt4158110
+  - title: Taxi Driver
+    year: 1976
+    explanation: Both films feature alienated protagonists who descend into violence
+      and seek meaning in a corrupt society, offering a similar exploration of psychological
+      turmoil and urban decay.
+    imdb_id: tt0075314
+  - title: American Psycho
+    year: 2000
+    explanation: This film shares Fight Club's satirical take on consumerism and toxic
+      masculinity, with a dark, unsettling tone and a focus on a protagonist's fractured
+      identity.
+    imdb_id: tt0144084
+  - title: Seven
+    year: 1995
+    explanation: This film's dark, gritty atmosphere, exploration of nihilism, and
+      shocking twists will appeal to fans of Fight Club's intense and unpredictable
+      narrative.
+    imdb_id: tt0346278
+  - title: Donnie Darko
+    year: 2001
+    explanation: This film's exploration of mental illness, existential themes, and
+      a surreal, dreamlike quality will resonate with fans of Fight Club's mind-bending
+      narrative and introspective focus.
+    imdb_id: tt0246578
+  character_list:
+  - name: Narrator
+    actor_name: Edward Norton
+    tmdb_person_id: 819
+    description: The unnamed protagonist, suffering from insomnia and seeking a way
+      to change his life, who becomes involved with Tyler Durden and Fight Club.
+    group: Fight Club Members
+    aliases:
+    - Jack
+    image_file: output/character_images/819.jpg
+  - name: Tyler Durden
+    actor_name: Brad Pitt
+    tmdb_person_id: 287
+    description: The charismatic and rebellious soap maker who forms Fight Club with
+      the Narrator and embodies an anti-consumerist philosophy.
+    group: Fight Club Founders
+    image_file: output/character_images/287.jpg
+  - name: Marla Singer
+    actor_name: Helena Bonham Carter
+    tmdb_person_id: 1283
+    description: A fellow support group attendee who becomes romantically involved
+      with both the Narrator and Tyler Durden.
+    group: Support Group Attendees
+    image_file: output/character_images/1283.jpg
+  - name: Robert Paulson
+    actor_name: Meat Loaf
+    tmdb_person_id: 7470
+    description: A large man who becomes a prominent member of Fight Club and is known
+      for his catchphrase, 'His name is Robert Paulson.'
+    group: Fight Club Members
+    aliases:
+    - Bob
+    image_file: output/character_images/7470.jpg
+  - name: Angel Face
+    actor_name: Jared Leto
+    tmdb_person_id: 7499
+    description: A member of Fight Club who is brutally beaten by the Narrator.
+    group: Fight Club Members
+    image_file: output/character_images/7499.jpg
+  - name: Richard Chesler (Regional Manager)
+    actor_name: Zach Grenier
+    tmdb_person_id: 7471
+    description: The Narrator's boss at the auto recall company.
+    group: Corporate Employees
+    image_file: output/character_images/7471.jpg
+  - name: The Mechanic
+    actor_name: Holt McCallany
+    tmdb_person_id: 7497
+    description: A member of Fight Club.
+    group: Fight Club Members
+    image_file: output/character_images/7497.jpg
+  - name: Ricky
+    actor_name: Eion Bailey
+    tmdb_person_id: 7498
+    description: A member of Fight Club.
+    group: Fight Club Members
+    image_file: output/character_images/7498.jpg
+  - name: Intern at Hospital
+    actor_name: Richmond Arquette
+    tmdb_person_id: 7472
+    description: An intern the Narrator encounters.
+    group: Medical Professionals
+    image_file: output/character_images/7472.jpg
+  - name: Thomas at Remaining Men Together
+    actor_name: David Andrews
+    tmdb_person_id: 7219
+    description: A man the Narrator encounters at a support group.
+    group: Support Group Attendees
+    image_file: output/character_images/7219.jpg
+  - name: Group Leader at Remaining Men Together
+    actor_name: George Maguire
+    tmdb_person_id: 1129738
+    description: The leader of a support group the Narrator attends.
+    group: Support Group Leaders
+    image_file: output/character_images/1129738.jpg
+  - name: Weeping Woman - Onward and Upward
+    actor_name: Eugenie Bondurant
+    tmdb_person_id: 1317693
+    description: A woman the Narrator encounters at a support group.
+    group: Support Group Attendees
+    image_file: output/character_images/1317693.jpg
+  - name: Group Leader - Partners in Positivity
+    actor_name: Christina Cabot
+    tmdb_person_id: 68277
+    description: The leader of a support group the Narrator attends.
+    group: Support Group Leaders
+    image_file: output/character_images/68277.jpg
+  - name: Speaker - Free and Clear
+    actor_name: Sydney 'Big Dawg' Colston
+    tmdb_person_id: 202080
+    description: A speaker at a support group the Narrator attends.
+    group: Support Group Speakers
+    image_file: output/character_images/202080.jpg
+  - name: Chloe
+    actor_name: Rachel Singer
+    tmdb_person_id: 7473
+    description: A woman the Narrator encounters at a support group.
+    group: Support Group Attendees
+    image_file: output/character_images/7473.jpg
+  - name: Airline Check-In Attendant
+    actor_name: Christie Cronenweth
+    tmdb_person_id: 1172435
+    description: An airline employee.
+    group: Airline Employees
+    image_file: output/character_images/1172435.jpg
+  - name: Federated Motor Co. - Inspector Bird
+    actor_name: Tim DeZarn
+    tmdb_person_id: 956719
+    description: An inspector at the auto recall company.
+    group: Corporate Employees
+    image_file: output/character_images/956719.jpg
+  - name: Federated Motor Co. - Inspector Dent
+    actor_name: Ezra Buzzington
+    tmdb_person_id: 59285
+    description: An inspector at the auto recall company.
+    group: Corporate Employees
+    image_file: output/character_images/59285.jpg
+  - name: Business Woman on Plane
+    actor_name: Dierdre Downing-Jackson
+    tmdb_person_id: 1705289
+    description: A business woman on a plane.
+    group: Airline Passengers
+    image_file: output/character_images/1705289.jpg
+  - name: Airport Security Officer
+    actor_name: Bob Stephenson
+    tmdb_person_id: 17449
+    description: An airport security officer.
+    group: Airport Staff
+    image_file: output/character_images/17449.jpg
+  - name: Doorman at Person Towers
+    actor_name: Charlie Dell
+    tmdb_person_id: 62846
+    description: A doorman.
+    group: Building Staff
+  - name: Man in Suit
+    actor_name: Rob Lanza
+    tmdb_person_id: 530040
+    description: A man in a suit.
+    group: Unspecified
+    image_file: output/character_images/530040.jpg
+  - name: Walter
+    actor_name: David Lee Smith
+    tmdb_person_id: 56112
+    description: A man the Narrator encounters.
+    group: Unspecified
+    image_file: output/character_images/56112.jpg
+  - name: Food Court Maitre d'
+    actor_name: Joel Bissonnette
+    tmdb_person_id: 137425
+    description: A food court employee.
+    group: Food Court Staff
+    image_file: output/character_images/137425.jpg
+  - name: Steph
+    actor_name: Evan Mirand
+    tmdb_person_id: 175120
+    description: A member of Fight Club.
+    group: Fight Club Members
+    image_file: output/character_images/175120.jpg
+  - name: Next Month's Opponent
+    actor_name: Robby Robinson
+    tmdb_person_id: 1744132
+    description: A member of Fight Club.
+    group: Fight Club Members
+  - name: Cop at Marla's Building
+    actor_name: Lou Beatty Jr.
+    tmdb_person_id: 168924
+    description: A police officer.
+    group: Police
+    image_file: output/character_images/168924.jpg
+  - name: Detective Stern
+    actor_name: Thom Gossom Jr.
+    tmdb_person_id: 1219497
+    description: A detective.
+    group: Police
+    image_file: output/character_images/1219497.jpg
+  - name: Cosmetics Buyer
+    actor_name: Valerie Bickford
+    tmdb_person_id: 157938
+    description: A cosmetics buyer.
+    group: Unspecified
+    image_file: output/character_images/157938.jpg
+  - name: Lou
+    actor_name: Peter Iacangelo
+    tmdb_person_id: 7500
+    description: A man the Narrator encounters.
+    group: Unspecified
+  - name: Lou's Body Guard
+    actor_name: Carl Ciarfalio
+    tmdb_person_id: 42824
+    description: Lou's bodyguard.
+    group: Unspecified
+    image_file: output/character_images/42824.jpg
+  - name: Car Salesman
+    actor_name: Stuart Blumberg
+    tmdb_person_id: 40277
+    description: A car salesman.
+    group: Car Dealership Staff
+    image_file: output/character_images/40277.jpg
+  - name: First Man at Auto Shop
+    actor_name: Todd Peirce
+    tmdb_person_id: 1744135
+    description: A man at the auto shop.
+    group: Auto Shop Staff
+  - name: Second Man at Auto Shop
+    actor_name: Mark Fite
+    tmdb_person_id: 122805
+    description: A man at the auto shop.
+    group: Auto Shop Staff
+    image_file: output/character_images/122805.jpg
+  - name: Seminary Student
+    actor_name: Matt Winston
+    tmdb_person_id: 35521
+    description: A seminary student.
+    group: Unspecified
+    image_file: output/character_images/35521.jpg
+  - name: Raymond K. Hessel
+    actor_name: Joon Kim
+    tmdb_person_id: 1744137
+    description: A convenience store clerk who is forced to change his life.
+    group: Fight Club Members
+  - name: Bus Driver with Broken Nose
+    actor_name: Bennie Moore
+    tmdb_person_id: 1636371
+    description: A bus driver.
+    group: Unspecified
+  - name: Channel 4 Reporter
+    actor_name: Lauren Sánchez
+    tmdb_person_id: 1224996
+    description: A news reporter.
+    group: News Media
+    image_file: output/character_images/1224996.jpg
+  - name: Commissioner Jacobs
+    actor_name: Pat McNamara
+    tmdb_person_id: 1174793
+    description: A commissioner.
+    group: Unspecified
+    image_file: output/character_images/1174793.jpg
+  - name: Banquet Speaker
+    actor_name: Tyrone R. Livingston
+    tmdb_person_id: 1744138
+    description: A banquet speaker.
+    group: Unspecified
+  relationships:
+  - source: Narrator
+    target: Tyler Durden
+    type: Friend
+    directed: false
+    description: The Narrator and Tyler form a close bond, co-founding Fight Club
+      and engaging in various activities.
+    sentiment: complicated
+    strength: 5
+    tense: evolving
+  - source: Narrator
+    target: Marla Singer
+    type: Romantic
+    directed: false
+    description: The Narrator and Marla have a complex romantic relationship, marked
+      by attraction and emotional turmoil.
+    sentiment: complicated
+    strength: 3
+    tense: evolving
+  - source: Tyler Durden
+    target: Marla Singer
+    type: Romantic
+    directed: false
+    description: Tyler and Marla also have a romantic relationship, adding to the
+      complications.
+    sentiment: complicated
+    strength: 3
+    tense: evolving
+  - source: Narrator
+    target: Robert Paulson
+    type: Friend
+    directed: false
+    description: The Narrator and Bob are both members of Fight Club and share a bond
+      through the group.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Narrator
+    target: Angel Face
+    type: Rival
+    directed: true
+    description: The Narrator brutally beats Angel Face in Fight Club.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Narrator
+    target: Richard Chesler (Regional Manager)
+    type: Employer-Employee
+    directed: true
+    description: The Narrator works for Chesler.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Narrator
+    target: Raymond K. Hessel
+    type: Mentor
+    directed: true
+    description: The Narrator, along with Tyler, forces Raymond to change his life.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Tyler Durden
+    target: Robert Paulson
+    type: Friend
+    directed: false
+    description: Tyler and Bob are both members of Fight Club and share a bond through
+      the group.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Tyler Durden
+    target: Angel Face
+    type: Mentor
+    directed: true
+    description: Tyler is the leader of Fight Club.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Tyler Durden
+    target: Ricky
+    type: Mentor
+    directed: true
+    description: Tyler is the leader of Fight Club.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Tyler Durden
+    target: The Mechanic
+    type: Mentor
+    directed: true
+    description: Tyler is the leader of Fight Club.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Tyler Durden
+    target: Steph
+    type: Mentor
+    directed: true
+    description: Tyler is the leader of Fight Club.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Tyler Durden
+    target: Next Month's Opponent
+    type: Mentor
+    directed: true
+    description: Tyler is the leader of Fight Club.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Robert Paulson
+    target: Angel Face
+    type: Friend
+    directed: false
+    description: Bob and Angel Face are both members of Fight Club and share a bond
+      through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Robert Paulson
+    target: Ricky
+    type: Friend
+    directed: false
+    description: Bob and Ricky are both members of Fight Club and share a bond through
+      the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Robert Paulson
+    target: The Mechanic
+    type: Friend
+    directed: false
+    description: Bob and the Mechanic are both members of Fight Club and share a bond
+      through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Robert Paulson
+    target: Steph
+    type: Friend
+    directed: false
+    description: Bob and Steph are both members of Fight Club and share a bond through
+      the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Robert Paulson
+    target: Next Month's Opponent
+    type: Friend
+    directed: false
+    description: Bob and Next Month's Opponent are both members of Fight Club and
+      share a bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Angel Face
+    target: Ricky
+    type: Friend
+    directed: false
+    description: Angel Face and Ricky are both members of Fight Club and share a bond
+      through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Angel Face
+    target: The Mechanic
+    type: Friend
+    directed: false
+    description: Angel Face and the Mechanic are both members of Fight Club and share
+      a bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Angel Face
+    target: Steph
+    type: Friend
+    directed: false
+    description: Angel Face and Steph are both members of Fight Club and share a bond
+      through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Angel Face
+    target: Next Month's Opponent
+    type: Friend
+    directed: false
+    description: Angel Face and Next Month's Opponent are both members of Fight Club
+      and share a bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Ricky
+    target: The Mechanic
+    type: Friend
+    directed: false
+    description: Ricky and the Mechanic are both members of Fight Club and share a
+      bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Ricky
+    target: Steph
+    type: Friend
+    directed: false
+    description: Ricky and Steph are both members of Fight Club and share a bond through
+      the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Ricky
+    target: Next Month's Opponent
+    type: Friend
+    directed: false
+    description: Ricky and Next Month's Opponent are both members of Fight Club and
+      share a bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: The Mechanic
+    target: Steph
+    type: Friend
+    directed: false
+    description: The Mechanic and Steph are both members of Fight Club and share a
+      bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: The Mechanic
+    target: Next Month's Opponent
+    type: Friend
+    directed: false
+    description: The Mechanic and Next Month's Opponent are both members of Fight
+      Club and share a bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Steph
+    target: Next Month's Opponent
+    type: Friend
+    directed: false
+    description: Steph and Next Month's Opponent are both members of Fight Club and
+      share a bond through the group.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  tmdb_user_review_summary: User reviews for 'Fight Club' highlight a range of opinions.
+    Some viewers consider it an all-time favorite, praising the storyline and rewatchability.
+    Others acknowledge its cultural impact and cult following, while also noting its
+    controversial nature and initial box office failure. Common themes include the
+    film's exploration of belief systems and the actions of individuals within a group.
+    The film's impact on the 90s cinema is also mentioned.
+  plot_with_character_constraints_and_relations: The Narrator, suffering from insomnia,
+    finds solace in support groups, a habit disrupted by the arrival of Marla Singer,
+    who also attends these meetings. The Narrator then meets Tyler Durden, and they
+    form Fight Club, a place for men to release their aggression. Robert Paulson,
+    Angel Face, The Mechanic, Ricky, Steph, and Next Month's Opponent all become members,
+    forming bonds within the club. As Fight Club grows, so does Tyler's influence,
+    leading to escalating acts of chaos. The Narrator's professional life, working
+    under Richard Chesler (Regional Manager), becomes increasingly disconnected from
+    his double life. The Narrator's relationship with Marla becomes more complicated,
+    as she becomes entangled with Tyler. The Narrator and Tyler confront Raymond K.
+    Hessel, forcing him to change his life. The Narrator's grip on reality loosens
+    as he uncovers the truth about Tyler and Fight Club's true purpose, leading to
+    a confrontation with Angel Face and a fight.
+- movie_title: City of God
+  movie_year: '2002'
+  tmdb_movie_id: 598
+  imdb_id: tt0317248
+  character_profile: The film presents a sprawling ensemble cast, primarily focusing
+    on the children and teenagers growing up in the Cidade de Deus favela. Rocket,
+    the narrator, serves as a central figure, his perspective guiding the audience
+    through the escalating violence and the complex relationships within the community.
+    The characters are diverse, ranging from aspiring gangsters like Lil' Zé to those
+    seeking escape through art and photography. The film portrays the brutal realities
+    of their lives, highlighting their resilience, ambition, and the devastating impact
+    of poverty and crime on their development.
+  character_profile_big5:
+    Openness:
+      score: 3
+      explanation: Rocket's willingness to adapt to the harsh realities of the favela
+        and his resourcefulness suggest a moderate level of openness to experience.
+    Conscientiousness:
+      score: 2
+      explanation: Rocket's actions are often driven by immediate needs and survival
+        instincts, showing a lack of long-term planning or adherence to strict rules.
+    Extraversion:
+      score: 3
+      explanation: Rocket interacts with a wide range of people in the favela, but
+        his focus is on survival and his actions are driven by the environment, not
+        necessarily a desire for social interaction.
+    Agreeableness:
+      score: 2
+      explanation: Rocket's actions are often self-serving, and he is willing to use
+        violence and manipulation to achieve his goals, showing low agreeableness.
+    Neuroticism:
+      score: 4
+      explanation: Rocket experiences significant stress and trauma due to the violence
+        and poverty of his environment, indicating a high level of neuroticism.
+  character_profile_myersbriggs:
+    type: ISTP
+    explanation: Introverted, Sensing, Thinking, Perceiving (Crafter). Rocket is a
+      pragmatic and resourceful individual who relies on his ability to react to immediate
+      situations and use his skills to survive in a dangerous environment.
+  critical_reception: City of God received widespread critical acclaim internationally.
+    Critics lauded its raw and unflinching portrayal of violence, its dynamic visual
+    style, and its compelling narrative structure. The film was praised for its authenticity,
+    its strong performances from a largely non-professional cast, and its exploration
+    of complex social issues. It was nominated for several Academy Awards and won
+    numerous international awards, solidifying its status as a landmark film in world
+    cinema. The film's impact extended beyond its artistic merit, sparking discussions
+    about social inequality and the realities of life in Brazilian favelas.
+  visual_style: The visual style of City of God is characterized by its frenetic energy,
+    vibrant colors, and dynamic camerawork. The film utilizes a variety of techniques,
+    including quick cuts, handheld camera movements, and slow-motion sequences, to
+    create a sense of urgency and immediacy. The cinematography is often gritty and
+    realistic, capturing the harsh realities of the favela environment. The use of
+    natural light and location shooting further enhances the film's authenticity.
+    The film's editing is fast-paced and rhythmic, mirroring the chaotic and unpredictable
+    nature of the characters' lives. The overall effect is a visually stunning and
+    emotionally gripping cinematic experience.
+  most_talked_about_related_topic: One of the most talked-about aspects of City of
+    God is its unflinching depiction of violence, particularly the graphic portrayal
+    of child soldiers and gang warfare. The film's realistic and often brutal scenes
+    sparked considerable debate about the ethics of portraying violence on screen.
+    While some critics argued that the violence was excessive and gratuitous, others
+    defended it as a necessary element to convey the harsh realities of the characters'
+    lives and the devastating impact of crime on the community. The film's impact
+    on discussions about violence in cinema and its social commentary remains significant.
+  genre_mix:
+    genres:
+      crime: 90
+      drama: 85
+      thriller: 60
+      action: 40
+      biography: 10
+      history: 5
+  matching_tags: {}
+  complex_search_queries:
+  - Brazilian crime dramas based on true stories
+  - Movies about child soldiers and gang violence
+  recommendations:
+  - title: Gomorrah
+    year: 2008
+    explanation: This Italian crime drama shares the gritty realism, violence, and
+      exploration of organized crime that are central to 'City of God,' offering a
+      similar intense viewing experience.
+    imdb_id: tt0929425
+  - title: A Prophet
+    year: 2009
+    explanation: This French crime drama, like 'City of God', follows a young man's
+      rise through a violent criminal underworld, focusing on survival and moral compromises.
+    imdb_id: tt1235166
+  - title: Elite Squad
+    year: 2007
+    explanation: This Brazilian action film, also set in Rio de Janeiro, offers a
+      similarly intense and realistic portrayal of violence and corruption, with a
+      focus on police operations.
+    imdb_id: tt0861739
+  - title: The Untouchables
+    year: 1987
+    explanation: A classic crime drama with a high IMDb rating, it provides a similar
+      exploration of good versus evil, with a focus on law enforcement in a violent
+      environment.
+    imdb_id: tt0094226
+  - title: Eastern Promises
+    year: 2007
+    explanation: This crime thriller, like 'City of God', features a compelling narrative,
+      intense violence, and a focus on the criminal underworld, with a strong performance
+      from Viggo Mortensen.
+    imdb_id: tt0765443
+  character_list:
+  - name: Buscapé - Rocket
+    actor_name: Alexandre Rodrigues
+    tmdb_person_id: 8595
+    description: The narrator and protagonist, Rocket grows up in the City of God,
+      witnessing the violence and striving for a better life through photography.
+    group: Narrator/Protagonist
+    aliases:
+    - Rocket
+    image_file: output/character_images/8595.jpg
+  - name: Zé Pequeno - Li'l Zé
+    actor_name: Leandro Firmino
+    tmdb_person_id: 8596
+    description: The ruthless and ambitious leader of a gang in the City of God, Zé
+      Pequeno is the primary antagonist.
+    group: Gang Leaders
+    aliases:
+    - Li'l Zé
+    - Zé
+    image_file: output/character_images/8596.jpg
+  - name: Bené - Benny
+    actor_name: Phellipe Haagensen
+    tmdb_person_id: 8597
+    description: Zé Pequeno's best friend and a key member of his gang, Benny is more
+      level-headed than Zé and tries to maintain peace.
+    group: Gang Members
+    aliases:
+    - Benny
+    image_file: output/character_images/8597.jpg
+  - name: Dadinho - Li'l Dice
+    actor_name: Douglas Silva
+    tmdb_person_id: 8598
+    description: A young criminal who becomes a ruthless gang leader, later known
+      as Zé Pequeno.
+    group: Gang Leaders
+    aliases:
+    - Li'l Dice
+    image_file: output/character_images/8598.jpg
+  - name: Cabeleira - Shaggy
+    actor_name: Jonathan Haagensen
+    tmdb_person_id: 8599
+    description: A member of Zé Pequeno's gang.
+    group: Gang Members
+    aliases:
+    - Shaggy
+    image_file: output/character_images/8599.jpg
+  - name: Sandro Cenoura - Carrot
+    actor_name: Matheus Nachtergaele
+    tmdb_person_id: 8600
+    description: A criminal who is part of the gang.
+    group: Gang Members
+    aliases:
+    - Carrot
+    image_file: output/character_images/8600.jpg
+  - name: Mané Galinha - Knockout Ned
+    actor_name: Seu Jorge
+    tmdb_person_id: 5659
+    description: A criminal who seeks revenge against Zé Pequeno after his brother
+      is killed.
+    group: Revenge Seekers
+    aliases:
+    - Knockout Ned
+    image_file: output/character_images/5659.jpg
+  - name: Alicate - Clipper
+    actor_name: Jefechander Suplino
+    tmdb_person_id: 8601
+    description: A member of Zé Pequeno's gang.
+    group: Gang Members
+    aliases:
+    - Clipper
+    image_file: output/character_images/8601.jpg
+  - name: Angélica
+    actor_name: Alice Braga
+    tmdb_person_id: 8602
+    description: Rocket's love interest.
+    group: Love Interests
+    image_file: output/character_images/8602.jpg
+  - name: Barbantinho - Stringy
+    actor_name: Emerson Gomes
+    tmdb_person_id: 3883645
+    description: A young boy who is part of the gang.
+    group: Gang Members
+    aliases:
+    - Stringy
+  - name: Barbantinho Adulto - Older Stringy
+    actor_name: Edson Oliveira
+    tmdb_person_id: 3582522
+    description: An older version of Stringy.
+    group: Gang Members
+    aliases:
+    - Stringy
+    image_file: output/character_images/3582522.jpg
+  - name: Bené Criança - Young Benny
+    actor_name: Michel Gomes
+    tmdb_person_id: 1032387
+    description: A younger version of Benny.
+    group: Gang Members
+    aliases:
+    - Benny
+    image_file: output/character_images/1032387.jpg
+  - name: Berenice - Bernice
+    actor_name: Roberta Rodrigues
+    tmdb_person_id: 8603
+    description: A woman who is part of the gang.
+    group: Gang Members
+    aliases:
+    - Bernice
+    image_file: output/character_images/8603.jpg
+  - name: Buscapé Criança - Young Rocket
+    actor_name: Luis Otávio
+    tmdb_person_id: 8604
+    description: A younger version of Rocket.
+    group: Narrator/Protagonist
+    aliases:
+    - Rocket
+    image_file: output/character_images/8604.jpg
+  - name: Cabeção - Melonhead
+    actor_name: Kiko Marques
+    tmdb_person_id: 2483242
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Melonhead
+    image_file: output/character_images/2483242.jpg
+  - name: Editor do Jornal - Rogerio Reis
+    actor_name: Gustavo Engracia
+    tmdb_person_id: 2700766
+    description: The editor of the newspaper where Rocket works.
+    group: Journalists
+    image_file: output/character_images/2700766.jpg
+  - name: Filé-com-Fritas - Steak and Fries
+    actor_name: Darlan Cunha
+    tmdb_person_id: 8605
+    description: A young boy who is part of the gang.
+    group: Gang Members
+    aliases:
+    - Steak and Fries
+    image_file: output/character_images/8605.jpg
+  - name: Gelson - Gerson
+    actor_name: Robson Rocha
+    tmdb_person_id: 2596718
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Gerson
+  - name: Lampião
+    actor_name: Thiago Martins
+    tmdb_person_id: 50362
+    description: A member of the gang.
+    group: Gang Members
+    image_file: output/character_images/50362.jpg
+  - name: Lúcia Maracanã
+    actor_name: Leandra Miranda
+    tmdb_person_id: 3610390
+    description: A woman who is part of the gang.
+    group: Gang Members
+  - name: Marina Cintra
+    actor_name: Graziella Moretto
+    tmdb_person_id: 54996
+    description: A woman who is part of the gang.
+    group: Gang Members
+    image_file: output/character_images/54996.jpg
+  - name: Marreco - Goose
+    actor_name: Renato de Souza
+    tmdb_person_id: 2596743
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Goose
+    image_file: output/character_images/2596743.jpg
+  - name: Mulher do Paraíba - Shorty's Wife
+    actor_name: Karina Falcão
+    tmdb_person_id: 2094628
+    description: Shorty's wife.
+    group: Family Members
+  - name: Namorada do Galinha - Knockout's Girlfriend
+    actor_name: Sabrina Rosa
+    tmdb_person_id: 2002288
+    description: Knockout Ned's girlfriend.
+    group: Love Interests
+    image_file: output/character_images/2002288.jpg
+  - name: Neguinho - Blacky
+    actor_name: Rubens Sabino
+    tmdb_person_id: 2004734
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Blacky
+  - name: Otávio
+    actor_name: Kikito Junqueira
+    tmdb_person_id: 1853689
+    description: A member of the gang.
+    group: Gang Members
+    image_file: output/character_images/1853689.jpg
+  - name: Pai Buscapé - Rocket's Father
+    actor_name: Edson Montenegro
+    tmdb_person_id: 1546242
+    description: Rocket's father.
+    group: Family Members
+    image_file: output/character_images/1546242.jpg
+  - name: Paraíba - Shorty
+    actor_name: Gero Camilo
+    tmdb_person_id: 55105
+    description: A character in the movie.
+    group: Civilians
+    aliases:
+    - Shorty
+    image_file: output/character_images/55105.jpg
+  - name: Rafael
+    actor_name: Felipe Paulino
+    tmdb_person_id: 2097770
+    description: A member of the gang.
+    group: Gang Members
+    image_file: output/character_images/2097770.jpg
+  - name: Thiago - Tiago
+    actor_name: Daniel Zettel
+    tmdb_person_id: 1372457
+    description: A character in the movie.
+    group: Civilians
+    aliases:
+    - Tiago
+  - name: Tio Sam - Uncle Sam
+    actor_name: Charles Paraventi
+    tmdb_person_id: 1181464
+    description: A character in the movie.
+    group: Civilians
+    aliases:
+    - Uncle Sam
+    image_file: output/character_images/1181464.jpg
+  - name: Touro
+    actor_name: Luiz Carlos Ribeiro Seixas
+    tmdb_person_id: 4910265
+    description: A member of the gang.
+    group: Gang Members
+  - name: Tuba
+    actor_name: Paulo 'Jacaré' César
+    tmdb_person_id: 4910267
+    description: A member of the gang.
+    group: Gang Members
+  - name: Vizinha do Paraíba - Shorty's Neighbor
+    actor_name: Dani Ornellas
+    tmdb_person_id: 560263
+    description: Shorty's neighbor.
+    group: Civilians
+    image_file: output/character_images/560263.jpg
+  - name: Caixa Baixa - Runts
+    actor_name: Bernardo Santos
+    tmdb_person_id: 2100447
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Runts
+  - name: Caixa Baixa - Runts
+    actor_name: Diego Batista
+    tmdb_person_id: 4910271
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Runts
+  - name: Caixa Baixa - Runts
+    actor_name: Diego Ferreira
+    tmdb_person_id: 4910273
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Runts
+  - name: Caixa Baixa - Runts
+    actor_name: Marcio Vinicios
+    tmdb_person_id: 4910276
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Runts
+  - name: Caixa Baixa - Runts
+    actor_name: Micael Borges
+    tmdb_person_id: 1245030
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Runts
+    image_file: output/character_images/1245030.jpg
+  - name: Caixa Baixa - Runts
+    actor_name: Rafael de Castro
+    tmdb_person_id: 4910278
+    description: A member of the gang.
+    group: Gang Members
+    aliases:
+    - Runts
+  relationships:
+  - source: Buscapé - Rocket
+    target: Zé Pequeno - Li'l Zé
+    type: Witness
+    directed: true
+    description: Rocket observes Zé Pequeno's rise to power and the violence he inflicts.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Bené - Benny
+    type: Friend
+    directed: false
+    description: Zé Pequeno and Benny are best friends and partners in crime.
+    sentiment: complicated
+    strength: 5
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Dadinho - Li'l Dice
+    type: Predecessor
+    directed: true
+    description: Zé Pequeno takes over from Dadinho's gang.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Mané Galinha - Knockout Ned
+    type: Rival
+    directed: false
+    description: Zé Pequeno and Knockout Ned are enemies, leading to a violent conflict.
+    sentiment: negative
+    strength: 5
+    tense: past
+  - source: Buscapé - Rocket
+    target: Angélica
+    type: Love Interest
+    directed: false
+    description: Rocket is in love with Angélica.
+    sentiment: positive
+    strength: 3
+    tense: evolving
+  - source: Buscapé - Rocket
+    target: Buscapé Criança - Young Rocket
+    type: Self
+    directed: false
+    description: Rocket's younger self.
+    sentiment: neutral
+    strength: 5
+    tense: past
+  - source: Bené - Benny
+    target: Dadinho - Li'l Dice
+    type: Friend
+    directed: false
+    description: Benny and Dadinho are friends.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Mané Galinha - Knockout Ned
+    target: Namorada do Galinha - Knockout's Girlfriend
+    type: Love Interest
+    directed: false
+    description: Knockout Ned is in love with his girlfriend.
+    sentiment: positive
+    strength: 4
+    tense: past
+  - source: Buscapé - Rocket
+    target: Pai Buscapé - Rocket's Father
+    type: Family
+    directed: false
+    description: Rocket's father.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Cabeleira - Shaggy
+    type: Gang Member
+    directed: false
+    description: Shaggy is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Alicate - Clipper
+    type: Gang Member
+    directed: false
+    description: Clipper is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Sandro Cenoura - Carrot
+    type: Gang Member
+    directed: false
+    description: Carrot is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Barbantinho - Stringy
+    type: Gang Member
+    directed: false
+    description: Stringy is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Berenice - Bernice
+    type: Gang Member
+    directed: false
+    description: Bernice is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Cabeção - Melonhead
+    type: Gang Member
+    directed: false
+    description: Melonhead is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Filé-com-Fritas - Steak and Fries
+    type: Gang Member
+    directed: false
+    description: Steak and Fries is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Gelson - Gerson
+    type: Gang Member
+    directed: false
+    description: Gerson is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Lampião
+    type: Gang Member
+    directed: false
+    description: Lampião is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Lúcia Maracanã
+    type: Gang Member
+    directed: false
+    description: Lúcia Maracanã is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Marina Cintra
+    type: Gang Member
+    directed: false
+    description: Marina Cintra is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Marreco - Goose
+    type: Gang Member
+    directed: false
+    description: Goose is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Neguinho - Blacky
+    type: Gang Member
+    directed: false
+    description: Blacky is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Otávio
+    type: Gang Member
+    directed: false
+    description: Otávio is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Rafael
+    type: Gang Member
+    directed: false
+    description: Rafael is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Touro
+    type: Gang Member
+    directed: false
+    description: Touro is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Tuba
+    type: Gang Member
+    directed: false
+    description: Tuba is a member of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Zé Pequeno - Li'l Zé
+    target: Caixa Baixa - Runts
+    type: Gang Member
+    directed: false
+    description: The Runts are members of Zé Pequeno's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Cabeleira - Shaggy
+    type: Gang Member
+    directed: false
+    description: Shaggy is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Alicate - Clipper
+    type: Gang Member
+    directed: false
+    description: Clipper is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Sandro Cenoura - Carrot
+    type: Gang Member
+    directed: false
+    description: Carrot is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Barbantinho - Stringy
+    type: Gang Member
+    directed: false
+    description: Stringy is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Berenice - Bernice
+    type: Gang Member
+    directed: false
+    description: Bernice is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Cabeção - Melonhead
+    type: Gang Member
+    directed: false
+    description: Melonhead is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Filé-com-Fritas - Steak and Fries
+    type: Gang Member
+    directed: false
+    description: Steak and Fries is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Gelson - Gerson
+    type: Gang Member
+    directed: false
+    description: Gerson is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Lampião
+    type: Gang Member
+    directed: false
+    description: Lampião is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Lúcia Maracanã
+    type: Gang Member
+    directed: false
+    description: Lúcia Maracanã is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Marina Cintra
+    type: Gang Member
+    directed: false
+    description: Marina Cintra is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Marreco - Goose
+    type: Gang Member
+    directed: false
+    description: Goose is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Neguinho - Blacky
+    type: Gang Member
+    directed: false
+    description: Blacky is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Otávio
+    type: Gang Member
+    directed: false
+    description: Otávio is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Rafael
+    type: Gang Member
+    directed: false
+    description: Rafael is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Touro
+    type: Gang Member
+    directed: false
+    description: Touro is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Tuba
+    type: Gang Member
+    directed: false
+    description: Tuba is a member of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Bené - Benny
+    target: Caixa Baixa - Runts
+    type: Gang Member
+    directed: false
+    description: The Runts are members of Benny's gang.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Buscapé - Rocket
+    target: Editor do Jornal - Rogerio Reis
+    type: Professional
+    directed: true
+    description: Rocket works for the editor of the newspaper.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Mané Galinha - Knockout Ned
+    target: Bené - Benny
+    type: Rival
+    directed: true
+    description: Knockout Ned is a rival of Benny.
+    sentiment: negative
+    strength: 5
+    tense: past
+  - source: Bené - Benny
+    target: Buscapé - Rocket
+    type: Acquaintance
+    directed: false
+    description: Benny and Rocket are acquaintances.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  tmdb_user_review_summary: User reviews of 'City of God' highlight its unflinching
+    portrayal of violence and crime in the slums of Rio de Janeiro. The film is praised
+    for its gritty realism and documentary-like feel, with one reviewer noting its
+    enduring quality. The narrative follows 'Rocket' as he navigates the brutal gang
+    warfare, offering a perspective on the escalating criminality within the community.
+    The film's depiction of societal breakdown and the growth of crime, from petty
+    offenses to larger-scale operations, is a key element. The film's setting in the
+    real-life Cidade de Deus, a housing project, further enhances its authenticity.
+    The reviews emphasize the film's brutal and attention-grabbing nature.
+  plot_with_character_constraints_and_relations: In the favelas of Rio de Janeiro,
+    the life of **Buscapé - Rocket** unfolds amidst escalating gang violence. As a
+    young boy (**Buscapé Criança - Young Rocket**), he witnesses the rise of **Dadinho
+    - Li'l Dice**, a ruthless criminal who is later supplanted by **Zé Pequeno - Li'l
+    Zé**. **Buscapé - Rocket** observes **Zé Pequeno - Li'l Zé's** brutal reign, marked
+    by turf wars and escalating crime. **Zé Pequeno - Li'l Zé** builds his power with
+    a gang that includes **Cabeleira - Shaggy**, **Alicate - Clipper**, **Sandro Cenoura
+    - Carrot**, **Barbantinho - Stringy**, **Berenice - Bernice**, **Cabeção - Melonhead**,
+    **Filé-com-Fritas - Steak and Fries**, **Gelson - Gerson**, **Lampião**, **Lúcia
+    Maracanã**, **Marina Cintra**, **Marreco - Goose**, **Neguinho - Blacky**, **Otávio**,
+    **Rafael**, **Touro**, **Tuba**, and the **Caixa Baixa - Runts**. **Zé Pequeno
+    - Li'l Zé's** best friend and partner in crime is **Bené - Benny**, but **Bené
+    - Benny** also builds his own gang, composed of **Cabeleira - Shaggy**, **Alicate
+    - Clipper**, **Sandro Cenoura - Carrot**, **Barbantinho - Stringy**, **Berenice
+    - Bernice**, **Cabeção - Melonhead**, **Filé-com-Fritas - Steak and Fries**, **Gelson
+    - Gerson**, **Lampião**, **Lúcia Maracanã**, **Marina Cintra**, **Marreco - Goose**,
+    **Neguinho - Blacky**, **Otávio**, **Rafael**, **Touro**, **Tuba**, and the **Caixa
+    Baixa - Runts**. **Bené - Benny** and **Zé Pequeno - Li'l Zé** later become rivals
+    with **Mané Galinha - Knockout Ned**, leading to brutal clashes. **Buscapé - Rocket**,
+    meanwhile, dreams of a life outside the violence, and is in love with **Angélica**.
+    He works for the **Editor do Jornal - Rogerio Reis**, and his father, **Pai Buscapé
+    - Rocket's Father**, tries to keep him safe. As the violence intensifies, **Bené
+    - Benny**'s influence wanes, and **Zé Pequeno - Li'l Zé**'s gang dominates. The
+    film culminates in a bloody showdown, with **Buscapé - Rocket** capturing the
+    escalating violence through his photography, ultimately documenting the tragic
+    cycle of crime.
+- movie_title: A Dog's Will
+  movie_year: '2000'
+  tmdb_movie_id: 40096
+  imdb_id: tt0271383
+  character_profile: The film centers around the interconnected lives of several characters
+    in a small Brazilian town, primarily focusing on the relationships between them
+    and their interactions with the stray dogs that roam the streets. The characters
+    are a diverse group, including a young woman struggling with her identity, a lonely
+    elderly man, and a group of children who find solace in caring for the dogs. The
+    dogs themselves are not just background elements; they are integral to the narrative,
+    reflecting the characters' emotions and acting as a unifying force within the
+    community. Their stories intertwine, revealing the complexities of human connection
+    and the resilience of the human spirit.
+  character_profile_big5:
+    Openness:
+      score: 4
+      explanation: The main character likely shows openness by embracing new experiences
+        and perspectives related to the dog's journey.
+    Conscientiousness:
+      score: 3
+      explanation: The character's level of conscientiousness would depend on the
+        specific narrative, but likely shows some level of responsibility and care
+        for the dog.
+    Extraversion:
+      score: 3
+      explanation: The character's extraversion would depend on the specific narrative,
+        but likely shows some level of social interaction.
+    Agreeableness:
+      score: 4
+      explanation: The character likely shows agreeableness through compassion and
+        empathy towards the dog.
+    Neuroticism:
+      score: 2
+      explanation: The character's neuroticism would depend on the specific narrative,
+        but likely shows some level of emotional stability.
+  character_profile_myersbriggs:
+    type: ISFJ
+    explanation: Introverted, Sensing, Feeling, Judging (Protector). The character
+      likely demonstrates ISFJ traits through their caring nature, attention to detail,
+      and dedication to the dog's well-being.
+  critical_reception: A Dog's Will received generally positive reviews, particularly
+    in Brazil and other Latin American countries. Critics praised its sensitive portrayal
+    of human relationships and its heartwarming depiction of the bond between humans
+    and animals. The film was lauded for its realistic and unpretentious approach,
+    avoiding melodrama in favor of a more nuanced exploration of everyday life. Some
+    international critics noted its gentle pacing and its ability to evoke a strong
+    sense of place. While not a blockbuster, it resonated with audiences who appreciated
+    its focus on empathy and community.
+  visual_style: The visual style of 'A Dog's Will' is characterized by its naturalistic
+    approach, aiming for a sense of realism and authenticity. The cinematography utilizes
+    a handheld camera style at times, contributing to the documentary feel. The film
+    often employs long takes and observational shots, allowing the story to unfold
+    organically. The color palette is muted, reflecting the dusty environment of the
+    Brazilian town. The camera focuses on capturing the everyday details of life,
+    from the bustling streets to the quiet moments of reflection. The film's visual
+    language is simple yet effective, emphasizing the emotional core of the story
+    and the characters' connection to their surroundings. The use of natural light
+    is prominent, enhancing the sense of realism.
+  most_talked_about_related_topic: One of the most discussed aspects of 'A Dog's Will'
+    is its portrayal of the stray dogs and the ethical considerations surrounding
+    their treatment. The film sparked conversations about animal welfare and the responsibilities
+    of humans towards animals in urban environments. The film's depiction of the dogs'
+    struggles for survival and their interactions with the human characters prompted
+    discussions about compassion, empathy, and the importance of providing care for
+    vulnerable creatures. The film's focus on this topic resonated with animal rights
+    activists and viewers concerned with the well-being of animals.
+  genre_mix:
+    genres:
+      drama: 70
+      family: 60
+      comedy: 30
+      adventure: 20
+      romance: 10
+      fantasy: 5
+  matching_tags:
+    tags:
+      Accidental Wholesome: The movie likely features a character who, through circumstances,
+        finds themselves in heartwarming situations and forms an unexpected bond with
+        the dog.
+      Analog Heartbeats: The movie likely focuses on the bond between the dog and
+        the character, emphasizing the importance of companionship and emotional connection.
+  complex_search_queries:
+  - Brazilian films about community and relationships
+  - Movies exploring human-animal bonds and social issues
+  recommendations:
+  - title: A Man Called Otto
+    year: 2022
+    explanation: This film shares a similar heartwarming vibe and explores themes
+      of unexpected friendship, making it a great choice for fans of 'A Dog's Will'.
+    imdb_id: tt7405458
+  - title: Marley & Me
+    year: 2008
+    explanation: With its focus on the bond between a person and a dog, and its blend
+      of humor and emotion, this film offers a comparable viewing experience.
+    imdb_id: tt0822832
+  - title: The Art of Racing in the Rain
+    year: 2019
+    explanation: This movie, like 'A Dog's Will', explores the deep connection between
+      humans and dogs, providing a similar emotional journey.
+    imdb_id: tt1478839
+  - title: Because of Winn-Dixie
+    year: 2005
+    explanation: This film shares a similar family-friendly vibe and heartwarming
+      themes, making it a great choice for fans of 'A Dog's Will'.
+    imdb_id: tt0317132
+  - title: 'Hachi: A Dog''s Tale'
+    year: 2009
+    explanation: This film, with its focus on the loyalty and love between a dog and
+      its owner, offers a similar emotional experience to 'A Dog's Will'.
+    imdb_id: tt1028532
+  character_list:
+  - name: João Grilo
+    actor_name: Matheus Nachtergaele
+    tmdb_person_id: 8600
+    description: A cunning and resourceful trickster, always looking for a way to
+      survive and get ahead, often with Chicó.
+    group: Protagonists
+    image_file: output/character_images/8600.jpg
+  - name: Chicó
+    actor_name: Selton Mello
+    tmdb_person_id: 87341
+    description: João Grilo's loyal and often naive companion, prone to exaggeration
+      and fear.
+    group: Protagonists
+    image_file: output/character_images/87341.jpg
+  - name: Padre João
+    actor_name: Rogério Cardoso
+    tmdb_person_id: 123757
+    description: The local priest, concerned with his reputation and the church's
+      finances.
+    group: Church Officials
+    image_file: output/character_images/123757.jpg
+  - name: Dora
+    actor_name: Denise Fraga
+    tmdb_person_id: 123758
+    description: A woman who is the wife of Eurico and is deeply religious.
+    group: Townspeople
+    image_file: output/character_images/123758.jpg
+  - name: Eurico
+    actor_name: Diogo Vilela
+    tmdb_person_id: 102551
+    description: The husband of Dora, and a man of means.
+    group: Townspeople
+    image_file: output/character_images/102551.jpg
+  - name: Diabo
+    actor_name: Luís Melo
+    tmdb_person_id: 90219
+    description: The Devil, who attempts to tempt and corrupt the characters.
+    group: Supernatural Beings
+    image_file: output/character_images/90219.jpg
+  - name: Rosinha
+    actor_name: Virginia Cavendish
+    tmdb_person_id: 123759
+    description: A young woman and the object of João Grilo's and Chicó's affections.
+    group: Townspeople
+    image_file: output/character_images/123759.jpg
+  - name: Vicentão
+    actor_name: Bruno Garcia
+    tmdb_person_id: 123760
+    description: A strong and imposing man, often involved in conflicts.
+    group: Townspeople
+    image_file: output/character_images/123760.jpg
+  - name: Joaquim Brejeiro
+    actor_name: Enrique Díaz
+    tmdb_person_id: 1126875
+    description: A character involved in the events of the story, often interacting
+      with the protagonists.
+    group: Townspeople
+    image_file: output/character_images/1126875.jpg
+  - name: Jesus Cristo / Emanuel
+    actor_name: Maurício Gonçalves
+    tmdb_person_id: 87340
+    description: Jesus Christ, appearing in the story to judge the characters.
+    group: Supernatural Beings
+    aliases:
+    - Emanuel
+    image_file: output/character_images/87340.jpg
+  - name: Cabo 70
+    actor_name: Aramis Trindade
+    tmdb_person_id: 123761
+    description: A police officer, representing authority.
+    group: Law Enforcement
+    image_file: output/character_images/123761.jpg
+  - name: Severino de Aracaju
+    actor_name: Marco Nanini
+    tmdb_person_id: 123762
+    description: A character who interacts with the other characters, often in comedic
+      situations.
+    group: Townspeople
+    image_file: output/character_images/123762.jpg
+  - name: Major Antônio Moraes
+    actor_name: Paulo Goulart
+    tmdb_person_id: 130046
+    description: A high-ranking military officer.
+    group: Law Enforcement
+    image_file: output/character_images/130046.jpg
+  - name: Bispo
+    actor_name: Lima Duarte
+    tmdb_person_id: 123763
+    description: A high-ranking church official.
+    group: Church Officials
+    image_file: output/character_images/123763.jpg
+  - name: Nossa Senhora
+    actor_name: Fernanda Montenegro
+    tmdb_person_id: 10055
+    description: The Virgin Mary, appearing in the story to judge the characters.
+    group: Supernatural Beings
+    image_file: output/character_images/10055.jpg
+  relationships:
+  - source: João Grilo
+    target: Chicó
+    type: Friend
+    directed: false
+    description: João Grilo and Chicó are best friends and partners in crime.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: João Grilo
+    target: Rosinha
+    type: Interest
+    directed: true
+    description: João Grilo is attracted to Rosinha.
+    sentiment: positive
+    strength: 3
+    tense: present
+  - source: Chicó
+    target: Rosinha
+    type: Interest
+    directed: true
+    description: Chicó also has feelings for Rosinha.
+    sentiment: positive
+    strength: 3
+    tense: present
+  - source: João Grilo
+    target: Padre João
+    type: Rival
+    directed: false
+    description: João Grilo often clashes with Padre João due to their differing values
+      and goals.
+    sentiment: negative
+    strength: 3
+    tense: present
+  - source: Padre João
+    target: Dora
+    type: Acquaintance
+    directed: false
+    description: Padre João is acquainted with Dora.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Eurico
+    target: Dora
+    type: Spouse
+    directed: false
+    description: Eurico is married to Dora.
+    sentiment: neutral
+    strength: 4
+    tense: present
+  - source: João Grilo
+    target: Diabo
+    type: Enemy
+    directed: false
+    description: João Grilo is in opposition to the Devil.
+    sentiment: negative
+    strength: 4
+    tense: evolving
+  - source: Jesus Cristo / Emanuel
+    target: João Grilo
+    type: Judge
+    directed: true
+    description: Jesus judges João Grilo's actions.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Jesus Cristo / Emanuel
+    target: Chicó
+    type: Judge
+    directed: true
+    description: Jesus judges Chicó's actions.
+    sentiment: neutral
+    strength: 4
+    tense: past
+  - source: Nossa Senhora
+    target: Jesus Cristo / Emanuel
+    type: Family
+    directed: false
+    description: Nossa Senhora is the mother of Jesus.
+    sentiment: positive
+    strength: 5
+    tense: present
+  - source: Cabo 70
+    target: Major Antônio Moraes
+    type: Subordinate
+    directed: false
+    description: Cabo 70 is a subordinate of Major Antônio Moraes.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Padre João
+    target: Bispo
+    type: Subordinate
+    directed: true
+    description: Padre João is a subordinate of the Bispo.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  tmdb_user_review_summary: The film 'A Dog's Will' is noted for its strong connection
+    to Brazilian culture, potentially making it less accessible to viewers unfamiliar
+    with the region's traditions. The movie draws from a play by Ariano Suassuna and
+    incorporates elements of Brazilian spiritualism, including candomblé. Reviewers
+    highlight the film's comedic style, comparing it to Laurel and Hardy, and praising
+    the actors' comedic timing. The direction is described as reminiscent of 20th-century
+    Brazilian comedic soap operas (novelas). While the film's cultural context is
+    a key element, it also provides a source of potential difficulty for some viewers.
+    The film is praised for its humor and comedic timing.
+  plot_with_character_constraints_and_relations: 'In the impoverished Brazilian Northeast,
+    the cunning João Grilo and his loyal friend Chicó, inseparable partners in crime,
+    find themselves entangled in a series of increasingly absurd and perilous situations.
+    João Grilo, with a hopeful eye towards Rosinha, finds himself competing with Chicó
+    for her affections. Their schemes often put them at odds with the sanctimonious
+    Padre João, a man of the cloth who frequently clashes with João Grilo''s less-than-pious
+    ways. Padre João, in turn, answers to the Bispo, illustrating the rigid hierarchy
+    of their world.
+
+    Their latest predicament involves a desperate attempt to secure a proper burial
+    for Dora and her husband Eurico, who are struggling financially. The pair''s attempts
+    to please the wealthy and powerful, including the Major Antônio Moraes and the
+    stern Cabo 70, lead to hilarious complications. The duo''s actions, however, attract
+    the attention of the Diabo, who seeks to exploit their weaknesses.
+
+    The story culminates in a trial in the afterlife, where Jesus Cristo / Emanuel
+    judges the actions of both João Grilo and Chicó. Nossa Senhora, watches over her
+    son as the fate of the two friends hangs in the balance. In the end, through their
+    wit and a touch of divine intervention, João Grilo and Chicó manage to outsmart
+    the devil and find a measure of redemption, proving that even in the face of adversity,
+    their friendship and cleverness can prevail. Severino de Aracaju, and Joaquim
+    Brejeiro also play roles in the unfolding events, adding to the chaos and humor
+    of the story. Vicentão, a character of significant strength, is also present in
+    the story, and his actions influence the outcome of events.'

@@ -10,12 +10,20 @@ The JSON object MUST have the following top-level keys with the specified struct
     - "score": (integer) An integer score from 1 to 5. (Scale: 1=Strongly Disagree/Very Inaccurate, 2=Disagree/Inaccurate, 3=Neutral, 4=Agree/Accurate, 5=Strongly Agree/Very Accurate).
     - "explanation": (string) A very concise string explainer for that trait score for the character.
     Example for "Openness": {{"score": 4, "explanation": "Clarice shows openness by venturing into unfamiliar, dangerous psychological territory to catch Buffalo Bill."}}
+    Example based on Clarice Starling from 'The Silence of the Lambs':
+      "Openness": {{"score": 4, "explanation": "Clarice shows openness by venturing into unfamiliar, dangerous psychological territory to catch Buffalo Bill."}}
+      "Conscientiousness": {{"score": 5, "explanation": "She is exceptionally diligent, disciplined, and committed to her FBI training and the case, following procedures meticulously."}}
+      "Extraversion": {{"score": 2, "explanation": "Clarice is often reserved and task-focused, more introverted than overtly outgoing, especially in high-pressure situations."}}
+      "Agreeableness": {{"score": 3, "explanation": "While driven and sometimes clashing with superiors, she shows empathy for victims and can be cooperative when necessary."}}
+      "Neuroticism": {{"score": 3, "explanation": "She experiences fear and stress, especially with Lecter, but generally manages it to perform effectively under pressure."}}
 
 2.  "character_profile_myersbriggs": (JSON object)
     This object is for the main character. It MUST contain exactly two keys:
     - "type": (string) The 4-letter MBTI type string (e.g., "ISTJ"). Valid types are: ESFP, INTJ, INTP, ENTJ, ENTP, INFJ, INFP, ENFJ, ENFP, ISTJ, ISFJ, ESTJ, ESFJ, ISTP, ISFP, ESTP.
     - "explanation": (string) A single, concise string explainer for that type, linking it to the character.
     Example: {{"type": "ISTJ", "explanation": "Introverted, Sensing, Thinking, Judging (Logistician). Clarice demonstrates ISTJ traits through her dutiful approach..."}}
+    Example based on Clarice Starling from 'The Silence of the Lambs' being typed as ISTJ: {{"type": "ISTJ", "explanation": "Introverted, Sensing, Thinking, Judging (Logistician). Clarice demonstrates ISTJ traits through her dutiful approach to her FBI responsibilities, her methodical investigation, and her reliance on concrete facts and established procedures to navigate complex challenges."}}
+    these are the 16 types: "ESFP: Extraverted, Sensing, Feeling, Perceiving (Entertainer)", "INTJ": "Introverted, Intuitive, Thinking, Judging (Architect)", "INTP": "Introverted, Intuitive, Thinking, Perceiving (Thinker)", "ENTJ": "Extraverted, Intuitive, Thinking, Judging (Commander)", "ENTP": "Extroverted, Intuitive, Thinking, Perceiving (Debater)", "INFJ": "Introverted, Intuitive, Feeling, Judging (Advocate)", "INFP": "Introverted, Intuitive, Feeling, Perceiving (Mediator)", "ENFJ": "Extraverted, Intuitive, Feeling, Judging (Protagonist)", "ENFP": "Extroverted, Intuitive, Feeling, Perceiving (Champion)", "ISTJ": "Introverted, Sensing, Thinking, Judging (Logistician)", "ISFJ": "Introverted, Sensing, Feeling, Judging (Protector)", "ESTJ": "Extraverted, Sensing, Thinking, Judging (Director)", "ESFJ": "Extroverted, Sensing, Feeling, Judging (Caregiver)", "ISTP": "Introverted, Sensing, Thinking, Perceiving (Crafter)", "ISFP": "Introverted, Sensing, Feeling, Perceiving (Adventurer)", "ESTP": "Extraverted, Sensing, Thinking, Perceiving (Entrepreneur)"
 
 3.  "genre_mix": (JSON object)
     This object MUST contain a single key: "genres".

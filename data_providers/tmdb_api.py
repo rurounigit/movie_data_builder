@@ -4,7 +4,7 @@ import os
 import shutil
 # import yaml # Not needed in this file
 from typing import Optional, List, Dict, Any, Tuple
-from models.movie_models import TMDBRawCharacter
+from models.movie_models import TMDBRawCharacter, TMDBReviewsResponse, TMDBReviewResult, TMDBReviewAuthorDetails
 
 # Default base URL and size, can be overridden by config
 TMDB_IMAGE_BASE_URL_DEFAULT = "https://image.tmdb.org/t/p/"
@@ -187,6 +187,70 @@ def fetch_raw_character_actor_list_from_tmdb(
         else: print(f"      {log_msg_error}")
     return None
 
+
+def fetch_movie_reviews_from_tmdb(
+    tmdb_api_key: str,
+    movie_id: int,
+    movie_title_for_log: str,
+    logger: Optional[Any] = None,
+    max_reviews_to_process: int = 5, # Configurable: how many reviews to feed to LLM
+    max_review_length_chars: int = 1000 # Configurable: truncate long reviews
+) -> Optional[List[Dict[str, Any]]]: # Returns a list of review content strings
+    """
+    Fetches user reviews for a movie from TMDB.
+    Returns a list of review content strings, or None if an error occurs or no reviews.
+    """
+    if not tmdb_api_key:
+        if logger: logger.error(f"TMDB API key not provided. Cannot fetch reviews for movie ID {movie_id}.")
+        return None
+    if not movie_id:
+        if logger: logger.error("Movie ID not provided. Cannot fetch reviews.")
+        return None
+
+    # For now, fetch only page 1. Could be extended to fetch more.
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}/reviews?language=en-US&page=1"
+    headers = {"accept": "application/json", "Authorization": f"Bearer {tmdb_api_key}"}
+
+    review_contents: List[str] = []
+
+    try:
+        if logger: logger.debug(f"Querying TMDB for reviews for '{movie_title_for_log}' (ID: {movie_id})...")
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
+        data = response.json() # This should be validated against TMDBReviewsResponse ideally
+
+        if data and data.get("results"):
+            results = data["results"]
+            if logger: logger.debug(f"TMDB Reviews: Found {len(results)} reviews on page 1 for '{movie_title_for_log}'. Processing up to {max_reviews_to_process}.")
+
+            count = 0
+            for review_data in results:
+                if count >= max_reviews_to_process:
+                    break
+                content = review_data.get("content")
+                author = review_data.get("author", "Unknown Author")
+                if content:
+                    # Truncate long reviews to manage token count for LLM
+                    truncated_content = content[:max_review_length_chars]
+                    if len(content) > max_review_length_chars:
+                        truncated_content += "..."
+                    review_contents.append(f"Review by {author}:\n{truncated_content}\n---") # Add author for context
+                    count += 1
+
+            if not review_contents:
+                if logger: logger.info(f"No review content found or extracted for '{movie_title_for_log}'.")
+                return None
+            return review_contents
+        else:
+            if logger: logger.info(f"No review results found in TMDB response for '{movie_title_for_log}'.")
+            return None
+    except requests.exceptions.Timeout:
+        if logger: logger.error(f"Timeout: TMDB reviews API request timed out for movie ID {movie_id}.")
+    except requests.exceptions.RequestException as e:
+        if logger: logger.error(f"Error calling TMDB reviews API for movie ID {movie_id}: {e}")
+    except Exception as e:
+        if logger: logger.error(f"Unexpected error during TMDB reviews lookup for movie ID {movie_id}: {e}")
+    return None
 
 def fetch_and_save_character_image(
     tmdb_api_key: str,

@@ -1,0 +1,13 @@
+You are provided with a collection of user reviews for the movie "{movie_title}" ({movie_year}).
+Your task is to generate a concise, neutral summary of the overall sentiment and key points mentioned in these reviews.
+Focus on common themes, praises, and criticisms. Aim for about 100-150 words.
+Do not include your own opinions. Base the summary strictly on the provided review snippets.
+
+User Reviews:
+---
+{tmdb_review_snippets}
+---
+
+Provide your summary in YAML or JSON format with a single top-level key: "tmdb_user_review_summary".
+Example:
+tmdb_user_review_summary: "Users generally praised the film's visuals and acting, though some found the pacing slow in the middle. The ending was divisive."
