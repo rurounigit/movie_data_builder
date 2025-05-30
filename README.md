@@ -19,7 +19,15 @@ The goal is to create a structured YAML database containing detailed profiles, c
     *   **Call 1 (Initial Data):** Generates plot summaries, critical reception, visual style descriptions, related topics, and potential sequels/prequels using the configured LLM.
     *   **Call 2 (Characters & Relationships):** Enriches TMDB character data with descriptions, group affiliations, aliases, and generates inter-character relationships.
     *   **Call 3 (Analytical Data):** Generates Big Five & Myers-Briggs personality profiles, genre mix percentages, thematic tags, and movie recommendations.
+    *   **TMDB Review Summary:** Fetches TMDB user reviews and generates a concise LLM-powered summary.
+    *   **Constrained Plot Description:** Generates a plot description strictly using character names from TMDB's initial list, informed by LLM-generated relationships.
 *   **Image Fetching:** Downloads character images from TMDB (if available and enabled).
+*   **Flexible Operation Modes:** The pipeline supports various modes to control which movies are processed and how existing data is handled:
+    *   `fetch_and_add_new`: Scans TMDB top-rated. Primarily adds *new* movies. Can optionally update *existing* movies if they are encountered during the TMDB scan (controlled by `update_existing_if_encountered_during_fetch`).
+    *   `update_all_existing`: Processes and updates *ALL* movies currently stored in your `output/clean_movie_database.yaml`.
+    *   `update_by_list`: Processes and updates *only* specific movies identified in the `target_movies_to_update` list.
+    *   `update_by_range`: Processes and updates movies from `output_file` based on their 0-based index range, specified in `target_existing_movies_by_index_range`.
+*   **Granular Update Control:** The `fields_to_update` setting allows you to specify exactly which fields (e.g., "recommendations", "imdb_id") should be updated for existing movies, applicable across all update scenarios. If empty, all fields relevant to active enrichers will be updated.
 *   **Data Persistence:**
     *   Saves all enriched data into a structured YAML file (`output/clean_movie_database.yaml`).
     *   Maintains a raw log file (`output/generated_movie_data_raw_log.txt`) for debugging and transparency.
@@ -30,7 +38,6 @@ The goal is to create a structured YAML database containing detailed profiles, c
     *   API keys for TMDB, OMDB, and selected LLM providers managed via a `.env` file.
 *   **Modularity:** Code is organized into data providers, enrichers, models, and utility helpers.
 *   **Pydantic Validation:** Uses Pydantic models for robust data validation at various stages, ensuring data integrity.
-*   **Update Existing Entries:** Optionally, the pipeline can update existing movies in the database based on specified keys or active enrichers.
 
 ### Project Structure
 
@@ -48,7 +55,9 @@ movie_enrichment_project/
 │   ├── __init__.py
 │   ├── analytical_enricher.py          # LLM Call 3 logic
 │   ├── character_enricher.py           # LLM Call 2 logic & image fetching
-│   └── movie_data_enricher.py          # LLM Call 1 logic
+│   ├── constrained_plot_rel_enricher.py # LLM Call for constrained plot
+│   ├── movie_data_enricher.py          # LLM Call 1 logic
+│   └── review_summarizer_enricher.py   # LLM Call for TMDB review summary
 ├── models/
 │   ├── __init__.py
 │   └── movie_models.py                 # Pydantic models for data structures
@@ -59,7 +68,9 @@ movie_enrichment_project/
 ├── prompts/
 │   ├── movie_analytical_data_prompt.txt
 │   ├── movie_enrich_chars_relationships_prompt.txt
-│   └── movie_initial_data_prompt.txt
+│   ├── movie_initial_data_prompt.txt
+│   ├── summarize_tmdb_reviews_prompt.txt
+│   └── plot_constrained_with_relations_prompt.txt
 ├── utils/
 │   ├── __init__.py
 │   └── helpers.py                      # Utility functions (YAML, logging, tokens)
@@ -134,12 +145,23 @@ movie_enrichment_project/
         ```yaml
         active_llm_provider_id: "google_gemini_2_0_flash_lite" # Or "lm_studio_gemma_3_12b", etc.
         ```
+    *   **Choose your `operation_mode`**: This is the primary control for what the pipeline will do.
+        *   **`fetch_and_add_new`:** (Default) The pipeline scans TMDB top-rated movies. If a movie is *new* to your database, it's added and fully enriched. If a movie *already exists*, its treatment is controlled by `update_existing_if_encountered_during_fetch`.
+        *   **`update_all_existing`:** The pipeline loads *all* movies from your `output/clean_movie_database.yaml` and attempts to update them.
+        *   **`update_by_list`:** The pipeline updates *only* specific movies listed in `target_movies_to_update`.
+        *   **`update_by_range`:** The pipeline updates movies from your `output/clean_movie_database.yaml` based on their 0-based index range specified in `target_existing_movies_by_index_range`.
+    *   **Control `fetch_and_add_new` behavior with `update_existing_if_encountered_during_fetch`**:
+        *   If `operation_mode` is `fetch_and_add_new` and `update_existing_if_encountered_during_fetch: true`, then existing movies found during the TMDB scan will be updated (according to `fields_to_update`).
+        *   If `operation_mode` is `fetch_and_add_new` and `update_existing_if_encountered_during_fetch: false`, then existing movies found during the TMDB scan will be *skipped*, and only new movies will be added. This is the option for "only add new datasets."
+    *   **Define `fields_to_update`**: This list controls *which specific top-level fields* (e.g., `recommendations`, `imdb_id`) of an *existing* movie entry will be re-generated/overwritten.
+        *   If `fields_to_update` is an **empty list (`[]`)**, then *all* fields generated by currently `active_enrichers` will be updated for any existing movie that's processed for an update.
+        *   If `fields_to_update` is **populated** (e.g., `["tmdb_user_review_summary", "character_profile_big5"]`), then *only* those specified fields will be updated, provided their corresponding `active_enrichers` are `true`.
+        *   This setting applies universally whenever an existing movie is targeted for an update (e.g., in `update_all_existing` mode, or when `update_existing_if_encountered_during_fetch` is `true`).
     *   Review other settings:
         *   `output_file`, `raw_log_file`, `character_image_save_path`.
         *   `prompts`: Paths to the LLM prompt template files.
         *   `num_new_movies_to_fetch_this_session`, `max_tmdb_top_rated_pages_to_check`, `max_characters_from_tmdb`.
-        *   `active_enrichers`: Booleans to toggle different enrichment stages.
-        *   `update_existing_movies`, `keys_to_update_for_existing`.
+        *   `active_enrichers`: Booleans to toggle different enrichment stages (applies to all operation modes for what to generate/regenerate).
         *   Token calculation ratios and limits.
 
 6.  **Review Prompts (`prompts/` directory):**
@@ -162,131 +184,52 @@ The script will log its progress to the console and to the `raw_log_file`. The e
 Adding a new data field (e.g., "primary_theme", "notable_cinematography_technique") to your movie entries involves a coordinated effort. Assuming the new data point will be generated by one of the LLM calls:
 
 1.  **Define in Pydantic Models (`models/movie_models.py`):**
-    *   Add the new field to `MovieEntry` and, if applicable, to the intermediate LLM output model (e.g., `LLMCall1Output`).
+    *   Add the new field to `MovieEntry` and, if applicable, to the intermediate LLM output model (e.g., `LLMCall3Output`).
         ```python
-        # In LLMCall1Output (example)
-        # new_field_from_llm: Optional[str] = None
+        # models/movie_models.py
+        from typing import Optional, List, Dict
+        from pydantic import BaseModel, Field
 
-        # In MovieEntry
-        # new_field_in_final_yaml: Optional[str] = None
+        # ... other existing models ...
+
+        class LLMCall3Output(BaseModel):
+            # ... existing fields ...
+            movie_mood: Optional[str] = Field(None, description="The overall mood or atmosphere of the movie, e.g., 'Dark and Gritty'.")
+
+        class MovieEntry(BaseModel):
+            # ... existing fields ...
+            movie_mood: Optional[str] = Field(None, description="The overall mood or atmosphere of the movie.")
+            # ... other existing fields ...
         ```
 
 2.  **Update LLM Prompt(s) (`prompts/` directory):**
-    *   Modify the relevant prompt file to instruct the LLM to generate this new field, specifying the key name it should use in its response and the desired format.
+    *   Modify the relevant prompt file (e.g., `prompts/movie_analytical_data_prompt.txt` for Call 3) to instruct the LLM to generate this new field, specifying the key name it should use in its YAML/JSON response and the desired format. Remember to update the `num_analytical_keys` variable in your prompt template if you're adding a new top-level key.
 
-3.  **Update Enricher Function (if needed) (`enrichers/` directory):**
-    *   Usually, if the field is added to the LLM output Pydantic model and the LLM returns it correctly, no major changes are needed here beyond ensuring the data gets passed through. Transformations can be added if the LLM's output for the new field needs adjustment.
+3.  **Update Enricher Function (`enrichers/` directory):**
+    *   Typically, if the new field is part of an LLM output Pydantic model (e.g., `LLMCall3Output`) and the LLM correctly returns it in the expected format, no major changes are needed in the enricher function itself. The `get_llm_response_and_parse` function combined with Pydantic's `model_validate` will handle parsing and validation.
 
 4.  **Integrate into Main Orchestrator (`main_orchestrator.py`):**
-    *   Ensure the data from the LLM output model is correctly mapped to the `working_data_dict` for `MovieEntry`.
-    *   Add the new field's key to `key_to_enricher_group_map` if it should be part of the selective update logic.
-
-5.  **Testing:**
-    *   Test with a single movie to verify the new field is generated, parsed, and saved correctly.
-
-Certainly! Here's the detailed example for adding a "movie_mood" data point, adapted to fit the current structure where LLM provider configuration is more flexible. This example assumes "movie_mood" will be generated by LLM Call 3 (analytical data).
-
----
-
-**Example: Adding a "Movie Mood" Data Point (LLM-generated, in Call 3)**
-
-Let's say you want to add a field called `movie_mood` to your `MovieEntry` that describes the overall mood or atmosphere of the film (e.g., "Dark and Gritty", "Hopeful and Uplifting", "Whimsical and Lighthearted"). This will be generated by LLM Call 3.
-
-1.  **Define in Pydantic Models (`models/movie_models.py`):**
-    *   First, add the `movie_mood` field to the Pydantic model that will receive the direct output from LLM Call 3, which is `LLMCall3Output`.
-    *   Then, add the same field to your final `MovieEntry` model.
+    *   The common enrichment function `_enrich_and_update_movie_data` handles the merging of LLM output into the `working_data_dict`. If `movie_mood` is part of `LLMCall3Output`, the existing `working_data_dict.update(llm3_output_data.model_dump(exclude_none=False))` will automatically include it, provided `should_update_field_local("movie_mood")` evaluates to `True`.
+    *   **Add the new field's key to `key_to_enricher_group_map`:** This is important for the selective update logic. Add `"movie_mood": "analytical_data"` to this dictionary in `main_orchestrator.py` so that `fields_to_update` can correctly target it.
 
     ```python
-    # models/movie_models.py
-    from typing import Optional, List, Dict # etc.
-    from pydantic import BaseModel, Field
+    # In main_orchestrator.py (within run_enrichment_pipeline scope)
+    key_to_enricher_group_map = {
+        # ... existing mappings ...
+        "movie_mood": "analytical_data", # Add this line
+        # ... existing mappings ...
+    }
 
-    # ... other existing models ...
-
-    class LLMCall3Output(BaseModel):
-        # ... existing fields like character_profile_big5, recommendations, etc. ...
-        movie_mood: Optional[str] = Field(None, description="The overall mood or atmosphere of the movie, e.g., 'Dark and Gritty'.")
-        # ... other existing fields ...
-
-    class MovieEntry(BaseModel):
-        # ... existing fields like movie_title, character_list, etc. ...
-        movie_mood: Optional[str] = Field(None, description="The overall mood or atmosphere of the movie.")
-        # ... other existing fields ...
+    # No change needed in the _enrich_and_update_movie_data function itself for simple string fields,
+    # as the loop already handles `should_update_field_local(key)` and `working_data_dict[key] = value`.
     ```
-
-2.  **Update LLM Prompt for Call 3 (`prompts/movie_analytical_data_prompt.txt`):**
-    *   You need to instruct the LLM to generate this new piece of information and tell it what key name to use in its YAML/JSON response.
-
-    Add a new instruction within the `MOVIE_PROMPT_ANALYTICAL_TEMPLATE` text. For example, you could add it to the list of requested keys:
-
-    ```text
-    # prompts/movie_analytical_data_prompt.txt
-    # ... (existing parts of the prompt) ...
-    For the movie titled "{movie_title_from_call_1}" (released around {movie_year_from_call_1}).
-    Provide the following analytical information...
-    Respond strictly in YAML format. The YAML should be a single object with these {num_analytical_keys} top-level keys:
-    # ... (existing key descriptions like character_profile_big5, genre_mix, etc.) ...
-    'movie_mood' (string: Describe the overall mood or atmosphere of the movie in a short phrase. Examples: "Dark and Gritty", "Hopeful and Uplifting", "Whimsical and Lighthearted", "Tense and Suspenseful", "Melancholic and Reflective").
-    # ... (rest of the prompt, including the example for recommendations) ...
-
-    # You might also add it to an example output structure if you have one in the prompt:
-    # Example of how the YAML output might look (snippet):
-    # ...
-    # genre_mix:
-    #   genres:
-    #     action: 70
-    #     drama: 30
-    # movie_mood: "Intense and Action-Packed"
-    # recommendations:
-    # ...
-    ```
-    *   **Important:** Remember to update `{num_analytical_keys}` in the prompt if you're adding a new top-level key. If `movie_mood` is a new top-level key requested from the LLM, `len(LLMCall3Output.model_fields.keys())` (which calculates `num_analytical_keys` in `analytical_enricher.py`) will automatically reflect this change once `movie_mood` is added to the `LLMCall3Output` model.
-
-3.  **Update Enricher Function (`enrichers/analytical_enricher.py`):**
-    *   The `LLMCall3Output` Pydantic model (which you updated in Step 1) is used to validate the output of `analytical_enricher.generate_analytical_data`.
-    *   If the LLM returns the `movie_mood` as a simple string under the key `"movie_mood"` (as instructed in the prompt), the existing parsing logic in `llm_clients.get_llm_response_and_parse` and the subsequent `LLMCall3Output.model_validate(data)` should automatically handle it. No specific transformation logic for `movie_mood` would be needed *within* `analytical_enricher.py` itself, assuming it's a direct string field.
-
-4.  **Integrate into Main Orchestrator (`main_orchestrator.py`):**
-    *   When `analytical_enricher.generate_analytical_data` returns the `llm3_output_data_model` (which is an instance of `LLMCall3Output`), the `movie_mood` field will be part of it.
-    *   The existing line that updates `working_data_dict` will automatically include it:
-        ```python
-        # In main_orchestrator.py, within the analytical_data block:
-        # ...
-        if llm3_output_data_model: # Renamed from llm3_output_data for clarity
-            logger.info(f"  Success: Analytical Data for '{movie_title_for_calls}'.")
-            working_data_dict.update(llm3_output_data_model.model_dump(exclude_none=False)) # This will include movie_mood
-        else:
-            logger.warning(f"  Failure or incomplete: Analytical Data for '{movie_title_for_calls}'.")
-            if not is_updating_existing_movie:
-                logger.error(f"    Critical analytical data missing for new movie '{movie_title_for_calls}'. Skipping final assembly.")
-                continue
-        # ...
-        ```
-    *   **Update `key_to_enricher_group_map`:** If you want `movie_mood` to be considered when `update_existing_movies` and `keys_to_update_for_existing` are used, add it to the map:
-        ```python
-        # In main_orchestrator.py
-        key_to_enricher_group_map = {
-            # ... existing mappings ...
-            "movie_mood": "analytical_data",
-            # ... existing mappings ...
-        }
-        ```
 
 5.  **Testing:**
-    *   Set `num_new_movies_to_fetch_this_session: 1` in `configs/main_config.yaml`.
-    *   Ensure the `analytical_data` enricher is active: `active_enrichers: analytical_data: true`.
+    *   Set `operation_mode` to `fetch_and_add_new` and `num_new_movies_to_fetch_this_session: 1` in `configs/main_config.yaml`.
+    *   Ensure `active_enrichers.analytical_data: true`.
     *   Run `poetry run python main_orchestrator.py`.
-    *   **Check the raw log (`output/generated_movie_data_raw_log.txt`):** Look for the LLM Call 3 output to see if the LLM included the `movie_mood` key and value.
-    *   **Check the console output:** Look for any parsing or validation errors related to `movie_mood`.
-    *   **Check the final `output/clean_movie_database.yaml`:** Verify that the `movie_mood` field is present and correctly populated for the processed movie.
-    *   If testing updates, ensure that if `update_existing_movies: true` and `"movie_mood"` is in `keys_to_update_for_existing`, the field gets updated.
-
-This example shows that for adding a relatively simple, LLM-generated string field:
-*   The primary work is in defining it in the Pydantic models and crafting the LLM prompt.
-*   The enricher and orchestrator often require minimal changes if the Pydantic models are set up correctly and the LLM follows instructions.
-*   The `key_to_enricher_group_map` is important for the update strategy.
-
-If the new data point were more complex (e.g., a list of structured objects for "awards"), the enricher might need more transformation logic, and you'd define more Pydantic sub-models.
+    *   **Check `output/clean_movie_database.yaml`:** Verify that the `movie_mood` field is present and correctly populated for the processed movie.
+    *   If testing updates for existing movies, set `operation_mode` to `update_all_existing` (or `update_by_list`/`range`) and ensure `fields_to_update: []` or `fields_to_update: ["movie_mood"]` is set.
 
 ### Contributing
 
