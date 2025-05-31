@@ -1,111 +1,143 @@
-# movie_enrichment_project/utils/helpers.py
 import yaml
-import os
 import logging
-from typing import List, Dict, Any, Optional # Added Optional for logger type hint
+import math
+import os
+import re
+import requests
+import shutil # For copyfileobj
+from typing import Optional, Any, Dict, List, Set, Union
 
-def words_to_tokens(words: int, ratio: float = 1.4) -> int:
-    """
-    Estimates the number of tokens from a given word count.
-    """
-    return int(words * ratio)
 
-def load_full_movie_data_from_yaml(filename: str) -> List[Dict[str, Any]]:
+def setup_logging(log_file_path: str, logger_name: str = "MovieEnrichmentPipeline"):
     """
-    Loads a list of movie data (as dictionaries) from a YAML file.
-    In the orchestrator, these dicts will be validated into Pydantic models.
+    Sets up a basic logger that writes to a file and outputs to console.
+    Ensures the log directory exists.
     """
-    movie_data_list: List[Dict[str, Any]] = []
-    if os.path.exists(filename):
-        try:
-            with open(filename, 'r', encoding='utf-8') as f:
-                data = yaml.safe_load(f)
-                if isinstance(data, list):
-                    for entry in data:
-                        if isinstance(entry, dict) and entry.get("movie_title"): # Basic check
-                            movie_data_list.append(entry)
-            # print(f"Loaded {len(movie_data_list)} existing movie entries from '{filename}'.")
-        except yaml.YAMLError as ye:
-            # Using print here as logger might not be set up when this is first called by orchestrator
-            print(f"YAML parsing error loading movie data from '{filename}': {ye}. Starting empty.")
-        except Exception as e:
-            print(f"Error loading full movie data from '{filename}': {e}. Starting empty.")
-    # else:
-        # print(f"Movie database file '{filename}' not found. Starting empty.")
-    return movie_data_list
-
-def save_movie_data_to_yaml(movie_data_list: List[Dict[str, Any]], filename: str, logger: Optional[logging.Logger] = None):
-    """
-    Saves a list of movie data (dictionaries) to a YAML file.
-    The orchestrator should pass data after model_dump(exclude_none=True) from Pydantic models.
-    """
-    try:
-        # Ensure parent directory exists
-        output_dir = os.path.dirname(filename)
-        if output_dir and not os.path.exists(output_dir): # Check if output_dir is not empty
-             os.makedirs(output_dir, exist_ok=True)
-             if logger: logger.info(f"Created output directory for YAML: {output_dir}")
-
-        with open(filename, 'w', encoding='utf-8') as f_yaml:
-            yaml.dump(movie_data_list, f_yaml, sort_keys=False, indent=2, allow_unicode=True, Dumper=yaml.SafeDumper)
-        if logger:
-            logger.info(f"Successfully wrote {len(movie_data_list)} total entries to '{filename}'.")
-        # else:
-            # print(f"      Successfully wrote {len(movie_data_list)} total entries to '{filename}'.")
-    except Exception as e:
-        if logger:
-            logger.error(f"Error writing to YAML file '{filename}': {e}")
-        else:
-            print(f"      Error writing to YAML file '{filename}': {e}")
-
-def setup_logging(
-    log_file_path: str,
-    logger_name: str = 'MovieEnrichmentApp', # Default name if not provided
-    level=logging.INFO
-) -> logging.Logger:
-    """
-    Sets up basic file and console logging.
-    Returns the configured logger instance.
-    """
-    # Ensure parent directory exists for the log file
     log_dir = os.path.dirname(log_file_path)
-    if log_dir and not os.path.exists(log_dir): # Check if log_dir is not empty string (e.g. if log file is in current dir)
+    if log_dir and not os.path.exists(log_dir):
         try:
             os.makedirs(log_dir, exist_ok=True)
         except OSError as e:
-            # Fallback to console print if directory creation fails, as logger might not be usable for this error
-            print(f"CRITICAL: Could not create log directory {log_dir}: {e}. Logging to file might fail.")
-            # Depending on severity, you might want to raise the error or exit.
+            print(f"Error creating log directory {log_dir}: {e}")
+            # Fallback to current directory if logging directory can't be created
+            log_file_path = os.path.join(os.getcwd(), os.path.basename(log_file_path))
 
     logger = logging.getLogger(logger_name)
-    logger.setLevel(level)
-    logger.propagate = False # Prevents log messages from being passed to the handlers of ancestor loggers.
+    logger.setLevel(logging.DEBUG)
 
-    # Clear existing handlers for this logger instance to avoid duplicate logs on re-runs in same session (e.g. during testing)
+    # Clear existing handlers to prevent duplicate messages
     if logger.hasHandlers():
         logger.handlers.clear()
 
-    # File Handler
-    try:
-        fh = logging.FileHandler(log_file_path, mode='a', encoding='utf-8')
-        fh.setLevel(level)
-        # More detailed formatter for file logs
-        formatter_fh = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(module)s.%(funcName)s:%(lineno)d - %(message)s')
-        fh.setFormatter(formatter_fh)
-        logger.addHandler(fh)
-    except Exception as e:
-        # If file handler setup fails, critical error, print to console
-        print(f"CRITICAL: Error setting up file handler for logging at {log_file_path}: {e}")
+    # File handler
+    file_handler = logging.FileHandler(log_file_path, encoding='utf-8')
+    file_handler.setLevel(logging.DEBUG)
+    file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(file_formatter)
+    logger.addHandler(file_handler)
 
-
-    # Console Handler (always add this as a fallback and for interactive use)
-    ch = logging.StreamHandler()
-    ch.setLevel(level) # Console can have a different level if needed, e.g., logging.WARNING for less verbosity
-    formatter_ch = logging.Formatter('%(name)s - %(levelname)s: %(message)s')
-    ch.setFormatter(formatter_ch)
-    logger.addHandler(ch)
-
-    # Test message to confirm logger is working (optional)
-    # logger.info(f"Logger '{logger_name}' initialized. Logging to file: {log_file_path} and console.")
+    # Console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO) # Console generally shows INFO and above
+    console_formatter = logging.Formatter('%(levelname)s: %(message)s')
+    console_handler.setFormatter(console_formatter)
+    logger.addHandler(console_handler)
 
     return logger
+
+def words_to_tokens(num_words: int, ratio: float = 1.3) -> int:
+    """Converts an approximate number of words to tokens."""
+    return math.ceil(num_words * ratio)
+
+def load_full_movie_data_from_yaml(filepath: str) -> List[Dict[str, Any]]:
+    """Loads all movie entries from a YAML file."""
+    if not os.path.exists(filepath):
+        return []
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = yaml.safe_load(f)
+            return data if isinstance(data, list) else []
+    except yaml.YAMLError as e:
+        print(f"Error reading YAML file {filepath}: {e}")
+        return []
+    except FileNotFoundError:
+        print(f"File not found: {filepath}")
+        return []
+    except Exception as e:
+        print(f"An unexpected error occurred while loading {filepath}: {e}")
+        return []
+
+def save_movie_data_to_yaml(data: List[Dict[str, Any]], output_file: str):
+    """Saves movie data to a YAML file."""
+    output_dir = os.path.dirname(output_file)
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+
+    try:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            yaml.dump(data, f, sort_keys=False, allow_unicode=True, indent=2)
+    except Exception as e:
+        print(f"Error saving data to {output_file}: {e}")
+
+def parse_index_range_string(range_str: str, logger: Optional[Any] = None) -> Set[int]:
+    """
+    Parses a string like "0-4, 7, 10-12" into a set of unique integers.
+    Handles single numbers and ranges. Logs warnings for invalid parts.
+    """
+    if not range_str:
+        return set()
+
+    indices = set()
+    parts = range_str.split(',')
+    for part in parts:
+        part = part.strip()
+        if not part:
+            continue
+
+        if '-' in part:
+            try:
+                start_str, end_str = part.split('-')
+                start = int(start_str.strip())
+                end = int(end_str.strip())
+                indices.update(range(min(start, end), max(start, end) + 1))
+            except ValueError:
+                if logger: logger.warning(f"Invalid range part in index string: '{part}'. Skipping.")
+        else:
+            try:
+                indices.add(int(part))
+            except ValueError:
+                if logger: logger.warning(f"Invalid single index in string: '{part}'. Skipping.")
+    return indices
+
+def slugify(text: str) -> str:
+    """Converts text to a URL-friendly slug."""
+    if not text: return "unknown"
+    text = str(text).lower().strip()
+    text = re.sub(r'[^\w\s-]', '', text)
+    text = re.sub(r'[-\s]+', '-', text)
+    text = text.strip('-')
+    return text if text else "slug_error"
+
+def download_image(url: str, filepath: str, logger: Optional[Any] = None) -> bool:
+    """
+    Downloads an image from a URL to a specified filepath.
+    Returns True on success, False on failure.
+    """
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        response = requests.get(url, stream=True, timeout=20, headers=headers)
+        response.raise_for_status() # Raises HTTPError for bad responses (4xx or 5xx)
+
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        with open(filepath, 'wb') as f:
+            shutil.copyfileobj(response.raw, f)
+        if logger: logger.debug(f"    Successfully downloaded image to {filepath}")
+        return True
+    except requests.exceptions.RequestException as e:
+        if logger: logger.warning(f"    Error downloading {url} to {filepath}: {e}")
+        return False
+    except Exception as e:
+        if logger: logger.error(f"    An unexpected error occurred while downloading {url} to {filepath}: {e}")
+        return False

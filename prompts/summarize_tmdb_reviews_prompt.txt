@@ -4,9 +4,7 @@ Focus on common themes, praises, and criticisms. Aim for about 100-150 words.
 Do not include your own opinions. Base the summary strictly on the provided review snippets.
 
 User Reviews:
----
 {tmdb_review_snippets}
----
 
 Provide your summary in YAML or JSON format with a single top-level key: "tmdb_user_review_summary".
 Example:

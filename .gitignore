@@ -18,3 +18,24 @@ story_agent_v21.py
 .DS_Store
 output/character_images/
 __pycache__/
+main_orchestrator copy 5.py
+main_orchestrator copy 4.py
+main_orchestrator copy 3.py
+main_orchestrator copy 2.py
+main_orchestrator copy.py
+main_orchestrator copy.py
+image_downloader copy.py
+image_downloader copy 2.py
+image_downloader copy 3.py
+image_downloader copy 4.py
+helpers copy.py
+main_config copy.yaml
+main_config copy 2.yaml
+main_config copy 3.yaml
+main_config copy 4.yaml
+tmdb_api copy.py
+character_enricher copy.py
+character_enricher copy 2.py
+character_enricher copy 3.py
+character_enricher copy 4.py
+movie_enrich_chars_relationships_prompt copy.txt

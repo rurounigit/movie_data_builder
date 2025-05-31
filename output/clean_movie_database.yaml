@@ -206,7 +206,6 @@
   - source: Andy Dufresne
     target: Ellis Boyd 'Red' Redding
     type: Friend
-    directed: false
     description: Andy and Red form a strong, enduring bond based on mutual respect,
       shared experiences, and hope within Shawshank.
     sentiment: positive
@@ -215,7 +214,6 @@
   - source: Warden Norton
     target: Andy Dufresne
     type: Antagonist
-    directed: true
     description: Warden Norton seeks to control and exploit Andy, using him for financial
       gain and suppressing any attempts at escape.
     sentiment: negative
@@ -224,7 +222,6 @@
   - source: Andy Dufresne
     target: Heywood
     type: Friend
-    directed: false
     description: Andy befriends Heywood and other inmates, gaining allies within the
       prison system.
     sentiment: positive
@@ -233,7 +230,6 @@
   - source: Andy Dufresne
     target: Tommy
     type: Ally
-    directed: false
     description: Andy gains Tommy's trust and receives crucial information from him,
       ultimately leading to a devastating consequence.
     sentiment: complicated
@@ -242,7 +238,6 @@
   - source: Andy Dufresne
     target: Brooks Hatlen
     type: Mentor/Friend
-    directed: false
     description: Andy and Brooks develop a relationship where Andy attempts to offer
       comfort and support to the elderly inmate.
     sentiment: positive
@@ -452,7 +447,6 @@
   - source: Don Vito Corleone
     target: Michael Corleone
     type: Father-Son
-    directed: false
     description: Don Vito guides and mentors Michael, preparing him to eventually
       take over the family business.
     sentiment: positive
@@ -461,7 +455,6 @@
   - source: Michael Corleone
     target: Kay Adams
     type: Romantic Relationship
-    directed: false
     description: Michael and Kay develop a romantic relationship, but their connection
       is strained by Michael's involvement in the Mafia.
     sentiment: complicated
@@ -470,7 +463,6 @@
   - source: Sonny Corleone
     target: Don Vito Corleone
     type: Son-Father
-    directed: false
     description: Sonny is fiercely protective of his father and loyal to the Corleone
       family.
     sentiment: positive
@@ -479,7 +471,6 @@
   - source: Tom Hagen
     target: Don Vito Corleone
     type: Advisor-Client
-    directed: false
     description: Tom Hagen serves as Don Vito's legal advisor and confidante, providing
       invaluable counsel.
     sentiment: positive
@@ -488,7 +479,6 @@
   - source: Michael Corleone
     target: Fredo Corleone
     type: Brother-Brother
-    directed: false
     description: Michael and Fredo share a complex brotherly relationship, marked
       by loyalty, resentment, and ultimately betrayal.
     sentiment: complicated
@@ -497,7 +487,6 @@
   - source: Sal Tessio
     target: Michael Corleone
     type: Associate
-    directed: false
     description: Sal Tessio is a trusted associate of Michael, but ultimately betrays
       him.
     sentiment: negative
@@ -703,7 +692,6 @@
   - source: Oskar Schindler
     target: Itzhak Stern
     type: Partnership
-    directed: false
     description: Schindler and Stern form a crucial partnership, with Stern providing
       essential connections and expertise to save Jewish workers.
     sentiment: positive
@@ -712,7 +700,6 @@
   - source: Oskar Schindler
     target: Amon Goeth
     type: Rivalry
-    directed: true
     description: Schindler and Goeth are rivals, with Schindler opposing Goeth's brutality
       and seeking to protect the Jewish workers under his control.
     sentiment: negative
@@ -721,7 +708,6 @@
   - source: Oskar Schindler
     target: Emilie Schindler
     type: Marriage
-    directed: false
     description: Oskar and Emilie are married, though their relationship is complex
       due to Oskar's affairs.
     sentiment: complicated
@@ -730,7 +716,6 @@
   - source: Oskar Schindler
     target: Poldek Pfefferberg
     type: Friendship
-    directed: false
     description: Schindler and Pfefferberg develop a friendship based on mutual respect
       and shared goals of saving Jewish lives.
     sentiment: positive
@@ -739,7 +724,6 @@
   - source: Amon Goeth
     target: Herman Toffel
     type: Rivalry
-    directed: false
     description: Goeth and Toffel are rivals for power within the Nazi hierarchy.
     sentiment: negative
     strength: 3
@@ -747,7 +731,6 @@
   - source: Oskar Schindler
     target: Herman Toffel
     type: Negotiation
-    directed: false
     description: Schindler frequently negotiates with Toffel to protect his workers.
     sentiment: neutral
     strength: 2
@@ -945,7 +928,6 @@
   - source: Vincent Vega
     target: Jules Winnfield
     type: Partners
-    directed: false
     description: Vincent and Jules work together as hitmen, sharing a complex relationship
       built on respect and shared experiences.
     sentiment: positive
@@ -954,7 +936,6 @@
   - source: Vincent Vega
     target: Mia Wallace
     type: Relationship
-    directed: false
     description: Vincent and Mia share a brief, intense connection that nearly ends
       in tragedy.
     sentiment: complicated
@@ -963,7 +944,6 @@
   - source: Marsellus Wallace
     target: Jules Winnfield
     type: Employer/Employee
-    directed: true
     description: Marsellus Wallace is the crime boss who employs Jules Winnfield as
       a hitman.
     sentiment: neutral
@@ -972,7 +952,6 @@
   - source: Mia Wallace
     target: Marsellus Wallace
     type: Marriage
-    directed: false
     description: Mia is married to Marsellus, a relationship marked by power dynamics
       and underlying tension.
     sentiment: complicated
@@ -981,7 +960,6 @@
   - source: Butch Coolidge
     target: Marsellus Wallace
     type: Debtor/Gambler
-    directed: false
     description: Butch owes Marsellus a significant debt, creating a dangerous situation
       for both men.
     sentiment: negative
@@ -990,7 +968,6 @@
   - source: Marsellus Wallace
     target: The Wolf
     type: Contractor (Problem Solver)
-    directed: true
     description: Marsellus Wallace hires The Wolf, a specialist cleaner, to manage
       a critical and messy situation.
     sentiment: neutral
@@ -999,7 +976,6 @@
   - source: Pumpkin
     target: Honey Bunny
     type: Partners
-    directed: false
     description: Pumpkin and Honey Bunny are partners in crime, planning a diner robbery.
     sentiment: negative
     strength: 4
@@ -1007,7 +983,6 @@
   - source: Jules Winnfield
     target: Pumpkin
     type: Encounter
-    directed: false
     description: Jules and Pumpkin have a tense encounter during the diner robbery.
     sentiment: negative
     strength: 2
@@ -1015,7 +990,6 @@
   - source: Butch Coolidge
     target: Fabienne
     type: Romantic Partner
-    directed: false
     description: Butch and Fabienne are loving partners, with Fabienne providing innocent
       support to Butch amidst his dangerous situation.
     sentiment: positive
@@ -1209,7 +1183,6 @@
   - source: Frodo
     target: Gandalf
     type: Mentee/Mentor
-    directed: true
     description: Frodo seeks Gandalf's guidance and wisdom to understand the Ring
       and his role in destroying it.
     sentiment: positive
@@ -1218,7 +1191,6 @@
   - source: Aragorn
     target: Gandalf
     type: Respect/Guidance
-    directed: true
     description: Aragorn looks to Gandalf for counsel and support as he embraces his
       destiny as king.
     sentiment: positive
@@ -1227,7 +1199,6 @@
   - source: Frodo
     target: Sam
     type: Friendship
-    directed: false
     description: Frodo and Sam share a deep, unwavering friendship that provides crucial
       support throughout their journey.
     sentiment: positive
@@ -1236,7 +1207,6 @@
   - source: Aragorn
     target: Arwen
     type: Romantic Love
-    directed: false
     description: Aragorn and Arwen share a passionate love that transcends race and
       challenges destiny.
     sentiment: positive
@@ -1245,7 +1215,6 @@
   - source: Saruman
     target: Gollum
     type: Manipulation/Control
-    directed: true
     description: Saruman attempts to manipulate Gollum to locate the Ring, exploiting
       his obsession.
     sentiment: negative
@@ -1254,7 +1223,6 @@
   - source: Boromir
     target: Frodo
     type: Conflict (Ring's Influence)
-    directed: true
     description: Influenced by the One Ring's corrupting power, Boromir attempts to
       take the Ring from Frodo, leading to a critical conflict.
     sentiment: negative
@@ -1263,7 +1231,6 @@
   - source: Gimli
     target: Legolas
     type: Friendship/Respect
-    directed: false
     description: Initially distrustful, Gimli and Legolas develop a strong friendship
       based on mutual respect and shared experiences.
     sentiment: positive
@@ -1272,7 +1239,6 @@
   - source: Galadriel
     target: Frodo
     type: Test/Guidance
-    directed: true
     description: Galadriel tests Frodo's resolve and offers him wisdom, guiding him
       on his path.
     sentiment: positive
@@ -1487,7 +1453,6 @@
   - source: Kambei Shimada
     target: Kikuchiyo
     type: Mentor/Mentee & Developing Respect
-    directed: false
     description: Kambei reluctantly takes the aspiring and impetuous Kikuchiyo under
       his wing, offering guidance. Kikuchiyo, in turn, develops profound respect for
       Kambei's leadership and wisdom.
@@ -1497,7 +1462,6 @@
   - source: Katsushiro Okamoto
     target: Shino
     type: Romantic Interest
-    directed: false
     description: Katsushiro and Shino develop a budding romance, offering a glimpse
       of hope amidst the conflict.
     sentiment: positive
@@ -1506,7 +1470,6 @@
   - source: Kambei Shimada
     target: Kyuzo
     type: Comradeship
-    directed: false
     description: Kambei and Kyuzo share a mutual respect for each other's skills and
       dedication to protecting the village.
     sentiment: positive
@@ -1515,7 +1478,6 @@
   - source: Kambei Shimada
     target: Shichiroji
     type: Comradeship
-    directed: false
     description: Kambei and Shichiroji share a long history of camaraderie as seasoned
       samurai.
     sentiment: positive
@@ -1727,7 +1689,6 @@
   - source: Juror 1
     target: Juror 8
     type: Conflict
-    directed: true
     description: Juror 1 struggles to manage Juror 8's persistent questioning, leading
       to frequent disagreements and tension during deliberations.
     sentiment: negative
@@ -1736,7 +1697,6 @@
   - source: Juror 3
     target: Juror 8
     type: Conflict
-    directed: true
     description: Juror 3 has a deeply personal and emotional conflict with Juror 8,
       stemming from his own difficult relationship with his son.
     sentiment: negative
@@ -1745,7 +1705,6 @@
   - source: Juror 8
     target: Juror 5
     type: Empathy
-    directed: false
     description: Juror 8 demonstrates understanding and empathy for Juror 5's background,
       helping him to feel comfortable sharing his perspective.
     sentiment: positive
@@ -1754,7 +1713,6 @@
   - source: Juror 10
     target: Juror 9
     type: Disdain
-    directed: true
     description: Juror 10 openly expresses prejudice and disdain for Juror 9 due to
       his age and ethnicity.
     sentiment: negative
@@ -1763,7 +1721,6 @@
   - source: Juror 11
     target: Juror 3
     type: Disagreement
-    directed: true
     description: Juror 11 and Juror 3 have fundamental disagreements about the importance
       of upholding legal principles, creating tension within the jury.
     sentiment: negative
@@ -1772,7 +1729,6 @@
   - source: Juror 8
     target: Juror 2
     type: Guidance
-    directed: false
     description: Juror 8 gently encourages Juror 2 to express his thoughts, helping
       him overcome his nervousness.
     sentiment: positive
@@ -1980,7 +1936,6 @@
   - source: Morpheus
     target: Neo
     type: Mentor/Guide
-    directed: true
     description: Morpheus believes Neo is 'The One' and serves as his primary mentor,
       guiding him to understand the Matrix and his destiny.
     sentiment: positive
@@ -1989,7 +1944,6 @@
   - source: Neo
     target: Trinity
     type: Romantic Partner
-    directed: false
     description: Neo and Trinity develop a deep romantic connection, supporting each
       other in their fight against the machines.
     sentiment: positive
@@ -1998,7 +1952,6 @@
   - source: Neo
     target: Agent Smith
     type: Arch-Nemesis / Rivalry
-    directed: false
     description: Neo and Agent Smith become arch-enemies, locked in a persistent battle
       that defines the conflict between humans and machines within the Matrix.
     sentiment: negative
@@ -2007,7 +1960,6 @@
   - source: Morpheus
     target: Trinity
     type: Ally
-    directed: false
     description: Morpheus and Trinity share a strong bond, working together to liberate
       humanity from the Matrix.
     sentiment: positive
@@ -2016,7 +1968,6 @@
   - source: Cypher
     target: Agent Smith
     type: Ally
-    directed: false
     description: Cypher betrays Morpheus and Neo, aligning himself with Agent Smith
       to escape the harsh realities of the rebellion.
     sentiment: negative
@@ -2025,7 +1976,6 @@
   - source: Oracle
     target: Neo
     type: Guide
-    directed: false
     description: The Oracle provides cryptic guidance to Neo, helping him understand
       his destiny and the nature of the Matrix.
     sentiment: neutral
@@ -2034,7 +1984,6 @@
   - source: Morpheus
     target: Cypher
     type: Former Friend
-    directed: false
     description: Morpheus considers Cypher a friend, but is betrayed by him.
     sentiment: negative
     strength: 4
@@ -2246,7 +2195,6 @@
   - source: Clarice Starling
     target: Dr. Hannibal Lecter
     type: Quid Pro Quo / Psychological Manipulation
-    directed: false
     description: Clarice engages in a dangerous quid pro quo with the manipulative
       Dr. Lecter, exchanging personal information and enduring psychological probing
       for clues to catch Buffalo Bill.
@@ -2256,7 +2204,6 @@
   - source: Clarice Starling
     target: Jack Crawford
     type: Employee/Supervisor
-    directed: false
     description: Clarice is assigned to work under Jack Crawford, her superior at
       the FBI.
     sentiment: positive
@@ -2265,7 +2212,6 @@
   - source: Jack Crawford
     target: Dr. Hannibal Lecter
     type: Professional Contact
-    directed: false
     description: Jack seeks Lecter's expertise to aid in the investigation of Jame
       Gumb.
     sentiment: neutral
@@ -2274,7 +2220,6 @@
   - source: Jame Gumb
     target: Catherine Martin
     type: Abductor/Captive
-    directed: true
     description: Jame Gumb (Buffalo Bill) kidnaps Catherine Martin, holding her captive
       as part of his plan to create a 'woman suit'.
     sentiment: negative
@@ -2283,7 +2228,6 @@
   - source: Jame Gumb
     target: Senator Ruth Martin
     type: Indirect Adversary
-    directed: true
     description: Jame Gumb's kidnapping of Catherine Martin makes him a direct adversary
       to her mother, Senator Ruth Martin, who uses her influence to aid the investigation.
     sentiment: negative
@@ -2292,7 +2236,6 @@
   - source: Dr. Hannibal Lecter
     target: Barney
     type: Inmate/Orderly
-    directed: false
     description: Dr. Lecter, an inmate, has a uniquely civil, albeit still cautious,
       professional relationship with Barney, an orderly at the hospital.
     sentiment: neutral
@@ -2301,7 +2244,6 @@
   - source: Dr. Hannibal Lecter
     target: Pilcher
     type: Professional Rivalry
-    directed: false
     description: Lecter and Pilcher are psychiatrists, with a tense professional relationship.
     sentiment: negative
     strength: 3
@@ -2505,7 +2447,6 @@
   - source: Paul Edgecomb
     target: John Coffey
     type: Observer-Subject
-    directed: true
     description: Paul witnesses John Coffey's extraordinary abilities and profound
       innocence, deeply affecting his worldview.
     sentiment: positive
@@ -2514,7 +2455,6 @@
   - source: Paul Edgecomb
     target: Warden Hal Moores
     type: Professional Rivalry
-    directed: true
     description: Paul and Warden Moores clash over Moores' corrupt practices and Paul's
       commitment to justice.
     sentiment: negative
@@ -2523,7 +2463,6 @@
   - source: Brutus 'Brutal' Howell
     target: John Coffey
     type: Transformation
-    directed: true
     description: Brutus witnesses John's kindness and healing abilities, leading to
       a significant change in his behavior and attitude.
     sentiment: positive
@@ -2532,7 +2471,6 @@
   - source: Warden Hal Moores
     target: Percy Wetmore
     type: Subordinate-Superior
-    directed: true
     description: Moores manipulates Wetmore, exploiting his cruelty and incompetence
       to further his own agenda.
     sentiment: negative
@@ -2541,7 +2479,6 @@
   - source: Eduard Delacroix
     target: John Coffey
     type: Friendship
-    directed: true
     description: Eduard and John develop a close friendship based on mutual respect
       and understanding.
     sentiment: positive
@@ -2550,7 +2487,6 @@
   - source: Arlen Bitterbuck
     target: John Coffey
     type: Healing
-    directed: true
     description: John's healing abilities ease Arlen's pain and offer him a sense
       of peace.
     sentiment: positive
@@ -2559,7 +2495,6 @@
   - source: Dean Stanton
     target: Warden Hal Moores
     type: Manipulation
-    directed: true
     description: Moores exploits Dean's naivete and eagerness to please, using him
       to carry out his orders.
     sentiment: negative
@@ -2568,7 +2503,6 @@
   - source: Paul Edgecomb
     target: Jan Edgecomb
     type: Spouse
-    directed: true
     description: Paul and Jan share a loving and supportive relationship, providing
       each other with comfort and stability.
     sentiment: positive
@@ -2759,7 +2693,6 @@
   - source: Blondie
     target: Tuco Ramirez
     type: Partnership
-    directed: true
     description: Blondie and Tuco initially form an uneasy partnership to find the
       gold, marked by mistrust and frequent conflicts.
     sentiment: complicated
@@ -2768,7 +2701,6 @@
   - source: Blondie
     target: Sentenza / Angel Eyes
     type: Rivalry
-    directed: true
     description: Blondie and Sentenza are fierce rivals, constantly vying for control
       and resources in their pursuit of the gold.
     sentiment: negative
@@ -2777,7 +2709,6 @@
   - source: Tuco Ramirez
     target: Sentenza / Angel Eyes
     type: Partnership
-    directed: true
     description: Tuco and Sentenza are partners in crime, seeking to exploit the situation
       and find the gold for themselves.
     sentiment: complicated
@@ -2786,7 +2717,6 @@
   - source: Blondie
     target: Maria
     type: Protection
-    directed: true
     description: Blondie protects Maria from Tuco's volatile behavior, showing a rare
       moment of compassion.
     sentiment: positive
@@ -2795,7 +2725,6 @@
   - source: Tuco Ramirez
     target: Maria
     type: Captivity
-    directed: true
     description: Tuco holds Maria captive, using her as leverage and a source of entertainment.
     sentiment: negative
     strength: 3
@@ -2803,7 +2732,6 @@
   - source: Alcoholic Union Captain
     target: Sentenza / Angel Eyes
     type: Manipulation
-    directed: true
     description: Sentenza manipulates the Alcoholic Union Captain to gain an advantage
       in the conflict.
     sentiment: negative
@@ -3013,7 +2941,6 @@
   - source: Forrest Gump
     target: Jenny Curran
     type: Romantic Interest
-    directed: true
     description: Forrest and Jenny share a lifelong connection, marked by love, loss,
       and unwavering support.
     sentiment: complicated
@@ -3022,7 +2949,6 @@
   - source: Forrest Gump
     target: Lieutenant Dan Taylor
     type: Friend
-    directed: true
     description: Forrest and Lieutenant Dan form a strong bond during their time in
       Vietnam, overcoming adversity together.
     sentiment: positive
@@ -3031,7 +2957,6 @@
   - source: Forrest Gump
     target: Mrs. Gump
     type: Son-Mother
-    directed: true
     description: Forrest has a deep and loving relationship with his mother, who provides
       him with unwavering support and guidance.
     sentiment: positive
@@ -3040,7 +2965,6 @@
   - source: Forrest Gump
     target: Bubba Blue
     type: Friend
-    directed: true
     description: Forrest and Bubba become close friends and share a dream of shrimping
       together.
     sentiment: positive
@@ -3049,7 +2973,6 @@
   - source: Jenny Curran
     target: Mrs. Gump
     type: Daughter-Mother
-    directed: true
     description: Jenny has a complex relationship with her mother, marked by both
       love and conflict.
     sentiment: complicated
@@ -3058,7 +2981,6 @@
   - source: Lieutenant Dan Taylor
     target: Mrs. Gump
     type: Support
-    directed: true
     description: Lieutenant Dan receives support and comfort from Mrs. Gump after
       his injuries.
     sentiment: positive
@@ -3067,7 +2989,6 @@
   - source: Young Forrest Gump
     target: Young Jenny Curran
     type: Childhood Friends
-    directed: true
     description: Forrest and Jenny grow up together, forming a deep and enduring friendship.
     sentiment: positive
     strength: 4
@@ -3282,7 +3203,6 @@
   - source: Dom Cobb
     target: Arthur
     type: Mentor-Mentee
-    directed: true
     description: Cobb trains and guides Arthur, sharing his expertise in dream extraction
       and relying on him to manage the team's operations.
     sentiment: positive
@@ -3291,7 +3211,6 @@
   - source: Dom Cobb
     target: Saito
     type: Client-Employer
-    directed: true
     description: Saito hires Cobb to perform a complex extraction, establishing a
       business relationship with high stakes.
     sentiment: neutral
@@ -3300,7 +3219,6 @@
   - source: Dom Cobb
     target: Mal Cobb
     type: Spouse-Former
-    directed: true
     description: A tragic relationship marked by shared architectural work and a descent
       into shared delusion, now haunting Cobb's dreams.
     sentiment: complicated
@@ -3309,7 +3227,6 @@
   - source: Arthur
     target: Eames
     type: Colleague
-    directed: true
     description: Arthur and Eames work closely together within the dream team, supporting
       each other's roles and coordinating their efforts.
     sentiment: positive
@@ -3318,7 +3235,6 @@
   - source: Robert Fischer, Jr.
     target: Peter Browning
     type: Unknown Type
-    directed: true
     description: Browning seeks to manipulate Fischer to gain control of his inheritance,
       creating a tense power dynamic.
     sentiment: negative
@@ -3327,7 +3243,6 @@
   - source: Saito
     target: Robert Fischer, Jr.
     type: Business Associate
-    directed: true
     description: Saito seeks to influence Fischer's decisions through extraction,
       demonstrating a calculated business strategy.
     sentiment: neutral
@@ -3336,7 +3251,6 @@
   - source: Yusuf
     target: Dom Cobb
     type: Colleague
-    directed: true
     description: Yusuf provides the sedative and chemical expertise needed for the
       dream extraction, working closely with Cobb.
     sentiment: neutral
@@ -3345,7 +3259,6 @@
   - source: Ariadne
     target: Dom Cobb
     type: Collaborator
-    directed: true
     description: Ariadne designs the dream worlds under Cobb's direction, developing
       a close working relationship.
     sentiment: positive
@@ -3564,7 +3477,6 @@
   - source: Don Michael Corleone
     target: Vito Corleone
     type: Son
-    directed: true
     description: Michael is the son of Vito, inheriting his position as the head of
       the family. The film contrasts Michael's reign with Vito's rise.
     sentiment: positive
@@ -3573,7 +3485,6 @@
   - source: Don Michael Corleone
     target: Kay Corleone
     type: Spouse
-    directed: true
     description: Michael marries Kay, but their relationship is strained and ultimately
       destroyed by his involvement in the Mafia and his increasing ruthlessness.
     sentiment: complicated
@@ -3582,7 +3493,6 @@
   - source: Tom Hagen
     target: Vito Corleone
     type: Consigliere
-    directed: true
     description: Tom served as Vito's trusted advisor and lawyer and continues in
       a diminished role for Michael.
     sentiment: positive
@@ -3591,7 +3501,6 @@
   - source: Frederico 'Fredo' Corleone
     target: Don Michael Corleone
     type: Brother
-    directed: true
     description: Fredo is Michael's older brother, whose weakness and feelings of
       being overlooked lead to betrayal.
     sentiment: negative
@@ -3600,7 +3509,6 @@
   - source: Constanzia 'Connie' Corleone
     target: Don Michael Corleone
     type: Sister
-    directed: true
     description: Connie is Michael's sister, experiencing turbulent relationships
       and later becoming more involved in family affairs.
     sentiment: neutral
@@ -3609,7 +3517,6 @@
   - source: Don Michael Corleone
     target: Hyman Roth
     type: Business Partner / Nemesis
-    directed: true
     description: Michael partners with Roth in Miami, a relationship built on mutual
       ambition and deception, ultimately leading to a deadly rivalry.
     sentiment: negative
@@ -3618,7 +3525,6 @@
   - source: Don Michael Corleone
     target: Frank Pentangeli
     type: Subordinate / Adversary
-    directed: true
     description: Frank is a Corleone caporegime who feels betrayed by Michael and
       testifies against the Corleone family, leading to a dramatic confrontation.
     sentiment: negative
@@ -3627,7 +3533,6 @@
   - source: Vito Corleone
     target: Don Fanucci
     type: Rival
-    directed: true
     description: Young Vito eliminates Fanucci to take control of the neighborhood
       and establish his own power.
     sentiment: negative
@@ -3852,7 +3757,6 @@
   - source: Chihiro Ogino / Sen (voice)
     target: Haku (voice)
     type: Friend
-    directed: true
     description: Chihiro and Haku develop a deep friendship and mutual reliance as
       they navigate the spirit world together, with Haku protecting Chihiro and Chihiro
       helping Haku remember his true identity.
@@ -3862,7 +3766,6 @@
   - source: Chihiro Ogino / Sen (voice)
     target: Yubaba / Zeniba (voice)
     type: Employee / Adversary (Yubaba) & Ally (Zeniba)
-    directed: true
     description: Chihiro works for Yubaba, who holds her parents captive and controls
       her name. She later encounters Yubaba's benevolent twin, Zeniba.
     sentiment: complicated
@@ -3871,7 +3774,6 @@
   - source: Chihiro Ogino / Sen (voice)
     target: Akio Ogino (voice)
     type: Family
-    directed: true
     description: Chihiro is devoted to rescuing her father, who is trapped as a pig.
     sentiment: positive
     strength: 5
@@ -3879,7 +3781,6 @@
   - source: Chihiro Ogino / Sen (voice)
     target: Yuko Ogino (voice)
     type: Family
-    directed: true
     description: Chihiro is determined to free her mother, who is also trapped as
       a pig.
     sentiment: positive
@@ -3888,7 +3789,6 @@
   - source: Chihiro Ogino / Sen (voice)
     target: Chichiyaku (voice)
     type: Workplace Superior / Occasional Helper
-    directed: true
     description: Chichiyaku, as a bathhouse foreman, initially seems dismissive but
       provides Chihiro with some work guidance and assistance.
     sentiment: neutral
@@ -3897,7 +3797,6 @@
   - source: Chihiro Ogino / Sen (voice)
     target: Kaonashi (voice)
     type: Object of Compassion / Complicated Entity
-    directed: true
     description: Chihiro shows kindness to the lonely Kaonashi (No-Face), who becomes
       dangerously fixated on her and causes chaos before she helps him find a calmer
       existence with Zeniba.
@@ -3907,7 +3806,6 @@
   - source: Haku (voice)
     target: Yubaba / Zeniba (voice)
     type: Apprentice / Subordinate (to Yubaba)
-    directed: true
     description: Haku serves as Yubaba's employee and enforcer, bound by her magic,
       but his loyalty is tested by his connection to Chihiro.
     sentiment: complicated
@@ -4135,7 +4033,6 @@
   - source: Kim Ki-taek
     target: Chung-sook
     type: Spouse
-    directed: true
     description: Kim Ki-taek and Chung-sook are a married couple, the parents of Ki-woo
       and Ki-jung, struggling to make ends meet and collaborating in the infiltration.
     sentiment: positive
@@ -4144,7 +4041,6 @@
   - source: Ki-woo
     target: Park Dong-ik
     type: Employer/Employee (Deceptive)
-    directed: true
     description: Ki-woo works as a tutor for Da-hye, employed by Park Dong-ik under
       false pretenses.
     sentiment: neutral
@@ -4153,7 +4049,6 @@
   - source: Ki-jung
     target: Yeon-kyo
     type: Employer/Employee (Deceptive)
-    directed: true
     description: Ki-jung, as 'Jessica', works as an art therapist for Da-song, employed
       by Yeon-kyo under false pretenses.
     sentiment: neutral
@@ -4162,7 +4057,6 @@
   - source: Ki-woo
     target: Da-hye
     type: Tutor/Student (with romantic undertones)
-    directed: true
     description: Ki-woo tutors Da-hye, and they develop a mutual flirtatious interest.
     sentiment: complicated
     strength: 3
@@ -4170,7 +4064,6 @@
   - source: Ki-jung
     target: Da-song
     type: Art Tutor/Student (Deceptive)
-    directed: true
     description: Ki-jung, posing as 'Jessica,' becomes the art tutor for the Park's
       young son, Da-song, using manipulative techniques.
     sentiment: neutral
@@ -4179,7 +4072,6 @@
   - source: Moon-gwang
     target: Park Dong-ik
     type: Former Employer/Employee
-    directed: true
     description: Moon-gwang was previously employed by Park Dong-ik as a loyal housekeeper
       before being ousted by the Kims.
     sentiment: complicated
@@ -4411,7 +4303,6 @@
   - source: Frodo
     target: Sam
     type: Friend (Unbreakable Bond)
-    directed: true
     description: Frodo and Sam share an unwavering friendship and profound bond, with
       Sam providing unwavering support, loyalty, and practical help throughout their
       journey to destroy the Ring.
@@ -4421,7 +4312,6 @@
   - source: Gandalf
     target: Frodo
     type: Mentor / Guide
-    directed: true
     description: Gandalf guides and protects Frodo, recognizing his importance in
       the fight against Sauron and offering wisdom, encouragement, and magical aid.
     sentiment: positive
@@ -4430,7 +4320,6 @@
   - source: Aragorn
     target: Arwen
     type: Romantic Partner
-    directed: true
     description: Aragorn and Arwen share a deep and enduring love, defying fate and
       the separation of mortals and elves, symbolizing hope and renewal for Middle-earth.
     sentiment: positive
@@ -4439,7 +4328,6 @@
   - source: Gimli
     target: Legolas
     type: Friend (Unlikely Companions)
-    directed: true
     description: Initially wary of each other due to their races' histories, Gimli
       the Dwarf and Legolas the Elf develop a strong and unlikely friendship, demonstrating
       unity and respect.
@@ -4449,7 +4337,6 @@
   - source: Gandalf
     target: Aragorn
     type: Mentor / Ally
-    directed: true
     description: Gandalf recognizes Aragorn's destiny as King and guides him towards
       embracing his role, offering wisdom, strategic counsel, and support in the war.
     sentiment: positive
@@ -4458,7 +4345,6 @@
   - source: Théoden
     target: Aragorn
     type: Ally
-    directed: true
     description: Théoden, King of Rohan, and Aragorn form a strong alliance to defend
       their peoples and fight against Sauron's forces, demonstrating courage and mutual
       respect as leaders.
@@ -4468,7 +4354,6 @@
   - source: Frodo
     target: Gollum / Smeagol
     type: Unstable Relationship (Guide/Burden)
-    directed: true
     description: Frodo reluctantly uses Gollum as a guide to Mordor, creating a complex
       and fraught relationship marked by manipulation, pity, dependence, and ultimately
       betrayal by Gollum.
@@ -4686,7 +4571,6 @@
   - source: Taki Tachibana (voice)
     target: Mitsuha Miyamizu (voice)
     type: Main Relationship
-    directed: true
     description: Taki and Mitsuha experience a series of body swaps, developing a
       deep connection and understanding of each other's lives.
     sentiment: positive
@@ -4695,7 +4579,6 @@
   - source: Taki Tachibana (voice)
     target: Katsuhiko Teshigawara (voice)
     type: Friend
-    directed: true
     description: Taki and Katsuhiko are close friends who support each other through
       various challenges.
     sentiment: positive
@@ -4704,7 +4587,6 @@
   - source: Mitsuha Miyamizu (voice)
     target: Sayaka Natori (voice)
     type: Friend
-    directed: true
     description: Mitsuha and Sayaka are close friends who share a bond based on mutual
       support and understanding.
     sentiment: positive
@@ -4713,7 +4595,6 @@
   - source: Taki Tachibana (voice)
     target: Taki's Father (voice)
     type: Family
-    directed: true
     description: Taki and his father share a loving and supportive family relationship.
     sentiment: positive
     strength: 4
@@ -4721,7 +4602,6 @@
   - source: Mitsuha Miyamizu (voice)
     target: Toshiki Miyamizu (voice)
     type: Family
-    directed: true
     description: Mitsuha and her father share a complex but ultimately loving family
       relationship.
     sentiment: positive
@@ -4730,7 +4610,6 @@
   - source: Mitsuha Miyamizu (voice)
     target: Hitoha Miyamizu (voice)
     type: Family
-    directed: true
     description: Mitsuha and her grandmother share a close and respectful relationship.
     sentiment: positive
     strength: 4
@@ -4957,7 +4836,6 @@
   - source: Cooper
     target: Murph
     type: Father
-    directed: true
     description: Cooper is Murph's father, and their relationship is central to the
       film's narrative, driven by a shared desire to understand the unexplained phenomena.
     sentiment: positive
@@ -4966,7 +4844,6 @@
   - source: Cooper
     target: Brand
     type: Romantic Interest
-    directed: true
     description: Cooper and Brand develop a romantic relationship during the mission,
       complicated by their respective roles and the challenges they face.
     sentiment: complicated
@@ -4975,7 +4852,6 @@
   - source: Murph
     target: Cooper
     type: Daughter
-    directed: true
     description: Murph is Cooper's daughter, and their bond is a driving force behind
       his actions and her own discoveries.
     sentiment: positive
@@ -4984,7 +4860,6 @@
   - source: Cooper
     target: Professor Brand
     type: Colleague
-    directed: true
     description: Cooper and Professor Brand are colleagues at NASA, working together
       to find a solution to humanity's problems.
     sentiment: neutral
@@ -4993,7 +4868,6 @@
   - source: Brand
     target: Professor Brand
     type: Daughter
-    directed: true
     description: Brand is Professor Brand's daughter, and their relationship influences
       her decisions and motivations.
     sentiment: neutral
@@ -5002,7 +4876,6 @@
   - source: Cooper
     target: Mann
     type: Colleague
-    directed: true
     description: Cooper and Mann are both astronauts, but their differing perspectives
       and Mann's deception create conflict.
     sentiment: negative
@@ -5235,7 +5108,6 @@
   - source: Henry Hill
     target: James Conway
     type: Informant
-    directed: true
     description: Henry Hill becomes an informant for FBI agent James Conway, providing
       crucial information that leads to the downfall of the Lucchese crime family.
     sentiment: complicated
@@ -5244,7 +5116,6 @@
   - source: Henry Hill
     target: Tommy DeVito
     type: Associate
-    directed: true
     description: Henry and Tommy are close associates within the Lucchese crime family,
       but their relationship deteriorates due to Tommy's volatility.
     sentiment: negative
@@ -5253,7 +5124,6 @@
   - source: Henry Hill
     target: Karen Hill
     type: Spouse
-    directed: true
     description: Henry and Karen are married, but their relationship is strained by
       Henry's criminal lifestyle and infidelity.
     sentiment: negative
@@ -5262,7 +5132,6 @@
   - source: Tommy DeVito
     target: Paul Cicero
     type: Mentee
-    directed: true
     description: Tommy is mentored by Paul Cicero, who guides him within the Lucchese
       crime family.
     sentiment: positive
@@ -5271,7 +5140,6 @@
   - source: Paul Cicero
     target: Frankie Carbone
     type: Superior
-    directed: true
     description: Paul Cicero is Frankie Carbone's superior within the Lucchese crime
       family, assigning him various tasks.
     sentiment: neutral
@@ -5280,7 +5148,6 @@
   - source: Henry Hill
     target: Billy Batts
     type: Rival
-    directed: true
     description: Henry and Billy have a tense rivalry in prison, leading to a violent
       confrontation.
     sentiment: negative
@@ -5289,7 +5156,6 @@
   - source: Tommy DeVito
     target: Janice Rossi
     type: Romantic
-    directed: true
     description: Tommy and Janice have a romantic relationship, but it is ultimately
       unstable and ends badly.
     sentiment: negative
@@ -5513,7 +5379,6 @@
   - source: Bruce Wayne
     target: Alfred
     type: Mentor
-    directed: false
     description: Alfred provides Bruce with unwavering support, guidance, and a sense
       of normalcy amidst his dual life as Batman.
     sentiment: positive
@@ -5522,7 +5387,6 @@
   - source: Bruce Wayne
     target: Rachel
     type: Romantic
-    directed: false
     description: Bruce and Rachel share a complex romantic relationship, complicated
       by Bruce's secret identity and the dangerous world he inhabits.
     sentiment: complicated
@@ -5531,7 +5395,6 @@
   - source: Bruce Wayne
     target: Gordon
     type: Alliance
-    directed: false
     description: Bruce and Gordon form an uneasy alliance to combat the criminal underworld,
       relying on each other despite their different methods.
     sentiment: positive
@@ -5540,7 +5403,6 @@
   - source: Bruce Wayne
     target: Lucius Fox
     type: Professional
-    directed: false
     description: Bruce and Lucius have a strong professional relationship, with Lucius
       providing crucial technology and support for Batman's operations.
     sentiment: positive
@@ -5549,7 +5411,6 @@
   - source: Joker
     target: Harvey Dent
     type: Nemesis
-    directed: true
     description: The Joker manipulates and corrupts Harvey Dent, pushing him to the
       brink of madness and transforming him into Two-Face.
     sentiment: negative
@@ -5558,7 +5419,6 @@
   - source: Harvey Dent
     target: Rachel
     type: Romantic
-    directed: false
     description: Harvey and Rachel are engaged, representing a symbol of hope and
       justice in Gotham, until Harvey's fall.
     sentiment: positive
@@ -5775,7 +5635,6 @@
   - source: Seita (voice)
     target: Setsuko (voice)
     type: Sibling
-    directed: false
     description: Seita and Setsuko share a close bond as siblings, relying on each
       other for survival.
     sentiment: positive
@@ -5784,7 +5643,6 @@
   - source: Seita (voice)
     target: Mother (voice)
     type: Child
-    directed: true
     description: Seita loves his mother, but her death deeply impacts him.
     sentiment: positive
     strength: 4
@@ -5792,7 +5650,6 @@
   - source: Setsuko (voice)
     target: Mother (voice)
     type: Child
-    directed: true
     description: Setsuko loves her mother, but her death deeply impacts her.
     sentiment: positive
     strength: 4
@@ -5800,7 +5657,6 @@
   - source: Seita (voice)
     target: Auntie (voice)
     type: Family
-    directed: false
     description: The relationship between Seita and his aunt deteriorates as she becomes
       less welcoming.
     sentiment: negative
@@ -5809,7 +5665,6 @@
   - source: Setsuko (voice)
     target: Auntie (voice)
     type: Family
-    directed: false
     description: The relationship between Setsuko and her aunt deteriorates as she
       becomes less welcoming.
     sentiment: negative
@@ -5929,21 +5784,18 @@
     description: A young woman of Indian descent living in London, torn between her
       family's traditions and her own desires.
     group: Family & Friends
-    image_file: output/character_images/55061.jpg
   - name: Raj Malhotra
     actor_name: Shah Rukh Khan
     tmdb_person_id: 35742
     description: A carefree and charming young man who falls in love with Simran and
       travels to India to win her family's approval.
     group: Family & Friends
-    image_file: output/character_images/35742.jpg
   - name: Chaudhry Baldev Singh
     actor_name: Amrish Puri
     tmdb_person_id: 691
     description: Simran's strict and traditional father, who initially opposes her
       relationship with Raj.
     group: Family
-    image_file: output/character_images/691.jpg
   - name: Lajwanti 'Lajjo' Singh
     actor_name: Farida Jalal
     tmdb_person_id: 146971
@@ -5952,14 +5804,12 @@
     group: Family
     aliases:
     - Lajjo
-    image_file: output/character_images/146971.jpg
   - name: Dharamvir Malhotra
     actor_name: Anupam Kher
     tmdb_person_id: 6217
     description: Raj's father, a jovial and understanding man who encourages his son's
       pursuit of love.
     group: Family & Friends
-    image_file: output/character_images/6217.jpg
   - name: Rajeshwari "Chutki" Singh
     actor_name: Pooja Ruparel
     tmdb_person_id: 146973
@@ -5967,43 +5817,36 @@
     group: Family
     aliases:
     - Chutki
-    image_file: output/character_images/146973.jpg
   - name: Kuljeet Singh
     actor_name: Parmeet Sethi
     tmdb_person_id: 85696
     description: Simran's arranged fiancé, a wealthy and traditional man.
     group: Family & Friends
-    image_file: output/character_images/85696.jpg
   - name: Ajit Singh, Kuljeet's Father
     actor_name: Satish Shah
     tmdb_person_id: 35759
     description: Kuljeet's father, who is involved in the marriage arrangement.
     group: Family & Friends
-    image_file: output/character_images/35759.jpg
   - name: Preeti Singh, Kuljeet's Sister
     actor_name: Mandira Bedi
     tmdb_person_id: 146974
     description: Kuljeet's sister, present during the wedding preparations.
     group: Family & Friends
-    image_file: output/character_images/146974.jpg
   - name: Simran's Grandmother
     actor_name: Achala Sachdev
     tmdb_person_id: 146972
     description: Simran's grandmother, a wise and supportive figure.
     group: Family
-    image_file: output/character_images/146972.jpg
   - name: Simran's Aunt
     actor_name: Himani Shivpuri
     tmdb_person_id: 78248
     description: Simran's aunt, part of the family.
     group: Family
-    image_file: output/character_images/78248.jpg
   - name: Rocky, Raj's friend
     actor_name: Karan Johar
     tmdb_person_id: 35736
     description: One of Raj's friends, who accompanies him on his journey.
     group: Family & Friends
-    image_file: output/character_images/35736.jpg
   - name: Roby, Raj's friend
     actor_name: Arjun Sablok
     tmdb_person_id: 631226
@@ -6014,13 +5857,11 @@
     tmdb_person_id: 102252
     description: A friend of Raj, seen in the beginning.
     group: Family & Friends
-    image_file: output/character_images/102252.jpg
   - name: Man on Bike
     actor_name: Uday Chopra
     tmdb_person_id: 69709
     description: A character who appears briefly in the film.
     group: Minor Characters
-    image_file: output/character_images/69709.jpg
   - name: Simran's Friend
     actor_name: Hemlata Deepak
     tmdb_person_id: 1661299
@@ -6040,7 +5881,6 @@
   - source: Simran Singh
     target: Raj Malhotra
     type: Romantic Interest
-    directed: false
     description: Simran and Raj fall in love and fight for their relationship.
     sentiment: positive
     strength: 5
@@ -6048,7 +5888,6 @@
   - source: Chaudhry Baldev Singh
     target: Simran Singh
     type: Father-Daughter
-    directed: true
     description: Baldev is Simran's father and initially disapproves of her relationship
       with Raj.
     sentiment: complicated
@@ -6057,7 +5896,6 @@
   - source: Lajwanti 'Lajjo' Singh
     target: Simran Singh
     type: Mother-Daughter
-    directed: false
     description: Lajjo is Simran's mother and supports her choices.
     sentiment: positive
     strength: 5
@@ -6065,7 +5903,6 @@
   - source: Dharamvir Malhotra
     target: Raj Malhotra
     type: Father-Son
-    directed: false
     description: Dharamvir is Raj's father and supports his son's decisions.
     sentiment: positive
     strength: 5
@@ -6073,7 +5910,6 @@
   - source: Raj Malhotra
     target: Chaudhry Baldev Singh
     type: Rival
-    directed: true
     description: Raj initially faces opposition from Baldev Singh.
     sentiment: complicated
     strength: 3
@@ -6081,7 +5917,6 @@
   - source: Simran Singh
     target: Kuljeet Singh
     type: Fiancé
-    directed: true
     description: Simran is engaged to Kuljeet, though she doesn't love him.
     sentiment: neutral
     strength: 2
@@ -6089,7 +5924,6 @@
   - source: Raj Malhotra
     target: Rocky, Raj's friend
     type: Friend
-    directed: false
     description: Rocky is one of Raj's friends.
     sentiment: positive
     strength: 3
@@ -6097,7 +5931,6 @@
   - source: Raj Malhotra
     target: Roby, Raj's friend
     type: Friend
-    directed: false
     description: Roby is one of Raj's friends.
     sentiment: positive
     strength: 3
@@ -6105,7 +5938,6 @@
   - source: Raj Malhotra
     target: Sheena
     type: Friend
-    directed: false
     description: Sheena is a friend of Raj.
     sentiment: neutral
     strength: 2
@@ -6113,7 +5945,6 @@
   - source: Simran Singh
     target: Rajeshwari "Chutki" Singh
     type: Sister
-    directed: false
     description: Simran and Chutki are sisters.
     sentiment: positive
     strength: 4
@@ -6121,7 +5952,6 @@
   - source: Simran Singh
     target: Simran's Grandmother
     type: Family
-    directed: true
     description: Simran's grandmother is a supportive family member.
     sentiment: positive
     strength: 3
@@ -6129,7 +5959,6 @@
   - source: Simran Singh
     target: Simran's Aunt
     type: Family
-    directed: true
     description: Simran's aunt is part of the family.
     sentiment: neutral
     strength: 2
@@ -6137,7 +5966,6 @@
   - source: Simran Singh
     target: Simran's Friend
     type: Friend
-    directed: false
     description: Simran has a friend.
     sentiment: positive
     strength: 3
@@ -6145,7 +5973,6 @@
   - source: Simran Singh
     target: Simran's Uncle
     type: Family
-    directed: true
     description: Simran's uncle is part of the family.
     sentiment: neutral
     strength: 2
@@ -6278,7 +6105,6 @@
     description: A charming and resourceful waiter who uses humor and imagination
       to protect his son from the horrors of a concentration camp.
     group: Family
-    image_file: output/character_images/4818.jpg
   - name: Dora
     actor_name: Nicoletta Braschi
     tmdb_person_id: 9235
@@ -6287,81 +6113,68 @@
     group: Family
     aliases:
     - Princess
-    image_file: output/character_images/9235.jpg
   - name: Giosué
     actor_name: Giorgio Cantarini
     tmdb_person_id: 9236
     description: Guido and Dora's young son, who is sheltered from the reality of
       the Holocaust by his father's playful deception.
     group: Family
-    image_file: output/character_images/9236.jpg
   - name: Zio
     actor_name: Giustino Durano
     tmdb_person_id: 9237
     description: Guido's uncle, who helps him in his pursuit of Dora.
     group: Supporting Characters
-    image_file: output/character_images/9237.jpg
   - name: Ferruccio
     actor_name: Sergio Bini Bustric
     tmdb_person_id: 9239
     description: Guido's friend, who shares his enthusiasm for life and helps him
       in his endeavors.
     group: Supporting Characters
-    image_file: output/character_images/9239.jpg
   - name: Dora's Mother
     actor_name: Marisa Paredes
     tmdb_person_id: 954
     description: Dora's mother, who disapproves of Guido initially.
     group: Supporting Characters
-    image_file: output/character_images/954.jpg
   - name: Doctor Lessing
     actor_name: Horst Buchholz
     tmdb_person_id: 5789
     description: A doctor at the camp, who is also a German officer.
     group: German Officers
-    image_file: output/character_images/5789.jpg
   - name: Mrs. Guicciardini
     actor_name: Lidia Alfonsi
     tmdb_person_id: 9240
     description: A woman who is a customer of Guido.
     group: Supporting Characters
-    image_file: output/character_images/9240.jpg
   - name: School Principal
     actor_name: Giuliana Lojodice
     tmdb_person_id: 9242
     description: The principal of the school where Dora works.
     group: Supporting Characters
-    image_file: output/character_images/9242.jpg
   - name: Rodolfo
     actor_name: Amerigo Fontani
     tmdb_person_id: 9238
     description: Dora's fiancé before she meets Guido.
     group: Supporting Characters
-    image_file: output/character_images/9238.jpg
   - name: Bartolomeo
     actor_name: Pietro De Silva
     tmdb_person_id: 9241
     description: A character who is present in the camp.
     group: Camp Inmates
-    image_file: output/character_images/9241.jpg
   - name: Vittorino
     actor_name: Francesco Guzzo
     tmdb_person_id: 9243
     description: A character who is present in the camp.
     group: Camp Inmates
-    image_file: output/character_images/9243.jpg
   - name: Elena
     actor_name: Raffaella Lebboroni
     tmdb_person_id: 93726
     description: A character who is present in the movie.
     group: Supporting Characters
-    image_file: output/character_images/93726.jpg
   - name: Rodolfo's Friend
     actor_name: Claudio Alfonsi
     tmdb_person_id: 1884402
     description: A friend of Rodolfo.
     group: Supporting Characters
-    image_file: output/character_images/1884402.jpg
   - name: Prefect
     actor_name: Gil Baroni
     tmdb_person_id: 1397652
@@ -6372,7 +6185,6 @@
     tmdb_person_id: 1898014
     description: A character who is present in the movie.
     group: Supporting Characters
-    image_file: output/character_images/1898014.jpg
   - name: German Party Attendant
     actor_name: Jürgen Bohn
     tmdb_person_id: 4479382
@@ -6383,7 +6195,6 @@
     tmdb_person_id: 6289
     description: A German auxiliary.
     group: German Officers
-    image_file: output/character_images/6289.jpg
   - name: German Executioner
     actor_name: Robert Camero
     tmdb_person_id: 4479387
@@ -6399,13 +6210,11 @@
     tmdb_person_id: 1913215
     description: A waiter.
     group: Supporting Characters
-    image_file: output/character_images/1913215.jpg
   - name: US Tank Driver
     actor_name: Aaron Craig
     tmdb_person_id: 1807066
     description: A US tank driver.
     group: Allied Forces
-    image_file: output/character_images/1807066.jpg
   - name: King
     actor_name: Alfiero Falomi
     tmdb_person_id: 4479396
@@ -6441,7 +6250,6 @@
     tmdb_person_id: 45662
     description: A German corporal.
     group: German Officers
-    image_file: output/character_images/45662.jpg
   - name: German Major at Party
     actor_name: Wolfgang Hillinger
     tmdb_person_id: 991277
@@ -6482,7 +6290,6 @@
     tmdb_person_id: 1724150
     description: A public education inspector.
     group: Supporting Characters
-    image_file: output/character_images/1724150.jpg
   - name: Lady at the Opera
     actor_name: Francesca Messinese
     tmdb_person_id: 4479415
@@ -6502,7 +6309,6 @@
   - source: Guido
     target: Dora
     type: Romantic
-    directed: false
     description: Guido and Dora fall in love and marry.
     sentiment: positive
     strength: 5
@@ -6510,7 +6316,6 @@
   - source: Guido
     target: Giosué
     type: Parent-Child
-    directed: false
     description: Guido is a loving father to Giosué, protecting him throughout the
       Holocaust.
     sentiment: positive
@@ -6519,7 +6324,6 @@
   - source: Guido
     target: Zio
     type: Family
-    directed: false
     description: Guido and his uncle have a close relationship.
     sentiment: positive
     strength: 3
@@ -6527,7 +6331,6 @@
   - source: Guido
     target: Ferruccio
     type: Friend
-    directed: false
     description: Guido and Ferruccio are friends who share a similar outlook on life.
     sentiment: positive
     strength: 4
@@ -6535,7 +6338,6 @@
   - source: Dora
     target: Giosué
     type: Parent-Child
-    directed: false
     description: Dora is Giosué's mother.
     sentiment: positive
     strength: 5
@@ -6543,7 +6345,6 @@
   - source: Dora
     target: Rodolfo
     type: Romantic
-    directed: true
     description: Dora was engaged to Rodolfo before meeting Guido.
     sentiment: neutral
     strength: 2
@@ -6551,7 +6352,6 @@
   - source: Dora
     target: Dora's Mother
     type: Family
-    directed: false
     description: Dora has a relationship with her mother.
     sentiment: neutral
     strength: 3
@@ -6559,7 +6359,6 @@
   - source: Guido
     target: Doctor Lessing
     type: Acquaintance
-    directed: true
     description: Guido encounters Doctor Lessing at the camp.
     sentiment: neutral
     strength: 1
@@ -6567,7 +6366,6 @@
   - source: Guido
     target: Mrs. Guicciardini
     type: Customer
-    directed: true
     description: Guido interacts with Mrs. Guicciardini as a waiter.
     sentiment: neutral
     strength: 2
@@ -6575,7 +6373,6 @@
   - source: Guido
     target: School Principal
     type: Acquaintance
-    directed: true
     description: Guido interacts with the school principal.
     sentiment: neutral
     strength: 2
@@ -6583,7 +6380,6 @@
   - source: Giosué
     target: Bartolomeo
     type: Camp Inmate
-    directed: true
     description: Giosué encounters Bartolomeo at the camp.
     sentiment: neutral
     strength: 1
@@ -6591,7 +6387,6 @@
   - source: Giosué
     target: Vittorino
     type: Camp Inmate
-    directed: true
     description: Giosué encounters Vittorino at the camp.
     sentiment: neutral
     strength: 1
@@ -6599,7 +6394,6 @@
   - source: Guido
     target: German Sergeant
     type: Enemy
-    directed: true
     description: Guido is in conflict with the German Sergeant.
     sentiment: negative
     strength: 4
@@ -6607,7 +6401,6 @@
   - source: Guido
     target: German Corporal
     type: Enemy
-    directed: true
     description: Guido is in conflict with the German Corporal.
     sentiment: negative
     strength: 4
@@ -6615,7 +6408,6 @@
   - source: Guido
     target: German Major at Party
     type: Enemy
-    directed: true
     description: Guido is in conflict with the German Major at Party.
     sentiment: negative
     strength: 4
@@ -6623,7 +6415,6 @@
   - source: Guido
     target: German Executioner
     type: Enemy
-    directed: true
     description: Guido is in conflict with the German Executioner.
     sentiment: negative
     strength: 4
@@ -6631,7 +6422,6 @@
   - source: Dora
     target: German Auxiliary
     type: Enemy
-    directed: true
     description: Dora is in conflict with the German Auxiliary.
     sentiment: negative
     strength: 4
@@ -6639,7 +6429,6 @@
   - source: Guido
     target: Elena
     type: Acquaintance
-    directed: true
     description: Guido interacts with Elena.
     sentiment: neutral
     strength: 1
@@ -6647,7 +6436,6 @@
   - source: Guido
     target: Prefect
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Prefect.
     sentiment: neutral
     strength: 1
@@ -6655,7 +6443,6 @@
   - source: Guido
     target: Man with Key
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Man with Key.
     sentiment: neutral
     strength: 1
@@ -6663,7 +6450,6 @@
   - source: Guido
     target: German Party Attendant
     type: Acquaintance
-    directed: true
     description: Guido interacts with the German Party Attendant.
     sentiment: neutral
     strength: 1
@@ -6671,7 +6457,6 @@
   - source: Guido
     target: King
     type: Acquaintance
-    directed: true
     description: Guido interacts with the King.
     sentiment: neutral
     strength: 1
@@ -6679,7 +6464,6 @@
   - source: Guido
     target: School Janitor
     type: Acquaintance
-    directed: true
     description: Guido interacts with the School Janitor.
     sentiment: neutral
     strength: 1
@@ -6687,7 +6471,6 @@
   - source: Guido
     target: Card Player
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Card Player.
     sentiment: neutral
     strength: 1
@@ -6695,7 +6478,6 @@
   - source: Guido
     target: Teacher
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Teacher.
     sentiment: neutral
     strength: 1
@@ -6703,7 +6485,6 @@
   - source: Guido
     target: Female Soldier at Children's Dinner
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Female Soldier at Children's Dinner.
     sentiment: neutral
     strength: 1
@@ -6711,7 +6492,6 @@
   - source: Guido
     target: 1st Lady at the Grand Hotel
     type: Acquaintance
-    directed: true
     description: Guido interacts with the 1st Lady at the Grand Hotel.
     sentiment: neutral
     strength: 1
@@ -6719,7 +6499,6 @@
   - source: Guido
     target: 2nd Lady at the Grand Hotel
     type: Acquaintance
-    directed: true
     description: Guido interacts with the 2nd Lady at the Grand Hotel.
     sentiment: neutral
     strength: 1
@@ -6727,7 +6506,6 @@
   - source: Guido
     target: Gigliola
     type: Acquaintance
-    directed: true
     description: Guido interacts with Gigliola.
     sentiment: neutral
     strength: 1
@@ -6735,7 +6513,6 @@
   - source: Guido
     target: Regina
     type: Acquaintance
-    directed: true
     description: Guido interacts with Regina.
     sentiment: neutral
     strength: 1
@@ -6743,7 +6520,6 @@
   - source: Guido
     target: Eleonora
     type: Acquaintance
-    directed: true
     description: Guido interacts with Eleonora.
     sentiment: neutral
     strength: 1
@@ -6751,7 +6527,6 @@
   - source: Guido
     target: Public Education Inspector
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Public Education Inspector.
     sentiment: neutral
     strength: 1
@@ -6759,7 +6534,6 @@
   - source: Guido
     target: Lady at the Opera
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Lady at the Opera.
     sentiment: neutral
     strength: 1
@@ -6767,7 +6541,6 @@
   - source: Guido
     target: Upholsterer
     type: Acquaintance
-    directed: true
     description: Guido interacts with the Upholsterer.
     sentiment: neutral
     strength: 1
@@ -6775,7 +6548,6 @@
   - source: Giosué
     target: Doctor Lessing
     type: Acquaintance
-    directed: true
     description: Giosué encounters Doctor Lessing at the camp.
     sentiment: neutral
     strength: 1
@@ -6900,7 +6672,6 @@
     description: The projectionist at the Cinema Paradiso, Alfredo becomes a father
       figure and mentor to young Totò.
     group: Cinema Staff
-    image_file: output/character_images/24366.jpg
   - name: Salvatore 'Totò' Di Vita (adult)
     actor_name: Jacques Perrin
     tmdb_person_id: 20030
@@ -6909,7 +6680,6 @@
     group: Protagonist
     aliases:
     - Totò
-    image_file: output/character_images/20030.jpg
   - name: Salvatore 'Totò' Di Vita (teen)
     actor_name: Marco Leonardi
     tmdb_person_id: 27643
@@ -6918,7 +6688,6 @@
     group: Protagonist
     aliases:
     - Totò
-    image_file: output/character_images/27643.jpg
   - name: Salvatore 'Totò' Di Vita (child)
     actor_name: Salvatore Cascio
     tmdb_person_id: 68635
@@ -6927,41 +6696,35 @@
     group: Protagonist
     aliases:
     - Totò
-    image_file: output/character_images/68635.jpg
   - name: Elena Mendola (teen) / Elena's daughter (in Director's cut)
     actor_name: Agnese Nano
     tmdb_person_id: 120152
     description: Totò's teenage love interest, Elena, who represents a significant
       emotional connection in his life.
     group: Love Interests
-    image_file: output/character_images/120152.jpg
   - name: Maria Di Vita (young)
     actor_name: Antonella Attili
     tmdb_person_id: 70083
     description: Totò's mother, who struggles to raise him and is often worried about
       his future.
     group: Family Members
-    image_file: output/character_images/70083.jpg
   - name: Maria Di Vita (aged)
     actor_name: Pupella Maggio
     tmdb_person_id: 25780
     description: The aged version of Totò's mother, reflecting on her life and her
       son's choices.
     group: Family Members
-    image_file: output/character_images/25780.jpg
   - name: Spaccafico
     actor_name: Enzo Cannavale
     tmdb_person_id: 52657
     description: A regular at the cinema, known for his boisterous reactions to the
       films.
     group: Cinema Patrons
-    image_file: output/character_images/52657.jpg
   - name: Anna
     actor_name: Isa Danieli
     tmdb_person_id: 1014911
     description: A character in the film, part of the community.
     group: Cinema Patrons
-    image_file: output/character_images/1014911.jpg
   - name: Ignazio, usher
     actor_name: Leo Gullotta
     tmdb_person_id: 119992
@@ -6970,54 +6733,45 @@
     group: Cinema Staff
     aliases:
     - Ignazio
-    image_file: output/character_images/119992.jpg
   - name: Father Adelfio
     actor_name: Leopoldo Trieste
     tmdb_person_id: 14151
     description: The local priest who censors the films shown at the Cinema Paradiso.
     group: Community Members
-    image_file: output/character_images/14151.jpg
   - name: Fabbro, blacksmith
     actor_name: Tano Cimarosa
     tmdb_person_id: 103627
     description: A local blacksmith, part of the community.
     group: Community Members
-    image_file: output/character_images/103627.jpg
   - name: Village idiot
     actor_name: Nicola Di Pinto
     tmdb_person_id: 39618
     description: A character in the film, part of the community.
     group: Community Members
-    image_file: output/character_images/39618.jpg
   - name: Lia
     actor_name: Roberta Lena
     tmdb_person_id: 1077256
     description: A character in the film, part of the community.
     group: Community Members
-    image_file: output/character_images/1077256.jpg
   - name: Peppino's Father
     actor_name: Nino Terzo
     tmdb_person_id: 134215
     description: A character in the film, part of the community.
     group: Community Members
-    image_file: output/character_images/134215.jpg
   - name: Elena Mendola (adult) (in Director's cut) (uncredited)
     actor_name: Brigitte Fossey
     tmdb_person_id: 1959
     description: The adult version of Elena, who reconnects with Totò.
     group: Love Interests
-    image_file: output/character_images/1959.jpg
   - name: Projectionist (uncredited)
     actor_name: Giuseppe Tornatore
     tmdb_person_id: 65314
     description: The projectionist, a minor character in the film.
     group: Cinema Staff
-    image_file: output/character_images/65314.jpg
   relationships:
   - source: Alfredo
     target: Salvatore 'Totò' Di Vita (child)
     type: Mentor
-    directed: true
     description: Alfredo guides and teaches young Totò about cinema and life.
     sentiment: positive
     strength: 5
@@ -7025,7 +6779,6 @@
   - source: Salvatore 'Totò' Di Vita (child)
     target: Alfredo
     type: Friend
-    directed: false
     description: Totò and Alfredo share a close bond, built on their shared love of
       cinema.
     sentiment: positive
@@ -7034,7 +6787,6 @@
   - source: Salvatore 'Totò' Di Vita (adult)
     target: Alfredo
     type: Reminiscence
-    directed: false
     description: The adult Totò reflects on his relationship with Alfredo.
     sentiment: positive
     strength: 4
@@ -7042,7 +6794,6 @@
   - source: Salvatore 'Totò' Di Vita (teen)
     target: Elena Mendola (teen) / Elena's daughter (in Director's cut)
     type: Love
-    directed: false
     description: Totò and Elena share a passionate teenage romance.
     sentiment: positive
     strength: 4
@@ -7050,7 +6801,6 @@
   - source: Salvatore 'Totò' Di Vita (adult)
     target: Elena Mendola (adult) (in Director's cut) (uncredited)
     type: Reunion
-    directed: false
     description: The adult Totò and Elena reconnect after many years.
     sentiment: complicated
     strength: 3
@@ -7058,7 +6808,6 @@
   - source: Maria Di Vita (young)
     target: Salvatore 'Totò' Di Vita (child)
     type: Mother-Son
-    directed: false
     description: Maria is the mother of Totò, and they share a familial bond.
     sentiment: neutral
     strength: 4
@@ -7066,7 +6815,6 @@
   - source: Father Adelfio
     target: Alfredo
     type: Authority
-    directed: true
     description: Father Adelfio represents the church's censorship of the films shown
       at the cinema.
     sentiment: negative
@@ -7075,7 +6823,6 @@
   - source: Ignazio, usher
     target: Alfredo
     type: Coworker
-    directed: false
     description: Ignazio works with Alfredo at the cinema.
     sentiment: neutral
     strength: 3
@@ -7083,7 +6830,6 @@
   - source: Spaccafico
     target: Alfredo
     type: Customer
-    directed: false
     description: Spaccafico is a regular patron of the cinema and interacts with Alfredo.
     sentiment: neutral
     strength: 2
@@ -7091,7 +6837,6 @@
   - source: Salvatore 'Totò' Di Vita (teen)
     target: Maria Di Vita (young)
     type: Family
-    directed: false
     description: Totò and his mother share a familial relationship.
     sentiment: neutral
     strength: 4
@@ -7099,7 +6844,6 @@
   - source: Salvatore 'Totò' Di Vita (adult)
     target: Maria Di Vita (aged)
     type: Family
-    directed: false
     description: Totò and his mother share a familial relationship.
     sentiment: neutral
     strength: 4
@@ -7258,21 +7002,18 @@
     group: Fight Club Members
     aliases:
     - Jack
-    image_file: output/character_images/819.jpg
   - name: Tyler Durden
     actor_name: Brad Pitt
     tmdb_person_id: 287
     description: The charismatic and rebellious soap maker who forms Fight Club with
       the Narrator and embodies an anti-consumerist philosophy.
     group: Fight Club Founders
-    image_file: output/character_images/287.jpg
   - name: Marla Singer
     actor_name: Helena Bonham Carter
     tmdb_person_id: 1283
     description: A fellow support group attendee who becomes romantically involved
       with both the Narrator and Tyler Durden.
     group: Support Group Attendees
-    image_file: output/character_images/1283.jpg
   - name: Robert Paulson
     actor_name: Meat Loaf
     tmdb_person_id: 7470
@@ -7281,103 +7022,86 @@
     group: Fight Club Members
     aliases:
     - Bob
-    image_file: output/character_images/7470.jpg
   - name: Angel Face
     actor_name: Jared Leto
     tmdb_person_id: 7499
     description: A member of Fight Club who is brutally beaten by the Narrator.
     group: Fight Club Members
-    image_file: output/character_images/7499.jpg
   - name: Richard Chesler (Regional Manager)
     actor_name: Zach Grenier
     tmdb_person_id: 7471
     description: The Narrator's boss at the auto recall company.
     group: Corporate Employees
-    image_file: output/character_images/7471.jpg
   - name: The Mechanic
     actor_name: Holt McCallany
     tmdb_person_id: 7497
     description: A member of Fight Club.
     group: Fight Club Members
-    image_file: output/character_images/7497.jpg
   - name: Ricky
     actor_name: Eion Bailey
     tmdb_person_id: 7498
     description: A member of Fight Club.
     group: Fight Club Members
-    image_file: output/character_images/7498.jpg
   - name: Intern at Hospital
     actor_name: Richmond Arquette
     tmdb_person_id: 7472
     description: An intern the Narrator encounters.
     group: Medical Professionals
-    image_file: output/character_images/7472.jpg
   - name: Thomas at Remaining Men Together
     actor_name: David Andrews
     tmdb_person_id: 7219
     description: A man the Narrator encounters at a support group.
     group: Support Group Attendees
-    image_file: output/character_images/7219.jpg
   - name: Group Leader at Remaining Men Together
     actor_name: George Maguire
     tmdb_person_id: 1129738
     description: The leader of a support group the Narrator attends.
     group: Support Group Leaders
-    image_file: output/character_images/1129738.jpg
   - name: Weeping Woman - Onward and Upward
     actor_name: Eugenie Bondurant
     tmdb_person_id: 1317693
     description: A woman the Narrator encounters at a support group.
     group: Support Group Attendees
-    image_file: output/character_images/1317693.jpg
   - name: Group Leader - Partners in Positivity
     actor_name: Christina Cabot
     tmdb_person_id: 68277
     description: The leader of a support group the Narrator attends.
     group: Support Group Leaders
-    image_file: output/character_images/68277.jpg
   - name: Speaker - Free and Clear
     actor_name: Sydney 'Big Dawg' Colston
     tmdb_person_id: 202080
     description: A speaker at a support group the Narrator attends.
     group: Support Group Speakers
-    image_file: output/character_images/202080.jpg
   - name: Chloe
     actor_name: Rachel Singer
     tmdb_person_id: 7473
     description: A woman the Narrator encounters at a support group.
     group: Support Group Attendees
-    image_file: output/character_images/7473.jpg
   - name: Airline Check-In Attendant
     actor_name: Christie Cronenweth
     tmdb_person_id: 1172435
     description: An airline employee.
     group: Airline Employees
-    image_file: output/character_images/1172435.jpg
   - name: Federated Motor Co. - Inspector Bird
     actor_name: Tim DeZarn
     tmdb_person_id: 956719
     description: An inspector at the auto recall company.
     group: Corporate Employees
-    image_file: output/character_images/956719.jpg
   - name: Federated Motor Co. - Inspector Dent
     actor_name: Ezra Buzzington
     tmdb_person_id: 59285
     description: An inspector at the auto recall company.
     group: Corporate Employees
-    image_file: output/character_images/59285.jpg
   - name: Business Woman on Plane
     actor_name: Dierdre Downing-Jackson
     tmdb_person_id: 1705289
     description: A business woman on a plane.
     group: Airline Passengers
-    image_file: output/character_images/1705289.jpg
   - name: Airport Security Officer
     actor_name: Bob Stephenson
     tmdb_person_id: 17449
     description: An airport security officer.
     group: Airport Staff
-    image_file: output/character_images/17449.jpg
   - name: Doorman at Person Towers
     actor_name: Charlie Dell
     tmdb_person_id: 62846
@@ -7388,25 +7112,21 @@
     tmdb_person_id: 530040
     description: A man in a suit.
     group: Unspecified
-    image_file: output/character_images/530040.jpg
   - name: Walter
     actor_name: David Lee Smith
     tmdb_person_id: 56112
     description: A man the Narrator encounters.
     group: Unspecified
-    image_file: output/character_images/56112.jpg
   - name: Food Court Maitre d'
     actor_name: Joel Bissonnette
     tmdb_person_id: 137425
     description: A food court employee.
     group: Food Court Staff
-    image_file: output/character_images/137425.jpg
   - name: Steph
     actor_name: Evan Mirand
     tmdb_person_id: 175120
     description: A member of Fight Club.
     group: Fight Club Members
-    image_file: output/character_images/175120.jpg
   - name: Next Month's Opponent
     actor_name: Robby Robinson
     tmdb_person_id: 1744132
@@ -7417,19 +7137,16 @@
     tmdb_person_id: 168924
     description: A police officer.
     group: Police
-    image_file: output/character_images/168924.jpg
   - name: Detective Stern
     actor_name: Thom Gossom Jr.
     tmdb_person_id: 1219497
     description: A detective.
     group: Police
-    image_file: output/character_images/1219497.jpg
   - name: Cosmetics Buyer
     actor_name: Valerie Bickford
     tmdb_person_id: 157938
     description: A cosmetics buyer.
     group: Unspecified
-    image_file: output/character_images/157938.jpg
   - name: Lou
     actor_name: Peter Iacangelo
     tmdb_person_id: 7500
@@ -7440,13 +7157,11 @@
     tmdb_person_id: 42824
     description: Lou's bodyguard.
     group: Unspecified
-    image_file: output/character_images/42824.jpg
   - name: Car Salesman
     actor_name: Stuart Blumberg
     tmdb_person_id: 40277
     description: A car salesman.
     group: Car Dealership Staff
-    image_file: output/character_images/40277.jpg
   - name: First Man at Auto Shop
     actor_name: Todd Peirce
     tmdb_person_id: 1744135
@@ -7457,13 +7172,11 @@
     tmdb_person_id: 122805
     description: A man at the auto shop.
     group: Auto Shop Staff
-    image_file: output/character_images/122805.jpg
   - name: Seminary Student
     actor_name: Matt Winston
     tmdb_person_id: 35521
     description: A seminary student.
     group: Unspecified
-    image_file: output/character_images/35521.jpg
   - name: Raymond K. Hessel
     actor_name: Joon Kim
     tmdb_person_id: 1744137
@@ -7479,13 +7192,11 @@
     tmdb_person_id: 1224996
     description: A news reporter.
     group: News Media
-    image_file: output/character_images/1224996.jpg
   - name: Commissioner Jacobs
     actor_name: Pat McNamara
     tmdb_person_id: 1174793
     description: A commissioner.
     group: Unspecified
-    image_file: output/character_images/1174793.jpg
   - name: Banquet Speaker
     actor_name: Tyrone R. Livingston
     tmdb_person_id: 1744138
@@ -7495,7 +7206,6 @@
   - source: Narrator
     target: Tyler Durden
     type: Friend
-    directed: false
     description: The Narrator and Tyler form a close bond, co-founding Fight Club
       and engaging in various activities.
     sentiment: complicated
@@ -7504,7 +7214,6 @@
   - source: Narrator
     target: Marla Singer
     type: Romantic
-    directed: false
     description: The Narrator and Marla have a complex romantic relationship, marked
       by attraction and emotional turmoil.
     sentiment: complicated
@@ -7513,7 +7222,6 @@
   - source: Tyler Durden
     target: Marla Singer
     type: Romantic
-    directed: false
     description: Tyler and Marla also have a romantic relationship, adding to the
       complications.
     sentiment: complicated
@@ -7522,7 +7230,6 @@
   - source: Narrator
     target: Robert Paulson
     type: Friend
-    directed: false
     description: The Narrator and Bob are both members of Fight Club and share a bond
       through the group.
     sentiment: neutral
@@ -7531,7 +7238,6 @@
   - source: Narrator
     target: Angel Face
     type: Rival
-    directed: true
     description: The Narrator brutally beats Angel Face in Fight Club.
     sentiment: negative
     strength: 4
@@ -7539,7 +7245,6 @@
   - source: Narrator
     target: Richard Chesler (Regional Manager)
     type: Employer-Employee
-    directed: true
     description: The Narrator works for Chesler.
     sentiment: neutral
     strength: 2
@@ -7547,7 +7252,6 @@
   - source: Narrator
     target: Raymond K. Hessel
     type: Mentor
-    directed: true
     description: The Narrator, along with Tyler, forces Raymond to change his life.
     sentiment: negative
     strength: 4
@@ -7555,7 +7259,6 @@
   - source: Tyler Durden
     target: Robert Paulson
     type: Friend
-    directed: false
     description: Tyler and Bob are both members of Fight Club and share a bond through
       the group.
     sentiment: neutral
@@ -7564,7 +7267,6 @@
   - source: Tyler Durden
     target: Angel Face
     type: Mentor
-    directed: true
     description: Tyler is the leader of Fight Club.
     sentiment: neutral
     strength: 3
@@ -7572,7 +7274,6 @@
   - source: Tyler Durden
     target: Ricky
     type: Mentor
-    directed: true
     description: Tyler is the leader of Fight Club.
     sentiment: neutral
     strength: 3
@@ -7580,7 +7281,6 @@
   - source: Tyler Durden
     target: The Mechanic
     type: Mentor
-    directed: true
     description: Tyler is the leader of Fight Club.
     sentiment: neutral
     strength: 3
@@ -7588,7 +7288,6 @@
   - source: Tyler Durden
     target: Steph
     type: Mentor
-    directed: true
     description: Tyler is the leader of Fight Club.
     sentiment: neutral
     strength: 3
@@ -7596,7 +7295,6 @@
   - source: Tyler Durden
     target: Next Month's Opponent
     type: Mentor
-    directed: true
     description: Tyler is the leader of Fight Club.
     sentiment: neutral
     strength: 3
@@ -7604,7 +7302,6 @@
   - source: Robert Paulson
     target: Angel Face
     type: Friend
-    directed: false
     description: Bob and Angel Face are both members of Fight Club and share a bond
       through the group.
     sentiment: neutral
@@ -7613,7 +7310,6 @@
   - source: Robert Paulson
     target: Ricky
     type: Friend
-    directed: false
     description: Bob and Ricky are both members of Fight Club and share a bond through
       the group.
     sentiment: neutral
@@ -7622,7 +7318,6 @@
   - source: Robert Paulson
     target: The Mechanic
     type: Friend
-    directed: false
     description: Bob and the Mechanic are both members of Fight Club and share a bond
       through the group.
     sentiment: neutral
@@ -7631,7 +7326,6 @@
   - source: Robert Paulson
     target: Steph
     type: Friend
-    directed: false
     description: Bob and Steph are both members of Fight Club and share a bond through
       the group.
     sentiment: neutral
@@ -7640,7 +7334,6 @@
   - source: Robert Paulson
     target: Next Month's Opponent
     type: Friend
-    directed: false
     description: Bob and Next Month's Opponent are both members of Fight Club and
       share a bond through the group.
     sentiment: neutral
@@ -7649,7 +7342,6 @@
   - source: Angel Face
     target: Ricky
     type: Friend
-    directed: false
     description: Angel Face and Ricky are both members of Fight Club and share a bond
       through the group.
     sentiment: neutral
@@ -7658,7 +7350,6 @@
   - source: Angel Face
     target: The Mechanic
     type: Friend
-    directed: false
     description: Angel Face and the Mechanic are both members of Fight Club and share
       a bond through the group.
     sentiment: neutral
@@ -7667,7 +7358,6 @@
   - source: Angel Face
     target: Steph
     type: Friend
-    directed: false
     description: Angel Face and Steph are both members of Fight Club and share a bond
       through the group.
     sentiment: neutral
@@ -7676,7 +7366,6 @@
   - source: Angel Face
     target: Next Month's Opponent
     type: Friend
-    directed: false
     description: Angel Face and Next Month's Opponent are both members of Fight Club
       and share a bond through the group.
     sentiment: neutral
@@ -7685,7 +7374,6 @@
   - source: Ricky
     target: The Mechanic
     type: Friend
-    directed: false
     description: Ricky and the Mechanic are both members of Fight Club and share a
       bond through the group.
     sentiment: neutral
@@ -7694,7 +7382,6 @@
   - source: Ricky
     target: Steph
     type: Friend
-    directed: false
     description: Ricky and Steph are both members of Fight Club and share a bond through
       the group.
     sentiment: neutral
@@ -7703,7 +7390,6 @@
   - source: Ricky
     target: Next Month's Opponent
     type: Friend
-    directed: false
     description: Ricky and Next Month's Opponent are both members of Fight Club and
       share a bond through the group.
     sentiment: neutral
@@ -7712,7 +7398,6 @@
   - source: The Mechanic
     target: Steph
     type: Friend
-    directed: false
     description: The Mechanic and Steph are both members of Fight Club and share a
       bond through the group.
     sentiment: neutral
@@ -7721,7 +7406,6 @@
   - source: The Mechanic
     target: Next Month's Opponent
     type: Friend
-    directed: false
     description: The Mechanic and Next Month's Opponent are both members of Fight
       Club and share a bond through the group.
     sentiment: neutral
@@ -7730,7 +7414,6 @@
   - source: Steph
     target: Next Month's Opponent
     type: Friend
-    directed: false
     description: Steph and Next Month's Opponent are both members of Fight Club and
       share a bond through the group.
     sentiment: neutral
@@ -7870,7 +7553,6 @@
     group: Narrator/Protagonist
     aliases:
     - Rocket
-    image_file: output/character_images/8595.jpg
   - name: Zé Pequeno - Li'l Zé
     actor_name: Leandro Firmino
     tmdb_person_id: 8596
@@ -7880,7 +7562,6 @@
     aliases:
     - Li'l Zé
     - Zé
-    image_file: output/character_images/8596.jpg
   - name: Bené - Benny
     actor_name: Phellipe Haagensen
     tmdb_person_id: 8597
@@ -7889,7 +7570,6 @@
     group: Gang Members
     aliases:
     - Benny
-    image_file: output/character_images/8597.jpg
   - name: Dadinho - Li'l Dice
     actor_name: Douglas Silva
     tmdb_person_id: 8598
@@ -7898,7 +7578,6 @@
     group: Gang Leaders
     aliases:
     - Li'l Dice
-    image_file: output/character_images/8598.jpg
   - name: Cabeleira - Shaggy
     actor_name: Jonathan Haagensen
     tmdb_person_id: 8599
@@ -7906,7 +7585,6 @@
     group: Gang Members
     aliases:
     - Shaggy
-    image_file: output/character_images/8599.jpg
   - name: Sandro Cenoura - Carrot
     actor_name: Matheus Nachtergaele
     tmdb_person_id: 8600
@@ -7914,7 +7592,6 @@
     group: Gang Members
     aliases:
     - Carrot
-    image_file: output/character_images/8600.jpg
   - name: Mané Galinha - Knockout Ned
     actor_name: Seu Jorge
     tmdb_person_id: 5659
@@ -7923,7 +7600,6 @@
     group: Revenge Seekers
     aliases:
     - Knockout Ned
-    image_file: output/character_images/5659.jpg
   - name: Alicate - Clipper
     actor_name: Jefechander Suplino
     tmdb_person_id: 8601
@@ -7931,13 +7607,11 @@
     group: Gang Members
     aliases:
     - Clipper
-    image_file: output/character_images/8601.jpg
   - name: Angélica
     actor_name: Alice Braga
     tmdb_person_id: 8602
     description: Rocket's love interest.
     group: Love Interests
-    image_file: output/character_images/8602.jpg
   - name: Barbantinho - Stringy
     actor_name: Emerson Gomes
     tmdb_person_id: 3883645
@@ -7952,7 +7626,6 @@
     group: Gang Members
     aliases:
     - Stringy
-    image_file: output/character_images/3582522.jpg
   - name: Bené Criança - Young Benny
     actor_name: Michel Gomes
     tmdb_person_id: 1032387
@@ -7960,7 +7633,6 @@
     group: Gang Members
     aliases:
     - Benny
-    image_file: output/character_images/1032387.jpg
   - name: Berenice - Bernice
     actor_name: Roberta Rodrigues
     tmdb_person_id: 8603
@@ -7968,7 +7640,6 @@
     group: Gang Members
     aliases:
     - Bernice
-    image_file: output/character_images/8603.jpg
   - name: Buscapé Criança - Young Rocket
     actor_name: Luis Otávio
     tmdb_person_id: 8604
@@ -7976,7 +7647,6 @@
     group: Narrator/Protagonist
     aliases:
     - Rocket
-    image_file: output/character_images/8604.jpg
   - name: Cabeção - Melonhead
     actor_name: Kiko Marques
     tmdb_person_id: 2483242
@@ -7984,13 +7654,11 @@
     group: Gang Members
     aliases:
     - Melonhead
-    image_file: output/character_images/2483242.jpg
   - name: Editor do Jornal - Rogerio Reis
     actor_name: Gustavo Engracia
     tmdb_person_id: 2700766
     description: The editor of the newspaper where Rocket works.
     group: Journalists
-    image_file: output/character_images/2700766.jpg
   - name: Filé-com-Fritas - Steak and Fries
     actor_name: Darlan Cunha
     tmdb_person_id: 8605
@@ -7998,7 +7666,6 @@
     group: Gang Members
     aliases:
     - Steak and Fries
-    image_file: output/character_images/8605.jpg
   - name: Gelson - Gerson
     actor_name: Robson Rocha
     tmdb_person_id: 2596718
@@ -8011,7 +7678,6 @@
     tmdb_person_id: 50362
     description: A member of the gang.
     group: Gang Members
-    image_file: output/character_images/50362.jpg
   - name: Lúcia Maracanã
     actor_name: Leandra Miranda
     tmdb_person_id: 3610390
@@ -8022,7 +7688,6 @@
     tmdb_person_id: 54996
     description: A woman who is part of the gang.
     group: Gang Members
-    image_file: output/character_images/54996.jpg
   - name: Marreco - Goose
     actor_name: Renato de Souza
     tmdb_person_id: 2596743
@@ -8030,7 +7695,6 @@
     group: Gang Members
     aliases:
     - Goose
-    image_file: output/character_images/2596743.jpg
   - name: Mulher do Paraíba - Shorty's Wife
     actor_name: Karina Falcão
     tmdb_person_id: 2094628
@@ -8041,7 +7705,6 @@
     tmdb_person_id: 2002288
     description: Knockout Ned's girlfriend.
     group: Love Interests
-    image_file: output/character_images/2002288.jpg
   - name: Neguinho - Blacky
     actor_name: Rubens Sabino
     tmdb_person_id: 2004734
@@ -8054,13 +7717,11 @@
     tmdb_person_id: 1853689
     description: A member of the gang.
     group: Gang Members
-    image_file: output/character_images/1853689.jpg
   - name: Pai Buscapé - Rocket's Father
     actor_name: Edson Montenegro
     tmdb_person_id: 1546242
     description: Rocket's father.
     group: Family Members
-    image_file: output/character_images/1546242.jpg
   - name: Paraíba - Shorty
     actor_name: Gero Camilo
     tmdb_person_id: 55105
@@ -8068,13 +7729,11 @@
     group: Civilians
     aliases:
     - Shorty
-    image_file: output/character_images/55105.jpg
   - name: Rafael
     actor_name: Felipe Paulino
     tmdb_person_id: 2097770
     description: A member of the gang.
     group: Gang Members
-    image_file: output/character_images/2097770.jpg
   - name: Thiago - Tiago
     actor_name: Daniel Zettel
     tmdb_person_id: 1372457
@@ -8089,7 +7748,6 @@
     group: Civilians
     aliases:
     - Uncle Sam
-    image_file: output/character_images/1181464.jpg
   - name: Touro
     actor_name: Luiz Carlos Ribeiro Seixas
     tmdb_person_id: 4910265
@@ -8105,7 +7763,6 @@
     tmdb_person_id: 560263
     description: Shorty's neighbor.
     group: Civilians
-    image_file: output/character_images/560263.jpg
   - name: Caixa Baixa - Runts
     actor_name: Bernardo Santos
     tmdb_person_id: 2100447
@@ -8141,7 +7798,6 @@
     group: Gang Members
     aliases:
     - Runts
-    image_file: output/character_images/1245030.jpg
   - name: Caixa Baixa - Runts
     actor_name: Rafael de Castro
     tmdb_person_id: 4910278
@@ -8153,7 +7809,6 @@
   - source: Buscapé - Rocket
     target: Zé Pequeno - Li'l Zé
     type: Witness
-    directed: true
     description: Rocket observes Zé Pequeno's rise to power and the violence he inflicts.
     sentiment: negative
     strength: 4
@@ -8161,7 +7816,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Bené - Benny
     type: Friend
-    directed: false
     description: Zé Pequeno and Benny are best friends and partners in crime.
     sentiment: complicated
     strength: 5
@@ -8169,7 +7823,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Dadinho - Li'l Dice
     type: Predecessor
-    directed: true
     description: Zé Pequeno takes over from Dadinho's gang.
     sentiment: neutral
     strength: 3
@@ -8177,7 +7830,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Mané Galinha - Knockout Ned
     type: Rival
-    directed: false
     description: Zé Pequeno and Knockout Ned are enemies, leading to a violent conflict.
     sentiment: negative
     strength: 5
@@ -8185,7 +7837,6 @@
   - source: Buscapé - Rocket
     target: Angélica
     type: Love Interest
-    directed: false
     description: Rocket is in love with Angélica.
     sentiment: positive
     strength: 3
@@ -8193,7 +7844,6 @@
   - source: Buscapé - Rocket
     target: Buscapé Criança - Young Rocket
     type: Self
-    directed: false
     description: Rocket's younger self.
     sentiment: neutral
     strength: 5
@@ -8201,7 +7851,6 @@
   - source: Bené - Benny
     target: Dadinho - Li'l Dice
     type: Friend
-    directed: false
     description: Benny and Dadinho are friends.
     sentiment: neutral
     strength: 3
@@ -8209,7 +7858,6 @@
   - source: Mané Galinha - Knockout Ned
     target: Namorada do Galinha - Knockout's Girlfriend
     type: Love Interest
-    directed: false
     description: Knockout Ned is in love with his girlfriend.
     sentiment: positive
     strength: 4
@@ -8217,7 +7865,6 @@
   - source: Buscapé - Rocket
     target: Pai Buscapé - Rocket's Father
     type: Family
-    directed: false
     description: Rocket's father.
     sentiment: neutral
     strength: 3
@@ -8225,7 +7872,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Cabeleira - Shaggy
     type: Gang Member
-    directed: false
     description: Shaggy is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8233,7 +7879,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Alicate - Clipper
     type: Gang Member
-    directed: false
     description: Clipper is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8241,7 +7886,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Sandro Cenoura - Carrot
     type: Gang Member
-    directed: false
     description: Carrot is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8249,7 +7893,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Barbantinho - Stringy
     type: Gang Member
-    directed: false
     description: Stringy is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8257,7 +7900,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Berenice - Bernice
     type: Gang Member
-    directed: false
     description: Bernice is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8265,7 +7907,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Cabeção - Melonhead
     type: Gang Member
-    directed: false
     description: Melonhead is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8273,7 +7914,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Filé-com-Fritas - Steak and Fries
     type: Gang Member
-    directed: false
     description: Steak and Fries is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8281,7 +7921,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Gelson - Gerson
     type: Gang Member
-    directed: false
     description: Gerson is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8289,7 +7928,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Lampião
     type: Gang Member
-    directed: false
     description: Lampião is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8297,7 +7935,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Lúcia Maracanã
     type: Gang Member
-    directed: false
     description: Lúcia Maracanã is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8305,7 +7942,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Marina Cintra
     type: Gang Member
-    directed: false
     description: Marina Cintra is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8313,7 +7949,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Marreco - Goose
     type: Gang Member
-    directed: false
     description: Goose is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8321,7 +7956,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Neguinho - Blacky
     type: Gang Member
-    directed: false
     description: Blacky is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8329,7 +7963,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Otávio
     type: Gang Member
-    directed: false
     description: Otávio is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8337,7 +7970,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Rafael
     type: Gang Member
-    directed: false
     description: Rafael is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8345,7 +7977,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Touro
     type: Gang Member
-    directed: false
     description: Touro is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8353,7 +7984,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Tuba
     type: Gang Member
-    directed: false
     description: Tuba is a member of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8361,7 +7991,6 @@
   - source: Zé Pequeno - Li'l Zé
     target: Caixa Baixa - Runts
     type: Gang Member
-    directed: false
     description: The Runts are members of Zé Pequeno's gang.
     sentiment: neutral
     strength: 4
@@ -8369,7 +7998,6 @@
   - source: Bené - Benny
     target: Cabeleira - Shaggy
     type: Gang Member
-    directed: false
     description: Shaggy is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8377,7 +8005,6 @@
   - source: Bené - Benny
     target: Alicate - Clipper
     type: Gang Member
-    directed: false
     description: Clipper is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8385,7 +8012,6 @@
   - source: Bené - Benny
     target: Sandro Cenoura - Carrot
     type: Gang Member
-    directed: false
     description: Carrot is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8393,7 +8019,6 @@
   - source: Bené - Benny
     target: Barbantinho - Stringy
     type: Gang Member
-    directed: false
     description: Stringy is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8401,7 +8026,6 @@
   - source: Bené - Benny
     target: Berenice - Bernice
     type: Gang Member
-    directed: false
     description: Bernice is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8409,7 +8033,6 @@
   - source: Bené - Benny
     target: Cabeção - Melonhead
     type: Gang Member
-    directed: false
     description: Melonhead is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8417,7 +8040,6 @@
   - source: Bené - Benny
     target: Filé-com-Fritas - Steak and Fries
     type: Gang Member
-    directed: false
     description: Steak and Fries is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8425,7 +8047,6 @@
   - source: Bené - Benny
     target: Gelson - Gerson
     type: Gang Member
-    directed: false
     description: Gerson is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8433,7 +8054,6 @@
   - source: Bené - Benny
     target: Lampião
     type: Gang Member
-    directed: false
     description: Lampião is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8441,7 +8061,6 @@
   - source: Bené - Benny
     target: Lúcia Maracanã
     type: Gang Member
-    directed: false
     description: Lúcia Maracanã is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8449,7 +8068,6 @@
   - source: Bené - Benny
     target: Marina Cintra
     type: Gang Member
-    directed: false
     description: Marina Cintra is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8457,7 +8075,6 @@
   - source: Bené - Benny
     target: Marreco - Goose
     type: Gang Member
-    directed: false
     description: Goose is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8465,7 +8082,6 @@
   - source: Bené - Benny
     target: Neguinho - Blacky
     type: Gang Member
-    directed: false
     description: Blacky is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8473,7 +8089,6 @@
   - source: Bené - Benny
     target: Otávio
     type: Gang Member
-    directed: false
     description: Otávio is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8481,7 +8096,6 @@
   - source: Bené - Benny
     target: Rafael
     type: Gang Member
-    directed: false
     description: Rafael is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8489,7 +8103,6 @@
   - source: Bené - Benny
     target: Touro
     type: Gang Member
-    directed: false
     description: Touro is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8497,7 +8110,6 @@
   - source: Bené - Benny
     target: Tuba
     type: Gang Member
-    directed: false
     description: Tuba is a member of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8505,7 +8117,6 @@
   - source: Bené - Benny
     target: Caixa Baixa - Runts
     type: Gang Member
-    directed: false
     description: The Runts are members of Benny's gang.
     sentiment: neutral
     strength: 4
@@ -8513,7 +8124,6 @@
   - source: Buscapé - Rocket
     target: Editor do Jornal - Rogerio Reis
     type: Professional
-    directed: true
     description: Rocket works for the editor of the newspaper.
     sentiment: neutral
     strength: 3
@@ -8521,7 +8131,6 @@
   - source: Mané Galinha - Knockout Ned
     target: Bené - Benny
     type: Rival
-    directed: true
     description: Knockout Ned is a rival of Benny.
     sentiment: negative
     strength: 5
@@ -8529,7 +8138,6 @@
   - source: Bené - Benny
     target: Buscapé - Rocket
     type: Acquaintance
-    directed: false
     description: Benny and Rocket are acquaintances.
     sentiment: neutral
     strength: 2
@@ -8686,58 +8294,49 @@
     description: A cunning and resourceful trickster, always looking for a way to
       survive and get ahead, often with Chicó.
     group: Protagonists
-    image_file: output/character_images/8600.jpg
   - name: Chicó
     actor_name: Selton Mello
     tmdb_person_id: 87341
     description: João Grilo's loyal and often naive companion, prone to exaggeration
       and fear.
     group: Protagonists
-    image_file: output/character_images/87341.jpg
   - name: Padre João
     actor_name: Rogério Cardoso
     tmdb_person_id: 123757
     description: The local priest, concerned with his reputation and the church's
       finances.
     group: Church Officials
-    image_file: output/character_images/123757.jpg
   - name: Dora
     actor_name: Denise Fraga
     tmdb_person_id: 123758
     description: A woman who is the wife of Eurico and is deeply religious.
     group: Townspeople
-    image_file: output/character_images/123758.jpg
   - name: Eurico
     actor_name: Diogo Vilela
     tmdb_person_id: 102551
     description: The husband of Dora, and a man of means.
     group: Townspeople
-    image_file: output/character_images/102551.jpg
   - name: Diabo
     actor_name: Luís Melo
     tmdb_person_id: 90219
     description: The Devil, who attempts to tempt and corrupt the characters.
     group: Supernatural Beings
-    image_file: output/character_images/90219.jpg
   - name: Rosinha
     actor_name: Virginia Cavendish
     tmdb_person_id: 123759
     description: A young woman and the object of João Grilo's and Chicó's affections.
     group: Townspeople
-    image_file: output/character_images/123759.jpg
   - name: Vicentão
     actor_name: Bruno Garcia
     tmdb_person_id: 123760
     description: A strong and imposing man, often involved in conflicts.
     group: Townspeople
-    image_file: output/character_images/123760.jpg
   - name: Joaquim Brejeiro
     actor_name: Enrique Díaz
     tmdb_person_id: 1126875
     description: A character involved in the events of the story, often interacting
       with the protagonists.
     group: Townspeople
-    image_file: output/character_images/1126875.jpg
   - name: Jesus Cristo / Emanuel
     actor_name: Maurício Gonçalves
     tmdb_person_id: 87340
@@ -8745,43 +8344,36 @@
     group: Supernatural Beings
     aliases:
     - Emanuel
-    image_file: output/character_images/87340.jpg
   - name: Cabo 70
     actor_name: Aramis Trindade
     tmdb_person_id: 123761
     description: A police officer, representing authority.
     group: Law Enforcement
-    image_file: output/character_images/123761.jpg
   - name: Severino de Aracaju
     actor_name: Marco Nanini
     tmdb_person_id: 123762
     description: A character who interacts with the other characters, often in comedic
       situations.
     group: Townspeople
-    image_file: output/character_images/123762.jpg
   - name: Major Antônio Moraes
     actor_name: Paulo Goulart
     tmdb_person_id: 130046
     description: A high-ranking military officer.
     group: Law Enforcement
-    image_file: output/character_images/130046.jpg
   - name: Bispo
     actor_name: Lima Duarte
     tmdb_person_id: 123763
     description: A high-ranking church official.
     group: Church Officials
-    image_file: output/character_images/123763.jpg
   - name: Nossa Senhora
     actor_name: Fernanda Montenegro
     tmdb_person_id: 10055
     description: The Virgin Mary, appearing in the story to judge the characters.
     group: Supernatural Beings
-    image_file: output/character_images/10055.jpg
   relationships:
   - source: João Grilo
     target: Chicó
     type: Friend
-    directed: false
     description: João Grilo and Chicó are best friends and partners in crime.
     sentiment: positive
     strength: 5
@@ -8789,7 +8381,6 @@
   - source: João Grilo
     target: Rosinha
     type: Interest
-    directed: true
     description: João Grilo is attracted to Rosinha.
     sentiment: positive
     strength: 3
@@ -8797,7 +8388,6 @@
   - source: Chicó
     target: Rosinha
     type: Interest
-    directed: true
     description: Chicó also has feelings for Rosinha.
     sentiment: positive
     strength: 3
@@ -8805,7 +8395,6 @@
   - source: João Grilo
     target: Padre João
     type: Rival
-    directed: false
     description: João Grilo often clashes with Padre João due to their differing values
       and goals.
     sentiment: negative
@@ -8814,7 +8403,6 @@
   - source: Padre João
     target: Dora
     type: Acquaintance
-    directed: false
     description: Padre João is acquainted with Dora.
     sentiment: neutral
     strength: 2
@@ -8822,7 +8410,6 @@
   - source: Eurico
     target: Dora
     type: Spouse
-    directed: false
     description: Eurico is married to Dora.
     sentiment: neutral
     strength: 4
@@ -8830,7 +8417,6 @@
   - source: João Grilo
     target: Diabo
     type: Enemy
-    directed: false
     description: João Grilo is in opposition to the Devil.
     sentiment: negative
     strength: 4
@@ -8838,7 +8424,6 @@
   - source: Jesus Cristo / Emanuel
     target: João Grilo
     type: Judge
-    directed: true
     description: Jesus judges João Grilo's actions.
     sentiment: neutral
     strength: 4
@@ -8846,7 +8431,6 @@
   - source: Jesus Cristo / Emanuel
     target: Chicó
     type: Judge
-    directed: true
     description: Jesus judges Chicó's actions.
     sentiment: neutral
     strength: 4
@@ -8854,7 +8438,6 @@
   - source: Nossa Senhora
     target: Jesus Cristo / Emanuel
     type: Family
-    directed: false
     description: Nossa Senhora is the mother of Jesus.
     sentiment: positive
     strength: 5
@@ -8862,7 +8445,6 @@
   - source: Cabo 70
     target: Major Antônio Moraes
     type: Subordinate
-    directed: false
     description: Cabo 70 is a subordinate of Major Antônio Moraes.
     sentiment: neutral
     strength: 3
@@ -8870,7 +8452,6 @@
   - source: Padre João
     target: Bispo
     type: Subordinate
-    directed: true
     description: Padre João is a subordinate of the Bispo.
     sentiment: neutral
     strength: 3
@@ -8908,3 +8489,1160 @@
     Brejeiro also play roles in the unfolding events, adding to the chaos and humor
     of the story. Vicentão, a character of significant strength, is also present in
     the story, and his actions influence the outcome of events.'
+- movie_title: Psycho
+  movie_year: '1960'
+  tmdb_movie_id: 539
+  imdb_id: tt0054215
+  character_profile: The character landscape of Psycho is dominated by Norman Bates,
+    a seemingly unassuming young man with a troubled past and a controlling mother.
+    Marion Crane, the protagonist for the first act, is a secretary on the run after
+    stealing money. The supporting characters, like Lila Crane and Sam Loomis, are
+    driven by a search for Marion and the truth behind her disappearance. The film
+    masterfully portrays the psychological complexities of Norman, highlighting his
+    vulnerability and the disturbing influence of his mother, creating a chilling
+    study of mental instability and its consequences.
+  character_profile_big5:
+    Openness:
+      score: 3
+      explanation: Norman Bates shows some openness to unusual ideas and experiences,
+        but his capacity is limited by his psychological issues.
+    Conscientiousness:
+      score: 2
+      explanation: Norman's actions are erratic and driven by his mental instability,
+        showing a lack of consistent self-control and discipline.
+    Extraversion:
+      score: 1
+      explanation: Norman is highly introverted, isolated, and struggles with social
+        interaction.
+    Agreeableness:
+      score: 1
+      explanation: Norman displays very low agreeableness, as he is manipulative,
+        deceptive, and capable of violence.
+    Neuroticism:
+      score: 5
+      explanation: Norman exhibits extremely high neuroticism, suffering from severe
+        anxiety, paranoia, and emotional instability.
+  character_profile_myersbriggs:
+    type: ISFJ
+    explanation: Introverted, Sensing, Feeling, Judging (Protector). Norman Bates's
+      ISFJ traits are evident in his introversion, his strong sense of duty (to his
+      mother), his sensitivity, and his need for order and control, even if that order
+      is warped by his psychosis.
+  critical_reception: Psycho was initially met with mixed reviews, with some critics
+    shocked by its violence and subject matter. However, it quickly gained critical
+    acclaim, with many praising Hitchcock's masterful direction, the suspenseful atmosphere,
+    and the groundbreaking use of cinematic techniques. Critics lauded the film's
+    innovative storytelling, its exploration of psychological themes, and the iconic
+    performances of Anthony Perkins and Janet Leigh. Psycho is now considered a landmark
+    film, a masterpiece of suspense, and a major influence on the horror genre.
+  visual_style: Psycho's visual style is characterized by its stark black and white
+    cinematography, which enhances the film's sense of unease and suspense. Hitchcock
+    employs a variety of techniques, including dramatic camera angles, close-ups,
+    and the strategic use of shadows, to create a palpable atmosphere of tension.
+    The iconic shower scene is a prime example of his visual storytelling, utilizing
+    rapid editing and dynamic camera movements to heighten the horror. The film's
+    use of location, particularly the Bates Motel and house, is crucial, creating
+    a claustrophobic and unsettling environment that reflects Norman's psychological
+    state. The overall aesthetic is clean, precise, and meticulously crafted to manipulate
+    the viewer's emotions.
+  most_talked_about_related_topic: The shower scene remains the most talked-about
+    aspect of Psycho. Its graphic nature for the time, combined with its unexpectedness
+    and the brutal murder of the protagonist, was revolutionary. The scene's impact
+    on cinema is undeniable, influencing countless filmmakers and forever changing
+    the way violence was depicted on screen. The use of rapid editing, close-ups,
+    and Bernard Herrmann's screeching score created a level of suspense and horror
+    that was unprecedented, cementing its place as a landmark moment in film history
+    and a cultural touchstone.
+  genre_mix:
+    genres:
+      thriller: 90
+      horror: 70
+      mystery: 60
+      drama: 40
+      psychological: 80
+      crime: 30
+  matching_tags:
+    tags:
+      Genre Autopsy: Psycho deconstructs the slasher and suspense genres, playing
+        with audience expectations and subverting classic tropes of the thriller and
+        horror genres.
+  complex_search_queries:
+  - Psychological thrillers with unreliable narrators
+  - Classic black and white horror films with iconic scenes
+  sequel:
+    title: Psycho II
+    imdb_id: tt0086154
+  remake:
+    title: Psycho (1998)
+    imdb_id: tt15443750
+  recommendations:
+  - title: The Silence of the Lambs
+    year: 1991
+    explanation: This high-rated psychological thriller shares Psycho's suspenseful
+      atmosphere, exploration of the dark side of human nature, and complex character
+      dynamics.
+    imdb_id: tt0102926
+  - title: Rear Window
+    year: 1954
+    explanation: Like Psycho, this Hitchcock classic offers a suspenseful, voyeuristic
+      experience with a focus on psychological tension and a sense of unease.
+    imdb_id: tt0047396
+  - title: Get Out
+    year: 2017
+    explanation: This critically acclaimed horror film shares Psycho's exploration
+      of social anxieties and its masterful use of suspense and unexpected twists.
+    imdb_id: tt5052448
+  - title: Vertigo
+    year: 1958
+    explanation: Another Hitchcock masterpiece, Vertigo, shares Psycho's focus on
+      psychological themes, suspense, and a descent into obsession and madness.
+    imdb_id: tt0052357
+  - title: Se7en
+    year: 1995
+    explanation: This dark and intense crime thriller shares Psycho's exploration
+      of the dark side of human nature, suspenseful atmosphere, and focus on a disturbing
+      mystery.
+    imdb_id: tt0114369
+  character_list:
+  - name: Norman Bates
+    actor_name: Anthony Perkins
+    tmdb_person_id: 7301
+    description: The troubled proprietor of the Bates Motel, harboring a dark secret
+      and a complex relationship with his deceased mother.
+    group: Bates Motel Staff
+  - name: Marion Crane
+    actor_name: Janet Leigh
+    tmdb_person_id: 7302
+    description: A secretary on the run after stealing money, who becomes a victim
+      of Norman Bates.
+    group: Victims
+  - name: Lila Crane
+    actor_name: Vera Miles
+    tmdb_person_id: 7303
+    description: Marion's sister, determined to find her after her disappearance.
+    group: Family Members
+  - name: Sam Loomis
+    actor_name: John Gavin
+    tmdb_person_id: 7304
+    description: Marion's boyfriend, also searching for her and eventually teaming
+      up with Lila.
+    group: Family Members
+  - name: Private Det. Milton Arbogast
+    actor_name: Martin Balsam
+    tmdb_person_id: 1936
+    description: A private investigator hired to find Marion and the stolen money.
+    group: Investigators
+  - name: Sheriff Al Chambers
+    actor_name: John McIntire
+    tmdb_person_id: 53010
+    description: The local sheriff who provides some information to Arbogast.
+    group: Law Enforcement
+  - name: Dr. Fred Richman
+    actor_name: Simon Oakland
+    tmdb_person_id: 14063
+    description: A psychiatrist who explains Norman's mental state.
+    group: Medical Professionals
+  - name: Tom Cassidy
+    actor_name: Frank Albertson
+    tmdb_person_id: 78902
+    description: Marion's employer, the man whose money she steals.
+    group: Business Associates
+  - name: Caroline
+    actor_name: Patricia Hitchcock
+    tmdb_person_id: 12500
+    description: A colleague of Marion, who is seen at the office.
+    group: Business Associates
+  - name: George Lowery
+    actor_name: Vaughn Taylor
+    tmdb_person_id: 3641
+    description: Marion's boss at the real estate office.
+    group: Business Associates
+  - name: Mrs. Chambers
+    actor_name: Lurene Tuttle
+    tmdb_person_id: 19781
+    description: The Sheriff's wife. She is seen speaking with Arbogast.
+    group: Law Enforcement
+  - name: California Charlie
+    actor_name: John Anderson
+    tmdb_person_id: 19111
+    description: The owner of the car lot where Marion trades her car.
+    group: Business Associates
+    aliases:
+    - Charlie
+  - name: Highway Patrol Officer
+    actor_name: Mort Mills
+    tmdb_person_id: 45525
+    description: The highway patrol officer who pulls Marion over.
+    group: Law Enforcement
+  - name: Policeman on Steps (uncredited)
+    actor_name: Fletcher Allen
+    tmdb_person_id: 2223538
+    description: A policeman seen in the office.
+    group: Law Enforcement
+  - name: Church Member (uncredited)
+    actor_name: Walter Bacon
+    tmdb_person_id: 1550460
+    description: A church member.
+    group: Community Members
+  - name: Extra (uncredited)
+    actor_name: Kit Carson
+    tmdb_person_id: 1824638
+    description: An extra.
+    group: Extras
+  - name: Deputy District Attorney Alan Deats (uncredited)
+    actor_name: Francis De Sales
+    tmdb_person_id: 124848
+    description: A Deputy District Attorney.
+    group: Law Enforcement
+  - name: Extra (uncredited)
+    actor_name: George Dockstader
+    tmdb_person_id: 117673
+    description: An extra.
+    group: Extras
+  - name: Police Chief James Mitchell (uncredited)
+    actor_name: George Eldredge
+    tmdb_person_id: 116135
+    description: A police chief.
+    group: Law Enforcement
+  - name: Extra (uncredited)
+    actor_name: Harper Flaherty
+    tmdb_person_id: 183856
+    description: An extra.
+    group: Extras
+  - name: County Sheriff (uncredited)
+    actor_name: Sam Flint
+    tmdb_person_id: 120736
+    description: A county sheriff.
+    group: Law Enforcement
+  - name: Norma Bates (voice) (uncredited)
+    actor_name: Virginia Gregg
+    tmdb_person_id: 19110
+    description: The voice of Norman's mother.
+    group: Bates Motel Staff
+  - name: Man Outside Office (uncredited)
+    actor_name: Alfred Hitchcock
+    tmdb_person_id: 2636
+    description: Alfred Hitchcock's cameo.
+    group: Extras
+  - name: Norma Bates (voice) (uncredited)
+    actor_name: Paul Jasmin
+    tmdb_person_id: 1844168
+    description: The voice of Norman's mother.
+    group: Bates Motel Staff
+  - name: Extra (uncredited)
+    actor_name: Lee Kass
+    tmdb_person_id: 2492916
+    description: An extra.
+    group: Extras
+  - name: Bob Summerfield (uncredited)
+    actor_name: Frank Killmond
+    tmdb_person_id: 117602
+    description: A man.
+    group: Extras
+  - name: Policeman in Hallway Opening Door (uncredited)
+    actor_name: Ted Knight
+    tmdb_person_id: 71146
+    description: A policeman.
+    group: Law Enforcement
+  - name: Police Guard (uncredited)
+    actor_name: Pat McCaffrie
+    tmdb_person_id: 151550
+    description: A police guard.
+    group: Law Enforcement
+  - name: Passerby on Sidewalk (uncredited)
+    actor_name: Hans Moebus
+    tmdb_person_id: 1469587
+    description: A passerby.
+    group: Extras
+  - name: Norma Bates (voice) (uncredited)
+    actor_name: Jeanette Nolan
+    tmdb_person_id: 7520
+    description: The voice of Norman's mother.
+    group: Bates Motel Staff
+  - name: Extra (uncredited)
+    actor_name: Lillian O'Malley
+    tmdb_person_id: 1422376
+    description: An extra.
+    group: Extras
+  - name: Man (uncredited)
+    actor_name: Robert Osborne
+    tmdb_person_id: 938901
+    description: A man.
+    group: Extras
+  - name: Extra (uncredited)
+    actor_name: Fred Scheiwiller
+    tmdb_person_id: 1574696
+    description: An extra.
+    group: Extras
+  - name: Hardware Store Customer (uncredited)
+    actor_name: Helen Wallace
+    tmdb_person_id: 114962
+    description: A hardware store customer.
+    group: Extras
+  relationships:
+  - source: Norman Bates
+    target: Marion Crane
+    type: Interaction
+    description: Norman and Marion have a brief but significant interaction at the
+      motel.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Norman Bates
+    target: Norma Bates (voice) (uncredited)
+    type: Dependent
+    description: Norman has a deeply troubled and co-dependent relationship with his
+      mother.
+    sentiment: negative
+    strength: 5
+    tense: past
+  - source: Marion Crane
+    target: Sam Loomis
+    type: Romantic
+    description: Marion and Sam are romantically involved.
+    sentiment: positive
+    strength: 4
+    tense: present
+  - source: Marion Crane
+    target: Tom Cassidy
+    type: Employer-Employee
+    description: Marion works for Tom Cassidy.
+    sentiment: negative
+    strength: 2
+    tense: past
+  - source: Marion Crane
+    target: Lila Crane
+    type: Sister
+    description: Marion is the sister of Lila.
+    sentiment: positive
+    strength: 5
+    tense: evolving
+  - source: Lila Crane
+    target: Sam Loomis
+    type: Alliance
+    description: Lila and Sam team up to find Marion.
+    sentiment: positive
+    strength: 4
+    tense: evolving
+  - source: Sam Loomis
+    target: Private Det. Milton Arbogast
+    type: Interaction
+    description: Sam interacts with Arbogast during the investigation.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Private Det. Milton Arbogast
+    target: Norman Bates
+    type: Investigation
+    description: Arbogast investigates Norman and the Bates Motel.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Private Det. Milton Arbogast
+    target: Lila Crane
+    type: Investigation
+    description: Arbogast interacts with Lila during the investigation.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Sheriff Al Chambers
+    target: Private Det. Milton Arbogast
+    type: Interaction
+    description: Sheriff Chambers provides some information to Arbogast.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Sheriff Al Chambers
+    target: Mrs. Chambers
+    type: Spouse
+    description: Sheriff Chambers is married to Mrs. Chambers.
+    sentiment: neutral
+    strength: 3
+    tense: present
+  - source: Dr. Fred Richman
+    target: Norman Bates
+    type: Analysis
+    description: Dr. Richman analyzes Norman's mental state.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Caroline
+    target: Marion Crane
+    type: Colleague
+    description: Caroline is a colleague of Marion.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: George Lowery
+    target: Marion Crane
+    type: Employer-Employee
+    description: George Lowery is Marion's boss.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: California Charlie
+    target: Marion Crane
+    type: Business
+    description: California Charlie sells Marion a car.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Highway Patrol Officer
+    target: Marion Crane
+    type: Law Enforcement
+    description: The officer pulls Marion over.
+    sentiment: negative
+    strength: 3
+    tense: past
+  - source: Policeman on Steps (uncredited)
+    target: Marion Crane
+    type: Law Enforcement
+    description: The policeman is seen in the office.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  - source: Policeman in Hallway Opening Door (uncredited)
+    target: Marion Crane
+    type: Law Enforcement
+    description: The policeman is seen in the office.
+    sentiment: neutral
+    strength: 1
+    tense: past
+  tmdb_user_review_summary: User reviews for 'Psycho' (1960) are overwhelmingly positive.
+    The film is lauded as a masterpiece of suspense and a groundbreaking psychological
+    horror film. Common praises include Alfred Hitchcock's direction, the performances
+    of Anthony Perkins and Janet Leigh, and Bernard Herrmann's score, which is credited
+    with enhancing the film's tension. The plot, involving a secretary, embezzlement,
+    and a remote motel, is frequently mentioned. The film's impact on the genre and
+    its ability to be both entertaining and horrifying are also highlighted. Some
+    reviewers consider it their favorite film, with the climax being particularly
+    memorable.
+  plot_with_character_constraints_and_relations: 'Marion Crane, seeking a new life,
+    steals money from her employer, Tom Cassidy. She flees, encountering the Highway
+    Patrol Officer along the way. She ends up at the isolated Bates Motel, run by
+    the peculiar Norman Bates. Norman and Marion share a brief, unsettling interaction.
+    Marion''s plan takes a dark turn at the motel.
+
+    Meanwhile, Sam Loomis, Marion''s lover, is desperately worried. Her sister, Lila
+    Crane, joins forces with Sam, determined to find her. They hire Private Det. Milton
+    Arbogast to investigate Marion''s disappearance. Arbogast speaks with Sheriff
+    Al Chambers, seeking information. Arbogast then visits the Bates Motel.
+
+    Arbogast''s investigation leads him to Norman Bates, but the truth is hidden.
+    Arbogast disappears, and Lila and Sam grow more concerned. Sheriff Al Chambers
+    provides some assistance to the investigation. Later, Dr. Fred Richman analyzes
+    Norman''s mental state.
+
+    Finally, Lila and Sam confront Norman, uncovering the horrifying truth about Norman''s
+    relationship with Norma Bates (voice) and the secrets of the motel. The Policeman
+    on Steps (uncredited) and Policeman in Hallway Opening Door (uncredited) are seen
+    at the office. The mystery is solved, revealing a chilling reality about Norman''s
+    sanity.'
+- movie_title: Impossible Things
+  movie_year: '2021'
+  tmdb_movie_id: 667257
+  imdb_id: tt10032342
+  character_profile: The film centers on Matilde, a woman in her 70s, who finds her
+    quiet life disrupted by the arrival of Miguel, a young man who claims to be her
+    grandson. The character dynamics explore themes of family, memory, and the bonds
+    that connect generations. Matilde's initial skepticism gradually gives way to
+    a complex relationship with Miguel, forcing her to confront her past and the secrets
+    she has kept. The supporting characters, including neighbors and friends, add
+    layers to the narrative, highlighting the importance of community and human connection
+    in the face of personal challenges.
+  character_profile_big5:
+    Openness:
+      score: 4
+      explanation: The main character demonstrates openness by embracing new experiences
+        and perspectives despite personal challenges.
+    Conscientiousness:
+      score: 3
+      explanation: The character's level of conscientiousness varies, sometimes prioritizing
+        emotional needs over strict adherence to plans.
+    Extraversion:
+      score: 2
+      explanation: The character is more introverted, finding strength in introspection
+        and close relationships rather than seeking external validation.
+    Agreeableness:
+      score: 4
+      explanation: The character shows a high degree of agreeableness, prioritizing
+        empathy and understanding in their interactions.
+    Neuroticism:
+      score: 3
+      explanation: The character experiences moments of vulnerability and emotional
+        intensity, but generally maintains a balanced emotional state.
+  character_profile_myersbriggs:
+    type: INFJ
+    explanation: Introverted, Intuitive, Feeling, Judging (Advocate). The main character's
+      introspective nature, focus on values, and desire to help others align with
+      the INFJ personality type.
+  critical_reception: International critical reception for 'Impossible Things' has
+    been generally positive, with critics praising the film's sensitive portrayal
+    of aging, family dynamics, and the power of human connection. Many reviewers highlighted
+    the strong performances of the lead actors and the film's ability to evoke emotion
+    without resorting to melodrama. Some critics noted the film's pacing as deliberate,
+    allowing for a deeper exploration of the characters and their relationships. While
+    not without its detractors, the film has been lauded for its heartfelt storytelling
+    and its ability to resonate with audiences on a personal level.
+  visual_style: The visual style of 'Impossible Things' is characterized by a naturalistic
+    and intimate approach. The cinematography favors a warm color palette, often bathed
+    in natural light, creating a sense of warmth and nostalgia. Close-ups are frequently
+    used to emphasize the characters' emotions and the nuances of their interactions.
+    The camera work is generally unobtrusive, allowing the story to unfold organically.
+    Location shooting in a small town or village contributes to the film's sense of
+    place and authenticity. The overall aesthetic aims for a realistic portrayal of
+    everyday life, emphasizing the beauty found in simplicity and the subtle details
+    of human experience.
+  most_talked_about_related_topic: One of the most discussed aspects of 'Impossible
+    Things' revolves around the exploration of family secrets and the impact of past
+    events on present-day relationships. The film's narrative delves into the complexities
+    of familial bonds, particularly the challenges of communication and the lingering
+    effects of unspoken truths. The revelation of a hidden past and the subsequent
+    emotional fallout sparked considerable discussion among viewers and critics alike,
+    making it a central theme in post-screening discussions and reviews. The film's
+    handling of these sensitive topics has been both praised and debated.
+  genre_mix:
+    genres:
+      drama: 80
+      romance: 40
+      family: 30
+      independent: 20
+      comedy: 10
+  matching_tags:
+    tags:
+      Imperfect Unions: The film centers on the complexities of relationships, highlighting
+        the characters' shared vulnerabilities and the challenges they face together.
+  complex_search_queries:
+  - Independent films about elderly protagonists.
+  - Movies exploring intergenerational relationships and family secrets.
+  recommendations:
+  - title: Little Miss Sunshine
+    year: 2006
+    explanation: This film shares a similar heartwarming, character-driven narrative
+      with a focus on family dynamics and emotional depth, appealing to fans of 'Impossible
+      Things'.
+    imdb_id: tt0449059
+  - title: Silver Linings Playbook
+    year: 2012
+    explanation: Like 'Impossible Things', this movie explores the intricacies of
+      relationships and mental health, offering a relatable and emotionally resonant
+      experience.
+    imdb_id: tt1045658
+  - title: Hunt for the Wilderpeople
+    year: 2016
+    explanation: This film offers a similar blend of humor, heart, and character development,
+      creating a heartwarming and memorable viewing experience.
+    imdb_id: tt4698684
+  - title: About Time
+    year: 2013
+    explanation: This movie shares a similar focus on relationships and emotional
+      growth, offering a heartwarming and thought-provoking experience.
+    imdb_id: tt2194499
+  - title: Beginners
+    year: 2010
+    explanation: This film's focus on family, self-discovery, and emotional vulnerability
+      aligns with the themes of 'Impossible Things', offering a similarly intimate
+      and moving experience.
+    imdb_id: tt1532503
+  character_list:
+  - name: Matilde
+    actor_name: Nora Velázquez
+    tmdb_person_id: 1508206
+    description: An elderly woman facing eviction who forms an unlikely friendship
+      with Miguel.
+    group: Neighbors
+  - name: Miguel
+    actor_name: Benny Emmanuel
+    tmdb_person_id: 1379379
+    description: A young man who befriends Matilde and helps her navigate her difficult
+      situation.
+    group: Neighbors
+  - name: Eugenia
+    actor_name: Luisa Huertas
+    tmdb_person_id: 224508
+    description: Matilde's friend and confidante.
+    group: Neighbors
+  - name: Porfirio
+    actor_name: Salvador Garcini
+    tmdb_person_id: 941366
+    description: A character with a role in Matilde's life, possibly related to her
+      past.
+    group: Past Connections
+  - name: Lalo
+    actor_name: Andrés Delgado
+    tmdb_person_id: 1549908
+    description: A character who interacts with Matilde and Miguel, likely in a supporting
+      role.
+    group: Supporting Characters
+  - name: Laura
+    actor_name: Gabriela Cartol
+    tmdb_person_id: 1304427
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Manuel Chang
+    actor_name: Juan Carlos Medellin
+    tmdb_person_id: 1309461
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: The singer
+    actor_name: Ari Gallegos
+    tmdb_person_id: 1017157
+    description: A singer who performs in the movie.
+    group: Performers
+  - name: Policeman
+    actor_name: Pablo Marín
+    tmdb_person_id: 3242962
+    description: A law enforcement officer who appears in the film.
+    group: Law Enforcement
+  - name: Nestor
+    actor_name: Héctor Holten
+    tmdb_person_id: 1413381
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Elena
+    actor_name: Norma Pablo
+    tmdb_person_id: 1211042
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Daniela
+    actor_name: Michelle Betancourt
+    tmdb_person_id: 1764882
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Chava
+    actor_name: Ángel Flores Torres
+    tmdb_person_id: 1206812
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Singer
+    actor_name: Veronica Toussaint
+    tmdb_person_id: 1912239
+    description: A singer who performs in the movie.
+    group: Performers
+  - name: Galaxia
+    actor_name: Haydee Leyva
+    tmdb_person_id: 1327353
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Plomero
+    actor_name: Adrián Vázquez
+    tmdb_person_id: 1413394
+    description: A plumber who appears in the film.
+    group: Supporting Characters
+  - name: Narro
+    actor_name: Bruno Coronel
+    tmdb_person_id: 1947775
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Rosita
+    actor_name: Tete Espinoza
+    tmdb_person_id: 1811039
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Demostradora
+    actor_name: Nora Isabel Huerta
+    tmdb_person_id: 3669118
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Guardia de seguridad
+    actor_name: Armando Casas
+    tmdb_person_id: 985464
+    description: A security guard who appears in the film.
+    group: Supporting Characters
+  - name: Empleada
+    actor_name: Claudia Acosta
+    tmdb_person_id: 1476669
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Matilde joven
+    actor_name: Adriana Llabrés
+    tmdb_person_id: 1831843
+    description: A younger version of Matilde, likely shown in flashbacks.
+    group: Past Connections
+  - name: Ernesto
+    actor_name: Christian Cortés
+    tmdb_person_id: 2255016
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Porfirio joven / Porfirio sin rostro
+    actor_name: Lucas Mollard
+    tmdb_person_id: 3669125
+    description: A younger version of Porfirio, possibly in flashbacks.
+    group: Past Connections
+  - name: La Güera
+    actor_name: Paulina Álvarez Muñoz
+    tmdb_person_id: 2934648
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  - name: Chica que compra drogas
+    actor_name: Danae Reynaud
+    tmdb_person_id: 1198613
+    description: A character who interacts with Matilde and Miguel.
+    group: Supporting Characters
+  relationships:
+  - source: Matilde
+    target: Miguel
+    type: Friend
+    description: Matilde and Miguel form an unlikely friendship.
+    sentiment: positive
+    strength: 4
+    tense: evolving
+  - source: Matilde
+    target: Eugenia
+    type: Friend
+    description: Matilde and Eugenia are friends who support each other.
+    sentiment: positive
+    strength: 3
+    tense: present
+  - source: Matilde
+    target: Porfirio
+    type: Past Connection
+    description: Matilde has a connection to Porfirio, possibly from her past.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Miguel
+    target: Lalo
+    type: Acquaintance
+    description: Miguel interacts with Lalo.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Miguel
+    target: Laura
+    type: Acquaintance
+    description: Miguel interacts with Laura.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Manuel Chang
+    type: Acquaintance
+    description: Matilde interacts with Manuel Chang.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: The singer
+    type: Acquaintance
+    description: Matilde may encounter the singer.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Policeman
+    type: Authority
+    description: Matilde interacts with the Policeman.
+    sentiment: neutral
+    strength: 2
+    tense: present
+  - source: Matilde
+    target: Nestor
+    type: Acquaintance
+    description: Matilde interacts with Nestor.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Elena
+    type: Acquaintance
+    description: Matilde interacts with Elena.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Daniela
+    type: Acquaintance
+    description: Matilde interacts with Daniela.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Chava
+    type: Acquaintance
+    description: Matilde interacts with Chava.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Singer
+    type: Acquaintance
+    description: Matilde may encounter the singer.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Galaxia
+    type: Acquaintance
+    description: Matilde interacts with Galaxia.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Plomero
+    type: Acquaintance
+    description: Matilde interacts with the Plomero.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Narro
+    type: Acquaintance
+    description: Matilde interacts with Narro.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Rosita
+    type: Acquaintance
+    description: Matilde interacts with Rosita.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Demostradora
+    type: Acquaintance
+    description: Matilde interacts with Demostradora.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Guardia de seguridad
+    type: Acquaintance
+    description: Matilde interacts with the Guardia de seguridad.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Empleada
+    type: Acquaintance
+    description: Matilde interacts with the Empleada.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Matilde joven
+    type: Self
+    description: Matilde's past self is shown.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Matilde
+    target: Ernesto
+    type: Acquaintance
+    description: Matilde interacts with Ernesto.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Matilde
+    target: Porfirio joven / Porfirio sin rostro
+    type: Past Connection
+    description: Matilde's past connection with Porfirio is shown.
+    sentiment: neutral
+    strength: 2
+    tense: past
+  - source: Matilde
+    target: La Güera
+    type: Acquaintance
+    description: Matilde interacts with La Güera.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  - source: Miguel
+    target: Chica que compra drogas
+    type: Acquaintance
+    description: Miguel interacts with the Chica que compra drogas.
+    sentiment: neutral
+    strength: 1
+    tense: present
+  plot_with_character_constraints_and_relations: In a world grappling with hardship,
+    Matilde navigates the complexities of her life. Matilde's unlikely friendship
+    with Miguel provides her with solace. Eugenia, a friend to Matilde, offers support
+    as Matilde confronts her past connection to Porfirio, potentially revisiting a
+    past she'd rather leave behind. Flashbacks reveal Matilde joven and her connection
+    to Porfirio joven / Porfirio sin rostro, hinting at unresolved issues. Throughout
+    her day, Matilde interacts with a variety of people, including Manuel Chang, Nestor,
+    Elena, Daniela, Chava, Galaxia, the Plomero, Narro, Rosita, Demostradora, and
+    the Guardia de seguridad. Matilde's path crosses with the Policeman, adding another
+    layer of tension to her daily life. Miguel's acquaintance Lalo and Laura also
+    appear in the story. Matilde might encounter The singer and Singer. The Empleada
+    and La Güera also play their roles. The struggles of the Chica que compra drogas
+    are also shown, as Miguel interacts with her. Matilde's resilience is tested as
+    she faces an uncertain future, seeking strength from her friendships and confronting
+    the echoes of her past, finally finding peace. Ernesto also plays a role in her
+    journey.
+- movie_title: Harakiri
+  movie_year: '1962'
+  tmdb_movie_id: 14537
+  imdb_id: tt0056058
+  character_profile: The film presents a stark portrayal of samurai society, focusing
+    on the desperation and moral decay within. The central figure, Tsugumo Hanshiro,
+    is a ronin seeking to commit ritual suicide (seppuku) at the house of a feudal
+    lord. His character is initially presented as a weary and impoverished warrior,
+    but as the narrative unfolds through flashbacks, his motivations and the true
+    nature of the events leading to his request are revealed. The film also features
+    the clan's samurai, who are shown to be cruel and hypocritical, highlighting the
+    corruption within the system.
+  character_profile_big5:
+    Openness:
+      score: 4
+      explanation: Kuwahara's willingness to challenge the established samurai order
+        and his pursuit of justice demonstrates a high degree of openness to new ideas
+        and experiences.
+    Conscientiousness:
+      score: 5
+      explanation: Kuwahara is incredibly disciplined and persistent in his quest
+        for revenge, meticulously planning and executing his actions with unwavering
+        focus.
+    Extraversion:
+      score: 2
+      explanation: Kuwahara is largely introverted, maintaining a stoic and reserved
+        demeanor throughout the film, and rarely engaging in overt displays of emotion
+        or seeking social interaction.
+    Agreeableness:
+      score: 1
+      explanation: Kuwahara is not agreeable; he is confrontational and willing to
+        defy authority, driven by his personal code and desire for vengeance, even
+        if it means causing conflict.
+    Neuroticism:
+      score: 4
+      explanation: While outwardly composed, Kuwahara's actions are driven by deep
+        emotional pain and a desire for retribution, suggesting a high degree of underlying
+        emotional sensitivity and potential for stress.
+  character_profile_myersbriggs:
+    type: ISTJ
+    explanation: Kuwahara's ISTJ type is evident in his adherence to a strict personal
+      code, his methodical approach to achieving his goals, his focus on facts and
+      details, and his reserved, pragmatic nature.
+  critical_reception: Harakiri received widespread critical acclaim upon its release
+    and continues to be lauded as a masterpiece of Japanese cinema. Critics praised
+    its powerful storytelling, thematic depth, and unflinching portrayal of samurai
+    honor and hypocrisy. The film's slow burn pacing and deliberate use of flashbacks
+    were lauded for building suspense and revealing the complexities of the characters
+    and their motivations. It is often cited as one of the greatest samurai films
+    ever made, celebrated for its anti-establishment themes and its exploration of
+    the human condition.
+  visual_style: The film's visual style is characterized by its stark simplicity and
+    meticulous composition. The use of black and white cinematography emphasizes the
+    dramatic contrasts and the emotional weight of the scenes. The camera work is
+    deliberate and often static, allowing the viewer to fully absorb the performances
+    and the carefully constructed sets. The film frequently uses long takes and slow
+    pans to build tension and create a sense of formality. The use of shadows and
+    light is particularly effective in highlighting the characters' emotions and the
+    film's themes of honor and betrayal. The film's visual style is a key element
+    in its enduring power.
+  most_talked_about_related_topic: The film's most talked-about aspect is its unflinching
+    depiction of seppuku, the ritual suicide practiced by samurai. The graphic and
+    brutal portrayal of the act, and the events leading up to it, are shocking and
+    moving. The film doesn't shy away from the violence, but uses it to underscore
+    the themes of honor, duty, and the consequences of adhering to a rigid code. The
+    film's exploration of the hypocrisy and cruelty within the samurai class, revealed
+    through the seppuku scenes, remains a powerful and controversial aspect of the
+    film.
+  genre_mix:
+    genres:
+      drama: 90
+      action: 30
+      historical: 70
+      samurai: 80
+      thriller: 40
+      revenge: 60
+  matching_tags:
+    tags:
+      Lo-Fi Epic: Despite its grand themes of honor, revenge, and societal critique,
+        the film is told through a grounded, intimate, character-driven lens, focusing
+        on the personal struggles of the characters.
+      Legacy Reckoning: The film is a historical drama that confronts the legacy of
+        the samurai class and the societal expectations of honor and duty, reflecting
+        on the past and its impact on the present.
+  complex_search_queries:
+  - Best samurai movies exploring themes of honor and revenge
+  - Movies with powerful critiques of societal hypocrisy
+  recommendations:
+  - title: Seven Samurai
+    year: 1954
+    explanation: A high-rated, classic samurai film with a similar focus on honor,
+      duty, and the struggles of individuals against a larger societal backdrop, offering
+      a comparable viewing experience.
+    imdb_id: tt0047478
+  - title: Yojimbo
+    year: 1961
+    explanation: This film shares a similar tone of stoicism and moral ambiguity,
+      with a lone samurai navigating a world of conflict, appealing to fans of 'Harakiri's'
+      intense and character-driven narrative.
+    imdb_id: tt0055630
+  - title: Rashomon
+    year: 1950
+    explanation: A critically acclaimed film exploring themes of truth, perspective,
+      and the complexities of human nature, offering a similar thought-provoking experience
+      to 'Harakiri'.
+    imdb_id: tt0042876
+  - title: Ran
+    year: 1985
+    explanation: A visually stunning and emotionally powerful epic that, like 'Harakiri',
+      explores themes of honor, betrayal, and the destructive nature of power within
+      a historical setting.
+    imdb_id: tt0089881
+  - title: Throne of Blood
+    year: 1957
+    explanation: This film, like 'Harakiri', is a dark and intense drama that explores
+      themes of ambition, betrayal, and the consequences of one's actions, offering
+      a similar viewing experience.
+    imdb_id: tt0050613
+  character_list:
+  - name: Hanshiro Tsugumo
+    actor_name: Tatsuya Nakadai
+    tmdb_person_id: 70131
+    description: A ronin seeking to avenge his family's honor, challenging the clan's
+      traditions and exposing their hypocrisy.
+    group: Challengers
+  - name: Motome Chijiiwa
+    actor_name: Akira Ishihama
+    tmdb_person_id: 76977
+    description: A samurai, forced to commit seppuku, whose death sets the stage for
+      the film's central conflict.
+    group: Samurai
+  - name: Miho Tsugumo
+    actor_name: Shima Iwashita
+    tmdb_person_id: 76976
+    description: Hanshiro's daughter, whose death deeply affects him.
+    group: Family Members
+  - name: Hikokuro Omodaka
+    actor_name: Tetsuro Tamba
+    tmdb_person_id: 10071
+    description: A senior samurai in the clan, involved in the events surrounding
+      the seppuku of other samurai.
+    group: Samurai
+  - name: Tango Inaba
+    actor_name: Masao Mishima
+    tmdb_person_id: 125721
+    description: A samurai in the clan, involved in the events surrounding the seppuku
+      of other samurai.
+    group: Samurai
+  - name: Hayato Yazaki
+    actor_name: Ichirō Nakatani
+    tmdb_person_id: 118993
+    description: A samurai in the clan, involved in the events surrounding the seppuku
+      of other samurai.
+    group: Samurai
+  - name: Masakazu
+    actor_name: Kei Satō
+    tmdb_person_id: 33730
+    description: A samurai in the clan, involved in the events surrounding the seppuku
+      of other samurai.
+    group: Samurai
+  - name: JInai Chijiiwa
+    actor_name: Yoshio Inaba
+    tmdb_person_id: 20828
+    description: A samurai in the clan, involved in the events surrounding the seppuku
+      of other samurai.
+    group: Samurai
+  - name: Retainer
+    actor_name: Hisashi Igawa
+    tmdb_person_id: 96637
+    description: A member of the clan, possibly a guard or official.
+    group: Guards
+  - name: Retainer
+    actor_name: Tōru Takeuchi
+    tmdb_person_id: 1499600
+    description: A member of the clan, possibly a guard or official.
+    group: Guards
+  - name: Kageyu Saito
+    actor_name: Rentaro Mikuni
+    tmdb_person_id: 76975
+    description: The head of the clan, representing the authority and the target of
+      Hanshiro's challenge.
+    group: Samurai
+  relationships:
+  - source: Hanshiro Tsugumo
+    target: Miho Tsugumo
+    type: Family
+    description: Hanshiro's daughter, whose death motivates his actions.
+    sentiment: positive
+    strength: 5
+    tense: past
+  - source: Hanshiro Tsugumo
+    target: Motome Chijiiwa
+    type: Opponent
+    description: Hanshiro's challenge is a direct response to the events surrounding
+      Motome's seppuku.
+    sentiment: negative
+    strength: 4
+    tense: past
+  - source: Hanshiro Tsugumo
+    target: Kageyu Saito
+    type: Rival
+    description: Hanshiro directly challenges Saito and the clan's authority.
+    sentiment: negative
+    strength: 5
+    tense: present
+  - source: Motome Chijiiwa
+    target: Kageyu Saito
+    type: Subordinate
+    description: Motome is a member of Saito's clan, and his fate is determined by
+      Saito's decisions.
+    sentiment: neutral
+    strength: 3
+    tense: past
+  - source: Hikokuro Omodaka
+    target: Hanshiro Tsugumo
+    type: Opponent
+    description: Hikokuro is involved in the events that lead to Hanshiro's challenge.
+    sentiment: negative
+    strength: 4
+    tense: present
+  - source: Tango Inaba
+    target: Hanshiro Tsugumo
+    type: Opponent
+    description: Tango is involved in the events that lead to Hanshiro's challenge.
+    sentiment: negative
+    strength: 4
+    tense: present
+  - source: Hayato Yazaki
+    target: Hanshiro Tsugumo
+    type: Opponent
+    description: Hayato is involved in the events that lead to Hanshiro's challenge.
+    sentiment: negative
+    strength: 4
+    tense: present
+  - source: Masakazu
+    target: Hanshiro Tsugumo
+    type: Opponent
+    description: Masakazu is involved in the events that lead to Hanshiro's challenge.
+    sentiment: negative
+    strength: 4
+    tense: present
+  - source: JInai Chijiiwa
+    target: Hanshiro Tsugumo
+    type: Opponent
+    description: JInai is involved in the events that lead to Hanshiro's challenge.
+    sentiment: negative
+    strength: 4
+    tense: present
+  tmdb_user_review_summary: User reviews for 'Harakiri' (1962) highlight its status
+    as a Japanese cinematic classic. The film is praised for its strong storytelling,
+    particularly the use of nested narratives, and its unflawed execution. One reviewer
+    suggests the film explores themes of truth and may even be predictive of certain
+    modern societal issues. Another review emphasizes the film's cultural significance,
+    noting Japan's rich history and the potential for Western audiences to undervalue
+    it. While acknowledging that some modern viewers might find it challenging, the
+    reviews generally encourage giving the film a chance.
+  plot_with_character_constraints_and_relations: 'The film opens with Hanshiro Tsugumo
+    arriving at the manor, requesting to commit seppuku. His request is a direct challenge
+    to Kageyu Saito and the clan. The audience is introduced to the tragic past of
+    Hanshiro Tsugumo, whose daughter, Miho Tsugumo, died, motivating his current actions.
+    Kageyu Saito, a powerful figure, is initially dismissive, but Hanshiro Tsugumo''s
+    resolve forces him to listen.
+
+    Flashbacks reveal the circumstances surrounding the death of Motome Chijiiwa,
+    a member of Kageyu Saito''s clan. Motome Chijiiwa was forced to commit seppuku,
+    and Hanshiro Tsugumo''s challenge is a response to the events surrounding that.
+    Kageyu Saito, suspecting Hanshiro Tsugumo''s true motives, orders three retainers
+    to recount their experiences with seppuku.
+
+    However, Hanshiro Tsugumo reveals a dark secret - the retainers, Hikokuro Omodaka,
+    Tango Inaba, Hayato Yazaki, Masakazu, and Jinai Chijiiwa, were involved in the
+    events and are forced to face the consequences of their actions. The true nature
+    of the clan''s cruelty is exposed. The film culminates in a tense confrontation,
+    with Hanshiro Tsugumo challenging Kageyu Saito and the clan''s authority, leading
+    to a bloody and tragic conclusion.'

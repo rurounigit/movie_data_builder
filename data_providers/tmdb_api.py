@@ -2,14 +2,12 @@
 import requests
 import os
 import shutil
-# import yaml # Not needed in this file
 from typing import Optional, List, Dict, Any, Tuple
-from models.movie_models import TMDBRawCharacter, TMDBReviewsResponse, TMDBReviewResult, TMDBReviewAuthorDetails
+from models.movie_models import TMDBRawCharacter, TMDBReviewsResponse, TMDBReviewResult, TMDBReviewAuthorDetails # Keeping for Pydantic validation if used elsewhere
 
 # Default base URL and size, can be overridden by config
 TMDB_IMAGE_BASE_URL_DEFAULT = "https://image.tmdb.org/t/p/"
 TMDB_IMAGE_SIZE_DEFAULT = "w500"
-CHARACTER_IMAGE_SAVE_PATH_DEFAULT = "output/character_images"
 
 
 def fetch_top_rated_movies_from_tmdb(
@@ -47,7 +45,7 @@ def search_tmdb_for_movie_id(
     tmdb_api_key: str,
     movie_title: str,
     year: Optional[str] = None,
-    logger: Optional[Any] = None # Added logger
+    logger: Optional[Any] = None
 ) -> Tuple[Optional[int], Optional[str]]:
     if not tmdb_api_key: return None, None
     if not movie_title or not movie_title.strip(): return None, None
@@ -64,7 +62,6 @@ def search_tmdb_for_movie_id(
     headers = {"accept": "application/json", "Authorization": f"Bearer {tmdb_api_key}"}
     try:
         if logger: logger.debug(f"Querying TMDB search for '{movie_title}' (Year: {year_to_query_tmdb or 'Any'})...")
-        else: print(f"      Querying TMDB search for '{movie_title}' (Year: {year_to_query_tmdb or 'Any'})...")
         response = requests.get(url, headers=headers, timeout=7)
         response.raise_for_status()
         data = response.json()
@@ -83,23 +80,22 @@ def search_tmdb_for_movie_id(
                 if not best_match and year_to_query_tmdb and tmdb_year_result_api == year_to_query_tmdb and target_title_lower in tmdb_title_result_lower:
                     best_match = result
 
-            if not best_match and data["results"]: best_match = data["results"][0] # Ensure data["results"] is not empty
+            if not best_match and data["results"]: best_match = data["results"][0]
 
-            if best_match: # Ensure best_match is not None
+            if best_match:
                 tmdb_id = best_match.get("id")
                 tmdb_year_result_found = best_match.get("release_date", "N/A")[:4]
                 return tmdb_id, tmdb_year_result_found
     except Exception as e:
         log_msg = f"Error/Timeout during TMDB search for '{movie_title}': {e}"
         if logger: logger.warning(log_msg)
-        else: print(f"      {log_msg}")
     return None, None
 
 def get_imdb_id_from_tmdb_details(
     tmdb_api_key: str,
     tmdb_movie_id: int,
     movie_title_for_log: str = "",
-    logger: Optional[Any] = None # Added logger
+    logger: Optional[Any] = None
 ) -> Optional[str]:
     if not tmdb_api_key or not tmdb_movie_id: return None
     url = f"https://api.themoviedb.org/3/movie/{tmdb_movie_id}/external_ids"
@@ -107,7 +103,6 @@ def get_imdb_id_from_tmdb_details(
     try:
         log_msg_query = f"Querying TMDB external IDs for TMDB ID: {tmdb_movie_id} ('{movie_title_for_log}')..."
         if logger: logger.debug(log_msg_query)
-        else: print(f"      {log_msg_query}")
         response = requests.get(url, headers=headers, timeout=7)
         response.raise_for_status()
         data = response.json()
@@ -117,7 +112,6 @@ def get_imdb_id_from_tmdb_details(
     except Exception as e:
         log_msg_error = f"Error/Timeout during TMDB external IDs lookup for TMDB ID {tmdb_movie_id}: {e}"
         if logger: logger.warning(log_msg_error)
-        else: print(f"      {log_msg_error}")
     return None
 
 def fetch_raw_character_actor_list_from_tmdb(
@@ -125,7 +119,7 @@ def fetch_raw_character_actor_list_from_tmdb(
     tmdb_movie_id: int,
     movie_title_for_log: str,
     max_chars: int,
-    logger: Optional[Any] = None # ADDED logger argument
+    logger: Optional[Any] = None
 ) -> Optional[List[TMDBRawCharacter]]:
     if not tmdb_api_key: return None
     if not tmdb_movie_id: return None
@@ -136,7 +130,6 @@ def fetch_raw_character_actor_list_from_tmdb(
     try:
         log_msg_query = f"Querying TMDB Credits for '{movie_title_for_log}' (TMDB ID: {tmdb_movie_id})..."
         if logger: logger.debug(log_msg_query)
-        else: print(f"      {log_msg_query}") # Kept print for direct calls without logger
 
         response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
@@ -162,29 +155,24 @@ def fetch_raw_character_actor_list_from_tmdb(
                     )
                 except Exception as e:
                     log_msg_pydantic_error = f"Pydantic validation error for TMDB char: {e}. Skipping."
-                    if logger: logger.warning(f"  {log_msg_pydantic_error}") # Indent for sub-process
-                    else: print(f"        {log_msg_pydantic_error}")
+                    if logger: logger.warning(f"  {log_msg_pydantic_error}")
                     continue
 
             if raw_char_actor_pydantic_list:
                 log_msg_success = f"TMDB Credits: Retrieved {len(raw_char_actor_pydantic_list)} raw characters for '{movie_title_for_log}'."
                 if logger: logger.debug(log_msg_success)
-                else: print(f"      {log_msg_success}")
                 return raw_char_actor_pydantic_list
             else:
                 log_msg_no_valid = f"TMDB Credits: No valid raw character data for '{movie_title_for_log}'."
                 if logger: logger.info(log_msg_no_valid)
-                else: print(f"      {log_msg_no_valid}")
                 return None
         else:
             log_msg_no_cast = f"TMDB Credits: No 'cast' array for '{movie_title_for_log}'."
             if logger: logger.info(log_msg_no_cast)
-            else: print(f"      {log_msg_no_cast}")
             return None
     except Exception as e:
         log_msg_error = f"Error during TMDB Credits lookup for '{movie_title_for_log}': {e}"
         if logger: logger.error(log_msg_error)
-        else: print(f"      {log_msg_error}")
     return None
 
 
@@ -193,9 +181,9 @@ def fetch_movie_reviews_from_tmdb(
     movie_id: int,
     movie_title_for_log: str,
     logger: Optional[Any] = None,
-    max_reviews_to_process: int = 5, # Configurable: how many reviews to feed to LLM
-    max_review_length_chars: int = 1000 # Configurable: truncate long reviews
-) -> Optional[List[Dict[str, Any]]]: # Returns a list of review content strings
+    max_reviews_to_process: int = 5,
+    max_review_length_chars: int = 1000
+) -> Optional[List[Dict[str, Any]]]:
     """
     Fetches user reviews for a movie from TMDB.
     Returns a list of review content strings, or None if an error occurs or no reviews.
@@ -207,7 +195,6 @@ def fetch_movie_reviews_from_tmdb(
         if logger: logger.error("Movie ID not provided. Cannot fetch reviews.")
         return None
 
-    # For now, fetch only page 1. Could be extended to fetch more.
     url = f"https://api.themoviedb.org/3/movie/{movie_id}/reviews?language=en-US&page=1"
     headers = {"accept": "application/json", "Authorization": f"Bearer {tmdb_api_key}"}
 
@@ -217,7 +204,7 @@ def fetch_movie_reviews_from_tmdb(
         if logger: logger.debug(f"Querying TMDB for reviews for '{movie_title_for_log}' (ID: {movie_id})...")
         response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
-        data = response.json() # This should be validated against TMDBReviewsResponse ideally
+        data = response.json()
 
         if data and data.get("results"):
             results = data["results"]
@@ -230,11 +217,10 @@ def fetch_movie_reviews_from_tmdb(
                 content = review_data.get("content")
                 author = review_data.get("author", "Unknown Author")
                 if content:
-                    # Truncate long reviews to manage token count for LLM
                     truncated_content = content[:max_review_length_chars]
                     if len(content) > max_review_length_chars:
                         truncated_content += "..."
-                    review_contents.append(f"Review by {author}:\n{truncated_content}\n---") # Add author for context
+                    review_contents.append(f"Review by {author}:\n{truncated_content}\n---")
                     count += 1
 
             if not review_contents:
@@ -250,62 +236,4 @@ def fetch_movie_reviews_from_tmdb(
         if logger: logger.error(f"Error calling TMDB reviews API for movie ID {movie_id}: {e}")
     except Exception as e:
         if logger: logger.error(f"Unexpected error during TMDB reviews lookup for movie ID {movie_id}: {e}")
-    return None
-
-def fetch_and_save_character_image(
-    tmdb_api_key: str,
-    person_id: int,
-    person_name_for_log: str,
-    save_path: str = CHARACTER_IMAGE_SAVE_PATH_DEFAULT,
-    base_image_url: str = TMDB_IMAGE_BASE_URL_DEFAULT,
-    image_size: str = TMDB_IMAGE_SIZE_DEFAULT,
-    logger: Optional[Any] = None # ADDED logger argument
-) -> Optional[str]:
-    if not tmdb_api_key: return None
-    if not person_id: return None
-
-    if not os.path.exists(save_path):
-        try:
-            os.makedirs(save_path, exist_ok=True)
-        except OSError as e:
-            log_msg_dir_error = f"Error creating directory {save_path}: {e}"
-            if logger: logger.error(f"  {log_msg_dir_error}") # Indent for sub-process
-            else: print(f"      {log_msg_dir_error}")
-            return None
-
-    url = f"https://api.themoviedb.org/3/person/{person_id}/images"
-    headers = {"accept": "application/json", "Authorization": f"Bearer {tmdb_api_key}"}
-
-    try:
-        log_msg_query = f"Querying TMDB images for person ID {person_id} ('{person_name_for_log}')..."
-        if logger: logger.debug(f"  {log_msg_query}") # Indent for sub-process
-        else: print(f"      {log_msg_query}")
-
-        response = requests.get(url, headers=headers, timeout=7)
-        response.raise_for_status()
-        data = response.json()
-
-        if data.get("profiles") and len(data["profiles"]) > 0:
-            file_path_suffix = data["profiles"][0].get("file_path")
-            if file_path_suffix:
-                image_url = f"{base_image_url}{image_size}{file_path_suffix}"
-                _, file_extension = os.path.splitext(file_path_suffix)
-                if not file_extension: file_extension = ".jpg"
-
-                local_image_filename = f"{person_id}{file_extension}"
-                local_image_full_path = os.path.join(save_path, local_image_filename)
-
-                img_response = requests.get(image_url, stream=True, timeout=10)
-                img_response.raise_for_status()
-                with open(local_image_full_path, 'wb') as f_img:
-                    shutil.copyfileobj(img_response.raw, f_img)
-
-                log_msg_success = f"Successfully saved image: {local_image_full_path}"
-                if logger: logger.debug(f"    {log_msg_success}") # Further indent
-                else: print(f"      {log_msg_success}")
-                return local_image_full_path
-    except Exception as e:
-        log_msg_error = f"Error/Timeout during image fetch for person ID {person_id} ('{person_name_for_log}'): {e}"
-        if logger: logger.warning(f"  {log_msg_error}") # Indent for sub-process
-        else: print(f"      {log_msg_error}")
     return None

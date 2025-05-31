@@ -1,11 +1,17 @@
 # enrichers/character_enricher.py
-# import yaml # No longer needed here for loading
+import yaml
 import openai
+import time # For sleep in image downloading
 from typing import List, Optional, Dict, Any
 
 from models.movie_models import CharacterListItem, Relationship, LLMCall2Output
 from data_providers.llm_clients import get_llm_response_and_parse
-from data_providers.tmdb_api import fetch_and_save_character_image # Keep this direct import
+from utils.image_downloader import (
+    download_actor_image_tmdb,
+    download_character_image_ddg,
+    download_ddg_image_for_query
+)
+from utils.helpers import slugify
 
 
 def enrich_characters_and_get_relationships(
@@ -16,7 +22,7 @@ def enrich_characters_and_get_relationships(
     raw_tmdb_characters_yaml_str: str,
     prompt_template: str,
     max_tokens: int,
-    config: Dict[str, Any],
+    config: Dict[str, Any], # Pass the whole app_config
     logger: Optional[Any] = None
 ) -> Optional[LLMCall2Output]:
     prompt_user_content = prompt_template.format(
@@ -59,38 +65,119 @@ def enrich_characters_and_get_relationships(
     return None
 
 
-def fetch_and_assign_character_images(
+def trigger_character_image_downloads(
     character_list_from_llm: List[CharacterListItem],
+    movie_title: str,
+    movie_tmdb_id: Optional[int],
     save_path_base: str,
     tmdb_api_key: str,
     tmdb_image_base_url: str,
     tmdb_image_size: str,
+    ddg_num_images_per_search: int,
+    ddg_sleep_after_character_group: float, # New
+    ddg_sleep_between_individual_downloads: float, # New
     logger: Optional[Any] = None
-) -> List[CharacterListItem]:
-    updated_list = []
-    for char_data in character_list_from_llm:
-        image_local_path = None
-        if char_data.tmdb_person_id is not None:
-            try:
-                person_id_int = int(char_data.tmdb_person_id)
-                image_local_path = fetch_and_save_character_image( # Direct call to imported function
-                    tmdb_api_key=tmdb_api_key,
-                    person_id=person_id_int,
-                    person_name_for_log=char_data.name,
-                    save_path=save_path_base,
-                    base_image_url=tmdb_image_base_url,
-                    image_size=tmdb_image_size,
-                    logger=logger # Pass the logger through
-                )
-            except ValueError:
-                log_msg = f"Warning: Invalid tmdb_person_id format '{char_data.tmdb_person_id}' for character '{char_data.name}'. Cannot fetch image."
-                if logger: logger.warning(f"    {log_msg}") # Indent for context
-            except Exception as e:
-                log_msg = f"Error during image fetch process for character {char_data.name} (ID: {char_data.tmdb_person_id}): {e}"
-                if logger: logger.error(f"    {log_msg}") # Indent for context
-        char_data.image_file = image_local_path
-        updated_list.append(char_data)
-    return updated_list
+) -> None:
+    if not character_list_from_llm:
+        if logger: logger.info("  No characters in list for image download.")
+        return
+
+    for char_idx, char_data in enumerate(character_list_from_llm):
+        if not char_data.tmdb_person_id:
+            if logger: logger.warning(f"  Skipping image download for '{char_data.name}': Missing TMDB Person ID.")
+            continue
+
+        person_id_int = int(char_data.tmdb_person_id)
+
+        if tmdb_api_key:
+            if logger: logger.info(f"    Downloading Actor Image (TMDB) for '{char_data.actor_name}' (ID: {person_id_int})...")
+            download_actor_image_tmdb(
+                tmdb_api_key=tmdb_api_key,
+                person_id=person_id_int,
+                person_name_for_log=char_data.actor_name,
+                save_path=save_path_base,
+                base_image_url=tmdb_image_base_url,
+                image_size=tmdb_image_size,
+                logger=logger
+            )
+        else:
+            if logger: logger.warning(f"    TMDB API key missing. Skipping actor image download for '{char_data.actor_name}'.")
+
+        if logger: logger.info(f"    Downloading Character Image (DDG) for '{char_data.name}' from '{movie_title}'...")
+        download_character_image_ddg(
+            character_name=char_data.name,
+            movie_title=movie_title,
+            tmdb_person_id=person_id_int,
+            num_images_to_fetch=ddg_num_images_per_search,
+            save_path=save_path_base,
+            sleep_between_downloads=ddg_sleep_between_individual_downloads, # Pass through
+            logger=logger
+        )
+
+        # Sleep after processing a character's image group (TMDB actor + DDG character)
+        # Don't sleep after the very last character in the list
+        if char_idx < len(character_list_from_llm) - 1:
+            if logger: logger.debug(f"    Sleeping for {ddg_sleep_after_character_group}s after processing images for '{char_data.name}'...")
+            time.sleep(ddg_sleep_after_character_group)
+
+
+def _sanitize_for_filename_component(name: str) -> str:
+    return slugify(name)
+
+
+def trigger_relationship_image_downloads(
+    relationships: List[Relationship],
+    movie_title: str,
+    save_path_base: str,
+    ddg_num_images_per_relationship_search: int,
+    max_relationships_to_process: int,
+    ddg_sleep_after_relationship_group: float, # New
+    ddg_sleep_between_individual_downloads: float, # New
+    logger: Optional[Any] = None
+) -> None:
+    if not relationships:
+        if logger: logger.info("  No relationships provided for relationship image download.")
+        return
+
+    if logger: logger.info(f"  Attempting to download images for up to {max_relationships_to_process} relationships for '{movie_title}'.")
+
+    processed_count = 0
+    for rel_idx, rel in enumerate(relationships):
+        if processed_count >= max_relationships_to_process:
+            if logger: logger.info(f"    Reached limit of {max_relationships_to_process} relationships for image download.")
+            break
+
+        source_name = str(rel.source).strip()
+        target_name = str(rel.target).strip()
+
+        if not source_name or not target_name:
+            if logger: logger.debug(f"    Skipping relationship image download due to empty source/target string after strip: '{source_name}' -> '{target_name}'")
+            continue
+
+        search_query = f"{source_name} and {target_name} {movie_title}"
+        sane_source = _sanitize_for_filename_component(source_name)
+        sane_target = _sanitize_for_filename_component(target_name)
+        filename_prefix = f"rel_{sane_source}_{sane_target}"
+
+        if logger: logger.info(f"    Downloading Relationship Image (DDG) for '{source_name}' & '{target_name}' from '{movie_title}' (Query: '{search_query}')...")
+
+        download_ddg_image_for_query(
+            query=search_query,
+            filename_prefix_base=filename_prefix,
+            num_images_to_fetch=ddg_num_images_per_relationship_search,
+            save_path=save_path_base,
+            sleep_between_downloads=ddg_sleep_between_individual_downloads, # Pass through
+            logger=logger
+        )
+        processed_count += 1
+
+        # Sleep after processing a relationship's image group
+        # Don't sleep after the very last relationship processed or if it's the last in the list
+        if processed_count < max_relationships_to_process and rel_idx < len(relationships) -1 :
+             if logger: logger.debug(f"    Sleeping for {ddg_sleep_after_relationship_group}s after processing images for relationship '{source_name}' & '{target_name}'...")
+             time.sleep(ddg_sleep_after_relationship_group)
+
+    if logger: logger.info(f"  Finished DDG downloads for relationships. Processed {processed_count} relationships for image search.")
 
 
 def deduplicate_and_normalize_relationships(
@@ -119,8 +206,7 @@ def deduplicate_and_normalize_relationships(
         return relationships_data_from_llm
 
     unique_relationships: List[Relationship] = []
-    seen_mutual_pairs = set()
-    seen_directed_pairs = set()
+    seen_pairs = set()
 
     for rel_model in relationships_data_from_llm:
         original_source_llm = rel_model.source.strip()
@@ -140,34 +226,18 @@ def deduplicate_and_normalize_relationships(
             if logger: logger.debug(f"Skipping self-relationship for '{source_norm}'.")
             continue
 
-        rel_dict = rel_model.model_dump()
-        rel_dict['source'] = source_norm
-        rel_dict['target'] = target_norm
-        is_directed = rel_model.directed
+        pair_key = tuple(sorted((source_norm.lower(), target_norm.lower())))
 
-        current_pair_key: Any
-        is_new_relationship = False
-
-        if not is_directed:
-            current_pair_key = tuple(sorted((source_norm.lower(), target_norm.lower())))
-            if current_pair_key not in seen_mutual_pairs:
-                seen_mutual_pairs.add(current_pair_key)
-                seen_directed_pairs.add((source_norm.lower(), target_norm.lower()))
-                seen_directed_pairs.add((target_norm.lower(), source_norm.lower()))
-                is_new_relationship = True
-        else:
-            current_pair_key = (source_norm.lower(), target_norm.lower())
-            mutual_equivalent_key = tuple(sorted((source_norm.lower(), target_norm.lower())))
-            if current_pair_key not in seen_directed_pairs and mutual_equivalent_key not in seen_mutual_pairs:
-                seen_directed_pairs.add(current_pair_key)
-                is_new_relationship = True
-
-        if is_new_relationship:
+        if pair_key not in seen_pairs:
+            seen_pairs.add(pair_key)
+            rel_dict = rel_model.model_dump()
+            rel_dict['source'] = source_norm
+            rel_dict['target'] = target_norm
             try:
                 unique_relationships.append(Relationship.model_validate(rel_dict))
             except Exception as e:
                  log_msg = f"Error validating normalized relationship after deduplication: {e}. Data: {rel_dict}"
-                 if logger: logger.error(f"    {log_msg}") # Indent for context
+                 if logger: logger.error(f"    {log_msg}")
 
     if logger and (len(unique_relationships) < len(relationships_data_from_llm)):
         logger.debug(f"  Normalized/deduplicated relationships from {len(relationships_data_from_llm)} to {len(unique_relationships)}.")

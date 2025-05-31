@@ -6,9 +6,9 @@ raw_log_file: "output/generated_movie_data_raw_log.txt" # Ensure 'output' direct
 character_image_save_path: "output/character_images"   # Ensure 'output/character_images' directory exists
 
 # --- Session Control ---
-num_new_movies_to_fetch_this_session: 1 # Start with 1 for testing
-max_tmdb_top_rated_pages_to_check: 2    # How many TMDB top-rated pages to check for new movies
-max_characters_from_tmdb: 40            # Max characters to fetch from TMDB credits
+num_new_movies_to_fetch_this_session: 1
+max_tmdb_top_rated_pages_to_check: 2
+max_characters_from_tmdb: 40
 
 # --- Operation Mode ---
 # Defines the primary action of the pipeline for this run.
@@ -17,7 +17,7 @@ max_characters_from_tmdb: 40            # Max characters to fetch from TMDB cred
 #   "update_all_existing": Loads ALL movies from `output_file` and updates them.
 #   "update_by_list": Loads and updates specific movies from `target_movies_to_update` list.
 #   "update_by_range": Loads and updates movies from `output_file` based on index range.
-operation_mode: "fetch_and_add_new" # Default operation mode
+operation_mode: "fetch_and_add_new" # Changed for testing the fix with new movies
 
 # --- Behavior for "fetch_and_add_new" mode ---
 # Only applicable if `operation_mode` is "fetch_and_add_new".
@@ -26,8 +26,9 @@ operation_mode: "fetch_and_add_new" # Default operation mode
 #          according to `fields_to_update`.
 # If false: Existing movies encountered during the TMDB scan will be SKIPPED,
 #           and only truly new movies will be added.
-update_existing_if_encountered_during_fetch: false # Set to `true` to enable updates on existing movies during fetch.
-                                                    # Set to `false` (default) to ONLY add new movies.
+# Set to `true` to enable updates on existing movies during fetch.
+# Set to `false` (default) to ONLY add new movies.
+update_existing_if_encountered_during_fetch: false
 
 # --- Specific Movie Targeting for "update_by_list" mode ---
 # List of movies to specifically target for update. Each item can specify by:
@@ -36,18 +37,18 @@ update_existing_if_encountered_during_fetch: false # Set to `true` to enable upd
 # - {"tmdb_id": 12345}
 # Only applicable if `operation_mode` is "update_by_list".
 target_movies_to_update: []
-  # - { title: "A Dog's Will", year: "2000" }
+  # - { title: "Psycho", year: "1960" } # Example
   # - { imdb_id: "tt0111161" } # The Shawshank Redemption
 
 # --- Index Targeting for "update_by_range" mode ---
 # A string specifying 0-based indices or ranges of movies from the `output_file`.
 # Examples: "0-4", "7", "0-4, 7, 10-12".
 # Only applicable if `operation_mode` is "update_by_range".
-target_existing_movies_by_index_range: "" # Example: "0-4, 7, 10-12"
+target_existing_movies_by_index_range: ""
 
 # LLM Configuration
 # active_llm_provider_id: "lm_studio_gemma_3_12b"
-active_llm_provider_id: "google_gemini_2_0_flash_lite" # Example: switch here
+active_llm_provider_id: "google_gemini_2_0_flash_lite"
 
 prompts:
   call1_initial_data: "prompts/movie_initial_data_prompt.txt"
@@ -58,35 +59,40 @@ prompts:
 
 # --- TMDB Image Settings ---
 tmdb_image_base_url: "https://image.tmdb.org/t/p/"
-tmdb_image_size: "w500" # Or "original", "w185", "w300", etc.
+tmdb_image_size: "w500"
+
+# --- DuckDuckGo Image Settings ---
+ddg_num_images_per_character_search: 1 # Reduce to 1 to lessen load
+ddg_num_images_per_relationship_search: 1 # Reduce to 1
+max_relationships_for_image_download: 5  # Reduce for testing
+# NEW: Delays for DDG searches
+ddg_sleep_after_character_image_group: 2.0  # Time to sleep after all images for ONE character are processed
+ddg_sleep_after_relationship_image_group: 2.5 # Time to sleep after all images for ONE relationship are processed
+ddg_sleep_between_individual_image_downloads: 1.0 # Time to sleep between downloading multiple images for the SAME character/relationship query
 
 # --- Token Calculation ---
-words_to_tokens_ratio: 1.4 # Approximate tokens per word
-
-# Max tokens (approximate words before ratio conversion) for different LLM calls
-# These are base values; actual token count for prompts will vary.
-max_tokens_call_1_words: 900 # (Original 800 + 100)
-max_tokens_enrich_rel_call_base_words: 350 # Base prompt words for char/rel
-max_tokens_enrich_rel_char_desc_words: 80  # Additional words per character for their description
-max_tokens_enrich_rel_char_rels_words: 90  # Additional words per character pair for relationships (e.g., 1.5 * 60)
-max_tokens_analytical_call_words: 1400 # (Original 1200 + 200)
-
+words_to_tokens_ratio: 1.4
+max_tokens_call_1_words: 900
+max_tokens_enrich_rel_call_base_words: 350
+max_tokens_enrich_rel_char_desc_words: 80
+max_tokens_enrich_rel_char_rels_words: 90
+max_tokens_analytical_call_words: 1400
 max_tmdb_reviews_for_summary: 3
 max_tmdb_review_length_chars: 750
-max_tokens_review_summary_words: 250 # Approx words for the summary LLM call
-max_tokens_constrained_plot_relations_words: 500
-
+max_tokens_review_summary_words: 250
+max_tokens_constrained_plot_relations_words: 300
 
 # --- Enrichment Process Control ---
 # These flags define which enrichment stages (LLM calls, API fetches) are active.
 # They apply to ALL processed movies (new or existing) that are targeted for enrichment.
 active_enrichers:
-  initial_data: true             # LLM Call 1: movie_title, year, profile, reception, visual, topic, related_titles, search_queries
-  characters_and_relations: true # TMDB Char Fetch, LLM Call 2: character_list (desc, group, alias), relationships
-  fetch_character_images: true   # Downloads images for character_list (depends on characters_and_relations being true)
-  analytical_data: true          # LLM Call 3: big5, myersbriggs, genre_mix, matching_tags, recommendations (titles/years/explainers)
-  fetch_imdb_ids: true           # Fetches IMDb IDs for: main movie, related movies (from LLM1), recommendations (from LLM3)
-  tmdb_review_summary: true      # Fetches user reviews from TMDB and summarizes them
+  initial_data: true
+  characters_and_relations: true
+  fetch_character_images: true
+  fetch_relationship_images: true
+  analytical_data: true
+  fetch_imdb_ids: true
+  tmdb_review_summary: true
   constrained_plot_with_relations: true
 
 # --- Fields to Update for Existing Movies ---
@@ -104,4 +110,9 @@ active_enrichers:
 #   - If `operation_mode` is "update_all_existing".
 #   - If `operation_mode` is "update_by_list".
 #   - If `operation_mode` is "update_by_range".
-fields_to_update: [] # Example: ["tmdb_user_review_summary", "character_profile_big5"]
+# Example: ["tmdb_user_review_summary", "character_profile_big5"]
+fields_to_update: []
+
+# --- API Request Delays ---
+api_request_delay_seconds_tmdb_page: 1
+api_request_delay_seconds_general: 2

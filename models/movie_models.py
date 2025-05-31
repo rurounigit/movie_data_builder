@@ -122,13 +122,13 @@ class CharacterListItem(BaseModel):
     description: str
     group: str
     aliases: Optional[List[str]] = None
-    image_file: Optional[str] = None # Path to local image
+    # image_file: Optional[str] = None # Path to local image
 
 class Relationship(BaseModel):
     source: str
     target: str
     type: str
-    directed: bool = True # Default from your prompt analysis
+    # directed: bool = True # Default from your prompt analysis
     description: str
     sentiment: str # Consider Enum: "positive", "negative", "neutral", "complicated"
     strength: int = Field(..., ge=1, le=5)

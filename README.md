@@ -21,12 +21,16 @@ The goal is to create a structured YAML database containing detailed profiles, c
     *   **Call 3 (Analytical Data):** Generates Big Five & Myers-Briggs personality profiles, genre mix percentages, thematic tags, and movie recommendations.
     *   **TMDB Review Summary:** Fetches TMDB user reviews and generates a concise LLM-powered summary.
     *   **Constrained Plot Description:** Generates a plot description strictly using character names from TMDB's initial list, informed by LLM-generated relationships.
-*   **Image Fetching:** Downloads character images from TMDB (if available and enabled).
+*   **Enhanced Image Downloading:**
+    *   Downloads **actor profile images** from TMDB (based on TMDB Person ID).
+    *   Downloads **character-specific images** using DuckDuckGo search (based on character name and movie title).
+    *   Images are saved to the `output/character_images` directory with descriptive filenames (e.g., `[person_id].jpg` for actors, `[person_id]_char_[character_slug].jpg` for characters).
+    *   **Note:** The paths to these downloaded images are NOT stored directly within the `character_list` in the `clean_movie_database.yaml` file, keeping the YAML focused on textual data.
 *   **Flexible Operation Modes:** The pipeline supports various modes to control which movies are processed and how existing data is handled:
-    *   `fetch_and_add_new`: Scans TMDB top-rated. Primarily adds *new* movies. Can optionally update *existing* movies if they are encountered during the TMDB scan (controlled by `update_existing_if_encountered_during_fetch`).
-    *   `update_all_existing`: Processes and updates *ALL* movies currently stored in your `output/clean_movie_database.yaml`.
-    *   `update_by_list`: Processes and updates *only* specific movies identified in the `target_movies_to_update` list.
-    *   `update_by_range`: Processes and updates movies from `output_file` based on their 0-based index range, specified in `target_existing_movies_by_index_range`.
+    *   **`fetch_and_add_new`**: Scans TMDB top-rated. Primarily adds *new* movies. Can optionally update *existing* movies if they are encountered during the TMDB scan (controlled by `update_existing_if_encountered_during_fetch`).
+    *   **`update_all_existing`**: Processes and updates *ALL* movies currently stored in your `output/clean_movie_database.yaml`.
+    *   **`update_by_list`**: Processes and updates *only* specific movies identified in the `target_movies_to_update` list.
+    *   **`update_by_range`**: Processes and updates movies from `output_file` based on their 0-based index range, specified in `target_existing_movies_by_index_range`.
 *   **Granular Update Control:** The `fields_to_update` setting allows you to specify exactly which fields (e.g., "recommendations", "imdb_id") should be updated for existing movies, applicable across all update scenarios. If empty, all fields relevant to active enrichers will be updated.
 *   **Data Persistence:**
     *   Saves all enriched data into a structured YAML file (`output/clean_movie_database.yaml`).
@@ -73,7 +77,8 @@ movie_enrichment_project/
 │   └── plot_constrained_with_relations_prompt.txt
 ├── utils/
 │   ├── __init__.py
-│   └── helpers.py                      # Utility functions (YAML, logging, tokens)
+│   ├── helpers.py                      # Utility functions (YAML, logging, tokens, image download helpers)
+│   └── image_downloader.py             # New module for image downloading logic (TMDB and DDG)
 ├── .env.example                        # Example environment variables
 ├── .gitignore
 ├── main_orchestrator.py                # Main script to run the pipeline
@@ -96,6 +101,7 @@ movie_enrichment_project/
     ```bash
     poetry install
     ```
+    *Note: The `duckduckgo_search` library (used for character images) might require `html-parser` or similar dependencies that Poetry should handle. If you encounter issues, refer to its documentation.*
 
 3.  **Set up Environment Variables (`.env`):**
     *   Copy `.env.example` to `.env`:
@@ -162,10 +168,11 @@ movie_enrichment_project/
         *   `prompts`: Paths to the LLM prompt template files.
         *   `num_new_movies_to_fetch_this_session`, `max_tmdb_top_rated_pages_to_check`, `max_characters_from_tmdb`.
         *   `active_enrichers`: Booleans to toggle different enrichment stages (applies to all operation modes for what to generate/regenerate).
+        *   `ddg_num_images_per_search`: New setting for the number of images to attempt downloading per DuckDuckGo search.
         *   Token calculation ratios and limits.
 
 6.  **Review Prompts (`prompts/` directory):**
-    *   The prompts are crucial for the quality of LLM-generated data. You may want to customize them for your chosen LLM, model, or desired output style.
+    *   The prompts are crucial for the quality of LLM-generated data. You may want to customize them for your chosen LLM, model, or desired output style. Note that `movie_enrich_chars_relationships_prompt.txt` has been updated to no longer request the `directed` field for relationships.
 
 ### Running the Pipeline
 
@@ -177,7 +184,7 @@ poetry run python main_orchestrator.py
 # poetry run python movie_enrichment_project/main_orchestrator.py
 ```
 
-The script will log its progress to the console and to the `raw_log_file`. The enriched movie data will be saved to the `output_file`.
+The script will log its progress to the console and to the `raw_log_file`. The enriched movie data will be saved to the `output_file`. Downloaded character and actor images will be saved to the directory specified by `character_image_save_path`.
 
 ### How to Add a New Data Field (Data Point) to Movie Entries
 
