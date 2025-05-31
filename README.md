@@ -24,8 +24,10 @@ The goal is to create a structured YAML database containing detailed profiles, c
 *   **Enhanced Image Downloading:**
     *   Downloads **actor profile images** from TMDB (based on TMDB Person ID).
     *   Downloads **character-specific images** using DuckDuckGo search (based on character name and movie title).
-    *   Images are saved to the `output/character_images` directory with descriptive filenames (e.g., `[person_id].jpg` for actors, `[person_id]_char_[character_slug].jpg` for characters).
-    *   **Note:** The paths to these downloaded images are NOT stored directly within the `character_list` in the `clean_movie_database.yaml` file, keeping the YAML focused on textual data.
+    *   Downloads **relationship-specific images** using DuckDuckGo search (based on the pair of character names and movie title) for the first N relationships.
+    *   Images are saved to the `output/character_images` directory with descriptive filenames (e.g., `[person_id].jpg` for actors, `[person_id]_char_[character_slug].jpg` for characters, `rel_[char1_slug]_[char2_slug]_[index].jpg` for relationships).
+    *   **Note:** The paths to these downloaded images are NOT stored directly within the `character_list` or `relationships` in the `clean_movie_database.yaml` file, keeping the YAML focused on textual data.
+    *   Configurable delays for DuckDuckGo searches to help manage rate limiting.
 *   **Flexible Operation Modes:** The pipeline supports various modes to control which movies are processed and how existing data is handled:
     *   **`fetch_and_add_new`**: Scans TMDB top-rated. Primarily adds *new* movies. Can optionally update *existing* movies if they are encountered during the TMDB scan (controlled by `update_existing_if_encountered_during_fetch`).
     *   **`update_all_existing`**: Processes and updates *ALL* movies currently stored in your `output/clean_movie_database.yaml`.
@@ -58,7 +60,7 @@ movie_enrichment_project/
 ├── enrichers/
 │   ├── __init__.py
 │   ├── analytical_enricher.py          # LLM Call 3 logic
-│   ├── character_enricher.py           # LLM Call 2 logic & image fetching
+│   ├── character_enricher.py           # LLM Call 2 logic & image fetching (character, relationship)
 │   ├── constrained_plot_rel_enricher.py # LLM Call for constrained plot
 │   ├── movie_data_enricher.py          # LLM Call 1 logic
 │   └── review_summarizer_enricher.py   # LLM Call for TMDB review summary
@@ -66,7 +68,7 @@ movie_enrichment_project/
 │   ├── __init__.py
 │   └── movie_models.py                 # Pydantic models for data structures
 ├── output/                             # Generated files (add to .gitignore if large/private)
-│   ├── character_images/               # Downloaded character images
+│   ├── character_images/               # Downloaded actor, character, and relationship images
 │   ├── clean_movie_database.yaml       # The final structured data
 │   └── generated_movie_data_raw_log.txt # Raw session log
 ├── prompts/
@@ -78,7 +80,7 @@ movie_enrichment_project/
 ├── utils/
 │   ├── __init__.py
 │   ├── helpers.py                      # Utility functions (YAML, logging, tokens, image download helpers)
-│   └── image_downloader.py             # New module for image downloading logic (TMDB and DDG)
+│   └── image_downloader.py             # Module for image downloading logic (TMDB actor, DDG character, DDG relationship)
 ├── .env.example                        # Example environment variables
 ├── .gitignore
 ├── main_orchestrator.py                # Main script to run the pipeline
@@ -101,7 +103,7 @@ movie_enrichment_project/
     ```bash
     poetry install
     ```
-    *Note: The `duckduckgo_search` library (used for character images) might require `html-parser` or similar dependencies that Poetry should handle. If you encounter issues, refer to its documentation.*
+    *Note: The `duckduckgo_search` library (used for character and relationship images) might require `html-parser` or similar dependencies that Poetry should handle. If you encounter issues, refer to its documentation.*
 
 3.  **Set up Environment Variables (`.env`):**
     *   Copy `.env.example` to `.env`:
@@ -135,7 +137,7 @@ movie_enrichment_project/
         ```yaml
         google_gemini_2_0_flash_lite: # This is an example ID
           description: "Google Gemini 2.0 Flash Lite via OpenAI-compatible endpoint"
-          base_url: "https://generativelanguage.googleapis.com/v1beta"
+          base_url: "https://generativelanguage.googleapis.com/v1beta" # Example, may vary
           api_key_env_var: "GOOGLE_GEMINI_API_KEY"
           model_id: "models/gemini-2.0-flash-lite" # Ensure this is a valid model ID for the endpoint
           type: "openai_compatible"
@@ -158,21 +160,22 @@ movie_enrichment_project/
         *   **`update_by_range`:** The pipeline updates movies from your `output/clean_movie_database.yaml` based on their 0-based index range specified in `target_existing_movies_by_index_range`.
     *   **Control `fetch_and_add_new` behavior with `update_existing_if_encountered_during_fetch`**:
         *   If `operation_mode` is `fetch_and_add_new` and `update_existing_if_encountered_during_fetch: true`, then existing movies found during the TMDB scan will be updated (according to `fields_to_update`).
-        *   If `operation_mode` is `fetch_and_add_new` and `update_existing_if_encountered_during_fetch: false`, then existing movies found during the TMDB scan will be *skipped*, and only new movies will be added. This is the option for "only add new datasets."
+        *   If `operation_mode` is `fetch_and_add_new` and `update_existing_if_encountered_during_fetch: false`, then existing movies found during the TMDB scan will be *skipped*, and only new movies will be added.
     *   **Define `fields_to_update`**: This list controls *which specific top-level fields* (e.g., `recommendations`, `imdb_id`) of an *existing* movie entry will be re-generated/overwritten.
         *   If `fields_to_update` is an **empty list (`[]`)**, then *all* fields generated by currently `active_enrichers` will be updated for any existing movie that's processed for an update.
         *   If `fields_to_update` is **populated** (e.g., `["tmdb_user_review_summary", "character_profile_big5"]`), then *only* those specified fields will be updated, provided their corresponding `active_enrichers` are `true`.
-        *   This setting applies universally whenever an existing movie is targeted for an update (e.g., in `update_all_existing` mode, or when `update_existing_if_encountered_during_fetch` is `true`).
     *   Review other settings:
         *   `output_file`, `raw_log_file`, `character_image_save_path`.
         *   `prompts`: Paths to the LLM prompt template files.
         *   `num_new_movies_to_fetch_this_session`, `max_tmdb_top_rated_pages_to_check`, `max_characters_from_tmdb`.
-        *   `active_enrichers`: Booleans to toggle different enrichment stages (applies to all operation modes for what to generate/regenerate).
-        *   `ddg_num_images_per_search`: New setting for the number of images to attempt downloading per DuckDuckGo search.
+        *   `active_enrichers`: Booleans to toggle different enrichment stages. Note the addition of `fetch_relationship_images`.
+        *   **DuckDuckGo Image Settings**: `ddg_num_images_per_character_search`, `ddg_num_images_per_relationship_search`, `max_relationships_for_image_download`.
+        *   **DuckDuckGo Delay Settings**: `ddg_sleep_after_character_image_group`, `ddg_sleep_after_relationship_image_group`, `ddg_sleep_between_individual_image_downloads` to manage DDG rate limits.
         *   Token calculation ratios and limits.
+        *   API request delays (`api_request_delay_seconds_tmdb_page`, `api_request_delay_seconds_general`).
 
 6.  **Review Prompts (`prompts/` directory):**
-    *   The prompts are crucial for the quality of LLM-generated data. You may want to customize them for your chosen LLM, model, or desired output style. Note that `movie_enrich_chars_relationships_prompt.txt` has been updated to no longer request the `directed` field for relationships.
+    *   The prompts are crucial for the quality of LLM-generated data. You may want to customize them for your chosen LLM, model, or desired output style. Note that `movie_enrich_chars_relationships_prompt.txt` has been updated to no longer request the `directed` field for relationships (this change was made in earlier iterations).
 
 ### Running the Pipeline
 
@@ -184,7 +187,7 @@ poetry run python main_orchestrator.py
 # poetry run python movie_enrichment_project/main_orchestrator.py
 ```
 
-The script will log its progress to the console and to the `raw_log_file`. The enriched movie data will be saved to the `output_file`. Downloaded character and actor images will be saved to the directory specified by `character_image_save_path`.
+The script will log its progress to the console and to the `raw_log_file`. The enriched movie data will be saved to the `output_file`. Downloaded actor, character, and relationship images will be saved to the directory specified by `character_image_save_path`.
 
 ### How to Add a New Data Field (Data Point) to Movie Entries
 
@@ -210,33 +213,30 @@ Adding a new data field (e.g., "primary_theme", "notable_cinematography_techniqu
         ```
 
 2.  **Update LLM Prompt(s) (`prompts/` directory):**
-    *   Modify the relevant prompt file (e.g., `prompts/movie_analytical_data_prompt.txt` for Call 3) to instruct the LLM to generate this new field, specifying the key name it should use in its YAML/JSON response and the desired format. Remember to update the `num_analytical_keys` variable in your prompt template if you're adding a new top-level key.
+    *   Modify the relevant prompt file (e.g., `prompts/movie_analytical_data_prompt.txt` for Call 3) to instruct the LLM to generate this new field, specifying the key name it should use in its YAML/JSON response and the desired format. Remember to update any counters in the prompt if it expects a specific number of keys.
 
 3.  **Update Enricher Function (`enrichers/` directory):**
     *   Typically, if the new field is part of an LLM output Pydantic model (e.g., `LLMCall3Output`) and the LLM correctly returns it in the expected format, no major changes are needed in the enricher function itself. The `get_llm_response_and_parse` function combined with Pydantic's `model_validate` will handle parsing and validation.
 
 4.  **Integrate into Main Orchestrator (`main_orchestrator.py`):**
-    *   The common enrichment function `_enrich_and_update_movie_data` handles the merging of LLM output into the `working_data_dict`. If `movie_mood` is part of `LLMCall3Output`, the existing `working_data_dict.update(llm3_output_data.model_dump(exclude_none=False))` will automatically include it, provided `should_update_field_local("movie_mood")` evaluates to `True`.
-    *   **Add the new field's key to `key_to_enricher_group_map`:** This is important for the selective update logic. Add `"movie_mood": "analytical_data"` to this dictionary in `main_orchestrator.py` so that `fields_to_update` can correctly target it.
+    *   The common enrichment function `_enrich_and_update_movie_data` handles the merging of LLM output into the `working_data_dict`. If `movie_mood` is part of `LLMCall3Output`, the existing logic should automatically include it, provided `should_update_field_local("movie_mood")` evaluates to `True`.
+    *   **Add the new field's key to `key_to_enricher_group_map`:** This is important for the selective update logic. Add an entry like `"movie_mood": "analytical_data"` (or whichever enricher group it belongs to) to this dictionary in `main_orchestrator.py` so that `fields_to_update` can correctly target it.
 
     ```python
     # In main_orchestrator.py (within run_enrichment_pipeline scope)
     key_to_enricher_group_map = {
         # ... existing mappings ...
-        "movie_mood": "analytical_data", # Add this line
+        "movie_mood": "analytical_data", # Add this line, associating with the correct enricher group
         # ... existing mappings ...
     }
-
-    # No change needed in the _enrich_and_update_movie_data function itself for simple string fields,
-    # as the loop already handles `should_update_field_local(key)` and `working_data_dict[key] = value`.
     ```
 
 5.  **Testing:**
     *   Set `operation_mode` to `fetch_and_add_new` and `num_new_movies_to_fetch_this_session: 1` in `configs/main_config.yaml`.
-    *   Ensure `active_enrichers.analytical_data: true`.
+    *   Ensure the relevant `active_enrichers` flag (e.g., `active_enrichers.analytical_data: true`) is set.
     *   Run `poetry run python main_orchestrator.py`.
-    *   **Check `output/clean_movie_database.yaml`:** Verify that the `movie_mood` field is present and correctly populated for the processed movie.
-    *   If testing updates for existing movies, set `operation_mode` to `update_all_existing` (or `update_by_list`/`range`) and ensure `fields_to_update: []` or `fields_to_update: ["movie_mood"]` is set.
+    *   **Check `output/clean_movie_database.yaml`:** Verify that the new field is present and correctly populated for the processed movie.
+    *   If testing updates for existing movies, set `operation_mode` to `update_all_existing` (or `update_by_list`/`range`) and ensure `fields_to_update: []` or `fields_to_update: ["your_new_field_name"]` is set appropriately.
 
 ### Contributing
 
